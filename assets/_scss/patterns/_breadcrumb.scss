@@ -1,0 +1,27 @@
+.breadcrumb {
+    display: inline-block;
+    letter-spacing: normal;
+    list-style: none;
+    
+    li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        
+        &:not(:last-child) {
+            &:after {
+                content:' / ';
+            }
+        }
+    }
+    
+    a {
+        font-family: lato_reg, arial, sans-serif;
+     }
+    
+    p {
+        position: relative;
+        top: -3px;
+        font-family: lato_black, arial, sans-serif;
+    }
+}

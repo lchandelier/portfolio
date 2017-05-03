@@ -1,0 +1,142 @@
+@import "base/setup";
+
+.contrast {
+    background: #333;
+    color: #eee;
+
+    article a, .wrapper a, a {
+        color: $high_contrast_color;
+        
+        &:after {
+            background: $high_contrast_color;
+        }
+
+        &:focus, &:active, &:hover {
+            color: #eee;
+
+            &:after {
+                background: #eee;
+            }
+        }
+    }
+
+    header {
+        a, button {
+            color: $high_contrast_color;
+
+            &:focus, &:active, &:hover {
+                color: #eee;
+
+                &:after {
+                    background: #eee;
+                }
+            }
+        }
+    }
+
+    h2.center {
+        color: #eee;
+    }
+    
+    code {
+        color: #000;
+    }
+
+    .intro, 
+    .project, 
+    .about,
+    .contact, 
+    .experience,
+    footer {
+        background: none;
+        border-top: 1px solid #eee;
+    }
+
+    header,
+    .portfolio,
+    .bg_shadow {
+        background: none;
+    }
+
+    .intro a, [download], [role="button"] {
+        background: none;
+        border: 1px solid $high_contrast_color;
+        @include transition(color .2s, border-color .2s);
+
+        &:focus, &:active, &:hover {
+            border-color: #eee;
+        }
+    }
+
+    .intro {
+        background: none;
+    }
+    
+    //project list
+    .project_list {
+        .detail {
+            background: none;
+            color: inherit;
+        }
+        .type {
+            color: inherit;
+        }
+        
+        p {
+            color: #eee;
+        }
+    }
+
+    //list xp
+    .list_xp {
+        li.highlight {
+            background: none;
+            border: 1px solid #eee;
+
+            .bottom {
+                border-color: #eee;
+            }
+        }
+        
+        h3 {
+            color: $high_contrast_color;
+        }
+        
+        a {
+            color: $light_color;
+            
+            &:focus, &:active, &:hover {
+                color: #fff;
+            }
+
+            &:focus, &:active, &:hover {
+                &:after {
+                    background: #fff;
+                }
+            }
+        }
+    }
+    
+    .social {
+        a {
+            &:focus, &:active, &:hover {
+                box-shadow: 0 0 10px #eee;
+            }
+        }
+    }
+
+    .about {
+        img {
+            display: none;
+        }
+        p {
+            max-width: 100%;
+        }
+    }
+    
+    .contact {
+        a { 
+            color: $high_contrast_color;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+sass:
+    sass_dir: assets/_scss
+name: Portfolio
+exclude:
+  - node_modules
+  - package.json
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+title:
+  en: Mylene Chandelier's portfolio
+  fr: Portfolio de Mylène Chandelier
+description:
+  en: A look at my front-end dev work
+  fr: Présentation de mon travail de développeuse front-end.
+index:
+  en: /en
+  fr: /
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mylene-chandelier.me" # the base hostname & protocol for your site
+permalink: /:categories/:title
+folioURL:
+  en: /en/portfolio
+  fr: /portfolio
+blogURL:
+  en: /en/blog
+  fr: /blog
+home:
+  en: Home
+  fr: Accueil
+back_home:
+  en: Back to homepage
+  fr: Retourner à la page d'accueil
+display_language:
+  en: Display page in english
+  fr: Afficher la page en français
+txtless_title:
+  en: Decrease text size
+  fr: Diminuer la taille du texte
+txtmore_title:
+  en: Increase text size
+  fr: Augmenter la taille du texte
+rsttxt_title:
+  en: Put the text to its original size
+  fr: Mettre le texte à sa taille initiale
+dyslexia_title:
+  en: Change the font
+  fr: Changer la police d'écriture
+contrast_title:
+  en: Enhance contrast
+  fr: Améliorer le contraste d'affichage
+skip_content:
+  en: Skip to content
+  fr: Aller au contenu
+skip_footer:
+  en: Skip to footer
+  fr: Aller au pied de page
+dyslexia:
+  en: Dyslexia
+  fr: Dyslexie
+contrast:
+  en: Contrasts
+  fr: Contrastes
+sitemap:
+  en: Sitemap
+  fr: Plan du site
+sitemapURL:
+  en: en/sitemap.html
+  fr: plan-du-site.html
+a11y:
+  en: Accessibility
+  fr: Accessibilité
+a11yURL:
+  en: en/accessibility.html
+  fr: accessibilite.html
+go_top:
+  en: Go on top of the page
+  fr: Remonter la page
+git:
+  en: Go to my Github profile
+  fr: Accéder à mon repo Github
+linkedin:
+  en: Go to my Linkedin profile
+  fr: Accéder à mon profil Linkedin
+viadeo:
+  en: Go to my Viadeo profile
+  fr: Accéder à mon profil Viadeo
+twitter:
+  en: Go to my Twitter profile
+  fr: Accéder à mon profil Twitter
+cookie_msg:
+  en: "Cookie recipe (for 2 people): 
+    ½ cup flour
+    ¼ teaspoon baking soda
+    ⅛ teaspoon salt
+    3 tablespoons melted butter
+    ¼ cup plus 2 tablespoons brown sugar
+    1 egg yolk
+    ½ tsp vanilla
+    ⅓ cup chocolate chips"
+  fr: "Recette de cookies (pour 2 personnes) : 70 g de pépites de chocolat,
+        70 g de raisins secs,
+        10 cl de crème fraîche,
+        125 g de farine,
+        100 g de cassonade,
+        1/2 cuillère à café de levure chimique,
+        1 pincée de sel,
+        1 œuf"
+cookie_ok:
+  en: Accept
+  fr: Accepter
+cookie_nok:
+  en: Refuse
+  fr: Refuser
+cookie_know_more:
+  en: Know more about cookies
+  fr: En savoir plus sur les cookies
+cookie_url:
+  en: /en/about-cookies.html
+  fr: /cookies.html
+here:
+  en: You are here
+  fr: Vous êtes ici
+current_language:
+  en: (active language)
+  fr: (langue active)
+# Build settings
+markdown: kramdown

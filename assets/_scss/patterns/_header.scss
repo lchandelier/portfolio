@@ -1,0 +1,214 @@
+header {
+    font-size: 1.8rem;
+    background: $dark_bg;
+    padding: 20px;
+    
+    .wrapper {
+        position: relative;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+    
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+        
+        &:nth-child(2) {
+            margin-left: 0;
+        }
+    }
+    
+    .a11y_tools {
+        
+        li {
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+    
+    .lang {
+        li {
+            padding-right: 10px;
+        }
+    } 
+    
+    :lang(en) .en, :lang(fr) .fr{
+        font-weight: bold;
+    }
+
+    .right_items {
+        max-width: 70%;
+    }
+    
+    a:not(.logo), button:not(.display_menu):not(.display_tools) {
+        color: #fff;
+        font-size: 1.4rem;
+        font-family: lato_reg, arial, sans-serif;
+        line-height: 1.6rem;
+        
+        &[id^="text"] {
+            text-transform:uppercase;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            margin: 3px auto 0;
+            height: 1px;
+            width: 0;
+            background: #fff;
+            @include transition(width .2s, background-color .2s);
+        }
+
+        &:focus, &:active, &:hover {
+            color: $light_color;
+        }
+
+        &:focus, &:active, &:hover {
+            &:after {
+                width: 100%;
+                background: $light_color;
+            }
+        }
+    }
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    min-width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 99;
+    text-align: center;
+    background: $site_color;
+    border: 1px solid #fff;
+    
+    @include respond-to(mobile) {
+        left: auto;
+        right: 0;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.a11y_tools {
+    position: relative;
+    
+   > button {
+        @include sprite($icons, a11y);
+    }
+    
+    button {
+        &:focus, &:active, &:hover {
+            outline: 1px dotted $light_color;
+        }
+    }
+    
+    ul {
+        @extend .submenu;
+       
+        @include respond-to(mobile) {
+            left: 50%;
+            right: auto;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    }
+    
+    a, button {
+        color: #fff;
+    }
+} 
+
+.logo {
+    margin-right: 20px;
+}
+
+//menu
+
+.main_menu {
+    position: relative;
+    
+    li {
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+
+.display_menu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    @include transition(.2s);
+
+    .caret {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        margin: 0 0 0 -15px;
+        cursor: pointer;
+        height: 3px;
+        width: 30px;
+        background: $light_color;
+        @include transition(.2s);
+
+        &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin-left: -15px;
+            cursor: pointer;
+            height: 3px;
+            width: 30px;
+            background: $light_color;
+            @include transition(.3s);
+        }
+
+        &:before {
+            top: 8px;
+        }
+        &:after {
+            bottom: 8px;
+        }
+    }
+
+    &.active {
+        span {
+            background-color: transparent;
+
+            &:before, &:after {
+                top: 0;
+            }
+            &:before {
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            &:after {
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    
+    &:focus, &:active, &:hover {
+        outline: 1px dotted $light_color;
+    }
+}

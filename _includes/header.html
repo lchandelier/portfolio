@@ -1,0 +1,56 @@
+<header role="banner" id="top" tabindex="-1">
+    <ul class="skip_links">
+        <li><a href="#page">{{ site.skip_content[page.lang] }}</a></li>
+        <li><a href="#footer">{{ site.skip_footer[page.lang] }}</a></li>
+    </ul>
+    <div class="wrapper">
+        <a href="{{ site.baseurl }}{{ site.index[page.lang] }}" class="logo">
+            <img src="{{ site.baseurl }}/assets/img/home/m.svg" alt="{{ site.back_home[page.lang] }}" 
+                 title="{{ site.back_home[page.lang] }}"
+                 width="51" height="61" role="img"/>
+        </a>
+        <nav role="navigation" class="right_items noprint" tabindex="-1">
+            <ul>
+                <li>
+                    <ul id="lang" class="lang">
+                        {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+                        {% for post in posts %}
+                        <li>
+                            <a href="{{ post.url }}" class="{{ page.lang }}"
+                               title="{{ site.display_language[post.lang] }}" lang="{{ post.lang }}">{{ post.lang }}</a>
+                        </li>
+                        {% endfor %}
+
+                        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+                        {% for page in pages %} 
+                        <li>
+                            <a href="{{ page.url }}" class="{{ page.lang }}"
+                               title="{{ site.display_language[page.lang] }}" lang="{{ page.lang }}">{{ page.lang }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li id="a11yTools" class="a11y_tools">
+                    <button type="button" class="display_tools">
+                        <span class="a11y_hidden">Ouvrir les options d'accessibilité</span>
+                    </button>
+                    <ul>
+                        <li><button id="dyslexia" title="{{ site.dyslexia_title[page.lang] }}">{{ site.dyslexia[page.lang] }}</button></li>
+                        <li><button id="contrast" title="{{ site.contrast_title[page.lang] }}">{{ site.contrast[page.lang] }}</button></li>
+                    </ul>
+                </li>
+                <li id="mainMenu" class="main_menu">
+                    <button id="displayMenu" class="display_menu" type="button">
+                        <span class="a11y_hidden">Ouvrir le menu</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="{{ site.baseurl }}{{ site.folioURL[page.lang] }}">Portfolio</a></li>
+                        <li><a href="{{ site.baseurl }}{{ site.blogURL[page.lang] }}">Blog</a></li>
+                        <li><a href="{{ site.baseurl }}{{ site.index[page.lang] }}#contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

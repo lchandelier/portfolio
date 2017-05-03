@@ -1,0 +1,248 @@
+---
+layout: post
+title:  "Retour sur la Kiwi Party 2016"
+ref: kiwi-party
+date:   2016-06-20 09:48:44 +0100
+category: "blog"
+permalink: /blog/kiwi-party-2016.html
+lang: fr
+thumbnail: /assets/img/blog/kiwi-party-medium.jpg
+alt_thumb: 
+---
+
+<img src="{{ site.baseurl }}/assets/img/blog/kiwi-party.jpg" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/kiwi-party-medium.jpg 670w,
+          {{ site.baseurl }}/assets/img/blog/kiwi-party.jpg 1024w"
+          sizes="(min-width:671px) 1024px"/>
+
+**Le 3 juin 2016 avait lieu la Kiwi Party à Strasbourg. c'est la conférence Web gratuite pour une journée dédiée à la qualité, la performance et l'accessibilité du Web. 
+12 conférences sur une journée que nous avons suivies avec Julien Ramel. Voici notre retour sur cette journée au pays des Kiwis !**
+
+
+## Programme du matin
+
+### Nos petits stress quotidiens
+
+La journée a démarré très fort avec la conférence de Damien Sengner qui a parlé du stress dans nos métiers.
+
+Il nous a montré les différents types de stress existants (stress aigü et stress chronique) ainsi que leurs phases (l’alarme, la résistance et l’épuisement).
+Le résultat est le burn out ou trouble anxio-dépressif. Il ne faut pas croire qu’on est en burnout parce qu’on ne sait pas gérer son temps, c’est un phénomène physique.
+
+Pour y remédier, il faut savoir dire non, tirer la sonnette d’alarme. Imposer ses limites sur les tâches qui nous sont confiées, les délais ou les plannings qui nous sont donnés.
+
+Changer de projet régulièrement est un facteur de stress important, on perd du temps à se remettre dedans.  
+Pareil pour les tâches de 5 minutes, elles n’existent pas. Il faut compter le temps d’ouvrir le projet, de se remettre dedans, de lancer les programmes nécessaires…
+
+L’open space est aussi vecteur de stress. Il est important de pouvoir s’isoler par exemple en mettant un casque ou en utilisant un dispositif lumineux qui change de couleur selon notre disponibilité.
+
+Il faut aussi avoir une bonne hygiène de vie : moins de café et plus de sport par exemple.
+
+Instaurer une transparence salariale. La comparaison entre chaque employé ne durera pas longtemps car nous avons tous un profil différent qui peut justifier des écarts.  
+Comprendre sa rémunération, c’est être moins stressé sur son avenir car on voit comment on peut évoluer.
+
+Laisser de l’indépendance à son salarié pour qu’il puisse innover, réfléchir et s’épanouir. Le laisser présenter son travail auprès du client.  
+Ne pas faire de rétention d’information, chacun doit pouvoir y accéder sans nécessiter d’interaction humaine.  
+Faire des pauses ! On a tous notre rythme.
+
+L’argument miroir n’en est pas un, dire à un employé que dans une entreprise concurrente il n’y a pas tel ou tel avantage ne sert à rien. Il souhaite s’épanouir dans sa structure actuelle et non pas chez le concurrent.
+
+Il faut s’autoriser à aérer son planning pour pouvoir faire de la veille.
+
+Pour finir, chasser la peur ! Si cela ne va vraiment pas, il ne faut pas hésiter à changer d’entreprise ou même à devenir indépendant. Il est primordial de s’épanouir et si on n’y parvient pas, il faut en parler autour de soi (amis, médecin) car on vaut mieux que ça.
+
+[Voir les slides de la conférence Nos petits stress quotidiens](https://speakerdeck.com/hiwelo/nos-petits-stress-quotidiens-kiwiparty-2016 "(nouvelle fenêtre)"){:target="_blank"}
+
+
+### 10 astuces <abbr title="Scalable Vector Graphics">SVG</abbr> qui vont vous sauver la vie
+
+A suivi une conférence plus technique au sujet de SVG donnée par Vincent De Oliveira.
+Vincent nous a donné différentes astuces comme d’utiliser un outil d’optimisation comme <abbr title="SVGO's Missing GUI">SVGOMG</abbr>, définir une largeur et une hauteur car cela est utile tant que le <abbr title="Cascading Style Sheets">CSS</abbr> n’est pas chargé.
+
+Il ne conseille pas d’utiliser les transformations car l’origine de transformation est différente entre le <abbr title="HyperText Markup Language">HTML</abbr> et le SVG, il vaut mieux utiliser une librairie javascript pour faire les animations et les transformations (<abbr title="GreenSock Animation Platform">GSAP</abbr> ou SnapSVG par exemple).  
+Les sprites SVG fonctionnent à partir de IE9, si vous ne les utilisez pas encore, il est grand temps de s’y mettre !
+
+[Voir la vidéo de la conférence 10 astuces SVG](https://vimeo.com/179313779 "(nouvelle fenêtre)"){:target="_blank"}
+
+
+### Mettez du libre dans vos projets
+
+Pierre Rudloff a expliqué pourquoi et comment faire du libre.
+On s’en sert dans beaucoup si ce n’est tous nos projets. Le libre a pas mal d’avantages, il permet de ne pas réinventer la roue, d’utiliser un code qui a été audité, de s’inscrire dans un écosystème.  
+
+Apporter sa contribution permet de montrer ses compétences, d’avoir des retours sur son code et de profiter des améliorations des autres, tout en les aidant.  
+Les bonnes pratiques sont de veiller à lire les licences pour être en règle, d’utiliser des gestionnaires de paquet pour avoir une gestion des dépendances plus aisée (<abbr title="Node Package Manager">NPM</abbr>, Bower,…).  
+
+Ne pas hésiter à signaler un bug plutôt que de le corriger pour soi et de ne pas communiquer dessus. Mais avant, il faut s’assurer qu’il n’a pas déjà été signalé et de lire les guidelines pour le rédiger correctement (et en anglais la plupart du temps).
+Pour une bonne signalisation de bug, plusieurs points sont à prendre en compte :
+
+ * S’assurer qu’il n’a pas déjà été signalé
+ * Lire les guidelines pour bien faire le rapport
+ * Rédiger en anglais (la plupart du temps)
+ * Bien détailler le bug avec si possible une version de la librairie utilisée, une <abbr title="Uniform Resource Locator">URL</abbr>, une plateforme et le résultat attendu. Ne pas se contenter de dire « ça ne marche pas »
+
+
+Il peut y avoir besoin de faire un patch d’une librairie. Pour cela, il faut en discuter avec l’auteur puis reprendre la dernière version de la librairie et faire attention à respecter les conventions de codes de celle-ci.
+Il est possible de créer un plugin si vous ne trouvez pas votre bonheur. Pour cela, il faut :
+
+ * Vérifier qu’il n’existe pas déjà
+ * Définir les fonctionnalités
+ * Choisir une licence
+ * Utiliser le semantic versioning (norme qui définit comment nommer les versions d’un outil)
+ * Documenter son code et l’installation du plugin
+
+Idéalement, il faut intégrer le libre dans son workflow. Pour ça, il faut le prévoir dans son budget et laisser du temps aux développeurs pour qu’ils y contribuent. Une contribution financière pour des projets qu’on utilise souvent peut être bienvenue.
+Enfin, si vous souhaitez créer un logiciel libre voici quelques conseils :
+
+ * Le publier sur Git
+ * Le découper en modules
+ * Écrire de la documentation
+ * Utiliser un standard de code connu
+ * Être inclusif en permettant une installation facile pour les non-initiés
+ * Être bienveillant envers les utilisateurs/contributeurs
+
+[Voir les slides de la conférence Mettez du libre dans vos projets](http://fr.slideshare.net/Rudloff/mettez-du-libre-dans-vos-projets-web "(nouvelle fenêtre)"){:target="_blank"}
+
+
+### Agilité pour petits projets
+
+Le web change et devient applications.
+Des outils comme Trello et Git permettent de détailler le projet et de raconter son histoire. C’est un échange d’expérience.  
+Pour une meilleure agilité, on peut utiliser des générateurs de sites statiques (Jekyll par exemple). Grâce à ce genre d’outil, on peut mettre facilement un proto en ligne, simple, avant de faire le design. Ainsi, les itérations se font rapidement entre la prod et le dév.
+[Exemple de site créé avec un générateur de site statique](https://mademistakes.com/style-guide/ "(nouvelle fenêtre)"){:target="_blank"}
+
+[Voir la vidéo de la conférence Agilité pour petits projets](https://vimeo.com/179314577 "(nouvelle fenêtre)"){:target="_blank"}
+
+
+### Intégration et Webapps : ProTips
+
+Un concentré de bonnes pratiques s’est retrouvé dans la conf de M4D’z. Il nous a montré l’intérêt d’utiliser autant que possible les balises de zones <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> ou rôles <abbr title="Accessible Rich Internet Applications">ARIA</abbr> afin de skinner les éléments d’une page plutôt que d’utiliser des class CSS.
+Pour éviter une spécificité trop importante, on peut utiliser les outils [CSS Specificity](http://cssspecificity.com "(nouvelle fenêtre)"){:target="_blank"} ou [Specificity Calculator](http://specificity.keegan.st/ "(nouvelle fenêtre)"){:target="_blank"}
+On peut utiliser <code>&lt;template&gt;</code> ou un moteur de template comme pug ou nunjucks. Cela aide à la réutilisation !  
+Surtout, ne pas utiliser de sélecteurs trop longs (+ 4 niveaux) d’identifiants ou de style forcés (!important)  
+On peut exploiter les pré/postprocesseurs pour l’utilisation de mixins, de nesting d’un côté et la compatibilité de l’autre.  
+Enfin, pour les webapps, on peut utiliser un framework front-end comme React ou vue.js et un packer comme Webpack ou Rollup.
+
+[Voir la vidéo de la conférence Intégration et Webapps : ProTips](https://vimeo.com/179315043 "(nouvelle fenêtre)"){:target="_blank"}
+
+### Git ProTips
+
+Christophe Porteneuve a fait un vrai show pour nous donner quelques commandes Git. Tout est dans la vidéo ci-dessous :
+
+[Vidéo de la conférence Git ProTips sur Vimeo](https://vimeo.com/179446529 "(nouvelle fenêtre)"){:target="_blank"}
+
+## Programme de l'après-midi
+
+### HTTPS partout, chiche !
+
+Dans sa conférence, Frédéric Kayser nous a appris, entre autre, que Google ne chiffrait pas ses trafics entre datacenters et que les révélations de Edward Snowden avaient fait gagner 7 ans techniquement.  
+Il a aussi présenté des outils très utiles pour avoir un état des lieux de la sécurité de notre site/serveur avec [Qualys](https://www.ssllabs.com/ "(nouvelle fenêtre)"){:target="_blank"} ou [acme.sh](https://github.com/Neilpang/acme.sh "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence HTTPS partout, chiche !](https://vimeo.com/179446532 "(nouvelle fenêtre)"){:target="_blank"}
+
+
+### L’email dans toutes ses formes
+
+Un email, ce n’est pas qu’une question de code, c’est que que nous a montré Sébastien Lejeune dans sa présentation.
+  
+Tout d’abord, le from doit reprendre le nom de la marque, avoir un alias ainsi qu’un email identifiable.  
+Le sujet doit faire 50 caractères maximum, être en rapport avec l’email. Ne pas hésiter à faire de l’A/B Testing et à utiliser des pictos.  
+Le préheader doit faire 100 caractères au maximum. Il résume le but de l’email et contient les liens de la page miroir et de désinscription.  
+Le footer contient un lien de désinscription, un autre vers les préférences de compte et d’autres vers les réseaux sociaux.  
+Pour les Call-to-action, utiliser du HTML plutôt qu’une image. Les boutons doivent être préférés aux liens.  
+La largeur d’un email desktop doit se situer entre 500 et 640px. Le header entre 100 et 200px.  
+Une image spécifique au desktop doit être utilisée. Elle doit être simple, visuelle et en rapport avec l’email. On peut utiliser un pattern en background-image du mail.  
+Pour le mobile, la largeur idéale est entre 280 et 320px, sur une colonne. Il ne faut pas craindre le scroll. Ainsi, on peut augmenter l’interlignage et la police de caractère (16px) pour une bonne lisibilité.  
+Les call-to-action doivent faire au minimum 44×44. La taille recommandée du texte sur les boutons est de 20px.
+  
+Pour l’intégration, quelques astuces :
+
+ * Faire attention à la limite de 102k sur Gmail
+ * Utiliser des media-queries
+ * Initial-scale=1 width=device-width
+ * Un doctype transitional
+ * Encodage en utf-8
+ * Mettre les styles sur le <code><td></code>
+ * Width à 100% sur le <table> principal
+ * Images en x2
+ * Alt sur les <code>&lt;img&gt;</code>
+ * Liens en target= "_blank"
+
+Pour tester, Email on Acid ou Litmus sont très efficaces.
+
+[Voir la vidéo de la conférence L’email dans toutes ses formes](https://vimeo.com/180578382 "(nouvelle fenêtre)"){:target="_blank"}
+
+
+### Les codes rewiewztraminer : contrairement au vin, c’est moins bon en tardive
+
+Morgane Hervé a présenté son retour d’expérience sur la revue de code au sein de son équipe.  
+
+Pourquoi faire de la revue de code ?
+
+ * Éviter les bugs, le « bus factor »
+ * Corriger les erreurs de conception
+ * Améliorer le travail d’équipe
+ * Permettre la montée en compétence
+ * Améliorer la qualité du code
+
+Les 3 Q Qui, Quand Quoi/Comment :
+
+ * Qui ? Tout le monde peut le faire, il faut être 2 au minimum.
+ * Quand ? Tous les jours dans l’idéal, au moins plusieurs fois par semaine et entre 2 développements de fonctionnalités.
+Plus elle est faite régulièrement, plus elle est simple et digeste à faire.
+ * Quoi/Comment ? En utilisant Github, GitLab ou Bitbucket. Elle peut être faite à plusieurs mais pas trop. On peut l’assigner à tour de rôle dans l’équipe ou cibler la bonne personne pour la bonne tâche.
+Enfin, elle doit porter sur l’aspect fonctionnel et la logique plutôt que sur les standards de codage.
+
+Comment convaincre un manager/Chef de projet d’instaurer la revue de code ?
+
+Les 4 A :
+
+ * Argent -> Meilleure image de marque, les livrables sont de meilleure qualité
+ * Assurance -> On sait ce qu’on met en prod
+ * Amélioration -> Partage des bonnes pratiques
+ * Agnostique -> même processus, peu importe la techno utilisée.
+
+[Voir la vidéo de la conférence Les codes rewiewztraminer : contrairement au vin, c’est moins bon en tardive](https://vimeo.com/180578384 "(nouvelle fenêtre)"){:target="_blank"}
+
+
+### Workflow moderne cherche graphiste à l’ancienne
+
+Pour avoir un bon workflow entre designer et intégrateur, Gaël Poupard a proposé sa méthode d’organisation.  
+Il faut commencer définir un protocole de travail, se remettre en question. On peut s’inspirer de la Photoshop Etiquette pour le design et du livre Intégration web : les bonnes pratiques pour le front.  
+
+Il peut être utile de se servir de Git pour avoir un historique des maquettes. Au niveau des <abbr title="Photoshop Document">PSD</abbr>, on peut appliquer la même logique que pour le front, par exemple, inclure les parties communes dans un seul fichier (Header/footer) pour n’avoir qu’à faire une modification à chaque fois. Cela aide à refléter l’organisation front à avoir.  
+Utiliser Gulp pour automatiser un maximum de tâches. Cela aide à générer des sprites ou des icon font à la volée ou encore sert à optimiser les images. En l’installant sur le poste de votre designer, il pourra faire un livrable déjà optimisé pour l’intégration.  
+Le designer peut livrer un styleguide grâce aux bibliothèques <abbr title="Creative Cloud">CC</abbr> ou encore PSD.rb
+
+Les freins qui peuvent survenir sont :
+
+ * Le designer ne veut pas sortir de sa zone de confort et donc, adopter des nouveaux outils/méthodes
+ * Les PSD qui viennent d’ailleurs
+ * Le cycle en V
+ * Trop d’intermédiaires dans les projets qui font que les informations se perdent
+
+La clé de réussite est la communication !
+
+[Voir la vidéo de la conférence Workflow moderne cherche graphiste à l’ancienne](https://vimeo.com/181158986 "(nouvelle fenêtre)"){:target="_blank"}
+
+
+### CSS Selector Wars : un nouvel espoir ?
+
+Pour éviter les conflits entre sélecteurs CSS, Florens Vershelde propose les solutions suivantes :
+
+ * Avoir plusieurs niveaux de granularité en utilisant <abbr title="Block Element Modifier">BEM</abbr>, des classes utilitaires ou des classes atomiques
+ * Utiliser les CSS Modules
+
+[Voir la vidéo de la conférence CSS Selector Wars : un nouvel espoir ?](https://vimeo.com/182053671 "(nouvelle fenêtre)"){:target="_blank"}
+
+
+### L’identité visuelle sur le web, penser au-delà du print
+
+Aurélien Sesmat a expliqué comment avoir une bonne identité visuelle. Pour cela, il faut :
+
+ * Définir la partie UX et technique
+ * Faire en fonction du budget client
+ * Intégrer des animations de prototype
+
+Les animations doivent être définies en amont entre l’UX et la <abbr title="Direction Artistique">DA</abbr>. Une présentation des éléments techniques va rassurer le client et cadrer la DA.  
+Cela permet d’éviter des retours inutiles en phase de développement, de préciser la façon dont l’identité visuelle s’articule ainsi que les détails techniques pour bien la réaliser.
+
+[Voir la vidéo de la conférence L’identité visuelle sur le web, penser au-delà du print](https://vimeo.com/181158992 "(nouvelle fenêtre)"){:target="_blank"}

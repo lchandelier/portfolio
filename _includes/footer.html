@@ -1,0 +1,30 @@
+<footer id="footer" role="contentinfo" class="noprint" tabindex="-1">
+    <div class="wrapper">
+        <p>&copy; 2017 Mylène Chandelier</p>
+        <ul>
+            <li><a href="{{ site.baseurl }}/{{ site.sitemapURL[page.lang] }}">{{ site.sitemap[page.lang] }}</a></li>
+            <li><a href="{{ site.baseurl }}/{{ site.a11yURL[page.lang] }}">{{ site.a11y[page.lang] }}</a></li>
+        </ul>
+    </div>
+    <a href="#top" class="top_page" id="go_top">
+        <span class="a11y_hidden">{{ site.go_top[page.lang] }}</span>
+    </a>
+</footer>
+
+{% if page.custom_js %}
+{% for js_file in page.custom_js %}
+<script src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
+{% endfor %}
+{% endif %}
+<div class="hidden">
+    <span id="currentLanguage">{{ site.current_language[page.lang] }}</span>
+    <span id="cookieMsg">{{ site.cookie_msg[page.lang] }}</span>
+    <span id="acceptMsg">{{ site.cookie_ok[page.lang] }}</span>
+    <span id="refuseMsg">{{ site.cookie_nok[page.lang] }}</span>
+    <span id="know_more_msg">{{ site.cookie_know_more[page.lang] }}</span>
+    <span id="policyURL">{{ site.baseurl }}{{ site.cookie_url[page.lang] }}</span>
+</div>
+
+<!-- Piwik -->
+<noscript><p><img src="//www.mylene-chandelier.me/stats/piwik.php?idsite=1" alt="" /></p></noscript>
+<!-- End Piwik Code -->

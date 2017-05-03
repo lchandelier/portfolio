@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article aria-labelledby="main_title" class="wrapper" itemscope itemtype="http://schema.org/BlogPosting">
+    <p class="a11y_hidden">{{ site.here[page.lang] }}</p>
+    
+    {% if page.category == "blog" %}
+    <ol class="breadcrumb">
+        <li><a href="{{ site.baseurl }}{{ site.index[page.lang] }}">{{ site.home[page.lang] }}</a></li>
+        <li><a href="{{ site.baseurl }}{{ site.blogURL[page.lang] }}">Blog</a></li>
+        <li><p>{{ page.title }}</p></li>
+    </ol>
+    {% else %}
+    <ol class="breadcrumb">
+        <li><a href="{{ site.baseurl }}{{ site.index[page.lang] }}">{{ site.home[page.lang] }}</a></li>
+        <li><a href="{{ site.baseurl }}{{ site.folioURL[page.lang] }}">Portfolio</a></li>
+        <li><p>{{ page.title }}</p></li>
+    </ol>
+    {% endif %}
+
+    <h1 id="main_title" itemprop="name headline">{{ page.title }}</h1>
+    {{ content }}
+</article>

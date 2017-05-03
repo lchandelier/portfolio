@@ -1,0 +1,212 @@
+---
+layout: post
+title:  "Feedback on Korat, a starterkit which makes a lot, but not coffee."
+ref: bfe
+date:   2016-05-26 13:22:16 +0100
+category: "blog"
+permalink: /en/blog/korat-starterkit.html
+lang: en
+thumbnail: /assets/img/blog/korat.jpg
+alt_thumb: 
+---
+
+<img src="{{ site.baseurl }}/assets/img/blog/korat.jpg" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/korat-medium.jpg 670w,
+          {{ site.baseurl }}/assets/img/blog/korat.jpg 1024w"
+          sizes="(min-width:671px) 1024px"/> 
+
+**Korat is a minimalist starterkit (also the breed of the cat on the picture) that allows you to quickly create sprites divided into multiple files, create an archive for a client sending or a server deployment, do basic optimizations such as images compression and <abbr title="Cascading Style Sheets">CSS</abbr>/<abbr title="Javascript">JS</abbr> minification.
+You can also split the <abbr title="HyperText Markup Language">HTML</abbr> into several files that are included in your page's template and create a styleguide automatically.**
+
+## How came the idea to create this package?
+
+
+At first, I was looking for a simple way to create multiple CSS sprite files in <abbr title="Scalable Vector Graphics">SVG</abbr>. I used <abbr title="Syntactically Awesome Stylesheets">Sass</abbr> and only knew how to create a <abbr title="Portable Network Graphics">PNG</abbr> sprite for a whole project. Which was not optimal for a large site.
+I saw this [article](https://www.liquidlight.co.uk/blog/article/creating-svg-sprites-using-gulp-and-sass/ "Liquid Light's blog (new window)"){:target="_blank"}
+
+As I wanted to get to Gulp, not to leave Sass and make SVG, this solution was perfect!
+
+The solution proposed above only generates a sprite but the author has published a [version to manage the multi-sprite](http://www.sassmeister.com/gist/d0f7c4a14b965d6fcb17 "Sass Meister (new window)"){:target ="_blank"} that I integrated in my projects.
+
+In the article, the author uses the gulp-svg-sprite module. When I started implementing this solution, it was gulp-svg-sprite**S** which was used (and is no longer maintained today). I have encountered several problems with this module (incomprehensible errors probably due to a lack of Windows compatibility), so I looked for another module, gulp-svg-spritesheet. I haven't tested gulp-svg-sprite in my solution since the module I use meets perfectly my needs.
+
+For this to work, you have to put SVG images in different directories (1 per sprite), then, using a template file (used to define the mapping between <abbr title="Sassy CSS">SCSS</abbr> and the sprite file), the Gulp task will build the SVG and PNG sprites and generate an interpretable mapping SCSS file.
+
+Concretely, the template file looks like this:
+{% highlight conf %}
+{% raw %}
+$icons: (
+    sprite: (width: {{width}}{{units}}, 
+             height:{{height}}{{units}}, 
+             pngPath: '{{{cssPathNoSvg}}}', 
+             svgPath: '{{{cssPathSvg}}}'),
+{{#sprites}}
+    {{fileName}}: (width: {{w}}{{units}}, 
+                   height: {{h}}{{units}}, 
+                   backgroundX: {{x}}{{units}}, 
+                   backgroundY:{{y}}{{units}}),
+{{/sprites}}
+);
+{% endraw %}
+{% endhighlight %}
+
+And the SCSS result after executing the Gulp task gives this:
+
+{% highlight scss %}
+{% raw %}
+$icons: (
+    sprite: (width: 25px, 
+             height:25px, 
+             pngPath: '../img/sprite_global.png', 
+             svgPath: '../img/sprite_global.svg'),
+    square: (width: 5px,
+             height: 5px, 
+             backgroundX: -10px, 
+             backgroundY:-10px),
+);
+{% endraw %}
+{% endhighlight %}
+
+
+For Sass, it's very simple, just target the sprite to use and specify the name of the icon to be displayed.
+{% highlight scss %}
+{% raw %}
+.class {
+    @include sprite($icons, square);
+}
+
+.class_two {
+    @include sprite($icons_home, star);
+}
+{% endraw %}
+{% endhighlight %}
+
+
+The above code calls the PNG or SVG sprite according to the browser support without additional code for the developer.
+
+If a PNG support is needed, add a variable $ie_sprite containing the name of the class to use to apply the correct sprite. Be careful to add it before calling the mixins file.
+
+Personally, I use the following syntax:
+{% highlight scss %}
+{% raw %}
+$ie_sprite: '.no-svg' !default;
+{% endraw %}
+{% endhighlight %}
+
+Then, just apply the class « .no-svg » on the HTML tag of each page and that's all.
+
+The use of the « sprite » mixin differs a bit from the Liquid Light article because it manages the multi sprite and applies them the rem unit instead of em. This mixin mapping between the name of the icon and the sprite and automatically applies its size and position.
+ 
+## The REM unit
+
+I was using the em unit until recently. Then I chose to switch to rem for simplicity. In fact, unlike em, rem doesn't inherit the font size of its parent, but only the size of the root element, ie <code>&lt;html&gt;</code>.
+Today, only IE8 doesn't recognize this unit. So, I resumed a mixin allowing the fallback in px for IE8 on any CSS property.
+
+## Continuous amelioration
+
+In addition to the sprites, I wanted to have the most optimized code. So I added the concatenation and minification of CSS and JS as well as images optimization. These improvements have been made very quickly because they are part of the basic optimizations, I quickly found the necessary plugins and their documentation.
+
+My arrival at Wax allowed me to share this project with my new colleagues and several improvements were born from the exchanges and the needs that we met during projects.
+ 
+## Icon fonts management
+
+When I arrived, the icons were managed by icon fonts and not by sprites.
+
+So I added the ability to generate an icon font based on images placed in a folder. The module [gulp-iconfont](https://github.com/nfroidure/gulp-iconfont "Gulp iconfont on Github (new window)"){:target="_ blank"} was chosen because it makes it easy to create different fonts formats.
+{% highlight js %}
+{% raw %}
+formats: ['ttf', 'eot', 'woff2'] //possibilité d’ajouter svg et woff
+{% endraw %}
+{% endhighlight %}
+
+In your CSS, just call the icon in the usual way with <code>@font-face</code> then use font-family to apply it to an element.
+
+## The inclusion of common HTML code parts 
+
+To have a code 100% HTML, and therefore, independent of the techno used in development, I added the function of inclusion of common code parts (header / footer / menu ...) without going through a back-end language. To do this, the module [gulp-html-extend](https://github.com/FrankFang/gulp-html-extend "Gulp HTML extend (new window)"){:target="_ blank"} is perfect.
+
+In each page, I use the following syntax to include my code parts:
+
+{% highlight html %}
+{% raw %}
+<!-- @@include ../inc/head.html -->
+{% endraw %}
+{% endhighlight %}
+
+And this adds this code:
+
+{% highlight html %}
+{% raw %}
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-svg ie8" lang="fr">
+<![endif]-->
+
+
+<!--[if !(IE 8)]><!-->
+
+<html lang="fr">
+
+<!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <title>Title</title>
+        <link rel="stylesheet" type="text/css" media="all" 
+                 href="site/css/all.css"/>
+        <link rel="stylesheet" type="text/css" media="print"
+                 href="site/css/print.css"/>
+        <script type="text/javascript" 
+                   src="site/js/all.js"></script>
+    </head>
+
+ {% endraw %}
+{% endhighlight %}
+
+## Adding a customer deliverable
+
+We sometimes have to deliver the front-end code to the client or back-end team on the project.
+To meet this need, I added a module to create a code archive. It includes only the needed files for production, so Sass files, source images for sprites or icon fonts and other configuration files are not included.
+
+## Adding a styleguide
+
+We have turned to [Fabricator](http://fbrctr.github.io/ "Fabricator (new window)"){:target="_ blank"} because it integrates natively most of the components needed to a website. Moreover, it uses Gulp which allows to maintain a technical standardization and to integrate it in our build process.
+
+I added a Gulp task to install Fabricator in case you want a styleguide for your project. This task gets Fabricator's sources and groups them in the directory "styleguide" which allows to have a clear project architecture.
+
+Natively, Fabricator uses its own CSS/JS, I have enhanced the tasks managing the CSS/JS files by copying them in fabricator's folder so each modification made to the project is transferred in the styleguide.
+
+## Bonus
+
+To save some extra time, I added the [LiveReload module](https://www.npmjs.com/package/gulp-livereload "Live reload on NPM (new window)"){:target="_blank"} which automatically refreshes the browser as soon as a CSS or JS change is made to the project.
+
+## Capital gains on projects
+
+The main advantages are performance and time saving at front development level.
+
+The CSS/JS sources are minified and concatenated, which makes it possible to have only one <abbr title="HyperText Transfert Protocol">HTTP</abbr> request for each source,
+The images are optimized automatically without loss of quality, the sprites or icon font are generated almost automatically (you only have to put images source in a directory ...).
+The responsive is made easy thanks to the breakpoints that can be adapted to your needs.
+The basic HTML code is accessible (avoid links, <abbr title="Accessible Rich Internet Applications">ARIA</abbr>, focus not deleted in CSS)
+
+## Disadvantages ?
+
+The need to install dependencies on Windows (including Python 2.7 for Fabricator)
+Also in Windows, the « node_modules » directory generated by npm can not be moved because some paths are too long and Windows can't do anything when path's names are longer than 256 characters.
+
+ 
+## Conclusion
+
+It's a tool that I have used and improved on a dozen projects at the moment. It is in constant evolution, the next step is to add CSS/JS linters in order to improve the code's quality.
+
+Finally, I thank Julien, Michael and Yassine for their suggestions and feedback. They have largely contributed to make this package more complete.
+
+[See the project on Github](https://github.com/mchandelier/korat "Korat (new window)"){:target="_ blank"}
+
+## Update December 2016
+
+gulp-html-extend has been replaced by gulp-fileinclude. I've had some issues on several projects that made me change. gulp-html-extend randomly flushed some included files which has never happened again since I use gulp-fileinclude.
+
+I've also included Plumber to avoid relaunching the watch command in case of compiling error.

@@ -1,0 +1,31 @@
+---
+layout: page
+title: Plan du site
+permalink: /plan-du-site.html
+ref: sitemap
+lang: fr
+---
+
+<div class="sitemap">
+    <h2>Articles</h2>
+    <ul>
+
+        {% assign posts=site.posts | sort: "title" | where:"lang", page.lang %}
+        {% for post in posts %}
+        <li>
+            <a href="{{ site.url }}{{ post.permalink }}">{{post.title}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <h2>Pages</h2>
+    <ul>
+        {% assign pages=site.pages | sort: "title" | where:"lang", page.lang %}
+        {% for page in pages %}
+            {% if page.ref != 404 %}
+                <li>
+                    <a href="{{ site.url }}{{ page.permalink }}">{{page.title}} </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>

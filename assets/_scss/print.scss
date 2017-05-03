@@ -1,0 +1,98 @@
+/* 
+  Description: print styles
+*/
+@import "base/setup";
+
+body,
+html {
+  background-color: #fff;
+  background-image: none;
+  border: 0;
+  box-shadow: none;
+  color: #000;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  position: static;
+  width: auto;
+  display: block;
+  min-height: 100%;
+}
+body {
+  padding: 1.5em;
+}
+
+.noprint, 
+header .right_items.noprint,
+#cookie-consent-bar,
+.intro a,
+.about img {
+  display: none;
+}
+
+section{
+    padding: 10px 0;
+}
+
+h2.center {
+    padding: 10px 0 30px;
+}
+
+a:not(.logo)[href]:after {
+    display: inline;
+    content: " (" attr(href) ")";
+}
+
+abbr[title]:after {
+    display: inline;
+    content: " (" attr(title) ")";
+}
+
+.project_list {
+    li {
+        display: inline-block;
+        width: 40%;
+        opacity: 1;
+        break-inside: avoid;
+        text-align: left;
+    }
+    
+     a {
+        display: inline-block;
+        max-width: none;
+        border-radius: 0;
+        box-shadow: none;
+        text-align: left;
+    }
+    
+    img {
+        display: none;
+    }
+}
+
+.list_xp > li {
+    opacity: 1;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+.about p {
+    margin: 0;
+    max-width: none;
+}
+
+.contact {
+    h2 { 
+        color: $secondary_color;
+    }
+}
+
+main p {
+    position: relative;
+}
+img {
+    position: relative;
+    page-break-inside: avoid;
+}

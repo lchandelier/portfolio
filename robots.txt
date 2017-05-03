@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mylene-chandelier.me/preprodv3/sitemap.xml

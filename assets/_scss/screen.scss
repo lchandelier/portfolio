@@ -1,0 +1,424 @@
+/* 
+  Description: print styles
+*/
+@import "base/setup";
+@import "base/reset";
+@import "base/helpers";
+
+/* fonts */
+@font-face {
+    font-family: 'lato_light';
+    src: url('font/lato-light-webfont.woff2') format('woff2'),
+        url('font/lato-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato_reg';
+    src: url('font/lato-regular-webfont.woff2') format('woff2'),
+        url('font/lato-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato_black';
+    src: url('font/lato-black-webfont.woff2') format('woff2'),
+        url('font/lato-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'od_reg';
+    src: url('font/opendyslexic3-regular-webfont.eot');
+    src: url('font/opendyslexic3-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('font/opendyslexic3-regular-webfont.woff2') format('woff2'),
+        url('font/opendyslexic3-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'od_bold';
+    src: url('font/opendyslexic3-bold-webfont.eot');
+    src: url('font/opendyslexic3-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('font/opendyslexic3-bold-webfont.woff2') format('woff2'),
+        url('font/opendyslexic3-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* global styles */
+html {
+    font-size: 62.5%;
+    font-size: calc(1rem * 0.625);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+html, body {
+    @include respond-to(mobile){
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: lato_reg, arial, sans-serif;
+    font-weight: normal;
+    color: $main_color;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    background: #fafafa;
+
+    display: -webkit-flex;
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    line-height: 2.2rem;
+}
+
+
+.skip_links {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    a {
+        &:focus {
+            width: auto;
+            height: auto;
+            clip: auto;
+            overflow: visible;
+            z-index: 99;
+            color: #fff;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $site_color;
+    @include transition( .2s);
+
+    &.link_full_block {
+        &:before {
+            content:'';
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            background: url("../img/global/link.png") 0 0 repeat;
+        }
+    }
+}
+
+code, pre {
+    font-size: 1.6rem;
+}
+
+button:not(.display_menu) {
+    -webkit-appearance: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    @include transition(color .2s, background-color .2s);
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 1.6rem 0;
+
+    &.center {
+        margin: 0;
+        padding: 2rem 0 8rem;
+        color: $secondary_color;
+        font-family: lato_light, arial, sans-serif;
+        font-size: 5rem;
+    }
+}
+
+h3 {
+    font-size: 2.2rem;
+    font-family: lato_black, arial, sans-serif;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: lato_reg,helvetica,sans-serif;
+}
+
+main {
+    -webkit-flex: 1;
+    flex: 1 0 auto;
+
+    p, li {
+        font-size: 1.6rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+    
+    li {
+        list-style: disc outside;
+        margin: 0 0 .5rem 2rem;
+    }
+}
+
+::-moz-selection { 
+    background: $site_color; 
+    color: #fff; 
+}
+::selection { 
+    background: $site_color; 
+    color: #fff; 
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #131A1C;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #131A1C;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #131A1C;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #131A1C;
+}
+
+.display {
+    -webkit-transform: translateZ(0); 
+    transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0); 
+    transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    -webkit-animation: display_item 1s  1;
+    animation: display_item 1s  1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+
+    transform: translateY(-30px);
+
+    @keyframes display_item {
+        0%   { 
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        100% { 
+            opacity: 1; 
+            transform: translateY(5px);
+        }
+    }
+
+    @-webkit-keyframes display_item {
+        0%   { opacity: 0; -webkit-transform: translateY(-30px);}
+        100% { opacity: 1; -webkit-transform: translateY(5px);}
+    }
+}
+
+div, textarea{
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.hidden_small {
+    @include respond-to(mobile_to_landscape) {
+        display: none;
+    }
+}
+
+.center_content {
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
+    @include respond-to(mobile_to_large) {
+        padding: 0 2rem;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.intro a, [download], [role="button"] {
+    min-width: 20rem;
+    box-sizing: border-box;
+    padding: 2rem 3.2rem;
+    background: $light_color;
+    border-radius: .2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $site_color;
+    font-family: lato_black, arial, sans-serif;
+    font-size: 1.6rem;
+    @include transition( .2s);
+
+    &:focus, &:active, &:hover {
+        background: $site_color;
+        color: $light_color;
+    }
+}
+
+body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo), {
+    .dyslexia & {
+        font-family: od_reg, arial, sans-serif;
+        line-height: 1.5;
+    }
+}
+
+.top_page {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    @include sprite($icons, top);
+    @include transition(opacity .2s);
+
+    &.visible {
+        opacity: 1;
+    }
+
+    @include respond-to(wide) {
+        right: 100px;
+        bottom: 130px;
+    }
+    
+    &:focus, &:active, &:hover {
+        &:after {
+            width: 0;
+        }
+    }
+}
+/* end global styles */
+
+.not_found {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@import "patterns/header";
+@import "patterns/breadcrumb";
+@import "patterns/footer";
+
+#cookie-consent-bar {
+    background: rgba(231, 231, 231, 0.9);
+    display: block;
+    left: 0;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    font-size: 1.6rem;
+    
+    .contrast & {
+        color: $main_color;
+        background: #eee;
+    }
+    
+    p {
+        position: relative;
+        max-width: 1240px;
+        margin: 0 auto 1rem;
+        line-height: 1.55;
+
+        @include respond-to(mobile_to_large) {
+            padding: 0 2rem;
+        }
+    }
+    
+    a {
+        margin-right: 2rem;
+    }
+    
+    .sb-enable, .sb-disable {
+        box-sizing: border-box;
+        padding: .5rem 1rem;
+        background: $light_color;
+        border-radius: .2rem;
+        text-align: center;
+        color: $site_color;
+        font-family: lato_black, arial, sans-serif;
+        font-size: 1.6rem;
+        @include transition( .2s);
+    }
+    
+    .sb-disable {
+        background: $site_color;
+        color: $light_color;
+    }
+    
+    .sb-policy {
+        display: inline-block;
+        .contrast & {
+            color: $main_color;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            height: 1px;
+            width: 100%;
+            background: $main_color;
+            @include transition(width .2s);
+        }
+
+        &:focus, &:active, &:hover{
+            color: $main_color;
+        }
+
+        &:focus, &:active, &:hover {
+            &:after {
+                width: 0;
+                background: $main_color;
+            }
+        }
+    }
+}

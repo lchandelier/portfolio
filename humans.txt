@@ -1,0 +1,23 @@
+/* TEAM */
+
+    Designer: Aurélie Dunier
+    Website: https://www.behance.net/loul
+    Twitter: @louul
+    From: Lyon, France
+
+    Developer: Mylène Chandelier
+    Contact: chandelier.mylene [at] gmail.com
+    Twitter: @crazycatlena
+    From: Lausanne, Vaud, Switzerland
+
+
+/* THANKS */
+
+
+
+
+
+/* SITE */
+      Last update: 2016/07/20
+      Language: English / French
+      Standards: HTML5 / CSS3 / A11y / Jekyll

@@ -1,0 +1,190 @@
+---
+layout: default
+title: Accueil
+ref: index
+lang: fr
+---
+
+<div class="banner">
+    <div class="wrapper">
+        <img src="{{ site.baseurl }}/assets/img/home/header.jpg" alt="" width="1024"
+             srcset="{{ site.baseurl }}/assets/img/home/header_medium.jpg 670w,
+          {{ site.baseurl }}/assets/img/home/header.jpg 1024w"
+          sizes="(min-width:671px) 1024px"
+             class="visual noprint"/> 
+        
+        <div class="intro">
+            <img src="{{ site.baseurl }}/assets/img/home/m.svg" alt="" width="51" height="61"/>
+            <h1>Mylène Chandelier</h1>
+            <p>
+                Développeuse front-end passionnée d'accessibilité
+            </p>
+            <a href="{{ site.baseurl }}{{ site.folioURL[page.lang] }}">Portfolio</a>
+            <a href="{{ site.baseurl }}{{ site.blogURL[page.lang] }}">Blog</a>
+        </div>
+    </div>
+    <div class="bg_shadow"></div>
+</div>
+
+<div class="project">
+    <div class="wrapper project_list" id="portfolio">
+        <h2 class="center">Portfolio</h2>
+        <div class="container">
+            {% assign posts=site.posts | where:"lang", page.lang %}
+            {% for post in posts %}
+                {% if post.category != "blog" %}
+                <div class="item">
+                    <h3>
+                        <a href="{{ post.url | prepend: site.baseurl }}">
+                            <img width="324" height="264" 
+                                 alt="" 
+                                 src="{{ site.baseurl }}{{ post.thumbnail }}">
+                            <span>{{ post.title }}</span>
+                        </a>
+                    </h3>
+                    <p>{{ post.type }}</p>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="about" id="about">
+    <div class="wrapper">
+        <h2 class="center">&Agrave; propos</h2>
+        <img src="{{ site.baseurl }}/assets/img/home/m.gif" alt="" width="215" height="180"/>
+        <p>
+            Piquée de curiosité pour la création virtuelle lors d'une partie du jeu vidéo "<span lang="en">Heroes of Might and Magic</span>", 
+            je me suis renseignée sur les différents métiers du web et de l'informatique en général. 
+            J'ai tout de suite su que c'était ma voie, mais c'était sans compter l'avis défavorable de
+            ma professeur de maths pour mon entrée dans la filière informatique de gestion...<br/><br/>
+
+            Quelques années plus tard avec un baccalauréat d'administration en poche, je me présente dans diverses écoles d'apprentissage en informatique. 
+            Forte de ma motivation sans faille pour intégrer un <abbr title="Brevet de Technicien Supérieur">BTS</abbr> Informatique de Gestion,
+            je parviens à intégrer l'Institut de Gestion Social à Lyon pour effectuer mon BTS.<br/><br/>
+
+            Aujourd'hui, je travaille chez Wax Interactive et me perfectionne au
+            quotidien sur les langages <abbr title="Hypertext Preprocessor">PHP</abbr>, 
+            <abbr title="HyperText Markup Language 5">HTML5</abbr>, 
+            <abbr title="Cascading Style Sheets 3">CSS3</abbr> les outils <abbr title="Syntactically Awesome Stylesheets">Sass</abbr>/Compass, Gulp ... 
+            Je suis très curieuse des nouveautés et fais de la veille techno chaque jour.  Je porte un grand intérêt à l'accessibilité web et me forme
+            à travers certaines lectures et sur le tas (voir mon projet sur le Conseil Général de l'Isère).
+        </p>
+    </div>
+</div>
+<div class="experience">
+    <div class="wrapper">
+        <h2 class="center">Parcours</h2>
+        <div id="xp" class="list_xp">
+            <div class="highlight">
+                <h3>Développeuse Front-end</h3>
+                <ul>
+                    <li>Intégration de sites Wordpress et de sites responsives,</li>
+                    <li>Maintenance de sites existants,</li>
+                    <li>Accessibilité.</li>
+                </ul>
+                <div class="bottom">
+                    <a href="http://www.wax-interactive.com/fr-ch/" target="_blank" title="Wax Interactive Lausanne (nouvelle fenêtre)">Wax Interactive Lausanne</a>
+                    <p>Depuis Juillet 2015</p>
+                </div>
+            </div>
+            <div>
+                <h3>Développeuse / Intégratrice web</h3>
+                <ul>
+                    <li>Intégration de sites Wordpress et de sites responsives,</li>
+                    <li>Maintenance de sites existants et développement en <abbr title="Programmation Orientée Objet">POO</abbr></li>
+                    <li>Accessibilité.</li>
+                </ul>
+                <p>
+                    <a href="http://www.actitudes.com" target="_blank" title="Actitudes (nouvelle fenêtre)">Actitudes</a> octobre 2014 à juin 2015
+                </p>
+            </div>
+            <div>
+                <h3>Développeuse / Intégratrice web</h3>
+                <ul>
+                    <li>Développement de sites accessibles et de sites responsives,</li>
+                    <li>Réalisation d’un site e-commerce avec Kiubi,</li>
+                    <li>Maintenance et évolutions de sites existants,</li>
+                    <li>Intégrations Magento, Drupal, Wordpress, ezPublish.</li>
+                </ul>
+                <p>
+                    <a href="http://www.agenceinteractive.com" target="_blank" title="Agence Interactive (nouvelle fenêtre)">Agence Interactive</a> 2009 à septembre 2014
+                </p>
+            </div>
+            <div>
+                <h3>Développeuse / Intégratrice web</h3>
+                <ul>
+                    <li>Réalisation de sites web (PHP/<abbr title="Cascading Style Sheets">CSS</abbr>/<abbr title="HyperText Markup Language">HTML</abbr>),</li>
+                    <li>Développement d'une interface de gestion de chèques cadeaux (PHP/<abbr title="Simple Object Access Protocol">SOAP</abbr>),</li>
+                    <li>Développement d'un système d'envoi de devis en <abbr title="Portable Document Format">PDF</abbr> (<abbr title="Extensible Markup Language">XML</abbr>/<abbr title="eXtensible Stylesheet Language - Formatting Objects">XSL-FO</abbr>/<abbr title="Formatting Objects Processor">FOP</abbr>)
+                    <li>Intégrations Google Maps</li>
+                </ul>
+                <p>
+                    <a href="http://www.speedmedia.fr" target="_blank" title="Speedmedia Services (nouvelle fenêtre)">Speedmedia Services</a> 2008 à 2009
+                </p>
+            </div>
+            <div>
+                <h3>BTS en alternance</h3>
+                <ul>
+                    <li>Réalisation d’un projet de gestion du suivi de cartouches de sauvegardes en PHP.</li>
+                </ul>
+                <p>
+                    <a href="http://www.veolia.com" target="_blank" title="Véolia Propreté (nouvelle fenêtre)">Véolia Propreté</a> 2006 à 2008
+                </p>
+            </div>
+        </div>
+        <div class="buttons noprint">
+            <p>
+                Télécharger mon cv
+            </p>
+            <a class="pdf" href="/assets/doc/cv_mylene_chandelier.pdf" download="">
+                (PDF - 675ko)
+            </a>
+            <a class="epub" href="/assets/doc/cv_mylene_chandelier.epub" download="">
+                (ePub - 12ko)
+            </a>
+            <ul class="social" id="social">
+                <li>
+                    <a href="https://www.linkedin.com/in/myl%C3%A8ne-chandelier-9808b952" class="linkedin" 
+                       title="Mon profil sur Linkedin (nouvelle fenêtre)" target="_blank">
+                        <img src="{{ site.baseurl }}/assets/img/home/linkedin.svg" width="34" height="34" alt="Linkedin"/>
+                        <span class="a11y_hidden">{{ site.linkedin[page.lang] }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://fr.viadeo.com/fr/profile/mylene.chandelier" class="viadeo" 
+                       title="Mon profil sur Viadéo (nouvelle fenêtre)" target="_blank">
+                        <img src="{{ site.baseurl }}/assets/img/home/viadeo.svg" width="34" height="34" alt="Viadéo"/>
+                        <span class="a11y_hidden">{{ site.viadeo[page.lang] }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/CrazyCatLena" class="twitter" 
+                       title="Mon profil sur Twitter (nouvelle fenêtre)" target="_blank">
+                        <img src="{{ site.baseurl }}/assets/img/home/twitter.svg" width="34" height="34" alt="Twitter"/>
+                        <span class="a11y_hidden">{{ site.twitter[page.lang] }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/mchandelier" class="github" 
+                       title="Mon repo Github (nouvelle fenêtre)" target="_blank">
+                        <img src="{{ site.baseurl }}/assets/img/home/github.svg" width="34" height="34" alt="Github"/>
+                        <span class="a11y_hidden">{{ site.github[page.lang] }}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="contact">
+    <div class="wrapper" id="contact">
+        <h2 class="center">Contact</h2>
+        <p>
+            <strong>Mylène CHANDELIER</strong><br/>
+            <a href="mailto:chandelier.mylene@gmail.com">chandelier.mylene@gmail.com</a><br/>
+            Tél. <a href="tel:+41768037955">+41 (0)76 803 79 55</a>
+        </p>
+    </div>
+    
+</div>

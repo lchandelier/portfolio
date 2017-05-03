@@ -1,0 +1,178 @@
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+@mixin transition-property($property...) {
+    -webkit-transition-property: $property;
+    transition-property:         $property;
+}
+@mixin transition-duration($duration...) {
+    -webkit-transition-property: $duration;
+    transition-property:         $duration;
+}
+@mixin transition-timing-function($timing...) {
+    -webkit-transition-timing-function: $timing;
+    transition-timing-function:         $timing;
+}
+@mixin transition-delay($delay...) {
+    -webkit-transition-delay: $delay;
+    transition-delay:         $delay;
+}
+// Media queries
+@mixin respond-to($media) {
+  // mobile max 415
+  @if $media == mobile {
+    @media screen and (min-width:0) and(max-width: $break-small) { @content; }
+  }
+  // 416 to 768
+  @else if $media == portrait {
+    @media screen and (min-width: $break-small + 1) and (max-width: $break-medium - 1) { @content; }
+  }
+  // 769 to 1023
+  @else if $media == landscape {
+    @media screen and (min-width: $break-medium) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == mobile_to_landscape {
+    @media screen and (max-width: $break-medium - 1) { @content; }
+  }
+  @else if $media == mobile_to_large {
+    @media screen and (max-width: $break-large - 1) { @content; }
+  }
+  // 1024 to 1279
+  @else if $media == large {
+    @media screen and (min-width: $break-large) and (max-width: $break-wide - 1) { @content; }
+  }
+  // 1280 to infini
+  @else if $media == wide {
+    @media screen and (min-width: $break-wide) { @content; }
+  }
+}
+
+// Animation mixin
+
+
+/* multiple sprites management 
+* see https://www.liquidlight.co.uk/blog/article/creating-svg-sprites-using-gulp-and-sass/
+*/
+
+// Gets an attribute from the sass map
+// Added: spriteMap option
+@function sprite-attr($spriteMap, $icon, $attr) {
+	$icon: map-get($spriteMap, $icon);
+	@return map-get($icon, $attr);
+}
+
+// Added: spriteMap option
+@function icon-attr($spriteMap, $icon) {
+	$attr: (
+		width: sprite-attr($spriteMap, $icon, width),
+		height: sprite-attr($spriteMap, $icon, height),
+		x: sprite-attr($spriteMap, $icon, backgroundX),
+		y: sprite-attr($spriteMap, $icon, backgroundY)
+	);
+
+	@return $attr;
+}
+
+
+
+// IE Sprite Mixin for when rotation is used
+// Added: spriteMap option
+// Removed: extend
+@mixin ie-sprite($spriteMap, $icon, $type: all) {
+	
+	$sprite: map-get($spriteMap, sprite);
+	$iconMap: icon-attr($spriteMap, $icon);
+	
+	@if $ie_sprite {
+		#{$ie_sprite} & {
+			@if $type == all {
+				// Shares the PNG background
+				background-image: url(map-get($sprite, pngPath));
+			}
+			// Outputs dimensions of icon
+			@if $type == all or $type == size {
+				width: map-get($iconMap, width);
+				height: map-get($iconMap, height);
+			}
+			// Outputs background position
+			@if $type == all or $type == bg {
+				background-position: (map-get($iconMap, x)) (map-get($iconMap, y));
+			}
+		}
+	}
+}
+
+// For use with the gulp sprite plugin
+// Added: spriteMap option
+// Removed: extend
+@mixin sprite($spriteMap, $icon, $type: all) {
+	$sprite: map-get($spriteMap, sprite);
+	
+	@if $type == all {
+		// Shares the backgrounds
+		display: inline-block;
+		background-image: url(map-get($sprite, svgPath));
+		background-size: map-get($sprite, width) map-get($sprite, height);
+	}
+
+	$iconMap: icon-attr($spriteMap, $icon);
+
+	// Outputs dimensions in em
+	@if $type == all or $type == size {
+		width: map-get($iconMap, width) + 1;
+		height: map-get($iconMap, height) + 1;
+	}
+
+	// Outputs background position in em
+	@if $type == all or $type == bg {
+		background-position: map-get($iconMap, x) map-get($iconMap, y);
+	}
+
+	// Add ie fallback
+	@include ie-sprite($spriteMap, $icon, $type);
+}
+
+// Animation mixin
+
+@mixin fadeAppear($delay) {
+
+    -webkit-transform: translateZ(0); 
+    transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0); 
+    transform: translate3d(0,0,0);
+    -webkit-perspective: 1000px; 
+    perspective: 1000px; 
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+
+    -webkit-animation: show_project 1s  1;
+    animation: show_project 1s  1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: #{$delay}s;
+    -moz-animation-delay:#{$delay}s;
+    animation-delay: #{$delay}s;
+
+
+    @keyframes show_project {
+        0%   { 
+          opacity: 0;
+          transform: translateZ(-20px);
+        }
+        100% { 
+          opacity: 1; 
+          transform: translateZ(0);
+        }
+    }
+    @-webkit-keyframes show_project {
+        0%   { 
+          opacity: 0;
+          -webkit-transform: translateZ(-20px);
+        }
+        100% { 
+          opacity: 1;
+          -webkit-transform: translateZ(0);
+        }
+    }
+}

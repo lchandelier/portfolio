@@ -1,0 +1,26 @@
+---
+layout: page
+title: Portfolio
+permalink: /en/portfolio/
+ref: portfolio
+lang: en
+category: project
+---
+
+<div class="post_list">
+    {% assign blogposts=site.categories.[page.category] | where:"lang", page.lang %}
+    {% for blogpost in blogposts %}
+    <div>
+        <a class="link_full_block" href="{{ blogpost.url | prepend: site.baseurl }}" title="Read the full {{ blogpost.title }} article">
+            <img width="320" height="220" 
+                         alt="{{ blogpost.alt_thumb }}" 
+                         src="{{ site.baseurl }}{{ blogpost.thumbnail }}">
+        </a>
+        <div class="content">
+            <h2>{{ blogpost.title }}</h2>
+            <p>{{blogpost.content | truncatewords: 40| strip_html}}</p>
+        </div>
+        
+    </div>
+    {% endfor %}
+</div>

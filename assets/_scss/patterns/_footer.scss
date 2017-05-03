@@ -1,0 +1,72 @@
+footer {
+    background: $dark_bg;
+    padding: 16px 20px;
+    color: #a1bfcf;
+    font-size: 1.6rem;
+    
+    @include respond-to(landscape) {
+        padding: 26px 20px 56px;
+    }
+    
+    @include respond-to(large) {
+        padding: 26px 20px 56px;
+    }
+
+    .wrapper {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        align-items: center;
+        
+        @include respond-to(mobile_to_landscape) {
+            display: block;
+        }
+    }
+    
+    li {
+        display: inline-block;
+        vertical-align: top;
+        
+        @include respond-to(mobile_to_landscape) {
+            margin: 3rem 0 0;
+        }
+    }
+    
+    a {
+        color: #fff;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        @include transition(color .2s, background-color .2s);
+
+        &:after {
+            content: '';
+            display: block;
+            margin: 3px auto 0;
+            height: 1px;
+            width: 0;
+            background: transparent;
+            @include transition(width .2s, background-color .2s);
+        }
+
+        &:focus, &:active, &:hover {
+            color: $light_color;
+        }
+
+        &:focus, &:active, &:hover {
+            &:after {
+                width: 100%;
+                background: $light_color;
+            }
+        }
+    }
+    
+    li:not(:first-child) {
+        margin-left: 20px;
+    }
+    
+    button {
+        @include sprite($icons, top);
+    }
+}

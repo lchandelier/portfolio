@@ -1,0 +1,45 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page.title | escape }} - {{ site.title[page.lang] | escape }}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}">
+    <meta content="website" property="og:type">
+    <meta content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}" property="og:title">
+    <meta content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}" property="og:description">
+    <meta content="https://mylene-chandelier.me" property="og:url">
+    <meta content="Mylène Chandelier" property="og:site_name">
+    <meta content="https://mylene-chandelier.me/assets/img/home/header_medium.jpg" property="og:image">
+    
+    <meta content="summary" name="twitter:card">
+    <meta content="https://mylene-chandelier.me" name="twitter:url">
+    <meta content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}" name="twitter:title">
+    <meta content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}" name="twitter:description">
+    <meta content="https://mylene-chandelier.me/assets/img/home/header_medium.jpg" name="twitter:image">
+
+    <link rel="stylesheet" href="{{ "/assets/css/all.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/print.min.css" | prepend: site.baseurl }}" media="print">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}{% for post in posts %}
+    <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />{% endfor %}
+
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    {% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css" media="screen" type="text/css">
+    {% endfor %}
+    {% endif %}
+
+    <link type="text/plain" rel="author" href="{{ site.baseurl }}/humans.txt" />
+    <link type="text/plain" rel="author" href="{{ site.baseurl }}/robots.txt" />
+</head>
