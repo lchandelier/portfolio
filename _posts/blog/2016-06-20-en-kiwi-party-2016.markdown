@@ -38,7 +38,7 @@ The mirror argument is not one, telling an employee that in a competing business
 You have to allow yourself to air your schedule to be able to do technical watch.
 Finally, drive away fear! If you aren't happy, do not hesitate to leave from your company or even become independent. It is essential to flourish and if you don't succeed, you have to talk around yourself (friends, doctor) because we worth better that it.
 
-[See the slides of the conference Our little daily stresses] (https://speakerdeck.com/hiwelo/nos-petits-stress-quotidiens-kiwiparty-2016 "(new window)") {:target="_blank" }
+[See the slides of the conference Our little daily stresses](https://speakerdeck.com/hiwelo/nos-petits-stress-quotidiens-kiwiparty-2016 "(new window)"){:target="_blank" }
 
 
 ### 10 tricks about <abbr title="Scalable Vector Graphics">SVG</abbr> that will save your life
@@ -48,7 +48,7 @@ Vincent has given us different tricks such as using an optimization tool like, <
 He doesn't recommend to use transformations because the origin of the transformation is different between the <abbr title="HyperText Markup Language">HTML</abbr> and the SVG. It's better to use a javascript library for animations and transformations (<abbr title="GreenSock Animation Platform">GSAP</abbr> or SnapSVG for example).
 SVG sprites work from IE9, if you do not use them yet, it's time to get started!
 
-[See the video of the conference 10 tricks about SVG that will save your life] (https://vimeo.com/179313779 "(new window)") {:target="_blank"}
+[See the video of the conference 10 tricks about SVG that will save your life](https://vimeo.com/179313779 "(new window)"){:target="_blank"}
 
 
 ### Put some free in your projects
@@ -57,29 +57,32 @@ Pierre Rudloff explained why and how to make free.
 We use it in a lot of our projects. Free has a lot of advantages. It allows not to reinvent the wheel, to use a code that has been audited, to enroll in an ecosystem. Bringing in your contribution helps you to show your skills, have feedback on your code and enjoy the improvements of others, while helping them.
 The best practices are to make sure to read the licenses to be in good standing, to use package managers to have easier dependency management (NPM, Bower, ...). Do not hesitate to report a bug rather than correct it for yourself and not communicate on it. But before, one has to make sure that it hasn't already been reported and read the guidelines to write it correctly (and in English most of the time).
 For a good bug report, several points must be taken into account:
-    * Make sure it has not already been reported
-    * Read the guidelines to make the report
-    * Write in English (most of the time)
-    * Detail the bug, if possible, a version of the library used, a <abbr title="Uniform Resource Locator">URL</abbr>, a platform and the expected result. Do not just say "it doesn't work"
+
+ * Make sure it has not already been reported
+ * Read the guidelines to make the report
+ * Write in English (most of the time)
+ * Detail the bug, if possible, a version of the library used, a <abbr title="Uniform Resource Locator">URL</abbr>, a platform and the expected result. Do not just say "it doesn't work"
 
 There may be a need to make a patch from a library. To do this, it's necessary to discuss it with the author and then take the latest version of the library and be careful to respect the code conventions of it.
 It's possible to create a plugin if you do not find what you expect. For that it's necessary to :
-    * Check that it doesn't already exist
-    * Define features
-    * Choose a license
-    * Use semantic versioning (standard that defines how to name versions of a tool)
-    * Document its code and installation of the plugin
+
+ * Check that it doesn't already exist
+ * Define features
+ * Choose a license
+ * Use semantic versioning (standard that defines how to name versions of a tool)
+ * Document its code and installation of the plugin
 
 Ideally, you should integrate free in your workflow. For that, it must be included in its budget and allow time for developers to contribute. A financial contribution for projects often used can be welcomed.
 Finally, if you want to create free software here are some tips:
-    * Post it on Git
-    * Cut it into modules
-    * Write documentation
-    * Use a known code standard
-    * Be inclusive by allowing easy installation for the uninitiated
-    * Be sympathetic to users / contributors
 
-[See the slides of Put some free in your projects] (http://en.slideshare.net/Rudloff/file-in-your-projects-web "(new window)") {:target="_blank"}
+ * Post it on Git
+ * Cut it into modules
+ * Write documentation
+ * Use a known code standard
+ * Be inclusive by allowing easy installation for the uninitiated
+ * Be sympathetic to users / contributors
+
+[See the slides of Put some free in your projects](http://en.slideshare.net/Rudloff/file-in-your-projects-web "(new window)"){:target="_blank"}
 
 
 ### Agility for small projects
@@ -87,35 +90,35 @@ Finally, if you want to create free software here are some tips:
 The web changes and becomes applications.
 Tools such as Trello and Git allow to detail the project and tell its story. It's an exchange of experience.
 For better agility, it's possible to use static site generators (Jekyll for example). With this kind of tool, you can easily put a prototype online, simple, before making the design. Thus, the iterations are quickly made between production and development.
-[Example of a site created with a static site builder] (https://mademistakes.com/style-guide/ "(new window)") {:target="_blank"}
+[Example of a site created with a static site builder](https://mademistakes.com/style-guide/ "(new window)"){:target="_blank"}
 
-[See the video of the conference Agility for small projects] (https://vimeo.com/179314577 "(new window)") {:target="_blank"}
+[See the video of the conference Agility for small projects](https://vimeo.com/179314577 "(new window)"){:target="_blank"}
 
 
 ### Integration and Webapps: ProTips
 
-A concentrate of best practices was in M4D'z conference. He showed us the point to use as much as possible tags of zones (<main> <section>) or <abbr title="Accessible Rich Internet Applications"> ARIA</abbr> roles to skin a page rather than using CSS classes.
-To avoid unnecessary specificity, you can use the [CSS Specificity] (http://cssspecificity.com "(new window)") {:target="_blank"} or [Specificity Calculator] (http://specificity.keegan.st/ "(new window)") {:target="_blank"}
-You can use <template> or a template engine like pug or nunjucks. It helps for reusing!
+A concentrate of best practices was in M4D'z conference. He showed us the point to use as much as possible tags of zones (<code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>) or <abbr title="Accessible Rich Internet Applications"> ARIA</abbr> roles to skin a page rather than using CSS classes.
+To avoid unnecessary specificity, you can use the [CSS Specificity](http://cssspecificity.com "(new window)"){:target="_blank"} or [Specificity Calculator](http://specificity.keegan.st/ "(new window)"){:target="_blank"}
+You can use <code>&lt;template&gt;</code> or a template engine like pug or nunjucks. It helps for reusing!
 Above all, you may not use too long selectors (+ 4 levels of nesting) of identifiers or forced styles (!important)
 You can use pre/postprocessors for the use of mixins, of nesting on the one hand and and compatibility on the other hand.
 At last, for webapps, you can use a front-end framework like React or vue.js and a packer like Webpack or Rollup.
 
-[See the video of the conference Integration and Webapps: ProTips] (https://vimeo.com/179315043 "(new window)") {:target="_blank"}
+[See the video of the conference Integration and Webapps: ProTips](https://vimeo.com/179315043 "(new window)"){:target="_blank"}
 
 ### Git ProTips
 
 Christophe Porteneuve made a real one-man show to give us some Git commands. Everything is in the video below:
 
-[See the video of the conference Git ProTips] (https://vimeo.com/179446529 "(new window)") {:target="_blank"}
+[See the video of the conference Git ProTips](https://vimeo.com/179446529 "(new window)"){:target="_blank"}
 
 
 ### HTTPS everywhere
 
 In his presentation, Frederic Kayser taught us, among other things, that Google doesn't encrypt between its traffic between data centers and that the revelations of Edward Snowden had gained 7 years technically.
-It also presented very useful tools to have an inventory of the security of our site / server with [Qualys] (https://www.ssllabs.com/ "(new window)") {:target="_blank"} or [acme.sh] (https://github.com/Neilpang/acme.sh "(new window)") {:target="_blank"}
+It also presented very useful tools to have an inventory of the security of our site / server with [Qualys](https://www.ssllabs.com/ "(new window)"){:target="_blank"} or [acme.sh](https://github.com/Neilpang/acme.sh "(new window)"){:target="_blank"}
 
-[See the video of the conference HTTPS everywhere] (Https://vimeo.com/179446532 "(new window)") {:target="_blank"}
+[See the video of the conference HTTPS everywhere](https://vimeo.com/179446532 "(new window)"){:target="_blank"}
 
 
 ### Email in all its forms
@@ -131,46 +134,51 @@ A desktop-specific image must be used. It must be simple, visual and related to 
 For the mobile, the ideal width is between 280 and 320px, on one column. Don't be afraid of scrolling. Thus, we can increase the spacing and the font of character (16px) for a good readability.
 Call-to-action must be at least 44 × 44. The recommended text size on the buttons is 20px.
 For integration, some tips:
-     * Pay attention to the 102k limit on Gmail
-     * Use media-queries
-     * Initial-scale=1 width=device-width
-     * A transitional doctype
-     * Encoding in utf-8
-     * Put styles on the <code><td></code>
-     * Width to 100% on the main <table>
-     * Pictures in x2
-     * Alt on the <code>&lt;img&gt;</code>
-     * Links in target="_blank"
+
+ * Pay attention to the 102k limit on Gmail
+ * Use media-queries
+ * Initial-scale=1 width=device-width
+ * A transitional doctype
+ * Encoding in utf-8
+ * Put styles on the <code><td></code>
+ * Width to 100% on the main <table>
+ * Pictures in x2
+ * Alt on the <code>&lt;img&gt;</code>
+ * Links in target="_blank"
 	 
 To test, Email on Acid or Litmus are very effective.
 
-[See the video of the conference The email in all its forms] (https://vimeo.com/180578382 "(new window)") {:target="_blank"}
+[See the video of the conference The email in all its forms](https://vimeo.com/180578382 "(new window)"){:target="_blank"}
 
 
 ### Code rewiewztraminer: unlike wine, they are less good late
 
 Morgane Hervé presented her feedback on code review within her team.
 Why do code review?
-    * Avoid bugs, the "bus factor"
-    * Correct design errors
-    * Improve Teamwork
-    * Enable the rise of competence
-    * Improve code quality
+
+ * Avoid bugs, the "bus factor"
+ * Correct design errors
+ * Improve Teamwork
+ * Enable the rise of competence
+ * Improve code quality
 
 The 3 W Who, When What/How:
-    * Who ? Everyone can do it, you have to be 2 at least.
-    * When? Every day ideally, at least several times a week and between 2 developments of features.
+
+ * Who ? Everyone can do it, you have to be 2 at least.
+ * When? Every day ideally, at least several times a week and between 2 developments of features.
 The more it is made regularly, the simpler and easier it is to make.
-    * What how ? Using Github, GitLab or Bitbucket. It can be done by several but not too many. You can assign it in turns to the team or target the right person for the right task.
+
+ * What how ? Using Github, GitLab or Bitbucket. It can be done by several but not too many. You can assign it in turns to the team or target the right person for the right task.
 Finally, it should focus on the functional aspect and logic rather than the coding standards.
 
 How to convince a manager / project manager to set up the code review?
-    * Money -> Better branding, deliveries are better
-    * Insurance -> We know what we put into production
-    * Improvement -> Sharing of best practices
-    * Agnostic -> same process, no matter the techno used.
 
-[See the video of the conference Code rewiewztraminer: unlike wine, they are less good late] (https://vimeo.com/180578384 "(new window)") {:target="_blank"}
+ * Money -> Better branding, deliveries are better
+ * Insurance -> We know what we put into production
+ * Improvement -> Sharing of best practices
+ * Agnostic -> same process, no matter the techno used.
+
+[See the video of the conference Code rewiewztraminer: unlike wine, they are less good late](https://vimeo.com/180578384 "(new window)"){:target="_blank"}
 
 
 ### Modern workflow looking for old-fashioned graphic designer
@@ -182,32 +190,35 @@ Use Gulp to automate as many tasks as possible. This helps to generate sprites o
 The designer can deliver a styleguide using <abbr title="Creative Cloud">CC</abbr> libraries or PSD.rb
 
 The brakes that can occur are:
-    * The designer doesn't want to leave his comfort zone and therefore, adopt new tools/methods
-    * PSDs coming from elsewhere
-    * The V-cycle
-    * Too many people in projects that cause information to get lost
+
+ * The designer doesn't want to leave his comfort zone and therefore, adopt new tools/methods
+ * PSDs coming from elsewhere
+ * The V-cycle
+ * Too many people in projects that cause information to get lost
 The success key is communication!
 
-[See the video of the conference Modern Workflow seeks old-fashioned graphic designer] (https://vimeo.com/181158986 "(new window)") {:target="_blank"}
+[See the video of the conference Modern Workflow seeks old-fashioned graphic designer](https://vimeo.com/181158986 "(new window)"){:target="_blank"}
 
 
 ### CSS Selector Wars: a new hope?
 
 To avoid conflicts between CSS selectors, Florens Vershelde offers the following solutions:
-    * Have multiple levels of granularity using <abbr title="Block Element Modify">BEM</abbr>, utility classes or atomic classes
-    * Use CSS Modules
 
-[See the video of the conference CSS Selector Wars: a new hope?] (Https://vimeo.com/182053671 "(new window)") {:target="_blank"}
+ * Have multiple levels of granularity using <abbr title="Block Element Modify">BEM</abbr>, utility classes or atomic classes
+ * Use CSS Modules
+
+[See the video of the conference CSS Selector Wars: a new hope?](Https://vimeo.com/182053671 "(new window)"){:target="_blank"}
 
 
 ### Visual identity on the web, thinking beyond print
 
 Aurélien Sesmat explained how to have a good visual identity. For that it is necessary to:
-    * Define the UX and technical part
-    * Deal with the client's budget
-    * Integrate prototype animations
+
+ * Define the UX and technical part
+ * Deal with the client's budget
+ * Integrate prototype animations
 
 Animations must be defined upstream between the UX and the <abbr title="Art Direction">AD</abbr>. A presentation of the technical elements will reassure the customer and frame the AD.
 This makes it possible to avoid unnecessary feedback in the development phase, to specify how the visual identity articulates as well as the technical details to achieve it.
 
-[See the video of the conference The visual identity on the web, thinking beyond print] (https://vimeo.com/181158992 "(new window)") {:target="_blank"}
+[See the video of the conference The visual identity on the web, thinking beyond print](https://vimeo.com/181158992 "(new window)"){:target="_blank"}

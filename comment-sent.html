@@ -1,0 +1,14 @@
+---
+layout: page
+title: Votre commentaire a été envoyé
+ref: comment
+---
+
+<p>Merci pour votre commentaire, il sera publié après validation.<br/>
+<?php 
+	if (isset($_POST['return_url']))
+	{
+		echo '<a href="'.$_POST['return_url'].'">Retourner à l\'article</a>';
+	}
+?>
+</p>

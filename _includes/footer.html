@@ -11,11 +11,6 @@
     </a>
 </footer>
 
-{% if page.custom_js %}
-{% for js_file in page.custom_js %}
-<script src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
-{% endfor %}
-{% endif %}
 <div class="hidden">
     <span id="currentLanguage">{{ site.current_language[page.lang] }}</span>
     <span id="cookieMsg">{{ site.cookie_msg[page.lang] }}</span>

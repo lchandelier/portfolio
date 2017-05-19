@@ -285,7 +285,8 @@ div, textarea{
     text-align: center;
 }
 
-.intro a, [download], [role="button"] {
+.intro a, [download], 
+[role="button"], input[type="submit"] {
     min-width: 20rem;
     box-sizing: border-box;
     padding: 2rem 3.2rem;
@@ -344,6 +345,7 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo), {
 
 @import "patterns/header";
 @import "patterns/breadcrumb";
+@import "patterns/form";
 @import "patterns/footer";
 
 #cookie-consent-bar {

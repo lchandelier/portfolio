@@ -1,0 +1,90 @@
+.form_comment {
+    background: #1a4860;
+    padding: 16px 20px;
+    color: #a1bfcf;
+    font-size: 1.6rem;
+
+    p {
+        color: #fff;
+    }
+    
+    .wrapper {
+        max-width: 640px;
+    }
+
+    h2 {
+        color: $light_color;
+    }
+
+    legend {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.container_field {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    @include respond-to(mobile_to_landscape) {
+        display: block;
+    }
+}
+
+.field {
+    width: 48%;
+
+    @include respond-to(mobile_to_landscape) {
+        width: 100%;
+    }
+}
+
+label {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: lato_reg, arial, sans-serif;
+}
+
+input {
+    display: block;
+    border: 0;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #a1bfcf;
+    font-family: lato_reg, arial, sans-serif;
+    font-size: 1.6rem;
+    color: #fff;
+
+    &[type="text"], &[type="email"] {
+        min-height: 40px;
+        width: 100%;
+        padding: 3px 10px;
+    }
+
+    &[type="submit"] {
+        margin: 40px auto;
+        width: auto;
+        cursor: pointer;
+
+        &:focus, &:active, &:hover {
+            background: #fff;
+            color: $main_color;
+        }
+    }
+}
+
+textarea {
+    width: 100%;
+    padding: 3px 10px;
+
+    @extend input;
+    resize: vertical;
+}

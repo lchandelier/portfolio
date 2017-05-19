@@ -47,6 +47,10 @@ article, .simple_content {
     }
 }
 
+.wrapper + .wrapper {
+    padding-top: 0;
+}
+
 .post_list {
 
     > div {
@@ -232,3 +236,36 @@ article {
 .highlight .vg { color: #077A7E } /* Name.Variable.Global */
 .highlight .vi { color: #077A7E } /* Name.Variable.Instance */
 .highlight .il { color: #037A7F } /* Literal.Number.Integer.Long */
+
+//comment
+
+.comment {
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.55;
+
+    &:not(:last-of-type) {
+        &:after {
+            display: block;
+            content: '';
+            width: 50%;
+            height: 1px;
+            margin: 20px auto;
+            background: $dark_bg;
+        }
+    }
+
+    .info {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+
+    .author {
+        font-weight: bold;
+    }
+    
+}

@@ -17,7 +17,7 @@ index:
   en: /en
   fr: /
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mylene-chandelier.me" # the base hostname & protocol for your site
+url: "http://localhost:3002" # the base hostname & protocol for your site
 permalink: /:categories/:title
 folioURL:
   en: /en/portfolio
@@ -124,5 +124,17 @@ here:
 current_language:
   en: (active language)
   fr: (langue active)
+nocomment:
+  en: No comment
+  fr: Pas de commentaire
+name:
+  en: Name or pseudo
+  fr: Nom ou pseudo
+comment:
+  en: Comment
+  fr: Commentaire
+submit:
+  en: Send my comment
+  fr: Envoyer mon commentaire
 # Build settings
 markdown: kramdown

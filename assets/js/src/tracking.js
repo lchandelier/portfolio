@@ -9,18 +9,20 @@ _paq.push(['enableLinkTracking']);
   g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
 })();
 
-jQuery(document).ready(function ($) {
-    
-    if($('#social').length > 0) {
-        $('#social').find('a').each(function(i, e){
-            $(e).click(function(){
-                if($('html').attr('lang') == 'fr') {
-                    _paq.push(['trackEvent', 'Home', 'Click', $(e).attr('class')]);
-                }
-                else {
-                    _paq.push(['trackEvent', 'Home EN', 'Click', $(e).attr('class')]);
-                }
+(function ($) {
+    $(document).ready(function () {
+        
+        if($('#social').length > 0) {
+            $('#social').find('a').each(function(i, e){
+                $(e).click(function(){
+                    if($('html').attr('lang') == 'fr') {
+                        _paq.push(['trackEvent', 'Home', 'Click', $(e).attr('class')]);
+                    }
+                    else {
+                        _paq.push(['trackEvent', 'Home EN', 'Click', $(e).attr('class')]);
+                    }
+                });
             });
-        });
-    }
+        }
+    });
 });

@@ -1,0 +1,76 @@
+
+<div class="wrapper">
+    {% capture commentid %}comments{{ page.id | replace: '/', '-' }}{% endcapture %}
+    <h2 class="center">Commentaires</h2>
+    {% if site.data[commentid] %}
+        {% for comment in site.data[commentid] %}
+
+        <div id="comment-{{ comment.id }}" class="comment" />
+            <div class="info">
+                <p class="author">
+                    {{ comment.author }}
+                </p>
+                <p class="date">
+                    {% if page.lang == 'en' %}
+                        {{ date: "%d/%m/%Y" }}
+                    {% endif %}
+
+                    {% if page.lang == 'fr' %}
+                        {{ date: "%Y-%m-%d" }}
+                    {% endif %}
+                    {% include date.html date=comment.date %}
+
+                    {{ day }}{{ sup }} {{ month }} {{ year }}
+                </p>
+            </div>
+            
+            <div class="content">
+                {{ comment.contents | liquify | markdownify }}
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+    <p>{{ site.nocomment[page.lang] }} </p>
+    {% endif %}
+    
+
+</div>
+<!-- end comments-->
+
+
+<div class="form_comment">
+    <div class="wrapper">
+        <form id="commentForm" method="POST" action="/comments/send_comment.php">
+            <input type="hidden" id="language" name="language" value="{{ page.lang }}" />
+            <input type="hidden" name="comment_blop" value="" />
+            <input type="hidden" name="post_id" value="{{ page.id }}" />
+            <input type="hidden" name="return_url" value="{{ page.url }}" />
+            <fieldset>
+                <legend>
+                    <h2 class="center">Poster un commentaire</h2>
+                </legend>
+                <p> {% if page.lang == 'en' %}All fields are required.{% else %}Tous les champs sont obligatoires.{% endif %}</p>
+                <div class="container_field">   
+                    <div class="field">
+                        <label for="name">
+                            {{ site.name[page.lang] }}
+                        </label>
+                        <input type="text" id="name" name="name" aria-required="true" aria-invalid="false"/>
+                    </div>
+                    <div class="field">
+                         <label for="email">
+                            E-mail
+                        </label>
+                        <input type="email" name="email" aria-required="true" aria-invalid="false"/>
+                    </div>
+                </div>
+                <label for="comment">
+                    {{ site.comment[page.lang] }}
+                </label>
+                <textarea id="comment" name="comment" rows="10" aria-required="true" aria-invalid="false"></textarea>
+
+                <input id="submit" class="comment-submit" type="submit" value="{{ site.submit[page.lang] }}" />
+            </fieldset>
+        </form>
+    </div>
+</div>

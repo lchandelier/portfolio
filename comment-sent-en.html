@@ -1,0 +1,16 @@
+---
+layout: page
+title: Your comment has been sent
+permalink: /en/comment-sent-en.html
+ref: comment
+lang: en
+---
+
+<p>Thanks for your comment, it will be published after validation.<br/>
+	<?php 
+		if (isset($_POST['return_url']))
+		{
+			echo '<a href="'.$_POST['return_url'].'">Go back to the post</a>';
+		}
+	?>
+</p>

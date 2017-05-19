@@ -1,5 +1,5 @@
-_site/
-.sass-cache/
-.jekyll-metadata
+_site
+.idea
 node_modules
+.sass-cache
 .netbeans.xml

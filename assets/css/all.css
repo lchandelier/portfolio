@@ -309,7 +309,8 @@ div, textarea {
 .center {
   text-align: center; }
 
-.intro a, [download], [role="button"] {
+.intro a, [download],
+[role="button"], input[type="submit"], textarea[type="submit"] {
   min-width: 20rem;
   box-sizing: border-box;
   padding: 2rem 3.2rem;
@@ -322,7 +323,10 @@ div, textarea {
   font-size: 1.6rem;
   -webkit-transition: 0.2s;
   transition: 0.2s; }
-  .intro a:focus, .intro a:active, .intro a:hover, [download]:focus, [download]:active, [download]:hover, [role="button"]:focus, [role="button"]:active, [role="button"]:hover {
+  .intro a:focus, .intro a:active, .intro a:hover, [download]:focus, [download]:active, [download]:hover,
+  [role="button"]:focus,
+  [role="button"]:active,
+  [role="button"]:hover, input[type="submit"]:focus, textarea[type="submit"]:focus, input[type="submit"]:active, textarea[type="submit"]:active, input[type="submit"]:hover, textarea[type="submit"]:hover {
     background: #1B4751;
     color: #4bc4b1; }
 
@@ -537,6 +541,73 @@ header {
     top: -3px;
     font-family: lato_black, arial, sans-serif; }
 
+.form_comment {
+  background: #1a4860;
+  padding: 16px 20px;
+  color: #a1bfcf;
+  font-size: 1.6rem; }
+  .form_comment p {
+    color: #fff; }
+  .form_comment .wrapper {
+    max-width: 640px; }
+  .form_comment h2 {
+    color: #4bc4b1; }
+  .form_comment legend {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto; }
+
+.container_field {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 767px) {
+    .container_field {
+      display: block; } }
+
+.field {
+  width: 48%; }
+  @media screen and (max-width: 767px) {
+    .field {
+      width: 100%; } }
+
+label {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: lato_reg, arial, sans-serif; }
+
+input, textarea {
+  display: block;
+  border: 0;
+  margin: 10px 0;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid #a1bfcf;
+  font-family: lato_reg, arial, sans-serif;
+  font-size: 1.6rem;
+  color: #fff; }
+  input[type="text"], textarea[type="text"], input[type="email"], textarea[type="email"] {
+    min-height: 40px;
+    width: 100%;
+    padding: 3px 10px; }
+  input[type="submit"], textarea[type="submit"] {
+    margin: 40px auto;
+    width: auto;
+    cursor: pointer; }
+    input[type="submit"]:focus, textarea[type="submit"]:focus, input[type="submit"]:active, textarea[type="submit"]:active, input[type="submit"]:hover, textarea[type="submit"]:hover {
+      background: #fff;
+      color: #5f5f5f; }
+
+textarea {
+  width: 100%;
+  padding: 3px 10px;
+  resize: vertical; }
+
 footer {
   background: #173d51;
   padding: 16px 20px;
@@ -690,6 +761,9 @@ article, .simple_content {
   article p, .simple_content p {
     font-size: 1.8rem;
     line-height: 1.55; }
+
+.wrapper + .wrapper {
+  padding-top: 0; }
 
 .post_list > div {
   position: relative;
@@ -1338,6 +1412,26 @@ article .highlight {
   color: #037A7F; }
 
 /* Literal.Number.Integer.Long */
+.comment {
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.55; }
+  .comment:not(:last-of-type):after {
+    display: block;
+    content: '';
+    width: 50%;
+    height: 1px;
+    margin: 20px auto;
+    background: #173d51; }
+  .comment .info {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between; }
+  .comment .author {
+    font-weight: bold; }
 
 /*
   Description: project's variables
