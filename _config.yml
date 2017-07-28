@@ -17,7 +17,7 @@ index:
   en: /en
   fr: /
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:3002" # the base hostname & protocol for your site
+url: "https://mylene-chandelier.me" # the base hostname & protocol for your site
 permalink: /:categories/:title
 folioURL:
   en: /en/portfolio
@@ -76,7 +76,7 @@ a11yURL:
 go_top:
   en: Go on top of the page
   fr: Remonter la page
-git:
+github:
   en: Go to my Github profile
   fr: Accéder à mon repo Github
 linkedin:

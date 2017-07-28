@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="{{ "/assets/css/all.min.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/print.min.css" | prepend: site.baseurl }}" media="print">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ https://mylene-chandelier.me | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}{% for post in posts %}
     <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />{% endfor %}
 
