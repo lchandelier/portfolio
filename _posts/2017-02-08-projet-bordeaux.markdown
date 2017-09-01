@@ -14,9 +14,9 @@ alt_thumb:
 
 J'ai participé à la refonte front du site avec <abbr title="Syntactically Awesome Stylesheets">Sass</abbr>/Compass pour aider à la mise en place du responsive et à la création d'une carte <abbr title="Scalable Vector Graphics">SVG</abbr>.
 
-J'ai également fait du développement back-end sous eZPublish 4 et de l'intégration de fiches détaillées sur les hôtels, le patrimoine à voir, ... à l'aide du Système d'Informations Touristiques [Sirtaqui](http://www.sirtaqui-aquitaine.com/ "Sirtaqui (nouvelle fenêtre)"){:target="_blank"}.
+J'ai également fait du développement back-end sous eZPublish 4 et de l'intégration de fiches détaillées sur les hôtels, le patrimoine à voir, ... à l'aide du Système d'Informations Touristiques [Sirtaqui](http://www.sirtaqui-aquitaine.com/ "Sirtaqui (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}.
 
-Voir le [site de Bordeaux Tourisme](http://www.bordeaux-tourisme.com/ "Bordeaux Tourisme (nouvelle fenêtre)"){:target="_blank"}.
+Voir le [site de Bordeaux Tourisme](http://www.bordeaux-tourisme.com/ "Bordeaux Tourisme (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}.
 
 <img src="{{ site.baseurl }}/assets/img/projects/bordeaux_large.jpg" alt="" 
              srcset="{{ site.baseurl }}/assets/img/projects/bordeaux_medium.jpg 670w,

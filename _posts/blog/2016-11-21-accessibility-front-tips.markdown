@@ -102,7 +102,7 @@ This is not a simple criterion. To do this, you can rely on the following resour
     <li><strong>Is the image purely informative?</strong>  If yes, the alternative text should convey the same information as the image. For example, <code>alt="Location"</code>.</li>
     <li>Finally, <strong>does the image convey any information that is not also represented on the page as text?</strong>  If yes, the alternative text should convey the same information as the image. If no, set the alternative text to null, so it will be ignored by screen readers.</li>
 </ol>
-Here is [the full article](https://bitsofco.de/alternative-text-and-images/ "Bits of code (new window)"){:target="_blank"}.
+Here is [the full article](https://bitsofco.de/alternative-text-and-images/ "Bits of code (new window)"){:target="_blank"}{:rel="noopener"}.
 
 ## A bit of testing
 Try browsing your page using only the keyboard, this will allow you to quickly solve accessibility issues. Is the outline hidden? Is the navigation order logical in relation to what it should be? Are the skip links present and functional? If these points are verified, this is a good start!
@@ -114,5 +114,5 @@ For example, if you use a CSS sprite to put a list of social network buttons, yo
 Here are the methods I put in place on all new projects I work on even if accessibility is not in the scope. As you can see, it's quick to set up and does not ask to dive into repositories or have a big knowledge on the subject. It also has no impact on the design (except for the outline but it is very minor) and it helps people using assistive technologies, although much remains to be done.
 
 ## Some tools to go further
-A [very diverse list of resources](https://github.com/atalan/a11y-resources/blob/master/list-of-a11y-resources.md "Atalan's Github (new window)"){:target="_blank"} on accessibility (articles, best practices, JavaScript plugins, ...)
+A [very diverse list of resources](https://github.com/atalan/a11y-resources/blob/master/list-of-a11y-resources.md "Atalan's Github (new window)"){:target="_blank"}{:rel="noopener"} on accessibility (articles, best practices, JavaScript plugins, ...)
 

@@ -39,35 +39,35 @@ Que nous sommes les personnes qui avons la connaissance et les compétences pour
 pour influencer ce qu’il en est fait.  
 Le ton est donné car plusieurs conférences reviendront sur le traitement des données personnelles.
 
-[Voir la vidéo de la conférence Internet et libertés](https://vimeo.com/143791970 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence Internet et libertés](https://vimeo.com/143791970 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 ### Le dev front à Mach 1 au quotidien
 
 Christophe Porteneuve a présenté des outils et des méthodes pour gagner du temps dans notre façon de coder (utiliser correctement ses dev tools, des outils comme Webpack, Gulp, BrowserSync…).
 
-[Voir la vidéo de la conférence Le dev front à Mach 1 au quotidien](https://vimeo.com/143169751 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence Le dev front à Mach 1 au quotidien](https://vimeo.com/143169751 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 ### La crypto pour les devs : petit état des lieux des outils d’aujourd’hui et des techniques de demain
 
-Matthias Dugué, a montré différentes méthodes pour sécuriser au mieux les données utilisateurs dont le chiffrement symétrique et asymétrique. Nous avons vu un peu d’histoire avec le [code César](https://fr.wikipedia.org/wiki/Histoire_de_la_cryptologie#Le_code_de_C.C3.A9sar "Définition du code César sur Wikipédia (nouvelle fenêtre)"){:target="_blank"}, Enigma,…  
+Matthias Dugué, a montré différentes méthodes pour sécuriser au mieux les données utilisateurs dont le chiffrement symétrique et asymétrique. Nous avons vu un peu d’histoire avec le [code César](https://fr.wikipedia.org/wiki/Histoire_de_la_cryptologie#Le_code_de_C.C3.A9sar "Définition du code César sur Wikipédia (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}, Enigma,…  
 Pour moi qui suis plutôt front, cette conférence était vraiment claire.
 
-[Voir la vidéo de la conférence La crypto pour les devs](https://vimeo.com/143169750 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence La crypto pour les devs](https://vimeo.com/143169750 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 ### « Hey, tu peux reprendre ce projet ? »
 
 Sylvain Zyssman nous a donné les clés pour reprendre un projet au milieu d’acteurs pas toujours évidents à gérer (la carpe, le bavard, le pressé, le pessimiste et le client).
 
-[Voir la vidéo de la conférence « Hey, tu peux reprendre ce projet ? »](https://vimeo.com/143791977 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence « Hey, tu peux reprendre ce projet ? »](https://vimeo.com/143791977 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 ### Le « RUN » (ou la Tierce Maintenance Applicative)
 
 Leïla Touati a rappelé les différents types de maintenance pouvant intervenir sur un site (préventive, adaptative, corrective, le support fonctionnel et l’exploitation). Le tout avec quelques séquences de films pour illustrer ses propos.
 
-[Voir la vidéo de la conférence Le « RUN » (ou la Tierce Maintenance Applicative)](https://vimeo.com/143791973 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence Le « RUN » (ou la Tierce Maintenance Applicative)](https://vimeo.com/143791973 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 L’après-midi était sous le signe de la qualité et des performances.
 
@@ -76,14 +76,14 @@ L’après-midi était sous le signe de la qualité et des performances.
 
 Avec l’arrivée d’<abbr title="HyperText Transfer Protocol">HTTP</abbr>2, nous allons pouvoir drastiquement revoir notre façon d’optimiser les sites. La concaténation/minification va devenir inutile, les ressources vont pouvoir être chargées en parallèle et non plus les unes à la suite des autres…
 
-[Voir la vidéo de la conférence Webperf 2.0](https://vimeo.com/145318582 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence Webperf 2.0](https://vimeo.com/145318582 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 <h3 lang="en">Creating a Culture of Code Quality</h3>
 
 David West, de Pinterest, nous a présenté divers outils comme Jenkins (anciennement Hudson) qui est un outil d’intégration continue, Flow, Babel ainsi que des outils de tests unitaires comme sinon.js ou de bonnes pratiques comme le lint <abbr title="Cascading Style Sheets">CSS</abbr> et <abbr title="JavaScript">JS</abbr>.  
 Pour lui, la qualité n’est pas une destination mais une culture, une attitude et un souci constant.
 
-[Voir la vidéo de la conférence Creating a Culture of Code Quality (en anglais)](https://vimeo.com/145318581 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence Creating a Culture of Code Quality (en anglais)](https://vimeo.com/145318581 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 ### Le styleguide, bien alimenté il tient ses promesses
@@ -91,7 +91,7 @@ Pour lui, la qualité n’est pas une destination mais une culture, une attitude
 Laurent Guitton a fait un retour d’expérience sur la refonte du site Relais Châteaux en parlant de l’utilisation des styleguides.
 Selon lui, la styleguide doit être un livrable à part entière auprès du client. A laquelle on peut ajouter de la documentation spécifique au projet, comme une méthode de déploiement particulière ou dans laquelle on peut rappeler des conventions de codage.
 
-[Voir la vidéo de la conférence Le styleguide, bien alimenté il tient ses promesses](https://vimeo.com/145318192 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence Le styleguide, bien alimenté il tient ses promesses](https://vimeo.com/145318192 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 ### Le défi d’une personne aveugle : conseiller sur l’accessibilité dans un web toujours plus visuel
@@ -105,7 +105,7 @@ Objectifs : « ne plus être l’aveugle de service qui teste un site » mais av
 
 Son cri du cœur qui a suscité une salve d’applaudissements : « Accessibilité pour tous : c’est un droit, un combat, un DEVOIR ! »
 
-[Voir la vidéo de la conférence Le défi d’une personne aveugle](https://vimeo.com/141981469 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence Le défi d’une personne aveugle](https://vimeo.com/141981469 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 ## Les conférences du deuxième jour
@@ -117,7 +117,7 @@ Cette journée a commencé sur un sujet délicat mais qui nous touche tous : la 
 Mais quelles options avons-nous pour anticiper le devenir de nos données une fois que nous ne serons plus là ?  
 Agnieszka Maria Walorska nous a suggéré une marche à suivre à travers des exemples de sa vie personnelle.
 
-[Voir la vidéo de la conférence Death and UX: Digital Afterlife and Digital Legacy (en anglais)](https://vimeo.com/144521295 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence Death and UX: Digital Afterlife and Digital Legacy (en anglais)](https://vimeo.com/144521295 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 ### Vers une bonne pratique du Pair Design
@@ -126,21 +126,21 @@ Catherine Verfaillie a décrit cette méthode peu connue en France. C’est le m
 
 Les arguments en faveur de l’application de cette méthode sont le gain de qualité, la collaboration améliorée, elle est approuvée par les développeurs et elle permet d’apprendre des autres métiers.
 
-[Voir la vidéo de la conférence Vers une bonne pratique du Pair Design](https://vimeo.com/143791971 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence Vers une bonne pratique du Pair Design](https://vimeo.com/143791971 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 <h3 lang="en"><abbr title="Content Security Policy">CSP</abbr> : Content Security Policy</h3>
 
 Nicolas Hoffmann a présenté CSP qui permet de sécuriser la partie front d’un site en déclarant les ressources qui sont autorisées. Par défaut, tout ce qui n’est pas déclaré n’est pas autorisé. On peut bloquer les styles inline CSS, les onclick en javascript ou encore interdire des noms de domaine.
 
-[Voir la vidéo de la conférence CSP : Content Security Policy](https://vimeo.com/143169749 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence CSP : Content Security Policy](https://vimeo.com/143169749 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 ### <abbr title="ECMAScript">ES</abbr>6 par le code
 
 Nous avons ensuite eu droit à une session de live coding grâce à Matthieu Lux. Il nous a fait découvrir les principales nouveautés d’ES6 telles que l’ajout du mot clé « class », les générateurs (fonctions qui peuvent être stoppées en cours de route et reprises à l’aide du mot-clé next), ou les arrow function. Il nous a montré par l’exemple comme le code devient plus lisible en passant d’ES5 à ES6.
 
-[Voir la vidéo de la conférence ES6 par le code](https://vimeo.com/144521293 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence ES6 par le code](https://vimeo.com/144521293 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 ### Vorlon.JS : un outil pour simplifier le debug web sur toutes les plateformes
@@ -148,7 +148,7 @@ Nous avons ensuite eu droit à une session de live coding grâce à Matthieu Lux
 David Rousset et Etienne Margraff de Microsoft ont fait preuve de pas mal d’auto-dérision et d’humour face à un public principalement équipé de Mac Book et d’iPhone.  
 Vorlon.js est un outil open-source de débug très complet. Pour l’installer, il suffit de passer par <abbr title="Node Package Manager">NPM</abbr> et d’appeler le script de vorlon dans sa page. Il est extensible par des plugins et se présente sous forme de console de débug enrichie. Il permet de se connecter à un device et de voir en direct ce qui pose problème. On peut highlighter les éléments comme si on était dans Firebug ou la console de Chrome.  Est disponible également un onglet Best practices qui alerte les erreurs portant préjudice à l’accessibilité, des méthodes pour cleaner son code CSS…
 
-[Voir la vidéo de la conférence Vorlon.JS](https://vimeo.com/143169749 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence Vorlon.JS](https://vimeo.com/143169749 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 ### Pasdecalais.fr, histoire d’une démarche d’accessibilité
@@ -161,7 +161,7 @@ En janvier 2010, le site mis en ligne répond au niveau AA du <abbr title="Réf�
 Aujourd’hui, le site est labellisé RGAA3 et bénéficie aussi d’un label de qualité délivré par Opquast. Il est reconnu comme modèle au niveau Européen.  
 Le site couvre d’autres critères qui ne font pas partie des directives du RGAA mais qui couvre un besoin des utilisateurs. Notamment en proposant un bouton « Dyslexie » qui permet d’afficher une police d’écriture adaptée pour faciliter la lecture du site par les personnes dyslexique. On trouve aussi des boutons pour modifier la taille du texte (car tous les utilisateurs ne savent pas forcément qu’ils peuvent le faire nativement avec leur navigateur).
 
-[Voir la vidéo de la conférence Pasdecalais.fr, histoire d’une démarche d’accessibilité](https://vimeo.com/146476183 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence Pasdecalais.fr, histoire d’une démarche d’accessibilité](https://vimeo.com/146476183 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 ### Design de soi : valoriser son identité et son expertise sur le web
@@ -170,23 +170,23 @@ Cette conférence a été une des meilleures de cette édition. D’ailleurs c�
 Marie Guillaumet préfère l’expression de design de soi à « Personal Branding » car nous ne sommes ni une marque, ni un produit à vendre.
 Elle nous a expliqué comment nous mettre en avant sans tomber dans le « Personal Branling » en partageant nos connaissances, nos savoir-faire et notre histoire personnelle.
 
-[Voir la vidéo de la conférence Design de soi : valoriser son identité et son expertise sur le web](https://vimeo.com/142169449 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence Design de soi : valoriser son identité et son expertise sur le web](https://vimeo.com/142169449 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 ### Le jour où l’on n’aura plus besoin de l’accessibilité
 
 Le rêve d’Olivier Nourry : Devenir inutile. Il espère qu’un jour cela puisse arriver grâce aux nouvelles formes d’assistance aux personnes handicapées. Aujourd’hui il existe plusieurs outils : lecteurs d’écrans, sous-titres mais ils sont trop limités. Quelques-uns sortent pourtant du lot comme Siri et VoiceOver TapTapSee, TranscriVox, le robot Nao… Si ces technologies continuent d’évoluer pour devenir encore plus intelligentes, peut-être que son rêve deviendra réalité.
 
-[Voir la vidéo de la conférence Le jour où l’on n’aura plus besoin de l’accessibilité](https://vimeo.com/142169448 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence Le jour où l’on n’aura plus besoin de l’accessibilité](https://vimeo.com/142169448 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 
 ### Conférence surprise – l’interprète LSF à Paris Web : Adaptative, responsive et agile
 
 Cette conférence était animée par Sandrine Schwartz, interprète LSF, qui a cassé bien des idées reçues et nous a appris pas mal de choses au passage (notamment que le signe du gâteau en France signifie avoir ses règles aux Etats-Unis et Moscou en Russe). Elle nous a expliqué avec beaucoup d’humour à quel point son métier est compliqué pendant ces 2 jours où il faut signer des mots comme Skeuomorphisme, Websockets… Mais que malgré tout, chaque année, elle revient, portée par la bonne humeur et l’effet Paris Web.
 
-[Voir la vidéo de la conférence LSF](https://vimeo.com/146682822 "(nouvelle fenêtre)"){:target="_blank"}
+[Voir la vidéo de la conférence LSF](https://vimeo.com/146682822 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 ### Conclusion
 
 Pour conclure ce billet, je ne peux que remercier à nouveau les orateurs, les interprètes et le staff pour leur travail énorme ! Merci pour cette ambiance si particulière qui nous donne envie d’être déjà l’année prochaine.
-[Découvrez les conférences en ligne](https://vimeo.com/parisweb/videos "Vidéos des conférences Paris Web sur Vimeo (nouvelle fenêtre)"){:target="_blank"}.
+[Découvrez les conférences en ligne](https://vimeo.com/parisweb/videos "Vidéos des conférences Paris Web sur Vimeo (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}.

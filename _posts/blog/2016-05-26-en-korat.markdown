@@ -22,7 +22,7 @@ You can also split the <abbr title="HyperText Markup Language">HTML</abbr> into 
 
 
 At first, I was looking for a simple way to create multiple CSS sprite files in <abbr title="Scalable Vector Graphics">SVG</abbr>. I used <abbr title="Syntactically Awesome Stylesheets">Sass</abbr> and only knew how to create a <abbr title="Portable Network Graphics">PNG</abbr> sprite for a whole project. Which was not optimal for a large site.
-I saw this [article](https://www.liquidlight.co.uk/blog/article/creating-svg-sprites-using-gulp-and-sass/ "Liquid Light's blog (new window)"){:target="_blank"}
+I saw this [article](https://www.liquidlight.co.uk/blog/article/creating-svg-sprites-using-gulp-and-sass/ "Liquid Light's blog (new window)"){:target="_blank"}{:rel="noopener"}
 
 As I wanted to get to Gulp, not to leave Sass and make SVG, this solution was perfect!
 
@@ -180,7 +180,7 @@ Natively, Fabricator uses its own CSS/JS, I have enhanced the tasks managing the
 
 ## Bonus
 
-To save some extra time, I added the [LiveReload module](https://www.npmjs.com/package/gulp-livereload "Live reload on NPM (new window)"){:target="_blank"} which automatically refreshes the browser as soon as a CSS or JS change is made to the project.
+To save some extra time, I added the [LiveReload module](https://www.npmjs.com/package/gulp-livereload "Live reload on NPM (new window)"){:target="_blank"}{:rel="noopener"} which automatically refreshes the browser as soon as a CSS or JS change is made to the project.
 
 ## Capital gains on projects
 

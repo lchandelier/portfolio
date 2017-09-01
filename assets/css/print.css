@@ -34,7 +34,8 @@ header .right_items.noprint,
 .a11y_hidden,
 .breadcrumb,
 .comments,
-.form_comment {
+.form_comment,
+.wrapper + .wrapper {
   display: none; }
 
 main > div {
@@ -44,6 +45,9 @@ main > div {
   position: relative;
   left: 0;
   padding: 0; }
+
+h1 {
+  font-size: 18pt; }
 
 h2.center {
   padding: 10px 0 30px; }
