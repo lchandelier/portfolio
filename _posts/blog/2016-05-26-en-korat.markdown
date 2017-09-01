@@ -210,3 +210,7 @@ Finally, I thank Julien, Michael and Yassine for their suggestions and feedback.
 gulp-html-extend has been replaced by gulp-fileinclude. I've had some issues on several projects that made me change. gulp-html-extend randomly flushed some included files which has never happened again since I use gulp-fileinclude.
 
 I've also included Plumber to avoid relaunching the watch command in case of compiling error.
+
+## Update July 2017
+Accessibility <abbr title="For The WIn">FTW</abbr> !
+In addition to modules upgrades, I've added axe-webdriver which makes an accessibility audit and generate a report.
