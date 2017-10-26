@@ -41,7 +41,7 @@ article, .simple_content {
         margin-top: 4rem;
     }
     
-    p, li {
+    p, ul li {
         font-size: 1.8rem;
         line-height: 1.55;
     }
@@ -240,9 +240,15 @@ article {
 //comment
 
 .comment {
+    padding: 20px;
+    box-sizing: border-box;
     max-width: 640px;
     margin: 0 auto;
     line-height: 1.55;
+
+    &.reply {
+        background: #ededed;
+    }
 
     &:not(:last-of-type) {
         &:after {
@@ -250,7 +256,7 @@ article {
             content: '';
             width: 50%;
             height: 1px;
-            margin: 20px auto;
+            margin: 0 auto;
             background: $dark_bg;
         }
     }

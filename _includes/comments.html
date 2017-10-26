@@ -5,7 +5,7 @@
     {% if site.data[commentid] %}
         {% for comment in site.data[commentid] %}
 
-        <div id="comment-{{ comment.id }}" class="comment" />
+        <div id="comment-{{ comment.id }}" class="comment {% if (comment.author == 'Mylène') %} reply {% endif %}" />
             <div class="info">
                 <p class="author">
                     {{ comment.author }}

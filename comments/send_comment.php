@@ -15,12 +15,8 @@ if($_POST['comment_blop'] == '') {
     $msg .= "---\n";
     $msg .= "- id: ?\n";
     $msg .= "  author: " . $_POST["name"] . "\n";
-    if ($_POST["url"] !== '')
-    {
-        $msg .= "  author-url: " . $_POST["url"] . "\n";
-    }
     $msg .= "  date: " . date($date_format) . "\n";
-    $msg .= "  contents: |\n" . $_POST["comment"];
+    $msg .= "  contents: \n" . $_POST["comment"];
 
     $headers = "From: $email_dest\n";
     $headers .= "Content-Type: text/plain; charset=utf-8";

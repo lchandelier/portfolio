@@ -25,9 +25,9 @@ alt_thumb:
 **Dans ce billet, je vais m’attaquer au premier apriori de cette liste, et montrer comment on peut apporter de l’accessibilité dans nos projets de manière rapide et assez facilement. Le résultat ne sera pas parfait car l’accessibilité ne concerne pas que le développement front mais toute l’équipe projet (UX, Designer, Rédacteurs de contenus, Développeurs back,…). Mais vous allez voir que des petites choses très simples peuvent avoir un impact très important sur l’accessibilité.**
 
 
-## Mettre un attribut lang sur la balise HTML
+## Mettre un attribut lang
 Cela peut couler de source et pourtant, je vois passer régulièrement des sites qui n’en ont pas.
-L’utilité de cet attribut est qu’il permet aux lecteurs d’écran de restituer le contenu avec la bonne prononciation et, lorsque précisé, le bon accent (Français Canadien par exemple). Faites le test avec NVDA ou VoiceOver de faire lire de l’anglais à votre synthèse vocale configurée en français et plus jamais vous n’oublierez de mettre cet attribut !
+L’utilité de cet attribut est qu’il permet aux lecteurs d’écran de restituer le contenu avec la bonne prononciation et, lorsque précisé, le bon accent (Français Canadien par exemple). Faites le test avec <abbr title="Non Visual Desktop Access" lang="en">NVDA</abbr> ou VoiceOver de faire lire de l’anglais à votre synthèse vocale configurée en français et plus jamais vous n’oublierez de mettre cet attribut !
 
 ## Ne pas utiliser maximum-scale= 1.0 dans la meta viewport
 Le problème de cette propriété est qu’elle empêche les utilisateurs de zoomer. Imaginez que le texte écrit est un peu petit, même pour vous qui avez une bonne vue ; votre réflexe va être de zoomer dessus, sauf que cette propriété est présente. Dommage...
@@ -75,12 +75,12 @@ Voici un exemple de mise en place de ces liens :
 <span onclick="btnFunction();" class="btn btn-primary">Cliquez ici</span>
 {% endraw %}
 {% endhighlight %}
-Pourquoi faire ça alors qu’il existe un élément HTML <code>&lt;button&gt;</code> ?
+Pourquoi faire ça alors qu’il existe un élément <abbr title="HyperText Markup Language" lang="en">HTML</abbr> <code>&lt;button&gt;</code> ?
 
 Cela est valable aussi pour les liens, il est très courant de voir des liens qui sont utilisés comme des boutons. Pourtant il est plus logique d’utiliser un lien pour rediriger quelque part et un bouton pour faire une action autre.  
 On peut aussi penser à utiliser les listes ordonnées, non ordonnées et de définitions pour bien structurer l’information, les balises HTML5 de structure comme <code>&lt;header&gt;, &lt;footer&gt;, &lt;main&gt;, &lt;section&gt;</code>, ... qui donnent du sens contrairement à des <code>&lt;div&gt;</code> ou des <code>&lt;span&gt;</code> qui n’ont aucune valeur sémantique.
 
-## ARIA est votre ami
+## <abbr title="Accessible Rich Internet Applications" lang="en">ARIA</abbr> est votre ami
 Utilisez les rôles ARIA pour aider les utilisateurs de lecteurs d’écrans à se repérer dans vos pages.
 <code>&lt;header role="banner"&gt;</code> <code>&lt;footer role="contentinfo"&gt;</code> etc... ce ne sont que des attributs à ajouter sur des éléments qui sont utilisés très couramment maintenant.  
 Si vous utilisez des évènements en JavaScript, les attributs ARIA peuvent aider vos utilisateurs sur de nombreux aspects (menu déplié ou non, champs obligatoires dans un formulaire, onglet actif dans une navigation et bien d’autres).

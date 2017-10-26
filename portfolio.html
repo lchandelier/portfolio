@@ -8,7 +8,7 @@ category: project
 ---
 
 <div class="post_list">
-    {% assign blogposts=site.categories.[page.category] | where:"lang", page.lang %}
+    {% assign blogposts=site.categories[page.category] | where:"lang", page.lang %}
     {% for blogpost in blogposts %}
     <div>
         <a class="link_full_block" href="{{ blogpost.url | prepend: site.baseurl }}" title="Lire l'article {{ blogpost.title }}">

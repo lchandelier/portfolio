@@ -38,7 +38,7 @@ The mirror argument is not one, telling an employee that in a competing business
 You have to allow yourself to air your schedule to be able to do technical watch.
 Finally, drive away fear! If you aren't happy, do not hesitate to leave from your company or even become independent. It is essential to flourish and if you don't succeed, you have to talk around yourself (friends, doctor) because we worth better that it.
 
-[See the slides of the conference Our little daily stresses](https://speakerdeck.com/hiwelo/nos-petits-stress-quotidiens-kiwiparty-2016 "(new window)"){:target="_blank" }
+[See the slides of the conference Our little daily stresses](https://speakerdeck.com/hiwelo/nos-petits-stress-quotidiens-kiwiparty-2016 "(new window)"){:target="_blank"}{:rel="noopener"}
 
 
 ### 10 tricks about <abbr title="Scalable Vector Graphics">SVG</abbr> that will save your life

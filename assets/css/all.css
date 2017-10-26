@@ -176,7 +176,7 @@ a {
     bottom: 0;
     background: url("../img/global/link.png") 0 0 repeat; }
 
-code, pre {
+pre {
   font-size: 1.6rem; }
 
 button:not(.display_menu) {
@@ -758,7 +758,7 @@ article, .simple_content {
     margin: 0 0 2rem 2rem; }
   article h2, article h3, .simple_content h2, .simple_content h3 {
     margin-top: 4rem; }
-  article p, article li, .simple_content p, .simple_content li {
+  article p, article ul li, .simple_content p, .simple_content ul li {
     font-size: 1.8rem;
     line-height: 1.55; }
 
@@ -1413,15 +1413,19 @@ article .highlight {
 
 /* Literal.Number.Integer.Long */
 .comment {
+  padding: 20px;
+  box-sizing: border-box;
   max-width: 640px;
   margin: 0 auto;
   line-height: 1.55; }
+  .comment.reply {
+    background: #ededed; }
   .comment:not(:last-of-type):after {
     display: block;
     content: '';
     width: 50%;
     height: 1px;
-    margin: 20px auto;
+    margin: 0 auto;
     background: #173d51; }
   .comment .info {
     display: -webkit-flex;

@@ -25,7 +25,7 @@ Our clients, as ourselves are not enough aware of this and we tend to approach t
 
 **In this post, I will tackle the first apriori of this list, and show how we can bring accessibility in our projects quickly and easily. The result won't be perfect because accessibility is not only about front-end development but also all the project team (UX, Designer, Content Editors, Back-end developers, ...). But you will see that very simple things can have a very important impact on accessibility.**
 
-## Put a lang attribute on the HTML tag
+## Use the lang attribute
 This can seem to be obvious, but I see regularly websites that don't have it.
 The utility of this attribute is that it allows screen readers to render content with correct pronunciation and, when specified, the correct accent (Canadian French for example). Test with NVDA or VoiceOver to read French with your screen reader configured in English and you'll never forget to put this attribute again!
 
@@ -75,7 +75,7 @@ Here is an example of setting up these links:
 <span onclick="btnFunction();" class="btn btn-primary">Click here</span>
 {% endraw %}
 {% endhighlight %}
-Why do this while there is an HTML <code>&lt;button&gt;</code> element?
+Why do this while there is an <abbr title="HyperText Markup Language">HTML</abbr> <code>&lt;button&gt;</code> element?
 
 This is also true for links, it is very common to see links that are used as buttons. Yet it makes more sense to use a link to redirect somewhere and a button to do another action.
 We can also think of using the ordered, unordered, and definitions lists to structure information, HTML5 structural tags such as <code>&lt;header&gt;, &lt;footer&gt;, &lt;main&gt;, &lt;section&gt;</code>, ... which give meaning contrary to <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> that haven't semantic value.
