@@ -20,6 +20,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mylene-chandelier.me" # the base hostname & protocol for your site
 permalink: /:categories/:title
 regeneration: -w
+feed:
+  en: /feed.xml
+  fr: /flux.xml
 folioURL:
   en: /en/portfolio
   fr: /portfolio

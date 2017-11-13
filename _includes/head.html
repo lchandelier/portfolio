@@ -23,6 +23,10 @@
     <link rel="canonical" href="{{ https://mylene-chandelier.me | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}{% for post in posts %}
     <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />{% endfor %}
+    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}{% for page in pages %}
+    <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />{% endfor %}
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="{{ site.feed[page.lang] | prepend: site.baseurl | prepend: site.url }}">
+  
 
     <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/apple-touch-icon-152x152.png">
     <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-32x32.png" sizes="32x32">
