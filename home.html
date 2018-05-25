@@ -31,7 +31,7 @@ permalink: /en/index.html
     <div class="wrapper project_list" id="portfolio">
         <h2 class="center">Portfolio</h2>
         <div class="container">
-            {% assign posts=site.posts | where:"lang", page.lang %}
+            {% assign posts=site.posts | where:"lang", page.lang  %}
             {% for post in posts %}
                 {% if post.category != "blog" %}
                 <div class="item">
@@ -62,10 +62,10 @@ permalink: /en/index.html
             A few years later with becoming graduate of secondary school, I introduced myself in many computing schools.
             With my unfailing motivation to get in that course, I managed to enter the <abbr title="Institut de Gestion Social">IGS</abbr> at Lyon.
             <br/><br/>
-            Today I'm working at Wax Interactive. I improve myself daily on <abbr title="Hypertext Preprocessor">PHP</abbr>, 
+            Today I'm working at Essencedesign. I improve myself daily on <abbr title="Hypertext Preprocessor">PHP</abbr>, 
             <abbr title="HyperText Markup Language 5">HTML5</abbr>, 
             <abbr title="Cascading Style Sheets 3">CSS3</abbr>, <abbr title="Syntactically Awesome Stylesheets">Sass</abbr>/Compass, Gulp ... I'm very curious about new technologies and do techno watch every day.
-            I'm really passioned by accessibility and I learn about it with some readings and as I go (you can see Isere project).
+            I'm really passioned by accessibility and <a href="https://certificates.opquast.com/certificate/ZDSJ9E/" hreflang="fr" target="_blank" rel="noopener" title="Opquast certification (new window)">web quality</a>.
         </p>
     </div>
 </div>
@@ -75,6 +75,11 @@ permalink: /en/index.html
         <div id="xp" class="list_xp">
             <div class="highlight">
                 <h3>Front-end developer / Brand Designer</h3>
+                 <ul>
+                    <li>Develop Wordpress and responsive websites,</li>
+                    <li>Maintenance and upgrade of existing websites,</li>
+                    <li>Accessibility (accessible development, internal awareness raising).</li>
+                </ul>
                 <div class="bottom">
                     <a href="http://essencedesign.com/" target="_blank" rel="noopener" title="Essence design (new window)">Essencedesign</a>
                     <p>Since November 2017</p>
@@ -83,14 +88,12 @@ permalink: /en/index.html
             <div>
                 <h3>Front-end developer</h3>
                 <ul>
-                    <ul>
-                        <li>Developed Wordpress and responsive websites,</li>
-                        <li>Maintenance and upgrade of existing websites,</li>
-                        <li>Accessibility (audit and accessible development).</li>
-                    </ul>
+                    <li>Developed Wordpress and responsive websites,</li>
+                    <li>Maintenance and upgrade of existing websites,</li>
+                    <li>Accessibility (audit and accessible development).</li>
                 </ul>
                 <p>
-                    <a href="http://www.wax-interactive.com/fr-ch/" target="_blank" rel="noopener" title="Wax Interactive Lausanne (new window)">Wax Interactive Lausanne</a> july 2015 to october 2017
+                    <a href="http://www.wax-interactive.com/fr-ch/" target="_blank" rel="noopener" hreflang="fr" title="Wax Interactive Lausanne (new window)">Wax Interactive Lausanne</a> july 2015 to october 2017
                 </p>
             </div>
             <div>
@@ -101,7 +104,7 @@ permalink: /en/index.html
                     <li>Accessibility.</li>
                 </ul>
                 <p>
-                    <a href="http://www.actitudes.com" target="_blank" rel="noopener" title="Actitudes (new window)">Actitudes</a> october 2014 to june 2015
+                    <a href="http://www.actitudes.com" target="_blank" rel="noopener" hreflang="fr" title="Actitudes (new window)">Actitudes</a> october 2014 to june 2015
                 </p>
             </div>
             <div>
@@ -113,7 +116,7 @@ permalink: /en/index.html
                     <li>Magento, Drupal, Wordpress, ezPublish integration.</li>
                 </ul>
                 <p>
-                    <a href="http://www.agenceinteractive.com" target="_blank" rel="noopener" title="Agence Interactive (new window)">Agence Interactive</a> 2009 to september 2014
+                    <a href="http://www.agenceinteractive.com" target="_blank" rel="noopener" hreflang="fr" title="Agence Interactive (new window)">Agence Interactive</a> 2009 to september 2014
                 </p>
             </div>
             <div>
@@ -125,7 +128,7 @@ permalink: /en/index.html
                     <li>Google maps integration.</li>
                 </ul>
                 <p>
-                    <a href="http://www.speedmedia.fr" target="_blank" rel="noopener" title="Speedmedia Services (new window)">Speedmedia Services</a> 2008 to 2009
+                    <a href="http://www.speedmedia.fr" target="_blank" rel="noopener" hreflang="fr" title="Speedmedia Services (new window)">Speedmedia Services</a> 2008 to 2009
                 </p>
             </div>
             <div>
@@ -134,7 +137,7 @@ permalink: /en/index.html
                     <li>Developed a project of saving cartridges follow-up management using PHP5.</li>
                 </ul>
                 <p>
-                    <a href="http://www.veolia.com" target="_blank" rel="noopener" title="Véolia Propreté (new window)">Véolia Propreté</a> 2006 to 2008
+                    <a href="http://www.veolia.com" target="_blank" rel="noopener" hreflang="fr" title="Véolia Propreté (new window)">Véolia Propreté</a> 2006 to 2008
                 </p>
             </div>
         </div>
@@ -158,7 +161,7 @@ permalink: /en/index.html
                 </li>
                 <li>
                     <a href="http://fr.viadeo.com/fr/profile/mylene.chandelier" class="viadeo" 
-                       title="My Viadeo profile (new window)" target="_blank" rel="noopener">
+                       title="My Viadeo profile (new window)" target="_blank" rel="noopener" hreflang="fr">
                         <img src="{{ site.baseurl }}/assets/img/home/viadeo.svg" width="34" height="34" alt="Viadeo"/>
                         <span class="a11y_hidden">{{ site.viadeo[page.lang] }}</span>
                     </a>
@@ -186,7 +189,7 @@ permalink: /en/index.html
         <h2 class="center">Get in touch</h2>
         <p>
             <strong>Mylène CHANDELIER</strong><br/>
-            <a href="mailto:chandelier.mylene@gmail.com">chandelier.mylene@gmail.com</a><br/>
+            <a href="mailto:mylene.chandelier@protonmail.ch">mylene.chandelier@protonmail.ch</a><br/>
             Phone: <a href="tel:+41768037955">+41 (0)76 803 79 55</a>
         </p>
     </div>

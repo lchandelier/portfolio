@@ -1881,6 +1881,22 @@ main > div {
       .about p {
         max-width: 100%;
         margin: 0; } }
+  .about a {
+    color: #173d51; }
+    .about a:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      height: 1px;
+      width: 100%;
+      background: #173d51;
+      -webkit-transition: width 0.2s;
+      transition: width 0.2s; }
+    .about a:focus, .about a:active, .about a:hover {
+      color: #5f5f5f; }
+    .about a:focus:after, .about a:active:after, .about a:hover:after {
+      width: 0;
+      background: #5f5f5f; }
 
 /* parcours */
 .list_xp ul {

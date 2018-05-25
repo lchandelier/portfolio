@@ -236,6 +236,32 @@ main {
             margin: 0;
         }
     }
+
+    a { 
+        color: #173d51;
+
+        &:after {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            height: 1px;
+            width: 100%;
+            background: #173d51;
+            @include transition(width .2s);
+        }
+
+        &:focus, &:active, &:hover{
+            color: $main_color;
+        }
+
+        &:focus, &:active, &:hover {
+            &:after {
+                width: 0;
+                background: $main_color;
+            }
+        }
+    }
+    
 }
 
 /* parcours */

@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "TL"
+type: "WordPress, AJAX"
+ref: tl
+date:   2018-05-25 12:15:21 +0100
+category: project
+permalink: /projets/projet-tl.html
+lang: fr
+thumbnail: /assets/img/projects/tl.jpg
+alt_thumb: 
+---
+
+Site WordPress pour présenter le rapport d'activité annuel des Transports en commun Lausannois.
+La partie front utilise CSS Grid pour la mise en page avec un fallback en flexbox pour IE11.
+Le moteur de recherche par catégories est fait en ajax, sans plugin. Au vu des nombreuses images sur le site, un système de lazy loading a été mis en place.
+
+Voir le [rapport annuel des Transports en commun Lausannois](https://rapportannuel.t-l.ch/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}.
+
+<img src="{{ site.baseurl }}/assets/img/projects/tl_large.jpg" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/projects/tl_medium.jpg 670w,
+          {{ site.baseurl }}/assets/img/projects/tl_large.jpg 1024w"
+          sizes="(min-width:671px) 1024px"/> 

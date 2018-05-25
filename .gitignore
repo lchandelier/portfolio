@@ -3,3 +3,6 @@ _site
 node_modules
 .sass-cache
 .netbeans.xml
+.history/
+package-lock.json
+assets/css/all.css.min.map.map
