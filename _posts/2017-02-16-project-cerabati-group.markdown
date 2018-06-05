@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Groupe Cerabati"
+title:  "Cerabati Group"
 type: "Website showcase - responsive"
 ref: gc
 date:   2017-02-16 09:48:44 +0100

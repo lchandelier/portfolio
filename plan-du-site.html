@@ -5,23 +5,37 @@ permalink: /plan-du-site.html
 ref: sitemap
 lang: fr
 ---
-
 <div class="sitemap">
     <h2>Articles</h2>
     <ul>
 
         {% assign posts=site.posts | sort: "title" | where:"lang", page.lang %}
         {% for post in posts %}
-        <li>
-            <a href="{{ site.url }}{{ post.permalink }}">{{post.title}}</a>
-        </li>
+            {% if post.category != "project" %}
+            <li>
+                <a href="{{ site.url }}{{ post.permalink }}">{{post.title}}</a>
+            </li>
+            {% endif %}
         {% endfor %}
     </ul>
+
+    <h2>Projets</h2>
+    <ul>
+
+        {% for post in posts %}
+            {% if post.category != "blog" %}
+            <li>
+                <a href="{{ site.url }}{{ post.permalink }}">{{post.title}}</a>
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
     <h2>Pages</h2>
     <ul>
         {% assign pages=site.pages | sort: "title" | where:"lang", page.lang %}
         {% for page in pages %}
-            {% if page.ref != 404 %}
+            {% if page.ref != 'rss' and page.ref != 404 and page.ref != 'comment' %}
                 <li>
                     <a href="{{ site.url }}{{ page.permalink }}">{{page.title}} </a>
                 </li>
