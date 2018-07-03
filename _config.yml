@@ -33,6 +33,12 @@ blogURL:
 home:
   en: Home
   fr: Accueil
+a11y_tools:
+  en: Open accessibility menu
+  fr: Ouvrir les options d'accessibilité
+menu:
+  en: Main menu
+  fr: Menu principal
 back_home:
   en: Back to homepage
   fr: Retourner à la page d'accueil

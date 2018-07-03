@@ -32,7 +32,7 @@
                 </li>
                 <li id="a11yTools" class="a11y_tools">
                     <button type="button" class="display_tools">
-                        <span class="a11y_hidden">Ouvrir les options d'accessibilité</span>
+                        <span class="a11y_hidden">{{ site.a11y_tools[page.lang] }}</span>
                     </button>
                     <ul>
                         <li><button id="dyslexia" title="{{ site.dyslexia_title[page.lang] }}">{{ site.dyslexia[page.lang] }}</button></li>
@@ -41,7 +41,7 @@
                 </li>
                 <li id="mainMenu" class="main_menu">
                     <button id="displayMenu" class="display_menu" type="button">
-                        <span class="a11y_hidden">Ouvrir le menu</span>
+                        <span class="a11y_hidden">{{ site.menu[page.lang] }}</span>
                         <span class="caret"></span>
                     </button>
                     <ul class="submenu">

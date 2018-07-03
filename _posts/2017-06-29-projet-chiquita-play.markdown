@@ -24,7 +24,7 @@ Le principe a été repris pour un jeu concours pour la rentrée scolaire.
 
 Enfin, j'ai participé à la refonte du site Chiquita en mettant en place quelques animations et en améliorant le code existant. 
 
-Voir le site [Chiquita](http://chiquita.com "Chiquita (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}.  
+Voir le site [Chiquita](https://www.chiquita.com/ "Chiquita (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}.  
 
 ### Jeu concours Breakfast
 

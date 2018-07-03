@@ -5,7 +5,7 @@ type: "WordPress, AJAX"
 ref: tl
 date:   2018-05-25 12:15:21 +0100
 category: project
-permalink: /en/projets/projet-tl.html
+permalink: /en/projects/project-tl.html
 lang: en
 thumbnail: /assets/img/projects/tl.jpg
 alt_thumb: 
