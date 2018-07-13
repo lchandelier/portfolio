@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mylene-chandelier.me/sitemaps.xml
+Sitemap: https://lena-chandelier.me/sitemaps.xml

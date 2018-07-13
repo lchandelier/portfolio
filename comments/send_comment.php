@@ -1,6 +1,6 @@
 <?php
 $date_format = "d/m/Y H:i:s";
-$email_dest = "mylene.chandelier@protonmail.ch";
+$email_dest = "lena.chandelier@pm.me";
 $subject = "[Blog] - Nouveau commentaire";
 $template_sent = '../comment-sent.html';
 

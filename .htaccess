@@ -13,13 +13,20 @@ deny from all
     Satisfy any
 </Files>
 
-RewriteEngine On
-RewriteBase /
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
 
-RewriteCond %{HTTPS} off
-RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	#RewriteCond %{HTTPS} off
+	#RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	#RewriteCond %{HTTP_HOST} !^www\.
+	#RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+    RewriteCond %{HTTP_HOST} !^www\.lena-chandelier\.me [NC]
+    RewriteRule ^ https://lena-chandelier.me%{REQUEST_URI} [R=301,L]
+</IfModule>
+
 
 AddType  application/font-woff2  .woff2
 

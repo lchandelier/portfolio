@@ -9,8 +9,8 @@ exclude:
   - Gemfile.lock
   - .history
 title:
-  en: Mylene Chandelier's portfolio
-  fr: Portfolio de Mylène Chandelier
+  en: Lena Chandelier's portfolio
+  fr: Portfolio de Lena Chandelier
 description:
   en: A look at my front-end dev work
   fr: Présentation de mon travail de développeuse front-end.
@@ -18,7 +18,7 @@ index:
   en: /en
   fr: /
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mylene-chandelier.me" # the base hostname & protocol for your site
+url: "https://lena-chandelier.me" # the base hostname & protocol for your site
 permalink: /:categories/:title
 regeneration: -w
 feed:

@@ -12,7 +12,7 @@ alt_thumb:
 
 Bonjour à tous,
 
-Je m'appelle Mylène Chandelier, je suis développeuse front-end et je vais vous parler d'accessibilité vite fait, bien fait.
+Je m'appelle Lena Chandelier, je suis développeuse front-end et je vais vous parler d'accessibilité vite fait, bien fait.
 
 Avant de commencer, pour les personnes qui le souhaitent, le transcript de cette conf est disponible à l'url affichée ou en scannant le QR Code.
 
