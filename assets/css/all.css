@@ -1870,7 +1870,7 @@ main > div {
       .about img {
         position: relative;
         left: 50%;
-        margin-left: -65px; } }
+        margin: 0 0 30px -110px; } }
   .about p {
     display: inline-block;
     vertical-align: top;

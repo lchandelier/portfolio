@@ -220,7 +220,7 @@ main {
         @include respond-to(mobile_to_large) {
             position: relative;
             left: 50%;
-            margin-left: -65px;
+            margin: 0 0 30px -110px;
         }
     }
     
