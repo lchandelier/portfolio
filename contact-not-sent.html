@@ -1,0 +1,15 @@
+---
+layout: page
+title: Votre demande n’a pas été envoyée
+ref: contact-not-sent
+lang: fr
+---
+
+<p>Votre demande n’a pas pu être envoyée. Veuillez remplir tous les champs obligatoires.<br/>
+<?php 
+	if (isset($_POST['return_url']))
+	{
+		echo '<a href="'.$_POST['return_url'].'">Retourner à l’article</a>';
+	}
+?>
+</p>

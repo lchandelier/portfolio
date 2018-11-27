@@ -11,10 +11,10 @@ thumbnail: /assets/img/projects/gc.jpg
 alt_thumb:
 ---
 
-Mon projet coup de coeur chez Actitudes car c'est le premier multisite Wordpress que j'ai eu à faire. 
+Mon projet coup de coeur chez Actitudes car c’est le premier multisite Wordpress que j’ai eu à faire. 
 
-Il est multilangue, responsive et j'ai pu le réaliser de A à Z sans contraintes spécifiques.
-C'est un projet que j'ai aimé par son aspect graphique, technique, j'ai pu jouer avec quelques animations <abbr title="Cascading Style Sheets">CSS</abbr> et découvrir Wordpress dans son aspect multisite.
+Il est multilangue, responsive et j’ai pu le réaliser de A à Z sans contraintes spécifiques.
+C’est un projet que j’ai aimé par son aspect graphique, technique, j’ai pu jouer avec quelques animations <abbr title="Cascading Style Sheets">CSS</abbr> et découvrir Wordpress dans son aspect multisite.
 
 Voir le [site du Groupe Cerabati](http://groupecerabati.com/ "Groupe Cerabati (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}.
 

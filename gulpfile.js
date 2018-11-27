@@ -1,21 +1,29 @@
-var gulp        = require('gulp');
-    plumber = require('gulp-plumber');
-    browserSync = require('browser-sync');
-    sass        = require('gulp-sass');
-    cp          = require('child_process');
-    uglify      = require('gulp-uglify');
-    cleanCSS   = require('gulp-clean-css');
-    imagemin    = require('gulp-imagemin');
-    rename      = require('gulp-rename');
-    concat      = require('gulp-concat');
-    notify      = require('gulp-notify');
-    cache       = require('gulp-cache');
-    gulpFilter  = require('gulp-filter');
-    merge       = require('merge-stream');
-    svgo        = require('imagemin-svgo');
-    svg2png     = require('gulp-svg2png');
-    sourcemaps  = require('gulp-sourcemaps');
-    svgspritesheet = require('gulp-svg-spritesheet');
+var axe = require('gulp-axe-webdriver'),
+	browsersync = require('browser-sync'),
+	cache = require('gulp-cache'),
+	changed = require('gulp-changed'),
+	cheerio = require('gulp-cheerio'),
+	cleanCSS = require('gulp-clean-css'),
+	clone = require('gulp-clone'),
+    concat = require('gulp-concat'),
+    cp  = require('child_process');
+	del	= require('del'),
+	fileinclude = require('gulp-file-include'),
+	gulp = require('gulp'),
+	gulpFilter = require('gulp-filter'),
+	gulpIf = require('gulp-if'),
+	imagemin = require('gulp-imagemin'),
+	merge = require('merge-stream'),
+	notify = require('gulp-notify'),
+	plumber = require('gulp-plumber'),
+	rename = require('gulp-rename'),
+	sass = require('gulp-sass'),
+	shell = require('gulp-shell'),
+	svgSymbols = require('gulp-svg-symbols'),
+	sourcemaps = require('gulp-sourcemaps'),
+	uglify = require('gulp-uglify'),
+	webp = require('gulp-webp'),
+    zip = require('gulp-zip');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
@@ -30,7 +38,6 @@ var assets = {
     util: paths.src + 'assets/_scss/utilities',
     img: paths.src + 'assets/img',
     sprites: paths.src + 'assets/sprites',
-    tpl: paths.src + 'assets/tpl',
     css_img_path: '../img'
 };
 
@@ -49,14 +56,14 @@ gulp.task('jekyll-build', function (done) {
  * Rebuild Jekyll & do page reload
  */
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-    browserSync.reload();
+    browsersync.reload();
 });
 
 /**
  * Wait for jekyll-build, then launch the Server
  */
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
-    browserSync({
+    browsersync({
         server: {
             baseDir: '_site'
         }
@@ -64,8 +71,25 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 });
 
 
+
+
+/*
+ * Tasks
+ * 1/ sass
+ * 2/ scripts
+ * 3/ images
+ * 4/ sprites
+ * 5/ extend
+ * 6/ styleguide
+ * 7/ zip
+ * 8/ watch
+ * 9/ accessibility check
+ * 
+ */
+
+/* remove print css from concatenation + Concatenate & Minify CSS */
 gulp.task('sass', function () {
-		var filterPrint = gulpFilter(['*', '!print.scss']);
+	var filterPrint = gulpFilter(['*', '!print.scss']);
 
     var all = gulp.src([assets.scss + '/screen.scss',
         assets.scss + '/**/*.scss',
@@ -75,88 +99,124 @@ gulp.task('sass', function () {
             .pipe(sass().on('error', sass.logError))
             .pipe(sourcemaps.init())
             .pipe(concat('all.css'))
-            .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest(assets.css))
-            .pipe(notify({message: 'all.css generated'}))
+            .pipe(notify({message: 'all.css generated', onLast: true}))
             .pipe(cleanCSS())
             .pipe(rename({suffix: '.min'}))
             .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest(assets.css))
-            .pipe(browserSync.reload({stream: true}))
-            .pipe(notify({message: 'all.min.css generated'}))
-            .pipe(gulp.dest(assets.css));
+            .pipe(browsersync.reload({stream: true}))
+            .pipe(notify({message: 'all.min.css generated', onLast: true}));
 
     var print = gulp.src(assets.scss + '/print.scss')
             .pipe(plumber())
             .pipe(sass().on('error', sass.logError))
             .pipe(gulp.dest(assets.css))
-            .pipe(notify({message: 'print.css generated'}))
+            .pipe(notify({message: 'print.css generated', onLast: true}))
             .pipe(cleanCSS())
             .pipe(rename({suffix: '.min'}))
             .pipe(gulp.dest(assets.css))
-            .pipe(notify({message: 'print.min.css generated'}));
+            .pipe(browsersync.reload({stream:true}))
+            .pipe(notify({message: 'print.min.css generated', onLast: true}));
 
     return all, print;
 });
 
 /* Concatenate & Minify JS */
 gulp.task('scripts', function () {
-  return gulp.src([assets.js + '/src/lib/*.js', assets.js + '/src/*.js']) //manage order
+    return gulp.src([assets.js + '/src/lib/*.js', assets.js + '/src/*.js']) //manage order
             .pipe(plumber())
-            .pipe(concat('/all.js'))    
-            .pipe(sourcemaps.write('./'))
+            .pipe(sourcemaps.init())
+            .pipe(concat('all.js'))
             .pipe(gulp.dest(assets.js))
             .pipe(rename({suffix: '.min'}))
             .pipe(uglify())
+            .pipe(sourcemaps.write('/'))
             .pipe(gulp.dest(assets.js))
-            .pipe(notify({message: 'Scripts task complete'}));
+            .pipe(browsersync.reload({stream: true}))
+            .pipe(notify({message: 'Scripts task complete', onLast: true}));
 });
 
-/* Optimise images */
+/* Optimize images */
 gulp.task('images', function () {
-  return gulp.src(assets.img + '/**/*')
+    var cloneSink = clone.sink();
+	
+    return gulp.src([assets.img + '/**/*', '!' + assets.img + '/**/*.webp'])
             .pipe(plumber())
-            .pipe(cache(imagemin({optimizationLevel: 3, progressive: true, interlaced: true})))
+			
+            .pipe(changed(assets.img + '/**/*')) //parse only new or updated files
+            .pipe(imagemin([
+                imagemin.gifsicle({interlaced: true}),
+                imagemin.jpegtran({progressive: true}),
+                imagemin.optipng({optimizationLevel: 5}),
+                imagemin.svgo({
+                    plugins: [
+                        {removeViewBox: false},
+                        {cleanupIDs: false}
+                    ]
+                })
+            ]))
+
+			.pipe(cloneSink)   // clone image
+			.pipe(webp())      // convert cloned image to WebP
+            .pipe(cloneSink.tap()) 
             .pipe(gulp.dest(assets.img));
 });
 
-
 /* sprites management 
- * note : pixelbase option = font-size on body in your CSS file
+ * generate svg file for inline use
  */
 
 gulp.task('sprites', function () {
-    
-  folder.forEach(function (name) {
-    gulp.src(assets.sprites + '/'+ name + '/*.svg')
+	return gulp.src([assets.sprites + '/**/*.svg'])
         .pipe(plumber())
-        .pipe(svgspritesheet({
-          cssPathNoSvg: assets.css_img_path + '/sprite_' + name + '.png',
-          cssPathSvg: assets.css_img_path + '/sprite_' + name + '.svg',
-          padding: 10,
-          positioning: 'diagonal',
-          templateDest: assets.util + '/_sprite_' + name + '.scss',
-          templateSrc: assets.tpl + '/sprite-template-' + name + '.tpl',
-          pixelBase: 14,
-          units: 'px',
-          x: 0,
-          y: 0
+        .pipe(cheerio({
+            run: function ($) {
+                $('[fill]').removeAttr('fill');
+            },
+            parserOptions: { xmlMode: true }
         }))
-        .pipe(svgo({
-          plugins: [
-            {removeXMLProcInst: false}
-          ]
-        })())
-        .pipe(gulp.dest(assets.img + '/sprite_' + name + '.svg'))
-        .pipe(svg2png({'verbose':true}))
-        .pipe(gulp.dest(assets.img + '/sprite_' + name + '.png'))
-        .pipe(notify({message: 'Sprite ' + name + ' generated'}));
-  });
+        .pipe(svgSymbols(
+            {
+                class: 'a11y_hidden',
+				'aria-hidden':'true'
+            }
+        ))
+        .pipe(gulpIf( /[.]svg$/, gulp.dest(assets.img + '/global')))
+        .pipe(gulpIf( /[.]css$/, gulp.dest(assets.components)))	
+		.pipe(notify({message: 'Sprite generated', onLast: true}));
 });
+
+/* rename generated css file for sprites */
+
+gulp.task('rename-sprites', ['sprites'], function() {
+   return gulp.src([assets.components + '/*.css'])
+    .pipe(plumber())
+    .pipe(rename({
+        basename: '_sprites',
+        extname: '.scss'
+    }))
+    .pipe(gulp.dest(assets.components))
+});
+
+/* delete the useless css file */
+gulp.task('clean-sprites', ['rename-sprites'], function() {    
+    return del([assets.components + '/*.css'], {force: true})
+});
+
+/* accessibility task */
+gulp.task('axe', function(done) {
+    var options = {
+      saveOutputIn: 'a11yResult.json',
+      browser: 'phantomjs',
+      urls: ['*.html']
+    };
+    return axe(options, done);
+  });
 
 /**
  * Watch scss files for changes & recompile
- * Watch html/md files, run jekyll & reload BrowserSync
+ * Watch html/md files, run jekyll & reload browsersync
  */
 gulp.task('watch', function () {
     gulp.watch([assets.scss+'/*.scss', assets.scss+'/**/*.scss'], ['sass', 'jekyll-rebuild']);
@@ -168,6 +228,6 @@ gulp.task('watch', function () {
 
 /**
  * Default task, running just `gulp` will compile the sass,
- * compile the jekyll site, launch BrowserSync & watch files.
+ * compile the jekyll site, launch browsersync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);

@@ -311,9 +311,9 @@ div, textarea {
 
 .intro a, [download],
 [role="button"], input[type="submit"], textarea[type="submit"] {
-  min-width: 20rem;
+  min-width: 13rem;
   box-sizing: border-box;
-  padding: 2rem 3.2rem;
+  padding: 1.8rem 2rem;
   background: #4bc4b1;
   border-radius: .2rem;
   text-align: center;
@@ -603,6 +603,50 @@ input, textarea {
       background: #fff;
       color: #5f5f5f; }
 
+.custom_select {
+  margin: 10px 0; }
+  .custom_select div {
+    display: block;
+    position: relative;
+    min-width: 305px;
+    min-height: 40px;
+    overflow-x: hidden;
+    border: 1px solid #a1bfcf; }
+    @media screen and (max-width: 767px) {
+      .custom_select div {
+        width: 100%;
+        min-width: auto; } }
+    .custom_select div:after {
+      content: '';
+      position: absolute;
+      top: 15px;
+      right: 12px;
+      pointer-events: none;
+      background: url(../img/global/arrow-down.svg) no-repeat;
+      width: 20px;
+      height: 12px; }
+    .custom_select div select {
+      position: absolute;
+      left: 1px;
+      top: 3px;
+      width: 99.5%;
+      border: 0;
+      background: transparent;
+      box-sizing: border-box;
+      padding: 5px 8px 5px;
+      font-family: lato_reg, arial, sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      color: #fff;
+      cursor: pointer;
+      -moz-appearance: none;
+      -webkit-appearance: none; }
+      .custom_select div select::-ms-expand {
+        display: none; }
+      .custom_select div select option {
+        padding-left: 0;
+        color: #5f5f5f; }
+
 textarea {
   width: 100%;
   padding: 3px 10px;
@@ -732,6 +776,10 @@ footer {
 /* multiple sprites management 
 * see https://www.liquidlight.co.uk/blog/article/creating-svg-sprites-using-gulp-and-sass/
 */
+.chapo {
+  font-weight: bold;
+  margin-bottom: 30px; }
+
 article, .simple_content {
   padding: 60px 20px; }
   article img, .simple_content img {
@@ -770,35 +818,38 @@ article, .simple_content {
   display: table;
   width: 100%;
   margin: 0 0 40px 0; }
-
-.post_list a, .post_list .content {
-  display: table-cell;
-  vertical-align: top; }
-  @media screen and (max-width: 767px) {
-    .post_list a, .post_list .content {
-      display: block; } }
-
-.post_list img {
-  box-shadow: 0 0 5px #f1f1f1;
-  -webkit-transition: box-shadow 0.2s, transform 0.2s;
-  transition: box-shadow 0.2s, transform 0.2s; }
-  @media screen and (max-width: 767px) {
-    .post_list img {
-      width: 100%;
-      height: auto; } }
-
-.post_list a {
-  width: 320px; }
-  @media screen and (max-width: 767px) {
-    .post_list a {
-      width: 100%; } }
-  .post_list a:focus img, .post_list a:active img, .post_list a:hover img {
-    box-shadow: 0 0 15px #d0d0d0;
-    transform: scale(1.02, 1.02); }
-  .post_list a:focus + .content h2:after, .post_list a:active + .content h2:after, .post_list a:hover + .content h2:after {
-    width: 100%; }
-  .wrapper .post_list a:after {
-    width: 0; }
+  .post_list > div > a, .post_list > div > img, .post_list > div .content {
+    display: table-cell;
+    vertical-align: top; }
+    @media screen and (max-width: 767px) {
+      .post_list > div > a, .post_list > div > img, .post_list > div .content {
+        display: block; } }
+  .post_list > div > a {
+    width: 320px; }
+    @media screen and (max-width: 767px) {
+      .post_list > div > a {
+        width: 100%; } }
+    .post_list > div > a:focus img, .post_list > div > a:active img, .post_list > div > a:hover img {
+      box-shadow: 0 0 15px #d0d0d0;
+      transform: scale(1.02, 1.02); }
+    .post_list > div > a:focus + .content h2:after, .post_list > div > a:active + .content h2:after, .post_list > div > a:hover + .content h2:after {
+      width: 100%; }
+    .wrapper .post_list > div > a:after {
+      width: 0; }
+    .post_list > div > a img {
+      box-shadow: 0 0 5px #f1f1f1;
+      -webkit-transition: box-shadow 0.2s, transform 0.2s;
+      transition: box-shadow 0.2s, transform 0.2s; }
+      @media screen and (max-width: 767px) {
+        .post_list > div > a img {
+          width: 100%;
+          height: auto; } }
+  .post_list > div > img {
+    width: 320px;
+    max-width: none; }
+    @media screen and (max-width: 767px) {
+      .post_list > div > img {
+        width: 100%; } }
 
 .post_list .content {
   padding-left: 20px; }
@@ -1576,16 +1627,21 @@ main > div {
     font-family: lato_black, arial, sans-serif;
     font-size: 3rem;
     text-transform: uppercase; }
+  .intro ul {
+    list-style: none; }
+  .intro li {
+    display: inline-block;
+    vertical-align: top; }
+    .intro li:not(:last-child) {
+      margin-right: 8px; }
+    @media screen and (max-width: 767px) {
+      .intro li {
+        margin: 0 0 16px 0; } }
   .intro p {
     margin-bottom: 60px; }
   .intro a {
     display: inline-block;
     vertical-align: top; }
-    .intro a:first-of-type {
-      margin-right: 8px; }
-      @media screen and (min-width: 0) and (max-width: 415px) {
-        .intro a:first-of-type {
-          margin: 0 0 16px 0; } }
 
 /*liste vignettes*/
 .project_list {
@@ -2062,5 +2118,3 @@ main > div {
     .contact a:focus:after, .contact a:active:after, .contact a:hover:after {
       width: 100%;
       background: #fff; }
-
-/*# sourceMappingURL=all.css.map */

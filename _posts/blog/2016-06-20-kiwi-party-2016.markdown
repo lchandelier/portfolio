@@ -15,7 +15,7 @@ alt_thumb:
           {{ site.baseurl }}/assets/img/blog/kiwi-party.jpg 1024w"
           sizes="(min-width:671px) 1024px"/>
 
-**Le 3 juin 2016 avait lieu la Kiwi Party à Strasbourg. c'est la conférence Web gratuite pour une journée dédiée à la qualité, la performance et l'accessibilité du Web. 
+**Le 3 juin 2016 avait lieu la Kiwi Party à Strasbourg. c’est la conférence Web gratuite pour une journée dédiée à la qualité, la performance et l’accessibilité du Web. 
 12 conférences sur une journée que nous avons suivies avec Julien Ramel. Voici notre retour sur cette journée au pays des Kiwis !**
 
 
@@ -56,7 +56,7 @@ Pour finir, chasser la peur ! Si cela ne va vraiment pas, il ne faut pas hésite
 ### 10 astuces <abbr title="Scalable Vector Graphics">SVG</abbr> qui vont vous sauver la vie
 
 A suivi une conférence plus technique au sujet de SVG donnée par Vincent De Oliveira.
-Vincent nous a donné différentes astuces comme d’utiliser un outil d’optimisation comme <abbr title="SVGO's Missing GUI">SVGOMG</abbr>, définir une largeur et une hauteur car cela est utile tant que le <abbr title="Cascading Style Sheets">CSS</abbr> n’est pas chargé.
+Vincent nous a donné différentes astuces comme d’utiliser un outil d’optimisation comme <abbr title="SVGO’s Missing GUI">SVGOMG</abbr>, définir une largeur et une hauteur car cela est utile tant que le <abbr title="Cascading Style Sheets">CSS</abbr> n’est pas chargé.
 
 Il ne conseille pas d’utiliser les transformations car l’origine de transformation est différente entre le <abbr title="HyperText Markup Language">HTML</abbr> et le SVG, il vaut mieux utiliser une librairie javascript pour faire les animations et les transformations (<abbr title="GreenSock Animation Platform">GSAP</abbr> ou SnapSVG par exemple).  
 Les sprites SVG fonctionnent à partir de IE9, si vous ne les utilisez pas encore, il est grand temps de s’y mettre !
@@ -130,7 +130,7 @@ Christophe Porteneuve a fait un vrai show pour nous donner quelques commandes Gi
 
 [Vidéo de la conférence Git ProTips sur Vimeo](https://vimeo.com/179446529 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
-## Programme de l'après-midi
+## Programme de l’après-midi
 
 ### HTTPS partout, chiche !
 

@@ -2,8 +2,9 @@
     <div class="wrapper">
         <p>&copy; 2018 Lena Chandelier</p>
         <ul>
-            <li><a href="{{ site.baseurl }}/{{ site.sitemapURL[page.lang] }}">{{ site.sitemap[page.lang] }}</a></li>
-            <li><a href="{{ site.baseurl }}/{{ site.a11yURL[page.lang] }}">{{ site.a11y[page.lang] }}</a></li>
+            <li><a href="{{ site.url }}{{ site.sitemapURL[page.lang] }}">{{ site.sitemap[page.lang] }}</a></li>
+            <li><a href="{{ site.url }}{{ site.a11yURL[page.lang] }}">{{ site.a11y[page.lang] }}</a></li>
+            <li><a href="{{ site.url }}{{ site.privacyURL[page.lang] }}">{{ site.privacy[page.lang] }}</a></li>
         </ul>
     </div>
     <a href="#top" class="top_page" id="go_top">
@@ -16,8 +17,8 @@
     <span id="cookieMsg">{{ site.cookie_msg[page.lang] }}</span>
     <span id="acceptMsg">{{ site.cookie_ok[page.lang] }}</span>
     <span id="refuseMsg">{{ site.cookie_nok[page.lang] }}</span>
-    <span id="know_more_msg">{{ site.cookie_know_more[page.lang] }}</span>
-    <span id="policyURL">{{ site.baseurl }}{{ site.cookie_url[page.lang] }}</span>
+    <span id="knowMoreMsg">{{ site.cookie_know_more[page.lang] }}</span>
+    <span id="policyURL">{{ site.baseurl }}{{ site.privacyURL[page.lang] }}</span>
 </div>
 
 <!-- Piwik -->

@@ -1,7 +1,7 @@
 
 <div class="wrapper">
     {% capture commentid %}comments{{ page.id | replace: '/', '-' }}{% endcapture %}
-    <h2 class="center">Commentaires</h2>
+    <h2 class="center">{{ site.comment[page.lang] }}</h2>
     {% if site.data[commentid] %}
         {% for comment in site.data[commentid] %}
 
@@ -47,7 +47,7 @@
             <input type="hidden" name="return_url" value="{{ page.url }}" />
             <fieldset>
                 <legend>
-                    <h2 class="center">Poster un commentaire</h2>
+                    <h2 class="center">{{ site.titlecomment[page.lang] }}</h2>
                 </legend>
                 <p> {% if page.lang == 'en' %}All fields are required.{% else %}Tous les champs sont obligatoires.{% endif %}</p>
                 <div class="container_field">   
@@ -55,13 +55,13 @@
                         <label for="name">
                             {{ site.name[page.lang] }}
                         </label>
-                        <input type="text" id="name" name="name" aria-required="true" aria-invalid="false"/>
+                        <input type="text" id="name" name="name" aria-required="true" aria-invalid="false" autocomplete="name"/>
                     </div>
                     <div class="field">
                          <label for="email">
                             E-mail
                         </label>
-                        <input type="email" name="email" aria-required="true" aria-invalid="false"/>
+                        <input type="email" name="email" aria-required="true" aria-invalid="false" autocomplete="email"//>
                     </div>
                 </div>
                 <label for="comment">

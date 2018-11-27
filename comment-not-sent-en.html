@@ -1,0 +1,15 @@
+---
+layout: page
+title: Your comment has been sent
+ref: comment-not-sent
+lang: en
+---
+
+<p>Your comment can’t be sent. Please, fill in all the required fields.<br/>
+	<?php 
+		if (isset($_POST['return_url']))
+		{
+			echo '<a href="'.$_POST['return_url'].'">Go back to the post</a>';
+		}
+	?>
+</p>

@@ -1,0 +1,15 @@
+---
+layout: page
+title: Your request has been sent
+ref: contact-sent
+lang: en
+---
+
+<p>Thank you for your request. I’m going to process it very quickly.<br/>
+	<?php 
+		if (isset($_POST['return_url']))
+		{
+			echo '<a href="'.$_POST['return_url'].'">Go back to the post</a>';
+		}
+	?>
+</p>

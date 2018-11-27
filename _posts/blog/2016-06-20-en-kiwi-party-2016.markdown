@@ -22,9 +22,9 @@ On June 3, 2016, the Kiwi Party was held in Strasbourg. This is a free web confe
 
 ### Our little daily stresses
 
-The day started very well with Damien Sengner's conference who talked about stress in our trades.
+The day started very well with Damien Sengner’s conference who talked about stress in our trades.
 He showed us the different types of existing stress (acute stress and chronic stress) as well as their phases (alarm, resistance and exhaustion).
-The result is burnout or anxiety-depressive disorder. We must not believe that we are burnout because we don't know how to manage our time. It is a physical phenomenon.
+The result is burnout or anxiety-depressive disorder. We must not believe that we are burnout because we don’t know how to manage our time. It is a physical phenomenon.
 To remedy this, we have to say no, to draw the alarm bell. Impose limits on tasks entrusted to us, deadlines or schedules given to us.
 Changing projects regularly is a major stressor, it takes time to get back into it. Same for "5 minutes tasks". They do not exist. It takes time to open the project, get back in it, launch the necessary programs ...
 Open space is also a vector of stress. It is important to be able to isolate yourself, for example by putting on headphones or by using a luminous device that changes color according to our availability.
@@ -36,7 +36,7 @@ Do not retain information. Everyone must be able to access it without the need f
 Take breaks! We all have our rhythm.
 The mirror argument is not one, telling an employee that in a competing business there is no such advantage is useless. He wants to flourish in his current structure and not in the competitor.
 You have to allow yourself to air your schedule to be able to do technical watch.
-Finally, drive away fear! If you aren't happy, do not hesitate to leave from your company or even become independent. It is essential to flourish and if you don't succeed, you have to talk around yourself (friends, doctor) because we worth better that it.
+Finally, drive away fear! If you aren’t happy, do not hesitate to leave from your company or even become independent. It is essential to flourish and if you don’t succeed, you have to talk around yourself (friends, doctor) because we worth better that it.
 
 [See the slides of the conference Our little daily stresses](https://speakerdeck.com/hiwelo/nos-petits-stress-quotidiens-kiwiparty-2016 "(new window)"){:target="_blank"}{:rel="noopener"}
 
@@ -44,9 +44,9 @@ Finally, drive away fear! If you aren't happy, do not hesitate to leave from you
 ### 10 tricks about <abbr title="Scalable Vector Graphics">SVG</abbr> that will save your life
 
 Attended a more technical conference about SVG given by Vincent De Oliveira.
-Vincent has given us different tricks such as using an optimization tool like, <abbr title="SVGO's Missing GUI">SVGOMG</abbr>, define a width and height as this is useful as long as the CSS is not served.
-He doesn't recommend to use transformations because the origin of the transformation is different between the <abbr title="HyperText Markup Language">HTML</abbr> and the SVG. It's better to use a javascript library for animations and transformations (<abbr title="GreenSock Animation Platform">GSAP</abbr> or SnapSVG for example).
-SVG sprites work from IE9, if you do not use them yet, it's time to get started!
+Vincent has given us different tricks such as using an optimization tool like, <abbr title="SVGO’s Missing GUI">SVGOMG</abbr>, define a width and height as this is useful as long as the CSS is not served.
+He doesn’t recommend to use transformations because the origin of the transformation is different between the <abbr title="HyperText Markup Language">HTML</abbr> and the SVG. It’s better to use a javascript library for animations and transformations (<abbr title="GreenSock Animation Platform">GSAP</abbr> or SnapSVG for example).
+SVG sprites work from IE9, if you do not use them yet, it’s time to get started!
 
 [See the video of the conference 10 tricks about SVG that will save your life](https://vimeo.com/179313779 "(new window)"){:target="_blank"}{:rel="noopener"}
 
@@ -55,18 +55,18 @@ SVG sprites work from IE9, if you do not use them yet, it's time to get started!
 
 Pierre Rudloff explained why and how to make free.
 We use it in a lot of our projects. Free has a lot of advantages. It allows not to reinvent the wheel, to use a code that has been audited, to enroll in an ecosystem. Bringing in your contribution helps you to show your skills, have feedback on your code and enjoy the improvements of others, while helping them.
-The best practices are to make sure to read the licenses to be in good standing, to use package managers to have easier dependency management (NPM, Bower, ...). Do not hesitate to report a bug rather than correct it for yourself and not communicate on it. But before, one has to make sure that it hasn't already been reported and read the guidelines to write it correctly (and in English most of the time).
+The best practices are to make sure to read the licenses to be in good standing, to use package managers to have easier dependency management (NPM, Bower, ...). Do not hesitate to report a bug rather than correct it for yourself and not communicate on it. But before, one has to make sure that it hasn’t already been reported and read the guidelines to write it correctly (and in English most of the time).
 For a good bug report, several points must be taken into account:
 
  * Make sure it has not already been reported
  * Read the guidelines to make the report
  * Write in English (most of the time)
- * Detail the bug, if possible, a version of the library used, a <abbr title="Uniform Resource Locator">URL</abbr>, a platform and the expected result. Do not just say "it doesn't work"
+ * Detail the bug, if possible, a version of the library used, a <abbr title="Uniform Resource Locator">URL</abbr>, a platform and the expected result. Do not just say "it doesn’t work"
 
-There may be a need to make a patch from a library. To do this, it's necessary to discuss it with the author and then take the latest version of the library and be careful to respect the code conventions of it.
-It's possible to create a plugin if you do not find what you expect. For that it's necessary to :
+There may be a need to make a patch from a library. To do this, it’s necessary to discuss it with the author and then take the latest version of the library and be careful to respect the code conventions of it.
+It’s possible to create a plugin if you do not find what you expect. For that it’s necessary to :
 
- * Check that it doesn't already exist
+ * Check that it doesn’t already exist
  * Define features
  * Choose a license
  * Use semantic versioning (standard that defines how to name versions of a tool)
@@ -88,8 +88,8 @@ Finally, if you want to create free software here are some tips:
 ### Agility for small projects
 
 The web changes and becomes applications.
-Tools such as Trello and Git allow to detail the project and tell its story. It's an exchange of experience.
-For better agility, it's possible to use static site generators (Jekyll for example). With this kind of tool, you can easily put a prototype online, simple, before making the design. Thus, the iterations are quickly made between production and development.
+Tools such as Trello and Git allow to detail the project and tell its story. It’s an exchange of experience.
+For better agility, it’s possible to use static site generators (Jekyll for example). With this kind of tool, you can easily put a prototype online, simple, before making the design. Thus, the iterations are quickly made between production and development.
 [Example of a site created with a static site builder](https://mademistakes.com/style-guide/ "(new window)"){:target="_blank"}{:rel="noopener"}
 
 [See the video of the conference Agility for small projects](https://vimeo.com/179314577 "(new window)"){:target="_blank"}{:rel="noopener"}
@@ -97,7 +97,7 @@ For better agility, it's possible to use static site generators (Jekyll for exam
 
 ### Integration and Webapps: ProTips
 
-A concentrate of best practices was in M4D'z conference. He showed us the point to use as much as possible tags of zones (<code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>) or <abbr title="Accessible Rich Internet Applications"> ARIA</abbr> roles to skin a page rather than using CSS classes.
+A concentrate of best practices was in M4D’z conference. He showed us the point to use as much as possible tags of zones (<code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>) or <abbr title="Accessible Rich Internet Applications"> ARIA</abbr> roles to skin a page rather than using CSS classes.
 To avoid unnecessary specificity, you can use the [CSS Specificity](http://cssspecificity.com "(new window)"){:target="_blank"}{:rel="noopener"} or [Specificity Calculator](http://specificity.keegan.st/ "(new window)"){:target="_blank"}{:rel="noopener"}
 You can use <code>&lt;template&gt;</code> or a template engine like pug or nunjucks. It helps for reusing!
 Above all, you may not use too long selectors (+ 4 levels of nesting) of identifiers or forced styles (!important)
@@ -115,7 +115,7 @@ Christophe Porteneuve made a real one-man show to give us some Git commands. Eve
 
 ### HTTPS everywhere
 
-In his presentation, Frederic Kayser taught us, among other things, that Google doesn't encrypt between its traffic between data centers and that the revelations of Edward Snowden had gained 7 years technically.
+In his presentation, Frederic Kayser taught us, among other things, that Google doesn’t encrypt between its traffic between data centers and that the revelations of Edward Snowden had gained 7 years technically.
 It also presented very useful tools to have an inventory of the security of our site / server with [Qualys](https://www.ssllabs.com/ "(new window)"){:target="_blank"}{:rel="noopener"} or [acme.sh](https://github.com/Neilpang/acme.sh "(new window)"){:target="_blank"}{:rel="noopener"}
 
 [See the video of the conference HTTPS everywhere](https://vimeo.com/179446532 "(new window)"){:target="_blank"}{:rel="noopener"}
@@ -125,13 +125,13 @@ It also presented very useful tools to have an inventory of the security of our 
 
 An email is not just a question of code, this is what Sébastien Lejeune showed us in his presentation.
 First of all, the from must take the name of the brand, have an alias as well as an identifiable email.
-The subject must be 50 characters maximum, be related to the email. Don't hesitate to do A/B Testing and use pictos.
-The pre-header must be 100 characters maximum. It summarizes the email's purpose and contains mirror page and unsubscribe links.
+The subject must be 50 characters maximum, be related to the email. Don’t hesitate to do A/B Testing and use pictos.
+The pre-header must be 100 characters maximum. It summarizes the email’s purpose and contains mirror page and unsubscribe links.
 The footer contains an unsubscribe link, another link to account preferences and others to social networks.
 For Call-to-Action, use HTML rather than an image. Buttons should be preferred to links.
 The width of an email desktop must be between 500 and 640px. The header between 100 and 200px.
 A desktop-specific image must be used. It must be simple, visual and related to the email. You can use a background pattern of the mail.
-For the mobile, the ideal width is between 280 and 320px, on one column. Don't be afraid of scrolling. Thus, we can increase the spacing and the font of character (16px) for a good readability.
+For the mobile, the ideal width is between 280 and 320px, on one column. Don’t be afraid of scrolling. Thus, we can increase the spacing and the font of character (16px) for a good readability.
 Call-to-action must be at least 44 × 44. The recommended text size on the buttons is 20px.
 For integration, some tips:
 
@@ -191,7 +191,7 @@ The designer can deliver a styleguide using <abbr title="Creative Cloud">CC</abb
 
 The brakes that can occur are:
 
- * The designer doesn't want to leave his comfort zone and therefore, adopt new tools/methods
+ * The designer doesn’t want to leave his comfort zone and therefore, adopt new tools/methods
  * PSDs coming from elsewhere
  * The V-cycle
  * Too many people in projects that cause information to get lost
@@ -215,7 +215,7 @@ To avoid conflicts between CSS selectors, Florens Vershelde offers the following
 Aurélien Sesmat explained how to have a good visual identity. For that it is necessary to:
 
  * Define the UX and technical part
- * Deal with the client's budget
+ * Deal with the client’s budget
  * Integrate prototype animations
 
 Animations must be defined upstream between the UX and the <abbr title="Art Direction">AD</abbr>. A presentation of the technical elements will reassure the customer and frame the AD.

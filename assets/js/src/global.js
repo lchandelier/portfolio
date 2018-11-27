@@ -59,7 +59,7 @@
             message: $('#cookieMsg').html(),
             accept: $('#acceptMsg').html(),
             refuse: $('#refuseMsg').html(),
-            know: $('#know_moreMsg').html(),
+            know: $('#knowMoreMsg').html(),
             url: $('#policyURL').html()
         };
 

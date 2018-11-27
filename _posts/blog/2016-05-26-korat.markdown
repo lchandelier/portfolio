@@ -16,7 +16,7 @@ alt_thumb:
           sizes="(min-width:671px) 1024px"/> 
 
 **Korat est un starterkit minimaliste (ainsi que la race du chat sur la photo) qui permet de créer rapidement des sprites divisés en plusieurs fichiers, créer une archive pour un envoi au client ou un déploiement sur serveur, faire les optimisations basiques telles que la compressions des images et la minification <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="JavaScript">JS</abbr>.  
-On peut aussi diviser le <abbr title="HyperText Markup Language">HTML</abbr> en plusieurs fichiers que l'on inclut à sa guise dans les templates et créer un styleguide automatiquement.**
+On peut aussi diviser le <abbr title="HyperText Markup Language">HTML</abbr> en plusieurs fichiers que l’on inclut à sa guise dans les templates et créer un styleguide automatiquement.**
 
 ## Comment est venue l’idée de créer ce package ?
 
@@ -38,8 +38,8 @@ Concrètement, le fichier de template ressemble à ceci:
 $icons: (
     sprite: (width: {{width}}{{units}}, 
              height:{{height}}{{units}}, 
-             pngPath: '{{{cssPathNoSvg}}}', 
-             svgPath: '{{{cssPathSvg}}}'),
+             pngPath: ’{{{cssPathNoSvg}}}’, 
+             svgPath: ’{{{cssPathSvg}}}’),
 {{#sprites}}
     {{fileName}}: (width: {{w}}{{units}}, 
                    height: {{h}}{{units}}, 
@@ -56,8 +56,8 @@ Et le résultat SCSS après l’exécution de la tâche Gulp donne ceci:
 $icons: (
     sprite: (width: 25px, 
              height:25px, 
-             pngPath: '../img/sprite_global.png', 
-             svgPath: '../img/sprite_global.svg'),
+             pngPath: ’../img/sprite_global.png’, 
+             svgPath: ’../img/sprite_global.svg’),
     square: (width: 5px,
              height: 5px, 
              backgroundX: -10px, 
@@ -88,7 +88,7 @@ Si un support PNG est nécessaire, il faut ajouter une variable $ie_sprite conte
 Personnellement, j’utilise la syntaxe suivante :
 {% highlight scss %}
 {% raw %}
-$ie_sprite: '.no-svg' !default;
+$ie_sprite: ’.no-svg’ !default;
 {% endraw %}
 {% endhighlight %}
 
@@ -117,7 +117,7 @@ J’ai donc ajouté la possibilité de générer une icon font en fonction d’i
 
 {% highlight js %}
 {% raw %}
-formats: ['ttf', 'eot', 'woff2'] //possibilité d’ajouter svg et woff
+formats: [’ttf’, ’eot’, ’woff2’] //possibilité d’ajouter svg et woff
 {% endraw %}
 {% endhighlight %}
 
@@ -208,10 +208,10 @@ Enfin, je remercie Julien, Michael et Yassine pour leurs suggestions et retours.
 [Voir le projet sur Github](https://github.com/mchandelier/korat "Korat (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
 
 ## Mise à jour Décembre 2016
-gulp-html-extend a été remplacé par gulp-fileinclude. J'ai rencontré plusieurs soucis sur différents projets qui m'ont poussée à changer de plugin. gulp-html-extend vidait de manière aléatoire les fichiers que j'incluais, ce qui n'arrive plus depuis que j'utilise gulp-fileinclude.
+gulp-html-extend a été remplacé par gulp-fileinclude. J’ai rencontré plusieurs soucis sur différents projets qui m’ont poussée à changer de plugin. gulp-html-extend vidait de manière aléatoire les fichiers que j’incluais, ce qui n’arrive plus depuis que j’utilise gulp-fileinclude.
 
-J'ai aussi intégré Plumber pour éviter d'avoir à relancer la commande Watch en cas d'erreur de compilation.
+J’ai aussi intégré Plumber pour éviter d’avoir à relancer la commande Watch en cas d’erreur de compilation.
 
 ## Mise à jour Juillet 2017
-Un peu d'accessibilité !
-En plus des mises à jour de modules, j'ai ajouté axe-webdriver qui permet de faire un audit d'accessibilité et qui génère un rapport avec les résultats.
+Un peu d’accessibilité !
+En plus des mises à jour de modules, j’ai ajouté axe-webdriver qui permet de faire un audit d’accessibilité et qui génère un rapport avec les résultats.

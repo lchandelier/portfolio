@@ -1,4 +1,10 @@
 @import 'base/setup';
+
+.chapo {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
 article, .simple_content {
     padding: 60px 20px;
     
@@ -58,50 +64,59 @@ article, .simple_content {
         display: table;
         width: 100%;
         margin: 0 0 40px 0;
-    }
 
-    a, .content {
-        display: table-cell;
-        vertical-align: top;
+        > a, > img, .content {
+            display: table-cell;
+            vertical-align: top;
 
-        @include respond-to(mobile_to_landscape) {
-            display: block;
-        }
-    }
-
-    img {
-        box-shadow: 0 0 5px #f1f1f1;
-        @include transition(box-shadow .2s, transform .2s);
-        
-        @include respond-to(mobile_to_landscape) {
-            width: 100%;
-            height: auto;
-        }
-    }
-
-    a {
-        width: 320px;
-        
-        @include respond-to(mobile_to_landscape) {
-            width: 100%;
-        }
-
-        &:focus, &:active, &:hover {
-            img {
-                box-shadow: 0 0 15px #d0d0d0;
-                transform: scale(1.02,1.02);
+            @include respond-to(mobile_to_landscape) {
+                display: block;
             }
-            
-            + .content h2 {
-                &:after {
+        }
+
+        > a {
+            width: 320px;
+        
+            @include respond-to(mobile_to_landscape) {
+                width: 100%;
+            }
+
+            &:focus, &:active, &:hover {
+                img {
+                    box-shadow: 0 0 15px #d0d0d0;
+                    transform: scale(1.02,1.02);
+                }
+                
+                + .content h2 {
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &:after {
+                .wrapper & {
+                    width: 0; 
+                }
+            }
+
+            img {
+                box-shadow: 0 0 5px #f1f1f1;
+                @include transition(box-shadow .2s, transform .2s);
+                
+                @include respond-to(mobile_to_landscape) {
                     width: 100%;
+                    height: auto;
                 }
             }
         }
+
+        > img {
+            width: 320px;
+            max-width: none;
         
-        &:after {
-            .wrapper & {
-               width: 0; 
+            @include respond-to(mobile_to_landscape) {
+                width: 100%;
             }
         }
     }

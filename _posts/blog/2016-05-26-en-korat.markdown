@@ -16,19 +16,19 @@ alt_thumb:
           sizes="(min-width:671px) 1024px"/> 
 
 **Korat is a minimalist starterkit (also the breed of the cat on the picture) that allows you to quickly create sprites divided into multiple files, create an archive for a client sending or a server deployment, do basic optimizations such as images compression and <abbr title="Cascading Style Sheets">CSS</abbr>/<abbr title="Javascript">JS</abbr> minification.
-You can also split the <abbr title="HyperText Markup Language">HTML</abbr> into several files that are included in your page's template and create a styleguide automatically.**
+You can also split the <abbr title="HyperText Markup Language">HTML</abbr> into several files that are included in your page’s template and create a styleguide automatically.**
 
 ## How came the idea to create this package?
 
 
 At first, I was looking for a simple way to create multiple CSS sprite files in <abbr title="Scalable Vector Graphics">SVG</abbr>. I used <abbr title="Syntactically Awesome Stylesheets">Sass</abbr> and only knew how to create a <abbr title="Portable Network Graphics">PNG</abbr> sprite for a whole project. Which was not optimal for a large site.
-I saw this [article](https://www.liquidlight.co.uk/blog/article/creating-svg-sprites-using-gulp-and-sass/ "Liquid Light's blog (new window)"){:target="_blank"}{:rel="noopener"}
+I saw this [article](https://www.liquidlight.co.uk/blog/article/creating-svg-sprites-using-gulp-and-sass/ "Liquid Light’s blog (new window)"){:target="_blank"}{:rel="noopener"}
 
 As I wanted to get to Gulp, not to leave Sass and make SVG, this solution was perfect!
 
 The solution proposed above only generates a sprite but the author has published a [version to manage the multi-sprite](http://www.sassmeister.com/gist/d0f7c4a14b965d6fcb17 "Sass Meister (new window)"){:target ="_blank"} that I integrated in my projects.
 
-In the article, the author uses the gulp-svg-sprite module. When I started implementing this solution, it was gulp-svg-sprite**S** which was used (and is no longer maintained today). I have encountered several problems with this module (incomprehensible errors probably due to a lack of Windows compatibility), so I looked for another module, gulp-svg-spritesheet. I haven't tested gulp-svg-sprite in my solution since the module I use meets perfectly my needs.
+In the article, the author uses the gulp-svg-sprite module. When I started implementing this solution, it was gulp-svg-sprite**S** which was used (and is no longer maintained today). I have encountered several problems with this module (incomprehensible errors probably due to a lack of Windows compatibility), so I looked for another module, gulp-svg-spritesheet. I haven’t tested gulp-svg-sprite in my solution since the module I use meets perfectly my needs.
 
 For this to work, you have to put SVG images in different directories (1 per sprite), then, using a template file (used to define the mapping between <abbr title="Sassy CSS">SCSS</abbr> and the sprite file), the Gulp task will build the SVG and PNG sprites and generate an interpretable mapping SCSS file.
 
@@ -38,8 +38,8 @@ Concretely, the template file looks like this:
 $icons: (
     sprite: (width: {{width}}{{units}}, 
              height:{{height}}{{units}}, 
-             pngPath: '{{{cssPathNoSvg}}}', 
-             svgPath: '{{{cssPathSvg}}}'),
+             pngPath: ’{{{cssPathNoSvg}}}’, 
+             svgPath: ’{{{cssPathSvg}}}’),
 {{#sprites}}
     {{fileName}}: (width: {{w}}{{units}}, 
                    height: {{h}}{{units}}, 
@@ -57,8 +57,8 @@ And the SCSS result after executing the Gulp task gives this:
 $icons: (
     sprite: (width: 25px, 
              height:25px, 
-             pngPath: '../img/sprite_global.png', 
-             svgPath: '../img/sprite_global.svg'),
+             pngPath: ’../img/sprite_global.png’, 
+             svgPath: ’../img/sprite_global.svg’),
     square: (width: 5px,
              height: 5px, 
              backgroundX: -10px, 
@@ -68,7 +68,7 @@ $icons: (
 {% endhighlight %}
 
 
-For Sass, it's very simple, just target the sprite to use and specify the name of the icon to be displayed.
+For Sass, it’s very simple, just target the sprite to use and specify the name of the icon to be displayed.
 {% highlight scss %}
 {% raw %}
 .class {
@@ -89,18 +89,18 @@ If a PNG support is needed, add a variable $ie_sprite containing the name of the
 Personally, I use the following syntax:
 {% highlight scss %}
 {% raw %}
-$ie_sprite: '.no-svg' !default;
+$ie_sprite: ’.no-svg’ !default;
 {% endraw %}
 {% endhighlight %}
 
-Then, just apply the class « .no-svg » on the HTML tag of each page and that's all.
+Then, just apply the class « .no-svg » on the HTML tag of each page and that’s all.
 
 The use of the « sprite » mixin differs a bit from the Liquid Light article because it manages the multi sprite and applies them the rem unit instead of em. This mixin mapping between the name of the icon and the sprite and automatically applies its size and position.
  
 ## The REM unit
 
-I was using the em unit until recently. Then I chose to switch to rem for simplicity. In fact, unlike em, rem doesn't inherit the font size of its parent, but only the size of the root element, ie <code>&lt;html&gt;</code>.
-Today, only IE8 doesn't recognize this unit. So, I resumed a mixin allowing the fallback in px for IE8 on any CSS property.
+I was using the em unit until recently. Then I chose to switch to rem for simplicity. In fact, unlike em, rem doesn’t inherit the font size of its parent, but only the size of the root element, ie <code>&lt;html&gt;</code>.
+Today, only IE8 doesn’t recognize this unit. So, I resumed a mixin allowing the fallback in px for IE8 on any CSS property.
 
 ## Continuous amelioration
 
@@ -115,7 +115,7 @@ When I arrived, the icons were managed by icon fonts and not by sprites.
 So I added the ability to generate an icon font based on images placed in a folder. The module [gulp-iconfont](https://github.com/nfroidure/gulp-iconfont "Gulp iconfont on Github (new window)"){:target="_ blank"} was chosen because it makes it easy to create different fonts formats.
 {% highlight js %}
 {% raw %}
-formats: ['ttf', 'eot', 'woff2'] //possibilité d’ajouter svg et woff
+formats: [’ttf’, ’eot’, ’woff2’] //possibilité d’ajouter svg et woff
 {% endraw %}
 {% endhighlight %}
 
@@ -174,9 +174,9 @@ To meet this need, I added a module to create a code archive. It includes only t
 
 We have turned to [Fabricator](http://fbrctr.github.io/ "Fabricator (new window)"){:target="_ blank"} because it integrates natively most of the components needed to a website. Moreover, it uses Gulp which allows to maintain a technical standardization and to integrate it in our build process.
 
-I added a Gulp task to install Fabricator in case you want a styleguide for your project. This task gets Fabricator's sources and groups them in the directory "styleguide" which allows to have a clear project architecture.
+I added a Gulp task to install Fabricator in case you want a styleguide for your project. This task gets Fabricator’s sources and groups them in the directory "styleguide" which allows to have a clear project architecture.
 
-Natively, Fabricator uses its own CSS/JS, I have enhanced the tasks managing the CSS/JS files by copying them in fabricator's folder so each modification made to the project is transferred in the styleguide.
+Natively, Fabricator uses its own CSS/JS, I have enhanced the tasks managing the CSS/JS files by copying them in fabricator’s folder so each modification made to the project is transferred in the styleguide.
 
 ## Bonus
 
@@ -194,12 +194,12 @@ The basic HTML code is accessible (avoid links, <abbr title="Accessible Rich Int
 ## Disadvantages ?
 
 The need to install dependencies on Windows (including Python 2.7 for Fabricator)
-Also in Windows, the « node_modules » directory generated by npm can not be moved because some paths are too long and Windows can't do anything when path's names are longer than 256 characters.
+Also in Windows, the « node_modules » directory generated by npm can not be moved because some paths are too long and Windows can’t do anything when path’s names are longer than 256 characters.
 
  
 ## Conclusion
 
-It's a tool that I have used and improved on a dozen projects at the moment. It is in constant evolution, the next step is to add CSS/JS linters in order to improve the code's quality.
+It’s a tool that I have used and improved on a dozen projects at the moment. It is in constant evolution, the next step is to add CSS/JS linters in order to improve the code’s quality.
 
 Finally, I thank Julien, Michael and Yassine for their suggestions and feedback. They have largely contributed to make this package more complete.
 
@@ -207,10 +207,10 @@ Finally, I thank Julien, Michael and Yassine for their suggestions and feedback.
 
 ## Update December 2016
 
-gulp-html-extend has been replaced by gulp-fileinclude. I've had some issues on several projects that made me change. gulp-html-extend randomly flushed some included files which has never happened again since I use gulp-fileinclude.
+gulp-html-extend has been replaced by gulp-fileinclude. I’ve had some issues on several projects that made me change. gulp-html-extend randomly flushed some included files which has never happened again since I use gulp-fileinclude.
 
-I've also included Plumber to avoid relaunching the watch command in case of compiling error.
+I’ve also included Plumber to avoid relaunching the watch command in case of compiling error.
 
 ## Update July 2017
 Accessibility <abbr title="For The WIn">FTW</abbr> !
-In addition to modules upgrades, I've added axe-webdriver which makes an accessibility audit and generate a report.
+In addition to modules upgrades, I’ve added axe-webdriver which makes an accessibility audit and generate a report.

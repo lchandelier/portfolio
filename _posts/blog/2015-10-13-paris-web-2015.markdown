@@ -15,7 +15,7 @@ alt_thumb:
           {{ site.baseurl }}/assets/img/blog/paris-web.jpg 1024w"
           sizes="(min-width:671px) 1024px"/>
 
-**Paris Web, l'un des plus gros événements à suivre pour les gens qui font du web a eu lieu du 1er au 3 octobre 2015.
+**Paris Web, l’un des plus gros événements à suivre pour les gens qui font du web a eu lieu du 1er au 3 octobre 2015.
 Au programme : 2 jours de conférences sur les thèmes du front-end, du back-end, de l’accessibilité, de la qualité et de l’<abbr title="User eXperience">UX</abbr>.**
 
 ## Introduction
@@ -156,7 +156,7 @@ Vorlon.js est un outil open-source de débug très complet. Pour l’installer, 
 Retour d’expérience de Bertrand Binois sur l’accessibilité du site pasdecalais.fr.  
 Ce site est un exemple en la matière car il répond aux normes d’accessibilité depuis plusieurs années.
 
-En janvier 2010, le site mis en ligne répond au niveau AA du <abbr title="Référentiel Général d'Accessibilité des Administrations">RGAA</abbr>, ce qui correspond à ce que la loi Française requiert. En mars 2012 il passe au niveau AA 3 étoiles or (soit 98% des critères or couverts). En janvier 2014, le site est refondu pour le responsive. Le site pasdecalais.fr devient pilote pour la version 3 du RGAA.
+En janvier 2010, le site mis en ligne répond au niveau AA du <abbr title="Référentiel Général d’Accessibilité des Administrations">RGAA</abbr>, ce qui correspond à ce que la loi Française requiert. En mars 2012 il passe au niveau AA 3 étoiles or (soit 98% des critères or couverts). En janvier 2014, le site est refondu pour le responsive. Le site pasdecalais.fr devient pilote pour la version 3 du RGAA.
 
 Aujourd’hui, le site est labellisé RGAA3 et bénéficie aussi d’un label de qualité délivré par Opquast. Il est reconnu comme modèle au niveau Européen.  
 Le site couvre d’autres critères qui ne font pas partie des directives du RGAA mais qui couvre un besoin des utilisateurs. Notamment en proposant un bouton « Dyslexie » qui permet d’afficher une police d’écriture adaptée pour faciliter la lecture du site par les personnes dyslexique. On trouve aussi des boutons pour modifier la taille du texte (car tous les utilisateurs ne savent pas forcément qu’ils peuvent le faire nativement avec leur navigateur).

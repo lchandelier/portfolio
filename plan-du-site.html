@@ -35,7 +35,7 @@ lang: fr
     <ul>
         {% assign pages=site.pages | sort: "title" | where:"lang", page.lang %}
         {% for page in pages %}
-            {% if page.ref != 'rss' and page.ref != 404 and page.ref != 'comment' %}
+            {% if page.ref != 'rss' and page.ref != 404 and page.ref != 'comment'  and page.ref != 'comment-not-sent' and page.ref != 'contact-sent' and page.ref != 'contact-not-sent' %}
                 <li>
                     <a href="{{ site.url }}{{ page.permalink }}">{{page.title}} </a>
                 </li>

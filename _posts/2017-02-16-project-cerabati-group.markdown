@@ -11,16 +11,16 @@ thumbnail: /assets/img/projects/gc.jpg
 alt_thumb: 
 ---
 
-My favourite project when I worked at Actitudes because it's the first multisite Wordpress I had to do. 
+My favourite project when I worked at Actitudes because it’s the first multisite Wordpress I had to do. 
 
-It's multilingual, responsive and I could do it without any technical constraint.
-This is a project I loved by its technical and graphical look. I played with some <abbr title="Cascading Style Sheets">CSS</abbr> animations and discovered the multisite Wordpress' face.
+It’s multilingual, responsive and I could do it without any technical constraint.
+This is a project I loved by its technical and graphical look. I played with some <abbr title="Cascading Style Sheets">CSS</abbr> animations and discovered the multisite Wordpress’ face.
 
-See the [Cerabati group's website](http://groupecerabati.com/en/ "Cerabati group (new window)"){:target="_blank"}{:rel="noopener"}.
+See the [Cerabati group’s website](http://groupecerabati.com/en/ "Cerabati group (new window)"){:target="_blank"}{:rel="noopener"}.
 
-See the [Cerabati's website](http://cerabati.fr/en/ "Cerabati (new window)"){:target="_blank"}{:rel="noopener"}.
+See the [Cerabati’s website](http://cerabati.fr/en/ "Cerabati (new window)"){:target="_blank"}{:rel="noopener"}.
 
-See the [Alfacaro's website](http://alfacaro.fr/en/ "Alfacaro (new window)"){:target="_blank"}{:rel="noopener"}.
+See the [Alfacaro’s website](http://alfacaro.fr/en/ "Alfacaro (new window)"){:target="_blank"}{:rel="noopener"}.
 
 <img src="{{ site.baseurl }}/assets/img/projects/gc_large.jpg" alt="" 
              srcset="{{ site.baseurl }}/assets/img/projects/gc_medium.jpg 670w,

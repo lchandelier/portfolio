@@ -6,28 +6,28 @@ date:   2016-11-20 13:22:16 +0100
 category: "blog"
 permalink: /en/blog/accessibility-front-tips.html
 lang: en
-thumbnail: /assets/img/blog/access-medium.png
+thumbnail: /assets/img/blog/access-medium.jpg
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/access.png" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.png 670w,
-          {{ site.baseurl }}/assets/img/blog/access.png 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/access.jpg" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.jpg 670w,
+          {{ site.baseurl }}/assets/img/blog/access.jpg 1024w"
           sizes="(min-width:671px) 1024px"/> 
 
-**We don't have to work often on a project that must be accessible.
+**We don’t have to work often on a project that must be accessible.
 Our clients, as ourselves are not enough aware of this and we tend to approach this topic with some apriori:**
 
- * **It's complicated**
+ * **It’s complicated**
  * **Accessible websites are ugly**
  * **This is for 3 blind people and 2 deaf people**
- * **It's expensive**
+ * **It’s expensive**
 
-**In this post, I will tackle the first apriori of this list, and show how we can bring accessibility in our projects quickly and easily. The result won't be perfect because accessibility is not only about front-end development but also all the project team (UX, Designer, Content Editors, Back-end developers, ...). But you will see that very simple things can have a very important impact on accessibility.**
+**In this post, I will tackle the first apriori of this list, and show how we can bring accessibility in our projects quickly and easily. The result won’t be perfect because accessibility is not only about front-end development but also all the project team (UX, Designer, Content Editors, Back-end developers, ...). But you will see that very simple things can have a very important impact on accessibility.**
 
 ## Use the lang attribute
-This can seem to be obvious, but I see regularly websites that don't have it.
-The utility of this attribute is that it allows screen readers to render content with correct pronunciation and, when specified, the correct accent (Canadian French for example). Test with NVDA or VoiceOver to read French with your screen reader configured in English and you'll never forget to put this attribute again!
+This can seem to be obvious, but I see regularly websites that don’t have it.
+The utility of this attribute is that it allows screen readers to render content with correct pronunciation and, when specified, the correct accent (Canadian French for example). Test with NVDA or VoiceOver to read French with your screen reader configured in English and you’ll never forget to put this attribute again!
 
 ## Do not use maximum-scale = 1.0 in the meta viewport
 The problem with this property is that it prevents users from zooming in. Imagine that the written text is a little small, even for you who have a good view; Your reflex will be zooming in, except that this property is present. Too bad...
@@ -36,7 +36,7 @@ The problem with this property is that it prevents users from zooming in. Imagin
 This represents 1 line of CSS not to write, or to delete if you use a framework.
 I can only invite you to go to [this site](http://www.outlinenone.com/ "Outline none (new window)"){:target="_ blank"} that says it all.
 
-To sum up, the outline is essential when using keyboard navigation. To make a quick test, go to the [20 minutes](http://www.20min.ch/ro/ "20 minutes Switzerland (new window)"){:target="_ blank"}' site and go to the topic Cinema, which is in the main menu, using only the tab key (and without looking at the URL at the bottom of the page ;)). Not that simple, is it? If the outline style was present when taking focus, you would have seen right away where you were.
+To sum up, the outline is essential when using keyboard navigation. To make a quick test, go to the [20 minutes](http://www.20min.ch/ro/ "20 minutes Switzerland (new window)"){:target="_ blank"}’ site and go to the topic Cinema, which is in the main menu, using only the tab key (and without looking at the URL at the bottom of the page ;)). Not that simple, is it? If the outline style was present when taking focus, you would have seen right away where you were.
 
 ## Set up skip links
 To do this, you just have to put those links at the very beginning of the page to the main areas of your site. They can be hidden by default but must appear while they are focused. The most common skip links are "Skip to menu" "Skip to content" and "Skip to footer". Then, put an anchor on the area to be targeted. This allows people using keyboard navigation (or other assistive technology) to move directly to the area that interests them, without having to tabulate through a whole menu for example. It takes very little time to integrate them and this saves a lot to your users in addition to comfort.
@@ -78,7 +78,7 @@ Here is an example of setting up these links:
 Why do this while there is an <abbr title="HyperText Markup Language">HTML</abbr> <code>&lt;button&gt;</code> element?
 
 This is also true for links, it is very common to see links that are used as buttons. Yet it makes more sense to use a link to redirect somewhere and a button to do another action.
-We can also think of using the ordered, unordered, and definitions lists to structure information, HTML5 structural tags such as <code>&lt;header&gt;, &lt;footer&gt;, &lt;main&gt;, &lt;section&gt;</code>, ... which give meaning contrary to <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> that haven't semantic value.
+We can also think of using the ordered, unordered, and definitions lists to structure information, HTML5 structural tags such as <code>&lt;header&gt;, &lt;footer&gt;, &lt;main&gt;, &lt;section&gt;</code>, ... which give meaning contrary to <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> that haven’t semantic value.
 
 ## ARIA is your friend
 Use ARIA roles to help screen reader users find their way into your pages.
@@ -89,8 +89,8 @@ If you use JavaScript events, ARIA attributes can help your users on many ways (
 Navigation by screen reader can be done by titles. Thus, it is important to have a logical order in these. If for aesthetic reasons you need <code>&lt;h3&gt;</code> after <code>&lt;h1&gt;</code>, use CSS to get the desired rendering and use a <code>&lt;h2&gt;</code> to follow this order.
 
 ## Put an alt attribute on images
-The alternative text is useful for people using a screen reader. But it must be set according to certain criteria. If it is a decorative image and it's not essential to understanding the content, you must put a <code>alt=""</code>.
-On the other hand, if the image is essential to the understanding (text in the image, button image ...) it's necessary to fill this alt in a pertinent way, taking, for example, the text contained in the image.
+The alternative text is useful for people using a screen reader. But it must be set according to certain criteria. If it is a decorative image and it’s not essential to understanding the content, you must put a <code>alt=""</code>.
+On the other hand, if the image is essential to the understanding (text in the image, button image ...) it’s necessary to fill this alt in a pertinent way, taking, for example, the text contained in the image.
 
 This is not a simple criterion. To do this, you can rely on the following resource which perfectly schematizes the reflection to have.
 
@@ -111,8 +111,8 @@ Another test is to disable your CSS. This allows you to quickly see if your cont
 For example, if you use a CSS sprite to put a list of social network buttons, you must have a hidden text that allows screen readers to know what these images are. If you have not filled in this text, you will see it quickly with this trick.
 
 ## Conclusion
-Here are the methods I put in place on all new projects I work on even if accessibility is not in the scope. As you can see, it's quick to set up and does not ask to dive into repositories or have a big knowledge on the subject. It also has no impact on the design (except for the outline but it is very minor) and it helps people using assistive technologies, although much remains to be done.
+Here are the methods I put in place on all new projects I work on even if accessibility is not in the scope. As you can see, it’s quick to set up and does not ask to dive into repositories or have a big knowledge on the subject. It also has no impact on the design (except for the outline but it is very minor) and it helps people using assistive technologies, although much remains to be done.
 
 ## Some tools to go further
-A [very diverse list of resources](https://github.com/atalan/a11y-resources/blob/master/list-of-a11y-resources.md "Atalan's Github (new window)"){:target="_blank"}{:rel="noopener"} on accessibility (articles, best practices, JavaScript plugins, ...)
+A [very diverse list of resources](https://github.com/atalan/a11y-resources/blob/master/list-of-a11y-resources.md "Atalan’s Github (new window)"){:target="_blank"}{:rel="noopener"} on accessibility (articles, best practices, JavaScript plugins, ...)
 

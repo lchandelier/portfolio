@@ -12,8 +12,8 @@ title:
   en: Lena Chandelier's portfolio
   fr: Portfolio de Lena Chandelier
 description:
-  en: A look at my front-end dev work
-  fr: Présentation de mon travail de développeuse front-end.
+  en: Freelance Accessibility Expert and Web Developer
+  fr: Experte en Accessibilité Numérique et Développeuse Web Freelance
 index:
   en: /en
   fr: /
@@ -24,12 +24,18 @@ regeneration: -w
 feed:
   en: /feed.xml
   fr: /flux.xml
+prestaURL:
+  en: /en/services.html
+  fr: /prestations.html
 folioURL:
   en: /en/portfolio
   fr: /portfolio
 blogURL:
   en: /en/blog
   fr: /blog
+koratURL:
+  en: /en/blog/korat-starterkit.html
+  fr: /blog/korat.html
 home:
   en: Home
   fr: Accueil
@@ -76,14 +82,20 @@ sitemap:
   en: Sitemap
   fr: Plan du site
 sitemapURL:
-  en: en/sitemap.html
-  fr: plan-du-site.html
+  en: /en/sitemap.html
+  fr: /plan-du-site.html
+privacy:
+  en: Privacy and cookies
+  fr: Vie privée et cookies
+privacyURL:
+  en: /en/privacy-policy.html
+  fr: /confidentialite-des-donnees.html
 a11y:
   en: Accessibility
   fr: Accessibilité
 a11yURL:
-  en: en/accessibility.html
-  fr: accessibilite.html
+  en: /en/accessibility.html
+  fr: /accessibilite.html
 go_top:
   en: Go on top of the page
   fr: Remonter la page
@@ -126,18 +138,27 @@ cookie_nok:
 cookie_know_more:
   en: Know more about cookies
   fr: En savoir plus sur les cookies
-cookie_url:
-  en: /en/about-cookies.html
-  fr: /cookies.html
 here:
   en: You are here
   fr: Vous êtes ici
 current_language:
   en: (active language)
   fr: (langue active)
+titlecomment:
+  en: Post a comment
+  fr: Poster un commentaire
+comment:
+  en: Comments
+  fr: Commentaires
 nocomment:
   en: No comment
   fr: Pas de commentaire
+contactdevis:
+  en: Quote
+  fr: Devis
+contactquestion:
+  en: Question
+  fr: Question
 name:
   en: Name or pseudo
   fr: Nom ou pseudo
@@ -147,5 +168,11 @@ comment:
 submit:
   en: Send my comment
   fr: Envoyer mon commentaire
+subject:
+  en: Subject
+  fr: Sujet
+submitcontact:
+  en: Send my request
+  fr: Envoyer ma demande
 # Build settings
 markdown: kramdown

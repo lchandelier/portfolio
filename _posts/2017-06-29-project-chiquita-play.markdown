@@ -11,20 +11,20 @@ thumbnail: /assets/img/projects/dm3.jpg
 alt_thumb: 
 ---
 
-I've worked on various projects for Chiquita.  
+I’ve worked on various projects for Chiquita.  
 
 Starting with 3 contests to win prizes.
 The first contest was to take the best banana breakfast picture and, everyday, the third most beautiful pictures won prizes.
 
 Then, there was a worldwide campaign for the Despicable Me 3 movie and Chiquita promotion. 
 
-Chiquita's customers can collect stickers from chiquita's bananas. Then, they can enter the code behind it on the campaign's site to try to win prizes. They can create an account or not and can collect 30 stickers to complete their album. A wheel of luck can be turned everyday to try to win a new code.
+Chiquita’s customers can collect stickers from chiquita’s bananas. Then, they can enter the code behind it on the campaign’s site to try to win prizes. They can create an account or not and can collect 30 stickers to complete their album. A wheel of luck can be turned everyday to try to win a new code.
 
 The same pattern has been used for another contest for the new school year.
 
-To finish, I participate in the redesign of Chiquita's main website by cleaning code and adding animations.
+To finish, I participate in the redesign of Chiquita’s main website by cleaning code and adding animations.
 
-See [Chiquita's website](https://www.chiquita.com/ "Chiquita (new window)"){:target="_blank"}{:rel="noopener"}.
+See [Chiquita’s website](https://www.chiquita.com/ "Chiquita (new window)"){:target="_blank"}{:rel="noopener"}.
 
 ### Breakfast Contest
 
@@ -47,7 +47,7 @@ See [Chiquita's website](https://www.chiquita.com/ "Chiquita (new window)"){:tar
           {{ site.baseurl }}/assets/img/projects/school_large.jpg 1024w"
           sizes="(min-width:671px) 1024px"/> 
 
-### Chiquita's main website
+### Chiquita’s main website
 
 <img src="{{ site.baseurl }}/assets/img/projects/chiquita_large.jpg" alt="" 
              srcset="{{ site.baseurl }}/assets/img/projects/chiquita_medium.jpg 670w,

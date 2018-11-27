@@ -1,0 +1,15 @@
+---
+layout: page
+title: Votre demande de contact a été envoyée
+ref: contact-sent
+lang: fr
+---
+
+<p>Merci pour votre demande de contact. Je vais la traiter très rapidement.<br/>
+<?php 
+	if (isset($_POST['return_url']))
+	{
+		echo '<a href="'.$_POST['return_url'].'">Retourner à l’article</a>';
+	}
+?>
+</p>

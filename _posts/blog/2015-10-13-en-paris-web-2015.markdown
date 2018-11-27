@@ -21,14 +21,14 @@ On the program : 2 days of conferences about front-end, back-end, accessibility,
 
 ## Introduction
 
-Paris Web, it's dozens of enriching conferences animated by passionate professionals. 
+Paris Web, it’s dozens of enriching conferences animated by passionate professionals. 
 It is also the opportunity to meet people whom we follow on Twitter or blogs of which we read, in real-life.
-It's like an annual health therapy. We stand out from these 2 days (or 3 if we make workshops) with the famous "Paris Web effect", a feeling to be back on board, 
+It’s like an annual health therapy. We stand out from these 2 days (or 3 if we make workshops) with the famous "Paris Web effect", a feeling to be back on board, 
 full of good resolutions and with the desire to put into practice all that we learnt.
 Paris Web is a unique atmosphere in which we mix our sharp jobs with a big dose of humour.
 We see regularly people disguised as unicorn, slides with Care Bears and we get back with goodies which mix unicorns and rainbows!
 Paris Web is the most accessible french web event thanks to stenotypy and <abbr title="French Sign Language">FSL</abbr> during conferences.
-I had followed the previous editions in streaming and seen the program of this year, I didn't want to miss this one. It is done now and here is my report.
+I had followed the previous editions in streaming and seen the program of this year, I didn’t want to miss this one. It is done now and here is my report.
 
 ## Conferences of the first day
 
@@ -47,7 +47,7 @@ Christophe Porteneuve presented tools and methods to save time in our way to cod
 [See the video of The front-end dev at Mach 1 daily](https://vimeo.com/143169751 "(new window)"){:target="_blank"}{:rel="noopener"}
 
 
-### The crypto for devs: small inventory of today's tools and techniques of tomorrow
+### The crypto for devs: small inventory of today’s tools and techniques of tomorrow
 
 Matthias Dugué, showed different methods to better secure user data including symmetric and asymmetric encryption. We saw a bit of history with [César code](https://fr.wikipedia.org/wiki/Histoire_de_la_cryptologie#Le_code_de_C.C3.A9sar "Setting the Caesar code on Wikipedia (new window)"){:target="_blank"}{:rel="noopener"}, Enigma ... For me, rather front, this conference was really clear.
 
@@ -94,7 +94,7 @@ He said the Styleguide must be available full to the client. To which can be add
 ### The challenge of a blind person: advisor on accessibility in an increasingly visual web
 
 Conference hosted by Sylvie Duchateau.
-She gave us a history of the tools (screen readers, Braille tablets) which before were only on Windows and paid. Today screen readers are available on all OS and are found for free (NVDA on Windows). She made the observation that some tools like Github, Gitlab have a 'fair' accessibility but as Dropbox and Google Drive are completely inaccessible. With the team of Access42, she created a referent accessibility training for blind and visually impaired to enable them to evaluate a website.
+She gave us a history of the tools (screen readers, Braille tablets) which before were only on Windows and paid. Today screen readers are available on all OS and are found for free (NVDA on Windows). She made the observation that some tools like Github, Gitlab have a ’fair’ accessibility but as Dropbox and Google Drive are completely inaccessible. With the team of Access42, she created a referent accessibility training for blind and visually impaired to enable them to evaluate a website.
 
 Objectives: "No longer be blind service which tests a site" but have real expertise to technically explain what to change and create new business for the disabled
 
@@ -109,7 +109,7 @@ Her cry of the heart which caused a burst of applause: "Accessibility for all: i
 
 The day started on a sensitive subject but that affects us all: death. And especially what happens to our data when we die?
 1 Facebook account on 30 belongs to a deceased person. 10,000 Facebook users die every day.
-But what options do we have to anticipate the becoming of our data once we're gone?
+But what options do we have to anticipate the becoming of our data once we’re gone?
 Agnieszka Maria Walorska suggested a way forward through examples from her personal life.
 
 [See video of the conference Death and UX: Afterlife Digital and Digital Legacy](https://vimeo.com/144521295 "(new window)"){:target="_blank"}{:rel="noopener"}
@@ -146,7 +146,7 @@ Vorlon.js is an open-source tool for comprehensive debugging. To install, simply
 
 ### Pasdecalais.fr, history of an accessibility approach
 
-Feedback from Bertrand Binois on pasdecalais.fr site's accessibility
+Feedback from Bertrand Binois on pasdecalais.fr site’s accessibility
 This site is an example because it meets accessibility standards since many years.
 In January 2010, the online site meets set at AA GRFA, which is what the French law requires. In March 2012 he spent at AA 3-star gold (98% gold cutlery criteria). In January 2014, the site was redesigned for the responsive. The site becomes pasdecalais.fr driver for version 3 of GRFA.
 Today the site is labeled RGAA3 and also boasts a quality label issued by Opquast. It is recognized as a model at European level.

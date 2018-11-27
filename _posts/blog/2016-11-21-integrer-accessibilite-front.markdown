@@ -6,13 +6,13 @@ date:   2016-11-20 13:22:16 +0100
 category: "blog"
 permalink: /blog/integrer-accessibilite-front.html
 lang: fr
-thumbnail: /assets/img/blog/access-medium.png
+thumbnail: /assets/img/blog/access-medium.jpg
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/access.png" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.png 670w,
-          {{ site.baseurl }}/assets/img/blog/access.png 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/access.jpg" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.jpg 670w,
+          {{ site.baseurl }}/assets/img/blog/access.jpg 1024w"
           sizes="(min-width:671px) 1024px"/> 
 
 **Nous travaillons assez rarement sur des projets qui doivent être accessibles. Nos clients, comme nous-mêmes ne sommes pas assez sensibilisés à cette question et nous avons tendance à aborder ce thème avec certains apriori :**
@@ -36,7 +36,7 @@ Le problème de cette propriété est qu’elle empêche les utilisateurs de zoo
 Cela représente 1 ligne de CSS à ne pas écrire, ou à supprimer si vous utilisez un framework.
 Je ne peux que vous inviter à aller sur [ce site (en anglais)](http://www.outlinenone.com/ "Outline none (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} qui dit tout.
 
-Pour résumer, l’outline est indispensable lorsque vous utilisez la navigation au clavier. Pour faire un test rapide, allez sur le site de [20 minutes](http://www.20min.ch/ro/ "20 minutes Suisse (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} et allez dans la rubrique Cinéma qui se trouve dans le menu principal en n'utilisant que la touche de tabulation (et sans regarder l’URL en bas de page ;) ). Pas évident n’est-ce pas ?  Si le style outline avait été présent lors de la prise de focus, vous auriez tout de suite vu où vous étiez.
+Pour résumer, l’outline est indispensable lorsque vous utilisez la navigation au clavier. Pour faire un test rapide, allez sur le site de [20 minutes](http://www.20min.ch/ro/ "20 minutes Suisse (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} et allez dans la rubrique Cinéma qui se trouve dans le menu principal en n’utilisant que la touche de tabulation (et sans regarder l’URL en bas de page ;) ). Pas évident n’est-ce pas ?  Si le style outline avait été présent lors de la prise de focus, vous auriez tout de suite vu où vous étiez.
 
 ## Mettre des liens d’évitement
 Cela se résume à mettre au tout début de votre code des liens vers les zones principales de votre site. Ils peuvent être masqués par défaut mais doivent apparaître au focus. Les liens les plus courants sont « Aller au menu »  « Aller au contenu » et « Aller au pied de page ».  Il s’agit ensuite de mettre une ancre sur la zone à cibler. Cela permet aux personnes utilisant la navigation au clavier (ou autre technologie d’assistance) de passer directement à la zone qui les intéresse, sans avoir à tabuler à travers tout un menu par exemple.  Il faut très peu de temps pour les intégrer et cela en fait gagner beaucoup à vos utilisateurs, en plus du confort.
@@ -63,7 +63,7 @@ Voici un exemple de mise en place de ces liens :
 
 <main role="main" id="page" tabindex="-1">
     <p>
-        Début du contenu auquel on accède plus rapidement grâce aux liens d'évitement.
+        Début du contenu auquel on accède plus rapidement grâce aux liens d’évitement.
     </p>
 </main>
 {% endraw %}
@@ -95,13 +95,13 @@ En revanche, si l’image est essentielle à la compréhension (Texte dans l’i
 Ce n’est pas un critère toujours simple à aborder. Pour cela, vous pouvez vous fier à la ressource suivante qui schématise parfaitement le cheminement de réflexion à avoir.
 
 
-<img src="{{ site.baseurl }}/assets/img/blog/the-alt-cheatsheet.png" alt="Schéma de réflexion pour le renseignement de l'attribut alt" aria-labelledby="description"/>
+<img src="{{ site.baseurl }}/assets/img/blog/the-alt-cheatsheet.png" alt="Schéma de réflexion pour le renseignement de l’attribut alt" aria-labelledby="description"/>
 <ol id="description" class="a11y_hidden">  
-    <li><strong>Est-ce que l'image est du texte ?</strong> Si oui, répétez le même texte de l'image dans l'attribut alt. Par exemple, <code> alt="Même texte que dans image"</code>.</li>
-    <li><strong>Est-ce que l'image est purement décorative ou stylistique ?</strong> Si oui, définissez le texte alternatif à vide, afin qu'il soit ignoré par les lecteurs d'écran. Par exemple, <code>alt=""</code>.</li>
-    <li><strong>L'image représente-t-elle une action que l'utilisateur peut faire ?</strong> Si oui, notez l'action qui sera effectuée lorsque l'utilisateur interagit avec l'élément. Par exemple, <code>alt="Ajouter au panier"</code>.</li>
-    <li><strong>L'image est-elle purement informative ?</strong> Si oui, le texte alternatif doit transmettre les mêmes informations que l'image. Par exemple, <code>alt="Emplacement"</code>.</li>
-    <li>Enfin, <strong>l'image transmet-elle des informations non représentées sur la page en tant que texte ?</strong> Si oui, le texte alternatif doit transmettre les mêmes informations que l'image. Si non, définissez le texte alternatif à vide, afin qu'il soit ignoré par les lecteurs d'écran.</li> 
+    <li><strong>Est-ce que l’image est du texte ?</strong> Si oui, répétez le même texte de l’image dans l’attribut alt. Par exemple, <code> alt="Même texte que dans image"</code>.</li>
+    <li><strong>Est-ce que l’image est purement décorative ou stylistique ?</strong> Si oui, définissez le texte alternatif à vide, afin qu’il soit ignoré par les lecteurs d’écran. Par exemple, <code>alt=""</code>.</li>
+    <li><strong>L’image représente-t-elle une action que l’utilisateur peut faire ?</strong> Si oui, notez l’action qui sera effectuée lorsque l’utilisateur interagit avec l’élément. Par exemple, <code>alt="Ajouter au panier"</code>.</li>
+    <li><strong>L’image est-elle purement informative ?</strong> Si oui, le texte alternatif doit transmettre les mêmes informations que l’image. Par exemple, <code>alt="Emplacement"</code>.</li>
+    <li>Enfin, <strong>l’image transmet-elle des informations non représentées sur la page en tant que texte ?</strong> Si oui, le texte alternatif doit transmettre les mêmes informations que l’image. Si non, définissez le texte alternatif à vide, afin qu’il soit ignoré par les lecteurs d’écran.</li> 
 </ol>
 Voici [l’article complet](https://bitsofco.de/alternative-text-and-images/ "Bits of code (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} (en anglais).
 
@@ -109,11 +109,11 @@ Voici [l’article complet](https://bitsofco.de/alternative-text-and-images/ "Bi
 ## Un peu de test
 Essayez de naviguer sur votre page en utilisant uniquement le clavier, cela vous permettra de lever très rapidement des problèmes d’accessibilité. Le outline est-il masqué ? L’ordre de navigation est-il logique par rapport à ce qu’il devrait ? Les liens d’évitement sont-ils présents et fonctionnels ? Si ces points sont vérifiés, c’est un bon début !
 
-Un autre test consiste à désactiver votre CSS. Cela permet de voir rapidement si votre contenu s'affiche de manière logique ou si vous avez des alternatives textuelles sur des images renseignées en CSS.  
-Par exemple, si vous utilisez un sprite CSS pour mettre une liste de boutons de réseaux sociaux, vous devez avoir un texte masqué qui permet aux lecteurs d'écran de savoir à quoi correspondent ces images. Si vous n'avez pas renseigné ce texte, vous le verrez vite avec cette astuce.
+Un autre test consiste à désactiver votre CSS. Cela permet de voir rapidement si votre contenu s’affiche de manière logique ou si vous avez des alternatives textuelles sur des images renseignées en CSS.  
+Par exemple, si vous utilisez un sprite CSS pour mettre une liste de boutons de réseaux sociaux, vous devez avoir un texte masqué qui permet aux lecteurs d’écran de savoir à quoi correspondent ces images. Si vous n’avez pas renseigné ce texte, vous le verrez vite avec cette astuce.
 
 ## Conclusion
 Voici les méthodes que je mets en place sur tous les nouveaux projets sur lesquels je travaille même si l’accessibilité n’est pas dans le scope. Comme vous pouvez le constater, c’est rapide à mettre en place et ne demande pas de se plonger dans des référentiels ou d’avoir une connaissance approfondie sur le sujet. Cela n’a pas non plus d’impact sur le design (à part pour l’outline mais c’est très mineur) et cela aide les personnes utilisant des technologies d’assistance, même s’il reste beaucoup à faire.
 
 ## Quelques outils pour aller plus loin
-Une [liste de ressources](https://github.com/atalan/a11y-resources/blob/master/list-of-a11y-resources.md "Github d'Atalan (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} très diverses sur l’accessibilité (articles, bonnes pratiques, plugins JavaScript,...)
+Une [liste de ressources](https://github.com/atalan/a11y-resources/blob/master/list-of-a11y-resources.md "Github d’Atalan (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} très diverses sur l’accessibilité (articles, bonnes pratiques, plugins JavaScript,...)

@@ -71,6 +71,23 @@ main {
         text-transform: uppercase;
     }
 
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+        vertical-align: top;
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        @include respond-to(mobile_to_landscape) {
+            margin: 0 0 16px 0;
+        }
+    }
+
     p {
         margin-bottom: 60px;
     }
@@ -78,14 +95,6 @@ main {
     a {
         display: inline-block;
         vertical-align: top;
-
-        &:first-of-type {
-            margin-right: 8px;
-            
-            @include respond-to(mobile) {
-                margin: 0 0 16px 0;
-            }
-        }
     }
 }
 
@@ -181,6 +190,7 @@ main {
             margin-bottom: 4px;
             font-family: od_bold, arial, sans-serif;
         }
+        
         span {
             display: inline-block;
             vertical-align: top;

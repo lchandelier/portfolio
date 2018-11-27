@@ -1,0 +1,49 @@
+
+<div class="form_comment">
+    <div class="wrapper">
+        <form id="contactForm" method="POST" action="/contact/send_contact.php">
+            <input type="hidden" id="language" name="language" value="{{ page.lang }}" />
+            <input type="hidden" name="contact_blop" value="" />
+            <input type="hidden" name="return_url" value="{{ page.url }}" />
+            <fieldset>
+                <legend>
+                    <h2 class="center">Contact</h2>
+                </legend>
+                <p> {% if page.lang == 'en' %}All fields are required.{% else %}Tous les champs sont obligatoires.{% endif %}</p>
+                <div class="container_field">   
+                    <div class="field">
+                        <label for="name">
+                            {{ site.name[page.lang] }}
+                        </label>
+                        <input type="text" id="name" name="name" aria-required="true" aria-invalid="false" autocomplete="name"/>
+                    </div>
+                    <div class="field">
+                         <label for="email">
+                            E-mail
+                        </label>
+                        <input type="email" name="email" aria-required="true" aria-invalid="false" autocomplete="email"//>
+                    </div>
+					<div class="field">
+                         <label for="subject">
+                            {{ site.subject[page.lang] }}
+                        </label>
+						<div class="custom_select">
+							<div>
+								<select name="subject" id="subject">
+									<option value="question">{{ site.contactquestion[page.lang] }}</option>
+									<option value="devis">{{ site.contactdevis[page.lang] }}</option>
+								</select>
+							</div>
+						</div>
+                    </div>
+                </div>
+                <label for="comment">
+                    {{ site.comment[page.lang] }}
+                </label>
+                <textarea id="comment" name="comment" rows="10" aria-required="true" aria-invalid="false"></textarea>
+
+                <input id="submit" class="comment-submit" type="submit" value="{{ site.submitcontact[page.lang] }}" />
+            </fieldset>
+        </form>
+    </div>
+</div>

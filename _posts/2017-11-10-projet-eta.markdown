@@ -13,7 +13,7 @@ alt_thumb:
 
 Qui a dit que les sites accessibles étaient moches ?
 Un effort particulier a été mené pour que ce site soit le plus accessible possible.
-J'ai adoré travailler dessus car il m'a permis de monter sérieusement en compétence sur ce sujet.
+J’ai adoré travailler dessus car il m’a permis de monter sérieusement en compétence sur ce sujet.
 Je me suis chargée de toute la partie front et la partie back, sous Drupal, a été confiée à une autre équipe.
 
 Voir le site [ETA Manufacture horlogère Suisse](http://www.eta.ch/fr "Eta - Manufacture horlogère Suisse (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}.

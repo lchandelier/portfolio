@@ -1,5 +1,6 @@
  (function ($) {
     if ($('#commentForm').length > 0) {
+		var pageTitle = document.title;
 
         if($('#language').val() == 'fr') {
             $.extend(jQuery.validator.messages, {
@@ -24,6 +25,13 @@
             highlight: function (element, errorClass) {
                 $(element).parent().addClass(errorClass);
                 $(element).attr('aria-invalid', true);
+				
+				if($('#language').val() == 'fr') {
+					document.title = 'Erreur sur le formulaire - '+ pageTitle;
+				}
+				else {
+					document.title = 'Error on the form - '+ pageTitle;
+				}
 
             },
             unhighlight: function (element, errorClass) {
