@@ -1627,6 +1627,12 @@ main > div {
     font-family: lato_black, arial, sans-serif;
     font-size: 3rem;
     text-transform: uppercase; }
+    .intro h1 span {
+      display: block;
+      margin-bottom: 6rem;
+      font-family: lato_reg, arial, sans-serif;
+      font-size: 1.6rem;
+      text-transform: none; }
   .intro ul {
     list-style: none; }
   .intro li {
@@ -1637,8 +1643,6 @@ main > div {
     @media screen and (max-width: 767px) {
       .intro li {
         margin: 0 0 16px 0; } }
-  .intro p {
-    margin-bottom: 60px; }
   .intro a {
     display: inline-block;
     vertical-align: top; }

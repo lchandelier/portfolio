@@ -69,6 +69,14 @@ main {
         font-family: lato_black, arial, sans-serif;
         font-size: 3rem;
         text-transform: uppercase;
+
+        span {
+            display: block;
+            margin-bottom: 6rem;
+            font-family: lato_reg, arial, sans-serif;
+            font-size: 1.6rem;
+            text-transform: none;
+        }
     }
 
     ul {
@@ -86,10 +94,6 @@ main {
         @include respond-to(mobile_to_landscape) {
             margin: 0 0 16px 0;
         }
-    }
-
-    p {
-        margin-bottom: 60px;
     }
 
     a {

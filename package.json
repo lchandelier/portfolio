@@ -1,9 +1,9 @@
 
 {
-  "name": "mchandelier-korat-sprites",
+  "name": "lchandelier-korat-sprites",
   "version": "2.1.0",
   "license": "MIT",
-  "repository": "https://github.com/mchandelier/korat",
+  "repository": "https://github.com/lchandelier/korat",
   "description": "Another front-end starter kit",
   "devDependencies": {
       "browser-sync": "2.24.4",
