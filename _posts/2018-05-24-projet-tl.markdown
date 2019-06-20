@@ -15,7 +15,7 @@ Site WordPress pour présenter le rapport d’activité annuel des Transports en
 La partie front utilise CSS Grid pour la mise en page avec un fallback en flexbox pour IE11.
 Le moteur de recherche par catégories est fait en ajax, sans plugin. Au vu des nombreuses images sur le site, un système de lazy loading a été mis en place.
 
-Voir le [rapport annuel des Transports en commun Lausannois](https://rapportannuel.t-l.ch/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}.
+Voir le [rapport annuel des Transports en commun Lausannois](https://rapportannuel.t-l.ch/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
 <img src="{{ site.baseurl }}/assets/img/projects/tl_large.jpg" alt="" 
              srcset="{{ site.baseurl }}/assets/img/projects/tl_medium.jpg 670w,

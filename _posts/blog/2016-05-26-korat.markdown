@@ -22,11 +22,11 @@ On peut aussi diviser le <abbr title="HyperText Markup Language">HTML</abbr> en 
 
 Au départ, je cherchais un moyen simple de créer plusieurs fichiers de sprites CSS en <abbr title="Scalable Vector Graphics">SVG</abbr>. J’utilisais <abbr title="Syntactically Awesome Stylesheets">Sass</abbr> et ne connaissais que le moyen de créer un sprite en <abbr title="Portable Network Graphics">PNG</abbr> pour tout un projet, ce qui s’avérait pas optimal pour un gros site.
 
-Je suis tombée sur cet [article (en anglais)](https://www.liquidlight.co.uk/blog/article/creating-svg-sprites-using-gulp-and-sass/ "Blog de Liquid Light (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+Je suis tombée sur cet [article (en anglais)](https://www.liquidlight.co.uk/blog/article/creating-svg-sprites-using-gulp-and-sass/ "Blog de Liquid Light (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 Comme je voulais me mettre à Gulp, ne pas quitter Sass et faire du SVG, cette solution est tombée à pic!
 
-La solution proposée ci-dessus ne permet de générer qu’un sprite mais l’auteur a publié une [version pour gérer le multi-sprite (en anglais)](http://www.sassmeister.com/gist/d0f7c4a14b965d6fcb17 "Sass Meister (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} que j’ai intégrée pour mes projets.
+La solution proposée ci-dessus ne permet de générer qu’un sprite mais l’auteur a publié une [version pour gérer le multi-sprite (en anglais)](http://www.sassmeister.com/gist/d0f7c4a14b965d6fcb17 "Sass Meister (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"} que j’ai intégrée pour mes projets.
 
 Dans l’article, l’auteur utilise le module gulp-svg-sprite. Quand j’ai commencé à implémenter cette solution, c’est gulp-svg-sprite**S** qui était utilisé (et qui n’est plus maintenu aujourd’hui). J’ai rencontré plusieurs problèmes avec ce module (erreurs incompréhensibles probablement dûes à un manque de compatibilité Windows), donc je me suis tournée vers un autre module, gulp-svg-spritesheet. Je n’ai pas testé gulp-svg-sprite dans ma solution puisque le module que j’utilise répond parfaitement à mon besoin.
 
@@ -113,7 +113,7 @@ Mon arrivée chez Wax m’a permis de partager ce projet avec mes nouveaux coll�
 
 Quand je suis arrivée, les icônes étaient gérées par des icon font et non par des sprites.
 
-J’ai donc ajouté la possibilité de générer une icon font en fonction d’images déposées dans un dossier. Le module [gulp-iconfont](https://github.com/nfroidure/gulp-iconfont "Gulp Iconfont sur Github (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} a été choisi car il permet de créer facilement les différents formats de fontes souhaités.
+J’ai donc ajouté la possibilité de générer une icon font en fonction d’images déposées dans un dossier. Le module [gulp-iconfont](https://github.com/nfroidure/gulp-iconfont "Gulp Iconfont sur Github (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"} a été choisi car il permet de créer facilement les différents formats de fontes souhaités.
 
 {% highlight js %}
 {% raw %}
@@ -124,7 +124,7 @@ formats: [’ttf’, ’eot’, ’woff2’] //possibilité d’ajouter svg et w
 Côté CSS, il suffit d’appeler l’icon font de manière habituelle avec <code>@font-face</code> d’utiliser ensuite font-family pour l’appliquer à un élément.
 L’inclusion de parties de code HTML communes
 
-Pour avoir un code 100% HTML, et donc, indépendant de la techno utilisée en développement, j’ai ajouté la fonction d’inclusion de parties communes de code (header/footer/menu…) sans passer par une techno back-end. Pour cela, le module [gulp-html-extend](https://github.com/FrankFang/gulp-html-extend "Gulp HTML Extend sur Github (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} est parfait.
+Pour avoir un code 100% HTML, et donc, indépendant de la techno utilisée en développement, j’ai ajouté la fonction d’inclusion de parties communes de code (header/footer/menu…) sans passer par une techno back-end. Pour cela, le module [gulp-html-extend](https://github.com/FrankFang/gulp-html-extend "Gulp HTML Extend sur Github (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"} est parfait.
 
 Dans chaque page, j’utilise la syntaxe suivante pour inclure mes blocs :
 
@@ -173,7 +173,7 @@ Pour répondre à ce besoin, j’ai ajouté un module permettant de créer une a
 
 ## Ajout d’un styleguide
 
-Nous nous sommes tournés vers [Fabricator (en anglais)](http://fbrctr.github.io/ "Fabricator (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} car il intègre nativement la plupart des composants nécessaires à un site. De plus, il utilise Gulp ce qui permet de conserver une uniformisation technique et de l’intégrer dans notre process de build.
+Nous nous sommes tournés vers [Fabricator (en anglais)](http://fbrctr.github.io/ "Fabricator (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"} car il intègre nativement la plupart des composants nécessaires à un site. De plus, il utilise Gulp ce qui permet de conserver une uniformisation technique et de l’intégrer dans notre process de build.
 
 J’ai ajouté une tâche Gulp pour installer Fabricator dans le cas où on souhaite un styleguide pour son projet. Cette tâche récupère les sources de Fabricator et les regroupe dans le répertoire « styleguide » ce qui permet d’avoir une architecture projet claire.
 
@@ -181,7 +181,7 @@ Nativement, Fabricator utilise son propre CSS/JS, j’ai enrichi les tâches gé
 
 ## Bonus
 
-Pour économiser un peu de temps supplémentaire, j’ai ajouté le module [LiveReload (en anglais)](https://www.npmjs.com/package/gulp-livereload "Live Reload sur NPM (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} qui permet de rafraîchir automatiquement le navigateur dès qu’une modification CSS ou JS est apportée au projet.
+Pour économiser un peu de temps supplémentaire, j’ai ajouté le module [LiveReload (en anglais)](https://www.npmjs.com/package/gulp-livereload "Live Reload sur NPM (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"} qui permet de rafraîchir automatiquement le navigateur dès qu’une modification CSS ou JS est apportée au projet.
 
 
 ## Plue-value sur les projets
@@ -205,7 +205,7 @@ C’est un outil que j’ai pu utiliser et améliorer sur une dizaine de projets
 
 Enfin, je remercie Julien, Michael et Yassine pour leurs suggestions et retours. Ils ont largement contribué à rendre ce package plus complet.
 
-[Voir le projet sur Github](https://github.com/mchandelier/korat "Korat (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[Voir le projet sur Github](https://github.com/mchandelier/korat "Korat (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Mise à jour Décembre 2016
 gulp-html-extend a été remplacé par gulp-fileinclude. J’ai rencontré plusieurs soucis sur différents projets qui m’ont poussée à changer de plugin. gulp-html-extend vidait de manière aléatoire les fichiers que j’incluais, ce qui n’arrive plus depuis que j’utilise gulp-fileinclude.

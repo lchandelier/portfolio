@@ -19,7 +19,7 @@ alt_thumb:
 
 ## A growing idea
 
-I was lucky to go to Paris Web in 2015. Among all the conferences I saw, there was Marie Guillaumet’s talk on [self design](https://vimeo.com/142169449 "Marie Guillaumet’s conference on Vimeo (new window)"){:target="_blank"}{:hreflang="fr"}{:rel="noopener"}.
+I was lucky to go to Paris Web in 2015. Among all the conferences I saw, there was Marie Guillaumet’s talk on [self design](https://vimeo.com/142169449 "Marie Guillaumet’s conference on Vimeo (new window)"){:target="_blank"}{:hreflang="fr"}{:rel="noopener noreferrer"}.
 She talked about something I’ve never heard before: the impostor syndrome. That little voice that tells you it’s useless to make an article, to give a conference, to share anything because, anyway, someone has already done it. That little voice that also tells you that you are not legitimate. Of course, people far more visible than you have already spoke about the subject you would like to talk about then why repeat something that has already been said and repeated?
 
 "You are legitimate." Those 3 words had a resonance that I couldn’t have imagined!
@@ -49,7 +49,7 @@ Once my feet touched the ground again, I thought I had the most important. The i
 Then, focus on the content, not on D-Day. Have the best presentation possible, clean slides. 
 
 Besides Reveal or AccesSlide? I make a talk on accessibility, I have to be rigorous on it...
-[This article (in french)](http://access42.net/Comparatif-accessibilite-Reveal-versus-AccesSlide-1-2 "Comparison between Reveal and AccesSlide (new window)"){:target="_blank"}{:hreflang="fr"}{:rel="noopener"} helped me to pick one.
+[This article (in french)](http://access42.net/Comparatif-accessibilite-Reveal-versus-AccesSlide-1-2 "Comparison between Reveal and AccesSlide (new window)"){:target="_blank"}{:hreflang="fr"}{:rel="noopener noreferrer"} helped me to pick one.
 
 Transcript or not? With the stress, am I going to be able to remember all this text? In a way, it’s easier, my text will be ready, I’ll just have to make a presentation to my colleagues, get their feedback and it will be good. But if I go blank on D-Day? What if I don’t respect the transcript?
 Well, relax. What’s the best thing to do from an inclusion and accessibility point of view? A transcript. Go to work!

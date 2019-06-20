@@ -34,9 +34,9 @@ Le problème de cette propriété est qu’elle empêche les utilisateurs de zoo
 
 ## Ne pas supprimer l’outline
 Cela représente 1 ligne de CSS à ne pas écrire, ou à supprimer si vous utilisez un framework.
-Je ne peux que vous inviter à aller sur [ce site (en anglais)](http://www.outlinenone.com/ "Outline none (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} qui dit tout.
+Je ne peux que vous inviter à aller sur [ce site (en anglais)](http://www.outlinenone.com/ "Outline none (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"} qui dit tout.
 
-Pour résumer, l’outline est indispensable lorsque vous utilisez la navigation au clavier. Pour faire un test rapide, allez sur le site de [20 minutes](http://www.20min.ch/ro/ "20 minutes Suisse (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} et allez dans la rubrique Cinéma qui se trouve dans le menu principal en n’utilisant que la touche de tabulation (et sans regarder l’URL en bas de page ;) ). Pas évident n’est-ce pas ?  Si le style outline avait été présent lors de la prise de focus, vous auriez tout de suite vu où vous étiez.
+Pour résumer, l’outline est indispensable lorsque vous utilisez la navigation au clavier. Pour faire un test rapide, allez sur le site de [20 minutes](http://www.20min.ch/ro/ "20 minutes Suisse (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"} et allez dans la rubrique Cinéma qui se trouve dans le menu principal en n’utilisant que la touche de tabulation (et sans regarder l’URL en bas de page ;) ). Pas évident n’est-ce pas ?  Si le style outline avait été présent lors de la prise de focus, vous auriez tout de suite vu où vous étiez.
 
 ## Mettre des liens d’évitement
 Cela se résume à mettre au tout début de votre code des liens vers les zones principales de votre site. Ils peuvent être masqués par défaut mais doivent apparaître au focus. Les liens les plus courants sont « Aller au menu »  « Aller au contenu » et « Aller au pied de page ».  Il s’agit ensuite de mettre une ancre sur la zone à cibler. Cela permet aux personnes utilisant la navigation au clavier (ou autre technologie d’assistance) de passer directement à la zone qui les intéresse, sans avoir à tabuler à travers tout un menu par exemple.  Il faut très peu de temps pour les intégrer et cela en fait gagner beaucoup à vos utilisateurs, en plus du confort.
@@ -103,7 +103,7 @@ Ce n’est pas un critère toujours simple à aborder. Pour cela, vous pouvez vo
     <li><strong>L’image est-elle purement informative ?</strong> Si oui, le texte alternatif doit transmettre les mêmes informations que l’image. Par exemple, <code>alt="Emplacement"</code>.</li>
     <li>Enfin, <strong>l’image transmet-elle des informations non représentées sur la page en tant que texte ?</strong> Si oui, le texte alternatif doit transmettre les mêmes informations que l’image. Si non, définissez le texte alternatif à vide, afin qu’il soit ignoré par les lecteurs d’écran.</li> 
 </ol>
-Voici [l’article complet](https://bitsofco.de/alternative-text-and-images/ "Bits of code (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} (en anglais).
+Voici [l’article complet](https://bitsofco.de/alternative-text-and-images/ "Bits of code (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"} (en anglais).
 
 
 ## Un peu de test
@@ -116,4 +116,4 @@ Par exemple, si vous utilisez un sprite CSS pour mettre une liste de boutons de 
 Voici les méthodes que je mets en place sur tous les nouveaux projets sur lesquels je travaille même si l’accessibilité n’est pas dans le scope. Comme vous pouvez le constater, c’est rapide à mettre en place et ne demande pas de se plonger dans des référentiels ou d’avoir une connaissance approfondie sur le sujet. Cela n’a pas non plus d’impact sur le design (à part pour l’outline mais c’est très mineur) et cela aide les personnes utilisant des technologies d’assistance, même s’il reste beaucoup à faire.
 
 ## Quelques outils pour aller plus loin
-Une [liste de ressources](https://github.com/atalan/a11y-resources/blob/master/list-of-a11y-resources.md "Github d’Atalan (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} très diverses sur l’accessibilité (articles, bonnes pratiques, plugins JavaScript,...)
+Une [liste de ressources](https://github.com/atalan/a11y-resources/blob/master/list-of-a11y-resources.md "Github d’Atalan (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"} très diverses sur l’accessibilité (articles, bonnes pratiques, plugins JavaScript,...)

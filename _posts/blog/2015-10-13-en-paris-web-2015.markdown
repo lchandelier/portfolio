@@ -38,34 +38,34 @@ Adrienne Charmet, from the Quadrature du Net, explains that all laws are affecti
 We are the people who have the knowledge and skills to change the world of digital as it is becoming, to influence what is done.
 The tone is set as several conferences will return to the processing of personal data.
 
-[See the video of the internet conference and Freedoms](https://vimeo.com/143791970 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See the video of the internet conference and Freedoms](https://vimeo.com/143791970 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### The front-end dev at Mach 1 daily
 
 Christophe Porteneuve presented tools and methods to save time in our way to code (properly use its dev tools, tools like Webpack, Gulp, BrowserSync ...).
 
-[See the video of The front-end dev at Mach 1 daily](https://vimeo.com/143169751 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See the video of The front-end dev at Mach 1 daily](https://vimeo.com/143169751 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### The crypto for devs: small inventory of today’s tools and techniques of tomorrow
 
-Matthias Dugué, showed different methods to better secure user data including symmetric and asymmetric encryption. We saw a bit of history with [César code](https://fr.wikipedia.org/wiki/Histoire_de_la_cryptologie#Le_code_de_C.C3.A9sar "Setting the Caesar code on Wikipedia (new window)"){:target="_blank"}{:rel="noopener"}, Enigma ... For me, rather front, this conference was really clear.
+Matthias Dugué, showed different methods to better secure user data including symmetric and asymmetric encryption. We saw a bit of history with [César code](https://fr.wikipedia.org/wiki/Histoire_de_la_cryptologie#Le_code_de_C.C3.A9sar "Setting the Caesar code on Wikipedia (new window)"){:target="_blank"}{:rel="noopener noreferrer"}, Enigma ... For me, rather front, this conference was really clear.
 
-[See video of the conference The crypto for devs](https://vimeo.com/143169750 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the conference The crypto for devs](https://vimeo.com/143169750 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### "Hey, can you take this project? "
 
 Sylvain Zyssman gave us the keys to resume a project in the middle of actors not always obvious to manage (carp, talkative, the hurry, the pessimist and the client).
 
-[See video of the conference "Hey, can you take this project?"](https://vimeo.com/143791977 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the conference "Hey, can you take this project?"](https://vimeo.com/143791977 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### The "RUN" (or Application Management)
 
 Leila Touati recalled the different types of maintenance that may take place on a site (preventive, adaptive, corrective, functional support and operation). All with a few film clips to illustrate his point.
 
-[See video of the conference The "RUN" (or Application Management)](https://vimeo.com/143791973 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the conference The "RUN" (or Application Management)](https://vimeo.com/143791973 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 The afternoon was under the sign of quality and performance.
 
@@ -74,13 +74,13 @@ The afternoon was under the sign of quality and performance.
 
 With the arrival of HTTP2, we can drastically rethink how to optimize sites. Concatenation / minification will become useless, resources will be loaded in parallel rather than one after the other ...
 
-[See video of the conference Webperf 2.0](https://vimeo.com/145318582 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the conference Webperf 2.0](https://vimeo.com/145318582 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Creating a Culture of Quality Code
 
 David West, Pinterest, presented various tools like Jenkins (formerly Hudson ) which is a continuous integration tool, Flow, Babel and unit testing tools like sinon.js or good practices such as CSS and JS lint. To him, quality is not a destination but a culture, an attitude and a constant concern.
 
-[See video of the conference Creating a Culture of Quality Code](https://vimeo.com/145318581 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the conference Creating a Culture of Quality Code](https://vimeo.com/145318581 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### The Styleguide, well fed he keeps his promises
@@ -88,7 +88,7 @@ David West, Pinterest, presented various tools like Jenkins (formerly Hudson ) w
 Laurent Guitton has a feedback on the site redesign Relais Châteaux speaking of the use of styleguides.
 He said the Styleguide must be available full to the client. To which can be added to the documentation specific to the project, as a particular method of deployment or in which it may be recalled coding conventions.
 
-[See video of the conference The Styleguide, well fed he keeps his promises](https://vimeo.com/145318192 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the conference The Styleguide, well fed he keeps his promises](https://vimeo.com/145318192 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### The challenge of a blind person: advisor on accessibility in an increasingly visual web
@@ -100,7 +100,7 @@ Objectives: "No longer be blind service which tests a site" but have real expert
 
 Her cry of the heart which caused a burst of applause: "Accessibility for all: it is a right, a fight, a MUST! "
 
-[See video of the conference The challenge of a blind person](https://vimeo.com/141981469 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the conference The challenge of a blind person](https://vimeo.com/141981469 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ## The lectures of the second day
@@ -112,28 +112,28 @@ The day started on a sensitive subject but that affects us all: death. And espec
 But what options do we have to anticipate the becoming of our data once we’re gone?
 Agnieszka Maria Walorska suggested a way forward through examples from her personal life.
 
-[See video of the conference Death and UX: Afterlife Digital and Digital Legacy](https://vimeo.com/144521295 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the conference Death and UX: Afterlife Digital and Digital Legacy](https://vimeo.com/144521295 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Towards a good practice Pair Design
 
 Catherine Verfaillie described the little-known method in France. This is the same principle as the pair programming but for the DA, UX designer editors ... It is important to have a complementary pair. By the level of experience the profession or expertise that is different. The objective is the growing competence and awareness for a new approach. The arguments in favor of the application of this method are the improved quality, improved cooperation, it is approved by the developers and it helps to learn from other trades.
 
-[See video of the conference Towards a good practice Pair Design](https://vimeo.com/143791971 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the conference Towards a good practice Pair Design](https://vimeo.com/143791971 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### CSP: content security policy
 
 Nicolas Hoffmann presented CSP that secures the front part of a site declaring the resources allowed. By default, everything is not said is not allowed. It can block inline CSS styles, the onclick in javascript or ban domain names.
 
-[See Video of CSP conference content security policy](https://vimeo.com/143169749 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See Video of CSP conference content security policy](https://vimeo.com/143169749 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### SS6 by the code
 
 We then were treated to a live coding session with Matthew Lux. He showed us the main novelties of SS6 such as adding the keyword "class", generators (functions which can be stopped en route and times with the next keyword), or arrow function. He showed us by example as the code becomes more readable by moving from ES5 to SS6.
 
-[See video of the conference by the code SS6](https://vimeo.com/144521293 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the conference by the code SS6](https://vimeo.com/144521293 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Vorlon.JS : a tool to simplify the web debug on all platforms
@@ -141,7 +141,7 @@ We then were treated to a live coding session with Matthew Lux. He showed us the
 David Rousset and Etienne Margraff from Microsoft showed a lot of self-mockery and humor to an audience mainly with Mac Book and iPhone.
 Vorlon.js is an open-source tool for comprehensive debugging. To install, simply go through NPM and call vorlon script in his page. It is extensible through plugins and is in the form of enhanced debug console. It connects to a device and see live which is a problem. We can highlighter elements like being in Firebug or Chrome Console. Is available also a Best Practices tab alert mistakes detrimental to accessibility, cleaner methods for its CSS code ...
 
-[See video of the conference Vorlon.JS](https://vimeo.com/143169749 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the conference Vorlon.JS](https://vimeo.com/143169749 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Pasdecalais.fr, history of an accessibility approach
@@ -152,7 +152,7 @@ In January 2010, the online site meets set at AA GRFA, which is what the French 
 Today the site is labeled RGAA3 and also boasts a quality label issued by Opquast. It is recognized as a model at European level.
 The site covers other criteria that are not part of GRFA guidelines but that covers a need of the users. Including proposing a "Dyslexia" button that displays a font adapted for easy reading of the site by dyslexic people. There are also buttons to change the text size (because all users do not necessarily know that they can do with their native browser).
 
-[See video of the Pasdecalais.fr conference history to an accessibility approach](https://vimeo.com/146476183 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the Pasdecalais.fr conference history to an accessibility approach](https://vimeo.com/146476183 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Self-Design: enhancing our identity and expertise on the web
@@ -161,23 +161,23 @@ This conference was one of the best of this edition. Moreover it is the only spe
 Marie Guillaumet prefers self-expression design to "Personal Branding" because we are not a brand or a product to sell.
 She explained how we put forward without falling into the "Personal Branling" by sharing our knowledge, our expertise and our personal history.
 
-[See video of the conference itself Design: enhancing its identity and expertise on the web](https://vimeo.com/142169449 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the conference itself Design: enhancing its identity and expertise on the web](https://vimeo.com/142169449 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### The day when we will not need accessibility
 
 The dream of Olivier Nourry: Become useless. He hopes that one day it would happen through new forms of assistance to the disabled. Today there are several tools: screen readers, subtitles but they are too limited. Yet some stand out as Siri and VoiceOver TapTapSee, TranscriVox the Nao robot ... If these technologies continue to evolve to become more intelligent, perhaps that his dream will become reality.
 
-[See video of the conference the day when we will not need accessibility](https://vimeo.com/142169448 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the conference the day when we will not need accessibility](https://vimeo.com/142169448 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Conference surprise - the LSF interpreter in Paris Web: adaptive, responsive and agile
 
 The conference was hosted by Sandrine Schwartz, LSF interpreter, who broke many ideas and has taught us many things in passing (including the sign of the cake in France means having rules in the United States and Moscow in Russian). She explained with great humor how his job is complicated during those 2 days he must sign words like skeuomorphism, Websockets ... But still, every year she comes back, driven by good humor and Indeed Paris Web
 
-[See video of the RSA Conference](https://vimeo.com/146682822 "(new window)"){:target="_blank"}{:rel="noopener"}
+[See video of the RSA Conference](https://vimeo.com/146682822 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Conclusion
 
 To conclude this post, I can only thank the speakers again, the interpreters and the staff for their hard work! Thank you for this special atmosphere that makes us want to be already next year.
-Discover conferences online with [this link](https://vimeo.com/parisweb/videos "Paris Web conference (new window)"){:target="_blank"}{:rel="noopener"}.
+Discover conferences online with [this link](https://vimeo.com/parisweb/videos "Paris Web conference (new window)"){:target="_blank"}{:rel="noopener noreferrer"}.

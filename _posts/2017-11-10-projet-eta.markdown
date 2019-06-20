@@ -16,7 +16,7 @@ Un effort particulier a été mené pour que ce site soit le plus accessible pos
 J’ai adoré travailler dessus car il m’a permis de monter sérieusement en compétence sur ce sujet.
 Je me suis chargée de toute la partie front et la partie back, sous Drupal, a été confiée à une autre équipe.
 
-Voir le site [ETA Manufacture horlogère Suisse](http://www.eta.ch/fr "Eta - Manufacture horlogère Suisse (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}.
+Voir le site [ETA Manufacture horlogère Suisse](http://www.eta.ch/fr "Eta - Manufacture horlogère Suisse (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
 <img src="{{ site.baseurl }}/assets/img/projects/eta_large.jpg" alt="" 
              srcset="{{ site.baseurl }}/assets/img/projects/eta_medium.jpg 670w,

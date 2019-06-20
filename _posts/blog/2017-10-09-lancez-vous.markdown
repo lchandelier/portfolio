@@ -19,7 +19,7 @@ alt_thumb:
 
 ## Une idée qui germe
 
-J’ai eu la chance de pouvoir aller à Paris Web en 2015. Parmi toutes les conférences auxquelles j’ai pu assister, il y a eu celle de Marie Guillaumet sur le [design de soi](https://vimeo.com/142169449 "Conférence de Marie Guillaumet sur Vimeo (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}. Elle a abordé un sujet dont je n’avais jamais entendu parler : le syndrome de l’imposteur. Cette petite voix qui vous dit que ça ne sert à rien de faire un article, de donner une conférence, de partager quoique ce soit parce que, de toute façon, quelqu’un l’a déjà fait. Cette petite voix qui vous dit aussi que vous n’êtes pas légitime. Bien sûr, des personnes bien plus visibles que vous parlent déjà en long en large et en travers du sujet sur lequel vous aimeriez vous exprimer alors pourquoi répéter quelque chose qui a déjà été dit et redit ?
+J’ai eu la chance de pouvoir aller à Paris Web en 2015. Parmi toutes les conférences auxquelles j’ai pu assister, il y a eu celle de Marie Guillaumet sur le [design de soi](https://vimeo.com/142169449 "Conférence de Marie Guillaumet sur Vimeo (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}. Elle a abordé un sujet dont je n’avais jamais entendu parler : le syndrome de l’imposteur. Cette petite voix qui vous dit que ça ne sert à rien de faire un article, de donner une conférence, de partager quoique ce soit parce que, de toute façon, quelqu’un l’a déjà fait. Cette petite voix qui vous dit aussi que vous n’êtes pas légitime. Bien sûr, des personnes bien plus visibles que vous parlent déjà en long en large et en travers du sujet sur lequel vous aimeriez vous exprimer alors pourquoi répéter quelque chose qui a déjà été dit et redit ?
 
 "Vous êtes légitimes". Ces 3 mots ont eu une résonnance que je n’aurais pas pu imaginer !
 
@@ -48,7 +48,7 @@ Une fois redescendue sur terre, je me suis dit que j’avais le plus important. 
 Ensuite, me concentrer sur le contenu, pas sur le jour J. Avoir la présentation la mieux possible, des slides claires. 
 
 D’ailleurs Reveal ou AccesSlide ? Je fais une conf sur l’accessibilité, je me dois d’être carrée à ce niveau...
-[Cet article](http://access42.net/Comparatif-accessibilite-Reveal-versus-AccesSlide-1-2 "Comparatif Reveal et AccesSlide (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} m’a aidée à choisir.
+[Cet article](http://access42.net/Comparatif-accessibilite-Reveal-versus-AccesSlide-1-2 "Comparatif Reveal et AccesSlide (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"} m’a aidée à choisir.
 
 Transcript ou pas transcript ? Avec le stress est-ce-que je vais pouvoir sortir par cœur tout ce texte ? Dans un sens, c’est plus facile, mon texte sera prêt, je n’aurais qu’à faire une présentation à mes collègues pour avoir leur retour et ce sera bon. Mais si j’ai un gros blanc le jour J ? Et si je dévie complètement du transcript ?
 Bon on se détend. Qu’est-ce-qui est le mieux d’un point de vue inclusion et accessibilité ? Un transcript. Allez, au boulot !

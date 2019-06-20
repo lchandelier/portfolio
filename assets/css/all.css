@@ -735,7 +735,7 @@ footer {
     @media screen and (max-width: 1023px) {
       #cookie-consent-bar p {
         padding: 0 2rem; } }
-  #cookie-consent-bar a {
+  #cookie-consent-bar button {
     margin-right: 2rem; }
   #cookie-consent-bar .sb-enable, #cookie-consent-bar .sb-disable {
     box-sizing: border-box;

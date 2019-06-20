@@ -24,7 +24,7 @@ The same pattern has been used for another contest for the new school year.
 
 To finish, I participate in the redesign of Chiquita’s main website by cleaning code and adding animations.
 
-See [Chiquita’s website](https://www.chiquita.com/ "Chiquita (new window)"){:target="_blank"}{:rel="noopener"}.
+See [Chiquita’s website](https://www.chiquita.com/ "Chiquita (new window)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ### Breakfast Contest
 

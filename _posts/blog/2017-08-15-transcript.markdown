@@ -49,14 +49,14 @@ pourra pas. Du coup, il y a de fortes chances pour qu’il quitte votre site.
 
 Ensuite, **ne pas supprimer l’outline**.  
 Tout simplement parce que cela aide à se repérer dans la page, notamment dans le cas d’une navigation clavier. 
-Je vais vous faire une démonstration très rapide sur un [site d’informations](http://www.20min.ch/ro "20 minutes Romandie (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}  
+Je vais vous faire une démonstration très rapide sur un [site d’informations](http://www.20min.ch/ro "20 minutes Romandie (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}  
 Si je tabule, vous pouvez constater qu’on ne sait pas où on se trouve. 
 Si je veux aller dans la section sport par exemple, à moins de lire l’URL en bas de page, je ne sais pas où je suis.  
 
 Alors vous pourriez me dire que l’outline, c’est moche. C’est un argument qu’on entend souvent. 
-Mais on peut le styler de plusieurs manières. Par exemple, sur le [blog accessibilité du gouvernement Anglais](https://accessibility.blog.gov.uk/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}{:hreflang="en"}, on utilise outline et background-color. Demandez à vos collègues designers qu’ils vous fassent un effet sympa là-dessus :)
+Mais on peut le styler de plusieurs manières. Par exemple, sur le [blog accessibilité du gouvernement Anglais](https://accessibility.blog.gov.uk/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}{:hreflang="en"}, on utilise outline et background-color. Demandez à vos collègues designers qu’ils vous fassent un effet sympa là-dessus :)
 
-Si vous voulez plus d’informations sur l’outline, je vous recommande le site [outline none](http://www.outlinenone.com/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}{:hreflang="en"}.
+Si vous voulez plus d’informations sur l’outline, je vous recommande le site [outline none](http://www.outlinenone.com/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}{:hreflang="en"}.
 
 
 Le point suivant est relatif aux **liens d’évitement ou liens d’accès rapide**.
@@ -72,11 +72,11 @@ Ce sont tout simplement des ancres à placer dans vos pages, les plus courantes 
 Une fois en place, il vous reste à mettre une liste de liens pointant vers ces ancres tout au début de votre page et le tour est joué !
 
 Parce qu’une démonstration vaut mieux qu’un long discours, voici un exemple de liens d’évitements sur le site
-[service-public.fr](https://www.service-public.fr/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[service-public.fr](https://www.service-public.fr/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 Si vous voulez masquer cette liste, il faut le faire de manière accessible, c’est-à-dire sans utiliser <code>display: none;</code>  ou <code>visibility: hidden;</code>.
 Pour ce faire, je vous invite à lire l’excellent article de Gaël Poupard sur le sujet:
-[Cache-cache <abbr title="Cascading Style Sheets">CSS</abbr>](http://www.ffoodd.fr/cache-cache-css "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}.
+[Cache-cache <abbr title="Cascading Style Sheets">CSS</abbr>](http://www.ffoodd.fr/cache-cache-css "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
 
 Cinquième point, la sémantique et, plus exactement **utiliser une sémantique cohérente**.  
@@ -125,7 +125,7 @@ Il y a **toujours** un attribut alt sur une image. La question est de savoir s�
 * Si l’image représente une action, par exemple un bouton avec un picto de panier, on met le texte de cette action dans le alt. Ici, "Ajouter au panier"
 * Si l’image à un caratère informatif, par exemple un picto de localisation à côté d’une adresse, on mettra "Emplacement" dans le alt.
 
-[Un article sur bits of code (en anglais)](https://bitsofco.de/alternative-text-and-images "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}{:hreflang="en"} détaille très bien la gestion de cet attribut et 
+[Un article sur bits of code (en anglais)](https://bitsofco.de/alternative-text-and-images "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}{:hreflang="en"} détaille très bien la gestion de cet attribut et 
 offre une illustration des différents cas possibles, c’est de cet article que viennent les exemples que je viens de vous présenter.
 
 
@@ -137,9 +137,9 @@ Un placeholder sert à donner une suggestion de saisie. En aucun cas il ne sert 
 
 
 Une technique pour concilier design et (presque) usabilité est celle des 
-[labels flottants](http://allthingssmitty.com/2016/09/25/accessible-floating-labels "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}{:hreflang="en"}.
+[labels flottants](http://allthingssmitty.com/2016/09/25/accessible-floating-labels "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}{:hreflang="en"}.
 Avec elle, on garde un HTML sémantique et, surtout, on garde l’information présente en permanence !
-Attention tout de même, cette technique n’est pas parfaite et n’est à utiliser que si vraiment il n’est pas possible d’avoir le label toujours visible. Adam Silver en parle très bien dans [son article (en anglais)](https://medium.com/simple-human/floating-labels-are-a-bad-idea-82edb64220f6 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}{:hreflang="en"}.
+Attention tout de même, cette technique n’est pas parfaite et n’est à utiliser que si vraiment il n’est pas possible d’avoir le label toujours visible. Adam Silver en parle très bien dans [son article (en anglais)](https://medium.com/simple-human/floating-labels-are-a-bad-idea-82edb64220f6 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}{:hreflang="en"}.
 
 
 Alors c’est bien beau tout ça mais comment tester que tous ces points sont bien en place et fonctionnent correctement ?
@@ -162,23 +162,23 @@ organisme de formation, certains aspects sont assez complexes à appréhender.
 
 
 Et ça me donne la transition parfaite pour vous donner quelques ressources d’auto-formation et d’outils de développement.  
-En premier lieu, [les notices AcceDe Web (pour designers, développeurs, contributeurs)](http://www.accede-web.com/notices "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}  
+En premier lieu, [les notices AcceDe Web (pour designers, développeurs, contributeurs)](http://www.accede-web.com/notices "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}  
 Ce sont des notices qui reprennent les critères de conformité à respecter et qui les expliquent de manière très simple avec des exemples à la clé, c’est vraiment une documentation à mettre entre toutes les mains des gens qui font du web.    
 
-Ensuite le [plugin pour Chrome et Firefox aXe](https://www.deque.com/products/axe "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}{:hreflang="en"}.   
+Ensuite le [plugin pour Chrome et Firefox aXe](https://www.deque.com/products/axe "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}{:hreflang="en"}.   
 Il permet d’auditer votre site pour voir si certains critères sont respectés ou non. Attention, là aussi, 
 ce n’est pas parce que le plugin vous dira que votre site est accessible qu’il l’est à 100% ! 
 Tous les critères ne peuvent être audités de manière automatique. Par exemple, la pertinence des alternatives textuelles ne peut être vérifiée que manuellement.    
 
 Après nous avons une 
-[liste de ressources sur ARIA, JavaScript, CSS, iOS/Android... par la société Atalan](https://github.com/atalan/a11y-resources/blob/master/list-of-a11y-resources.md "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}{:hreflang="en"} 
+[liste de ressources sur ARIA, JavaScript, CSS, iOS/Android... par la société Atalan](https://github.com/atalan/a11y-resources/blob/master/list-of-a11y-resources.md "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}{:hreflang="en"} 
 Une énorme liste de liens vers des outils, de la documentation, du code... c’est un peu la caverne d’Ali Baba qui fait de l’accessibilité.    
 
 Et puis, parce que sans eux, rien ne serait possible : les critères internationaux d’accessibilité, les 
-<abbr title="Web Content Accessibility Guidelines">[WCAG 2.0](http://code.viget.com/interactive-wcag/#responsibility=&level=aa "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}{:hreflang="en"}</abbr> filtrés par métiers (en anglais)
+<abbr title="Web Content Accessibility Guidelines">[WCAG 2.0](http://code.viget.com/interactive-wcag/#responsibility=&level=aa "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}{:hreflang="en"}</abbr> filtrés par métiers (en anglais)
 
 Et leurs équivalents Français, le 
-<abbr title="Référentiel Général d’Accessibilité pour les Administrations">[RGAA](http://references.modernisation.gouv.fr/referentiel/criteres.html "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}</abbr> et [Accessiweb](http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+<abbr title="Référentiel Général d’Accessibilité pour les Administrations">[RGAA](http://references.modernisation.gouv.fr/referentiel/criteres.html "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}</abbr> et [Accessiweb](http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 Pour récapituler tout ça : on utilise l’attribut lang, on ne met pas d’attribut maximum-scale= 1.0, on garde l’outline CSS (demandez à votre designer de
  vous faire un style sympa), on ajoute des liens d’évitement, on utilise une sémantique correcte, on utilise ARIA quand il faut, on fait 

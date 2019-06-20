@@ -50,7 +50,7 @@ Il faut s’autoriser à aérer son planning pour pouvoir faire de la veille.
 
 Pour finir, chasser la peur ! Si cela ne va vraiment pas, il ne faut pas hésiter à changer d’entreprise ou même à devenir indépendant. Il est primordial de s’épanouir et si on n’y parvient pas, il faut en parler autour de soi (amis, médecin) car on vaut mieux que ça.
 
-[Voir les slides de la conférence Nos petits stress quotidiens](https://speakerdeck.com/hiwelo/nos-petits-stress-quotidiens-kiwiparty-2016 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[Voir les slides de la conférence Nos petits stress quotidiens](https://speakerdeck.com/hiwelo/nos-petits-stress-quotidiens-kiwiparty-2016 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### 10 astuces <abbr title="Scalable Vector Graphics">SVG</abbr> qui vont vous sauver la vie
@@ -61,7 +61,7 @@ Vincent nous a donné différentes astuces comme d’utiliser un outil d’optim
 Il ne conseille pas d’utiliser les transformations car l’origine de transformation est différente entre le <abbr title="HyperText Markup Language">HTML</abbr> et le SVG, il vaut mieux utiliser une librairie javascript pour faire les animations et les transformations (<abbr title="GreenSock Animation Platform">GSAP</abbr> ou SnapSVG par exemple).  
 Les sprites SVG fonctionnent à partir de IE9, si vous ne les utilisez pas encore, il est grand temps de s’y mettre !
 
-[Voir la vidéo de la conférence 10 astuces SVG](https://vimeo.com/179313779 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[Voir la vidéo de la conférence 10 astuces SVG](https://vimeo.com/179313779 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Mettez du libre dans vos projets
@@ -100,7 +100,7 @@ Enfin, si vous souhaitez créer un logiciel libre voici quelques conseils :
  * Être inclusif en permettant une installation facile pour les non-initiés
  * Être bienveillant envers les utilisateurs/contributeurs
 
-[Voir les slides de la conférence Mettez du libre dans vos projets](http://fr.slideshare.net/Rudloff/mettez-du-libre-dans-vos-projets-web "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[Voir les slides de la conférence Mettez du libre dans vos projets](http://fr.slideshare.net/Rudloff/mettez-du-libre-dans-vos-projets-web "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Agilité pour petits projets
@@ -108,35 +108,35 @@ Enfin, si vous souhaitez créer un logiciel libre voici quelques conseils :
 Le web change et devient applications.
 Des outils comme Trello et Git permettent de détailler le projet et de raconter son histoire. C’est un échange d’expérience.  
 Pour une meilleure agilité, on peut utiliser des générateurs de sites statiques (Jekyll par exemple). Grâce à ce genre d’outil, on peut mettre facilement un proto en ligne, simple, avant de faire le design. Ainsi, les itérations se font rapidement entre la prod et le dév.
-[Exemple de site créé avec un générateur de site statique](https://mademistakes.com/style-guide/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[Exemple de site créé avec un générateur de site statique](https://mademistakes.com/style-guide/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
-[Voir la vidéo de la conférence Agilité pour petits projets](https://vimeo.com/179314577 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[Voir la vidéo de la conférence Agilité pour petits projets](https://vimeo.com/179314577 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Intégration et Webapps : ProTips
 
 Un concentré de bonnes pratiques s’est retrouvé dans la conf de M4D’z. Il nous a montré l’intérêt d’utiliser autant que possible les balises de zones <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> ou rôles <abbr title="Accessible Rich Internet Applications">ARIA</abbr> afin de skinner les éléments d’une page plutôt que d’utiliser des class CSS.
-Pour éviter une spécificité trop importante, on peut utiliser les outils [CSS Specificity](http://cssspecificity.com "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} ou [Specificity Calculator](http://specificity.keegan.st/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+Pour éviter une spécificité trop importante, on peut utiliser les outils [CSS Specificity](http://cssspecificity.com "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"} ou [Specificity Calculator](http://specificity.keegan.st/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 On peut utiliser <code>&lt;template&gt;</code> ou un moteur de template comme pug ou nunjucks. Cela aide à la réutilisation !  
 Surtout, ne pas utiliser de sélecteurs trop longs (+ 4 niveaux) d’identifiants ou de style forcés (!important)  
 On peut exploiter les pré/postprocesseurs pour l’utilisation de mixins, de nesting d’un côté et la compatibilité de l’autre.  
 Enfin, pour les webapps, on peut utiliser un framework front-end comme React ou vue.js et un packer comme Webpack ou Rollup.
 
-[Voir la vidéo de la conférence Intégration et Webapps : ProTips](https://vimeo.com/179315043 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[Voir la vidéo de la conférence Intégration et Webapps : ProTips](https://vimeo.com/179315043 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Git ProTips
 
 Christophe Porteneuve a fait un vrai show pour nous donner quelques commandes Git. Tout est dans la vidéo ci-dessous :
 
-[Vidéo de la conférence Git ProTips sur Vimeo](https://vimeo.com/179446529 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[Vidéo de la conférence Git ProTips sur Vimeo](https://vimeo.com/179446529 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Programme de l’après-midi
 
 ### HTTPS partout, chiche !
 
 Dans sa conférence, Frédéric Kayser nous a appris, entre autre, que Google ne chiffrait pas ses trafics entre datacenters et que les révélations de Edward Snowden avaient fait gagner 7 ans techniquement.  
-Il a aussi présenté des outils très utiles pour avoir un état des lieux de la sécurité de notre site/serveur avec [Qualys](https://www.ssllabs.com/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"} ou [acme.sh](https://github.com/Neilpang/acme.sh "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
-[Voir la vidéo de la conférence HTTPS partout, chiche !](https://vimeo.com/179446532 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+Il a aussi présenté des outils très utiles pour avoir un état des lieux de la sécurité de notre site/serveur avec [Qualys](https://www.ssllabs.com/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"} ou [acme.sh](https://github.com/Neilpang/acme.sh "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
+[Voir la vidéo de la conférence HTTPS partout, chiche !](https://vimeo.com/179446532 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### L’email dans toutes ses formes
@@ -168,7 +168,7 @@ Pour l’intégration, quelques astuces :
 
 Pour tester, Email on Acid ou Litmus sont très efficaces.
 
-[Voir la vidéo de la conférence L’email dans toutes ses formes](https://vimeo.com/180578382 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[Voir la vidéo de la conférence L’email dans toutes ses formes](https://vimeo.com/180578382 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Les codes rewiewztraminer : contrairement au vin, c’est moins bon en tardive
@@ -200,7 +200,7 @@ Les 4 A :
  * Amélioration -> Partage des bonnes pratiques
  * Agnostique -> même processus, peu importe la techno utilisée.
 
-[Voir la vidéo de la conférence Les codes rewiewztraminer : contrairement au vin, c’est moins bon en tardive](https://vimeo.com/180578384 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[Voir la vidéo de la conférence Les codes rewiewztraminer : contrairement au vin, c’est moins bon en tardive](https://vimeo.com/180578384 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Workflow moderne cherche graphiste à l’ancienne
@@ -221,7 +221,7 @@ Les freins qui peuvent survenir sont :
 
 La clé de réussite est la communication !
 
-[Voir la vidéo de la conférence Workflow moderne cherche graphiste à l’ancienne](https://vimeo.com/181158986 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[Voir la vidéo de la conférence Workflow moderne cherche graphiste à l’ancienne](https://vimeo.com/181158986 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### CSS Selector Wars : un nouvel espoir ?
@@ -231,7 +231,7 @@ Pour éviter les conflits entre sélecteurs CSS, Florens Vershelde propose les s
  * Avoir plusieurs niveaux de granularité en utilisant <abbr title="Block Element Modifier">BEM</abbr>, des classes utilitaires ou des classes atomiques
  * Utiliser les CSS Modules
 
-[Voir la vidéo de la conférence CSS Selector Wars : un nouvel espoir ?](https://vimeo.com/182053671 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[Voir la vidéo de la conférence CSS Selector Wars : un nouvel espoir ?](https://vimeo.com/182053671 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### L’identité visuelle sur le web, penser au-delà du print
@@ -245,4 +245,4 @@ Aurélien Sesmat a expliqué comment avoir une bonne identité visuelle. Pour ce
 Les animations doivent être définies en amont entre l’UX et la <abbr title="Direction Artistique">DA</abbr>. Une présentation des éléments techniques va rassurer le client et cadrer la DA.  
 Cela permet d’éviter des retours inutiles en phase de développement, de préciser la façon dont l’identité visuelle s’articule ainsi que les détails techniques pour bien la réaliser.
 
-[Voir la vidéo de la conférence L’identité visuelle sur le web, penser au-delà du print](https://vimeo.com/181158992 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}
+[Voir la vidéo de la conférence L’identité visuelle sur le web, penser au-delà du print](https://vimeo.com/181158992 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}

@@ -16,9 +16,9 @@ Il s'agit d'une expérience de création de son programme personnalisé pour le 
 
 Après avoir répondu à 6 questions, notre programme apparaît pour l'ensemble du festival. À partr de là, on peut directement acheter un billet pour la ou les dates qui nous intéresse(nt). Il est également possible de recommencer l'expérience si nous ne sommes pas satisfaits du résultat.
 
-Pour ce projet, j'ai intégré l'équipe de développement de [Superhuit](https://superhuit.ch/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}. J'ai apporté une touche d'accessibilité à l'expérience et participé au développement Vue.js et CSS.
+Pour ce projet, j'ai intégré l'équipe de développement de [Superhuit](https://superhuit.ch/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}. J'ai apporté une touche d'accessibilité à l'expérience et participé au développement Vue.js et CSS.
 
-Voir [L'expérience Swipe du Montreux Jazz Festival](https://mjfswipe.com/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener"}.
+Voir [L'expérience Swipe du Montreux Jazz Festival](https://mjfswipe.com/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
 <img src="{{ site.baseurl }}/assets/img/projects/mjf_large.jpg" alt="" 
              srcset="{{ site.baseurl }}/assets/img/projects/mjf_medium.jpg 670w,
