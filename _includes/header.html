@@ -16,7 +16,7 @@
                         {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
                         {% for post in posts %}
                         <li>
-                            <a href="{{ post.url }}" class="{{ page.lang }}"
+                            <a href="{{ post.url }}" class="{{ post.lang }}"
                                title="{{ site.display_language[post.lang] }}" lang="{{ post.lang }}">{{ post.lang }}</a>
                         </li>
                         {% endfor %}

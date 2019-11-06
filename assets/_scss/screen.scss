@@ -133,6 +133,33 @@ pre {
     font-size: 1.6rem;
 }
 
+blockquote, q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    font-size: 1.8rem;
+    line-height: 1.55;
+    margin-bottom: 2rem;
+}
+
+:lang(fr) > blockquote,
+:lang(fr) > q {
+    quotes: "\00AB\A0" "\A0\00BB" "\201C" "\201D" "\2018" "\2019";
+}
+
+:lang(en) > blockquote,
+:lang(en) > q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+blockquote:before,
+q:before {
+    content: open-quote;
+}
+
+blockquote:after,
+q:after {
+    content: close-quote;
+}
+
 button:not(.display_menu) {
     -webkit-appearance: none;
     border: 0;
