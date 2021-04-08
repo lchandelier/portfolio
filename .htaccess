@@ -16,15 +16,8 @@ deny from all
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 	RewriteBase /
-
-	#RewriteCond %{HTTPS} off
-	#RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-	#RewriteCond %{HTTP_HOST} !^www\.
-	#RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-
-    RewriteCond %{HTTP_HOST} !^www\.lena-chandelier\.me [NC]
-    RewriteRule ^ https://lena-chandelier.me%{REQUEST_URI} [R=301,L]
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 </IfModule>
 
 

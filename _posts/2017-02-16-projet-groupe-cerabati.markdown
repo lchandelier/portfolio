@@ -18,7 +18,7 @@ C’est un projet que j’ai aimé par son aspect graphique, technique, j’ai p
 
 Voir le [site du Groupe Cerabati](http://groupecerabati.com/ "Groupe Cerabati (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
-Voir le [site Cerabati](http://cerabati.fr/ "Cerabati (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}.
+Voir le [site Cerabati](https://web.archive.org/web/20190309111417/https://cerabati.fr/ "Cerabati sur Internet webarchive (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Voir le [site Alfacaro](http://alfacaro.fr/ "Alfacaro (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}.
 

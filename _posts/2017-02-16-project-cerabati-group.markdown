@@ -18,7 +18,7 @@ This is a project I loved by its technical and graphical look. I played with som
 
 See the [Cerabati group’s website](http://groupecerabati.com/en/ "Cerabati group (new window)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
-See the [Cerabati’s website](http://cerabati.fr/en/ "Cerabati (new window)"){:target="_blank"}{:rel="noopener noreferrer"}.
+See the [Cerabati’s website](https://web.archive.org/web/20190309111417/https://cerabati.fr/ "Cerabati on the Internet webarchive (new window)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
 See the [Alfacaro’s website](http://alfacaro.fr/en/ "Alfacaro (new window)"){:target="_blank"}{:rel="noopener noreferrer"}.
 

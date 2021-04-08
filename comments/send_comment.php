@@ -5,7 +5,14 @@ $subject = "[Blog] - Nouveau commentaire";
 $template_sent = '../comment-sent.html';
 
 
-if($_POST['comment_blop'] == '') {
+if($_POST['comment_blop'] != '' || preg_match('/(meds|pills|pill|rayban|remedies|remedy|med|amoxicillin)/i', $_POST["comment"])) {
+	//bots
+	header('Content-Type: text/plain; charset=utf-8');
+	echo 'Nope.';
+	return;
+}
+else 
+{ 
 	$msg = "post_id: " . $_POST["post_id"] . "\n";
 	$msg .= "email: " . $_POST["email"] . "\n";
 	$msg .= "---\n";
@@ -16,7 +23,7 @@ if($_POST['comment_blop'] == '') {
 
 	$headers = "From: noreply@lena-chandelier.me\n";
 	$headers .= "Content-Type: text/plain; charset=utf-8";
-	
+
 	if($_POST["email"] != '') {
 		
 		if($_POST['language'] == 'en') {
@@ -50,12 +57,5 @@ if($_POST['comment_blop'] == '') {
 			include $template_sent;
 		}
 	}
-}
-else 
-{ 
-	//bots
-	header('Content-Type: text/plain; charset=utf-8');
-	echo 'Nope.';
-	return;
 }
 
