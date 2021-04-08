@@ -10,11 +10,11 @@ const cp = require('child_process');
 const del = require('del');
 const gulp = require('gulp');
 const gulpFilter = require('gulp-filter');
+const gulpIf = require('gulp-if');
 const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
 const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
-const replace = require('gulp-replace');
 const sass = require('gulp-sass');
 const svgSymbols = require('gulp-svg-symbols');
 const sourcemaps = require('gulp-sourcemaps');
@@ -30,7 +30,7 @@ const assets = {
     js: paths.src + 'assets/js',
     css: paths.src + 'assets/css',
     scss: paths.src + 'assets/_scss',
-    components: paths.src + '_scss/components',
+    components: paths.src + 'assets/_scss/components',
     util: paths.src + 'assets/_scss/utilities',
     img: paths.src + 'assets/img',
     sprites: paths.src + 'assets/sprites',
@@ -66,8 +66,6 @@ function css() {
         assets.scss + '/*.scss'])
             .pipe(plumber())
             .pipe(filterPrint)
-            .pipe(filterThemaMobile)
-            .pipe(filterThemaLidl)
             .pipe(sass().on('error', sass.logError))
             .pipe(sourcemaps.init())
             .pipe(concat('all.css'))
@@ -93,8 +91,6 @@ function scripts() {
 
     return gulp.src([assets.js + '/src/lib/*.js', assets.js + '/src/*.js'])
             .pipe(plumber())
-            .pipe(filterFixFunc)
-            .pipe(filterFixAPI)
             .pipe(sourcemaps.init())
             .pipe(concat('all.js'))
             .pipe(gulp.dest(assets.js))
@@ -113,7 +109,6 @@ function scripts() {
             .pipe(browsersync.stream());
 };
 
-/* Optimize images */
 /* Optimize images */
 function images() {
 	
