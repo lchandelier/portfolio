@@ -203,14 +203,4 @@ It’s a tool that I have used and improved on a dozen projects at the moment. I
 
 Finally, I thank Julien, Michael and Yassine for their suggestions and feedback. They have largely contributed to make this package more complete.
 
-[See the project on Github](https://github.com/mchandelier/korat "Korat (new window)"){:target="_ blank"}
-
-## Update December 2016
-
-gulp-html-extend has been replaced by gulp-fileinclude. I’ve had some issues on several projects that made me change. gulp-html-extend randomly flushed some included files which has never happened again since I use gulp-fileinclude.
-
-I’ve also included Plumber to avoid relaunching the watch command in case of compiling error.
-
-## Update July 2017
-Accessibility <abbr title="For The WIn">FTW</abbr> !
-In addition to modules upgrades, I’ve added axe-webdriver which makes an accessibility audit and generate a report.
+[See the project on Github](https://github.com/lchandelier/korat "Korat (new window)"){:target="_ blank"}

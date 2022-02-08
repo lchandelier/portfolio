@@ -205,13 +205,4 @@ C’est un outil que j’ai pu utiliser et améliorer sur une dizaine de projets
 
 Enfin, je remercie Julien, Michael et Yassine pour leurs suggestions et retours. Ils ont largement contribué à rendre ce package plus complet.
 
-[Voir le projet sur Github](https://github.com/mchandelier/korat "Korat (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
-
-## Mise à jour Décembre 2016
-gulp-html-extend a été remplacé par gulp-fileinclude. J’ai rencontré plusieurs soucis sur différents projets qui m’ont poussée à changer de plugin. gulp-html-extend vidait de manière aléatoire les fichiers que j’incluais, ce qui n’arrive plus depuis que j’utilise gulp-fileinclude.
-
-J’ai aussi intégré Plumber pour éviter d’avoir à relancer la commande Watch en cas d’erreur de compilation.
-
-## Mise à jour Juillet 2017
-Un peu d’accessibilité !
-En plus des mises à jour de modules, j’ai ajouté axe-webdriver qui permet de faire un audit d’accessibilité et qui génère un rapport avec les résultats.
+[Voir le projet sur Github](https://github.com/lchandelier/korat "Korat (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}

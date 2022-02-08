@@ -4,8 +4,12 @@ $email_dest = "lena.chandelier@pm.me";
 $subject = "[Blog] - Nouveau commentaire";
 $template_sent = '../comment-sent.html';
 
-
-if($_POST['comment_blop'] != '' || preg_match('/(meds|pills|pill|rayban|remedies|remedy|med|amoxicillin)/i', $_POST["comment"])) {
+if(preg_match('/jonjamail/i', $_POST["email"])) {
+	header('Content-Type: text/plain; charset=utf-8');
+	echo 'Nope.';
+	return;
+}
+else if($_POST['comment_blop'] != '' || preg_match('/(meds|pills|pill|drug|drugs|rayban|remedies|remedy|med|amoxicillin)/i', $_POST["comment"])) {
 	//bots
 	header('Content-Type: text/plain; charset=utf-8');
 	echo 'Nope.';
