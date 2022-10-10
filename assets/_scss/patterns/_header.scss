@@ -44,6 +44,12 @@ header {
     .right_items {
         max-width: 70%;
     }
+
+    a, button {
+        &:focus-visible {
+            outline: 2px solid $light_color;
+        }
+    }
     
     a:not(.logo), button:not(.display_menu):not(.display_tools) {
         color: #fff;
@@ -67,14 +73,13 @@ header {
 
         &:focus, &:active, &:hover {
             color: $light_color;
-        }
-
-        &:focus, &:active, &:hover {
+        
             &:after {
                 width: 100%;
                 background: $light_color;
             }
         }
+      
     }
 }
 
@@ -106,12 +111,6 @@ header {
     
    > button {
         @include sprite($icons, a11y);
-    }
-    
-    button {
-        &:focus, &:active, &:hover {
-            outline: 1px dotted $light_color;
-        }
     }
     
     ul {
@@ -206,9 +205,5 @@ header {
                 transform: rotate(-45deg);
             }
         }
-    }
-    
-    &:focus, &:active, &:hover {
-        outline: 1px dotted $light_color;
     }
 }

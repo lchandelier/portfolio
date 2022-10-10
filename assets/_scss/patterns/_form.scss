@@ -78,6 +78,10 @@ input {
             background: #fff;
             color: $main_color;
         }
+
+        &:focus-visible {
+            outline: 2px solid $light_color;
+        }
     }
 }
 
@@ -144,4 +148,10 @@ textarea {
 
     @extend input;
     resize: vertical;
+}
+
+input, textarea, select {
+    &:focus-visible {
+        outline: 2px solid $light_color;
+    }
 }

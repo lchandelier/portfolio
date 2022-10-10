@@ -2,7 +2,7 @@
 
 /* header with picture */
 main {
-    >div {
+    > div {
         padding: 60px 20px 80px;
 
         &.banner {
@@ -99,6 +99,10 @@ main {
     a {
         display: inline-block;
         vertical-align: top;
+        
+        &:focus-visible {
+            outline: 2px solid $light_color;
+        }
     }
 }
 
@@ -142,6 +146,13 @@ main {
     @for $i from 1 through 6 {
         .item:nth-child(#{$i}) {            
             @include fadeAppear($i/4);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .item:nth-child(#{$i}) {
+                animation: none;
+                opacity: 1;
+            }
         }
     }
 
@@ -236,6 +247,12 @@ main {
             left: 50%;
             margin: 0 0 30px -110px;
         }
+
+        @media (prefers-reduced-motion: reduce) {
+            &.display {
+                opacity: 1;
+            }
+        }
     }
     
     p {
@@ -301,6 +318,12 @@ main {
             border-radius: 4px;
             border: 0;
         }
+
+        @media (prefers-reduced-motion: reduce) {
+            &.display {
+                opacity: 1;
+            }
+        }
     }
     
     h3 {
@@ -323,6 +346,7 @@ main {
         }
         
         &:focus, &:active, &:hover {
+
             &:after {
                 width: 100%;
             }
@@ -333,17 +357,7 @@ main {
         display: inline-block;
         margin-right: 12px;
         text-transform: uppercase;
-        font-family: lato_black, arial, sans-serif;
-        
-        &:focus, &:active, &:hover {
-            color: $light_color;
-        }
-
-        &:focus, &:active, &:hover {
-            &:after {
-                background: $light_color;
-            }
-        }
+        font-family: lato_black, arial, sans-serif;       
     }
 }
 
@@ -386,12 +400,14 @@ main {
             
             &:focus, &:active, &:hover {
                 color: #fff;
-            }
-
-            &:focus, &:active, &:hover {
+              
                 &:after {
                     background: #fff;
                 }
+            }
+
+            &:focus-visible {
+                outline: 2px solid $light_color;
             }
         }
     }
@@ -459,10 +475,11 @@ main {
         padding: 0 3px;
         border-radius: 100%;
         background: #ededed;
+        border: 1px solid $site_color;
         @include transition(box-shadow .3s);
         
         &:focus, &:active, &:hover {
-            box-shadow: 0 0 5px #bbb;
+            box-shadow: 0 0 5px $site_color;
         }
     }
 }
@@ -509,13 +526,15 @@ main {
 
         &:focus, &:active, &:hover{
             color: #fff;
-        }
 
-        &:focus, &:active, &:hover {
             &:after {
                 width: 100%;
                 background: #fff;
             }
+        }
+
+        &:focus-visible {
+            outline: 2px solid $light_color;
         }
     }
 }

@@ -52,13 +52,15 @@ footer {
 
         &:focus, &:active, &:hover {
             color: $light_color;
-        }
 
-        &:focus, &:active, &:hover {
             &:after {
                 width: 100%;
                 background: $light_color;
             }
+        }
+        
+        &:focus-visible {
+            outline: 2px solid $light_color;
         }
     }
     

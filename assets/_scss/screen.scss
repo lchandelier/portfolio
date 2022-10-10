@@ -12,6 +12,7 @@
         url('font/lato-light-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 
 @font-face {
@@ -20,6 +21,7 @@
         url('font/lato-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 
 @font-face {
@@ -28,6 +30,7 @@
         url('font/lato-black-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 
 @font-face {
@@ -38,6 +41,7 @@
         url('font/opendyslexic3-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 
 @font-face {
@@ -48,6 +52,7 @@
         url('font/opendyslexic3-bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 
 /* global styles */
@@ -56,6 +61,7 @@ html {
     font-size: calc(1rem * 0.625);
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -101,6 +107,9 @@ body {
             color: #fff;
             font-size: 1.6rem;
         }
+        &:focus-visible {
+            outline: 2px solid $light_color;
+        }
     }
 }
 
@@ -114,6 +123,7 @@ a {
     display: inline-block;
     text-decoration: none;
     color: $site_color;
+
     @include transition( .2s);
 
     &.link_full_block {
@@ -126,6 +136,10 @@ a {
             bottom:0;
             background: url("../img/global/link.png") 0 0 repeat;
         }
+    }
+
+    &:focus-visible {
+        outline: 2px solid $site_color;
     }
 }
 
@@ -288,6 +302,12 @@ main {
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .display {
+        animation: none;
+    }
+}
+
 div, textarea{
     word-wrap: break-word;
     hyphens: auto;
@@ -329,10 +349,17 @@ div, textarea{
     &:focus, &:active, &:hover {
         background: $site_color;
         color: $light_color;
+        box-shadow: 0 0 1px 2px $light_color;
     }
 }
 
-body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo), {
+[download] {
+    &:focus, &:active, &:hover {
+        box-shadow: none;
+    }
+}
+
+body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
     .dyslexia & {
         font-family: od_reg, arial, sans-serif;
         line-height: 1.5;
@@ -360,6 +387,10 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo), {
         &:after {
             width: 0;
         }
+    }
+
+    &:focus-visible {
+        box-shadow: 0 0 1px 2px $light_color, 0 0 1px 4px $site_color;
     }
 }
 /* end global styles */
@@ -442,13 +473,17 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo), {
 
         &:focus, &:active, &:hover{
             color: $main_color;
-        }
-
-        &:focus, &:active, &:hover {
+        
             &:after {
                 width: 0;
                 background: $main_color;
             }
+        }
+    }
+
+    a, button {
+        &:focus-visible {
+            outline: 2px solid $site_color;
         }
     }
 }

@@ -29,13 +29,15 @@ article, .simple_content {
 
         &:focus, &:active, &:hover{
             color: $main_color;
-        }
-
-        &:focus, &:active, &:hover {
+        
             &:after {
                 width: 0;
                 background: $main_color;
             }
+        }
+
+        &:focus-visible {
+            outline: 2px solid $site_color;
         }
     }
     
@@ -85,6 +87,10 @@ article, .simple_content {
                 img {
                     box-shadow: 0 0 15px #d0d0d0;
                     transform: scale(1.02,1.02);
+
+                    @media (prefers-reduced-motion: reduce) {
+                        transform: none;
+                    }
                 }
                 
                 + .content h2 {
@@ -92,6 +98,12 @@ article, .simple_content {
                         width: 100%;
                     }
                 }
+            }
+            &:focus-visible {
+                &::before {
+                    outline: 2px solid $site_color;
+                }
+
             }
 
             &:after {

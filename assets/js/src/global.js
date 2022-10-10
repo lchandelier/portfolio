@@ -29,27 +29,24 @@
         openMenu($('#displayMenu'), $('#displayMenu + ul'), $('#a11yTools').find('button'), $('#a11yTools').find('ul'));
         closeAfterLastTab($('#displayMenu + ul'));
         closeClickOutside($('#mainMenu'));
-    
 
         //back top page
         if ($('#top').length > 0)
         {
-            var offset = 220;
-            var duration = 600;
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > offset) {
+            window.onscroll = function () {
+                if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
                     $('#go_top').addClass('visible');
                 } else {
                     $('#go_top').removeClass('visible');
                 }
-            });
-
+            };
+          
             $('#go_top').focus(function () {
                 $('#go_top').addClass('visible');
             }).focusout(function () {
                 $('#go_top').removeClass('visible');
             }).click(function () {
-                $('html, body').animate({scrollTop: 0}, duration);
+                window.scrollTo({ top: 0, behavior: "smooth" });
                 return false;
             });
         }
@@ -145,10 +142,8 @@
 
     function closeAfterLastTab(selector) {
         selector.keydown(function (e) {
-            
+            var focusedElement = $(':focus');
             if (e.keyCode === 9) {
-                var focusedElement = $(':focus');
-                
                 if (e.shiftKey === false && focusedElement.is($(this).find(':tabbable').last())) {
                     $(this).prev().trigger('click');
                     $(this).prev().parent().next().find(':tabbable').first().focus();
