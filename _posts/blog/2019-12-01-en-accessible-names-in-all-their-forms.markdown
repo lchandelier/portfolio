@@ -235,3 +235,5 @@ Even better, during the UX and/or design phase, check if it is possible to integ
 [Compatibility of screen readers with ARIA attributes](https://www.powermapper.com/tests/screen-readers/wcag/ "Powermapper (new window)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 Thanks to Romain Gervois for his kind review and good advices as well as to Nicolas Hoffmann and the proofreaders :)
+
+You can find this article and many other very interesting articles on [24 jours de web (in french only)](https://www.24joursdeweb.fr/2019/ "24 jours de web 2019 edition (new window)"){:target="_blank"}{:hreflang="fr"}{:rel="noopener noreferrer"}

@@ -1,0 +1,212 @@
+---
+layout: post
+title:  "Paris Web, back to basics"
+ref: paris-web-2022
+date:   2022-10-10 12:20:00 +0100
+category: "blog"
+permalink: /en/blog/paris-web-2022.html
+lang: en
+thumbnail: /assets/img/blog/paris-web-medium.jpg
+alt_thumb: 
+---
+
+<img src="{{ site.baseurl }}/assets/img/blog/paris-web.jpg" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/paris-web-medium.jpg 670w,
+          {{ site.baseurl }}/assets/img/blog/paris-web.jpg 1024w"
+          sizes="(min-width:671px) 1024px"/>
+
+**Back in person for this edition after 2 years of COVID pandemic and online editions. It was great to be back with the "Paris Web family"! This year's theme was "back to basics"**.
+
+Accessibility, diversity, eco-design and technology were on the menu.<br>
+Some of the conferences were a real eye-opener, others will help me to improve my daily work and give me arguments to push even more the accessibility in the company I work in. Here is my feedback of some of them.
+
+
+## Thursday's conferences
+
+### Enrich your projects by integrating personae in constrained situations
+
+Nathalie Pican and Stéphane Deschamps presented Persona11y, 12 personae with different disabilities. Each of them have a very detailed sheet to understand their needs and their use of technology. An interesting mnemonic technique was used: the first letter of the persona's first name matches his or her disability (e.g. Angélique who is blind (doesn't work in english...)).
+
+One person out of six is disabled, this tool help us to integrate at least one persona with a disability among those used during the design of a project.
+
+A dedicated and multilingual website will soon be online where it will be possible to consult each persona's details. 
+
+[See the video of Enrich your projects by integrating personae in constrained situations on Youtube (in French)](https://www.youtube.com/watch?v=pJuHsOi0q4Y&t=2192s "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}{:hreflang="fr"}
+
+### Animating the impossible
+
+After a short video with a magic trick demonstrating how our eye only focuses on the central axis, Cassie Evans presented different advanced and responsive animations using [GreenSock](https://greensock.com/gsap/ "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}. 
+
+I remember the FLIP method for First, Last, Invert, Play.<br>
+First means that we enter the position and size of the element to be animated in its initial state.<br> Last, we calculate the position and the final size of the element by moving it in the DOM.<br>
+Invert, with the help of transitions, we pass the element from its final state to its initial state<br> Finally, Play, means that we play the animation to the user. The calculations are done in an invisible way for him but he sees the result.
+
+[See the video Animating the impossible on Youtube](https://www.youtube.com/watch?v=pJuHsOi0q4Y&t=8130s "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+
+### Illectronism and digitization of public services
+
+Raphaël Yharrassarry presented us illectronism, or digital inability in Quebecers.<br>
+Not to be confused with administrative phobia (which is reserved for ministers and elected officials), this is a real problem.<br>
+Indeed, 18% of the French population has difficulties to master digital tools and 35% have at least one difficulty that prevents them from fully using digital and internet. 8% don't have an email address at all, 15% don't have internet at home, 22% don't have a tablet or a computer at home.
+
+In a country where administrative procedures are increasingly dematerialized, the exclusion of a part of the population is growing.
+
+So what are the solutions to limit the damage?
+
+- let the user choose the means of communication with the administration (phone, email...)
+- let him change the mode of relationship during the process
+- "go to" (social networks to reach students, authorize the creation of an account by a third party)
+- transform administrative jargon into understandable French
+- Translate into English (to help people who arrive in France and do not yet speak the language)
+
+[See the video Illectronism and digitization of public services on Youtube (in French)](https://www.youtube.com/watch?v=TGnbXfyIbq8&t=323s "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+
+### You're working in the web and you don't know what Layout Shifts are? Oh, wait... 
+
+Unexpected conference by Raphaël Goetter who replaced another speaker with short notice!<br>
+We learned simple techniques to avoid layout shifts, which are the untimely reorganization of a page (resizing, repositioning, ...). 
+
+For example, indicating the dimensions of images avoids these layout shifts because the browser can calculate their ratio. 
+
+This applies to flexbox and grid: avoid grid-auto-columns and prefer grid-templates-columns where you indicate the exact number of elements, use auto-fill instead of auto-fit which removes unused columns.
+
+For fonts, we can use the [Fallback font generator tool](https://screenspan.net/fallback "(new window)"){:target="_blank"}{:rel="noopener noreferrer"} which allows us to set the characters of the fallback font according to the font that will be loaded later and thus, avoid a layout shift. Also, we can preload our different fonts in the `<head>` by adding the `preload` attribute like this:
+
+{% highlight html %}
+{% raw %}
+<link rel="preload" as="font" href="mafont.woff2" type="font/woff2"/>
+{% endraw %}
+{% endhighlight %}
+
+[See the video You're working in the web and you don't know what Layout Shifts are? Oh, wait… on Youtube (in French)](https://www.youtube.com/watch?v=LRx8jSBwQeY&t=2628s "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+## Friday's conferences
+
+<h3>Discover "the good <abbr title="HyperText Markup Language">HTML</abbr>" and save some <abbr title="javaScript">JS</abbr> and <abbr title="Cascading Stylesheet">CSS</abbr></h3>
+
+Another great conference by Gaël Poupard. How to build some advanced components or input helpers without JS? 
+For example, a `<dialog>` tag with a simple JS event for opening it has accessibility built-in. The modal window closes with the escape key and the focus automatically moves to the first focusable element. No need for JS for that, **« it just works »** (it's better in french).
+
+Do you want to propose a suggestions list? The `<datalist>` tag is for you!
+
+To help fill input fields (and to respect the accessibility criterion [1.3.5: Identify input purpose](https://www.w3.org/TR/WCAG21/#identify-input-purpose "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}) use the autocomplete attribute with the desired value. The complete list can be found on [this page](https://www.w3.org/TR/WCAG21/#input-purposes "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}.
+
+Do you want to improve the performance of your site? The attributes `preload`, `prefetch`, `loading="lazy"` for images exist and are well supported.
+
+
+[See the video Discover "The good HTML" and save some JS and CSS on Youtube (in French)](https://www.youtube.com/watch?v=ym2sI8Jlu6A&t=653s "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+
+### From social to tech: a plea for atypical profiles
+
+Magali Milbergue presented us her personal experience as a person coming from another field than tech to integrate it. 
+
+She also talked a lot about Pierre.
+
+Pierre is a white, heterosexual, thin, cisgender individual and his profile is the majority in tech.
+Pierre is full of bias (like everyone else). The problem is that Peter will design services with these biases inside. So when Pierre is going to design a facial recognition software, he isn't going to think that some people may have a tattoo on their face, and so, this recognition is going to ask the person to remove what is obstructing his face...
+
+When Pierre is building the artificial intelligence of autonomous cars, these same cars will think that black people are non-living obstacles and will therefore choose to run over them rather than a white person.
+
+When Peter is going to make a chair, he isn't going to think that a person with overweight might not be able to sit in it.
+
+It's to avoid these kind of biases that it's important to include atypical profiles, minorities. Beyond opening your mind, this will help produce services and tools that can be used by the greatest number.
+
+[See the video of the conference From social to tech: plea for atypical profiles on Youtube (in French)](https://www.youtube.com/watch?v=ym2sI8Jlu6A&t=7840s "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+
+<h3 lang="en">Defensive CSS</h3>
+
+Like Raphaël Goetter's conference, Ahmad Shadeed presented us several techniques to have a content always readable and presentable in all circumstances.
+For example, the overflow-wrap: break-word; property with min-width: 0; to automatically adjust a too long content.
+
+Another example, using the scrollbar-gutter: stable; property allows to reserve the space for the browser's scrollbar, so when the scrollbar appears, there won't be a layout shift in the page.
+
+One technique I particularly liked is the overscroll-behaviour to apply on a modal. By using overscroll-behaviour-y: contain; the scroll is contained in the modal and does not scroll the rest of the body.
+
+[See the video Defensive CSS on Youtube](https://www.youtube.com/watch?v=ym2sI8Jlu6A&t=10226s "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+### Digital and ethics: the impossible equation?
+
+Definitely the slap in the face of this edition.<br>
+Audrey Neveu and Agnès Crepet showed us the environmental and societal impact of our digital consumption.
+We know it between the huge Chinese factories, child labor, pollution generated. But with figures and concrete examples, the feeling is not the same.
+
+Some figures:
+- it is necessary to extract 70 kg of minerals for a phone of 250 g. The extraction is done with acid for the copper, which is then found in the water table, which causes a huge and lasting pollution and therefore an exodus of population.
+
+- 40,000 children working in the cobalt mines in Congo
+
+- more than 50 million tons of electronic waste
+
+- collective suicides in factories in China because of the horrible working conditions (26 employees in 2010)
+
+- teenage labor in Chinese factories
+
+- armed conflicts and mafias (about 100 armed groups) that exploit minors
+
+Concerning ethics, we talked about dark patterns and attention design.<br>
+When we refresh our Twitter or Facebook feed, the same mechanism as when we play a slot machine is triggered in our brain and this creates an addiction.
+
+Regarding the collection of personal data, even people who don't use Facebook have a "shadow profile" thanks to their Facebook contacts.
+This makes possible to sell profiles, to know the probability that you will buy a particular product or vote for a particular political party.
+
+About internet of things, they are becoming mainstream, trivializing things that would have seemed liberticidal in the past.
+
+Example of pizza delivery drones: the idea at first sight is not really shocking... A drift that was made, **in France**, in 2020 is that protesting health care workers were followed to their homes by police drones to be placed in custody a few days later!
+
+Another drone, in Libya this time, shot down a target; today, nobody knows if it was the operator of the drone who fired or the drone itself...
+
+So what are the solutions to limit all this?
+
+- Keep your phone longer and don't change it every 3 years. By keeping it for 7 years, you reduce greenhouse gas emissions by 44%.
+- Use privacy-friendly services (Proton Mail, Signal, Firefox, Framasoft tools)
+
+Many other examples and solutions were given, I strongly invite you to see this conference.
+
+[See the video Digital and ethics: the impossible equation? on Youtube (in French)](https://www.youtube.com/watch?v=gq_y9PDQgLw&t=20357s "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+
+### The Big Miss: the trans community in our digital products 
+
+How can we design non-discriminatory products and services for trans people?
+
+First of all, avoid clichés such as "pink for girls, blue for boys": an application for menstrual monitoring can be used by a trans person and they won't necessarily feel at ease because of these gendered colors.
+
+Also avoid the female/male binarity when asking for the gender of the person. First, ask yourself if this information is useful? And if so, add a neutral gender so that everyone is included.
+
+This is also important in job ads, they always specify female/male.
+
+Here again, many other examples were given, this conference is very interesting to open your mind!
+
+[See the video The Great Absence: the trans community in our digital products on Youtube (in French)](https://www.youtube.com/watch?v=ym2sI8Jlu6A&t=28925s "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+
+### In a nutshell
+
+The theme was "back to basics" and we felt it. The human being at the center of our concerns, giving value to our jobs by thinking of including minorities, by measuring and limiting our impact on the environment and society.
+This edition was rich with very diverse themes. A balance was struck between pure technique and social issues and I particularly appreciated that.
+
+Thank you to the speakers for these fascinating and enriching topics as well as to all the people I met, it was great to see you again, see you next year!
+
+While waiting for the videos to be cut, you can find all the conferences 
+[on this Twitter feed](https://twitter.com/mab_/status/1578780606179282944 "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}.
+
+<div class="cols">
+   <figure>
+      <img src="{{ site.baseurl }}/assets/img/blog/staff-paris-web.jpg" alt="Paris Web staff greeting the audience from the stage" 
+                  srcset="{{ site.baseurl }}/assets/img/blog/staff-paris-web-medium.jpg 670w,
+               {{ site.baseurl }}/assets/img/blog/staff-paris-web.jpg 1024w"
+               sizes="(min-width:671px) 1024px"/>
+      <figcaption>A big thank you to the Staff who did a great job, as always!</figcaption>
+   </figure>
+   <figure>
+      <img src="{{ site.baseurl }}/assets/img/blog/interpretes-lsf.jpg" alt="The FSL team" 
+            srcset="{{ site.baseurl }}/assets/img/blog/interpretes-lsf-medium.jpg 670w,
+               {{ site.baseurl }}/assets/img/blog/interpretes-lsf.jpg 1024w"
+               sizes="(min-width:671px) 1024px"/>
+      <figcaption>Thank you to the <abbr title="French Sign Language">FSL</abbr> interpreters who are so talented that even the government can no longer do without them!</figcaption>
+   </figure>   
+</div> 

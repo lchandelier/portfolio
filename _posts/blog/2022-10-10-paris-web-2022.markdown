@@ -1,0 +1,209 @@
+---
+layout: post
+title:  "Paris Web, retour aux sources"
+ref: paris-web-2022
+date:   2022-10-10 12:20:00 +0100
+category: "blog"
+permalink: /blog/paris-web-2022.html
+lang: fr
+thumbnail: /assets/img/blog/paris-web-medium.jpg
+alt_thumb: 
+---
+
+<img src="{{ site.baseurl }}/assets/img/blog/paris-web.jpg" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/paris-web-medium.jpg 670w,
+          {{ site.baseurl }}/assets/img/blog/paris-web.jpg 1024w"
+          sizes="(min-width:671px) 1024px"/>
+
+**Retour en présentiel pour cette édition après 2 ans de pandémie COVID et d’éditions en ligne. Autant dire que cela à fait beaucoup de bien de retrouver la « famille Paris Web » ! Le thème de cette année était le retour aux sources.**
+
+Accessibilité, diversité, éco-conception et technique étaient au menu de cette édition.<br>
+Certaines conférences ont été de véritables prises de conscience, d’autres vont me permettre d’améliorer mon travail au quotidien et me donner des éléments pour pousser encore plus l’accessibilité dans l’entreprise dans laquelle je travaille. Voici mon compte-rendu de certaines de ces conférences.
+
+## Les conférences du jeudi
+
+### Enrichissez vos projets en y intégrant des personae en situation contrainte
+
+Nathalie Pican et Stéphane Deschamps ont présenté Persona11y, 12 personae porteurs de différents handicaps. Ils ont chacun une fiche très détaillée pour comprendre leurs besoins et leur usage du numérique. Un moyen mnémotechnique intéressant a été mis en place: la première lettre du prénom du persona correspond à son handicap (exemple d’Angélique qui est aveugle).
+
+Etant donné qu’une personne sur six est handicapée, cet outil permet d’intégrer au moins un persona porteur de handicap parmi ceux que l’on utilise lors de la conception d’un projet.
+
+Un site dédié et multilingue sera prochainement en ligne et permettra la consultation en détail de chaque persona. 
+
+[Voir la vidéo de la conférence Enrichissez vos projets en y intégrant des personae en situation contrainte sur Youtube](https://www.youtube.com/watch?v=pJuHsOi0q4Y&t=2192s "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+<h3 lang="en">Animating the impossible</h3>
+
+Après une brève vidéo contenant un tour de magie démontrant comment notre oeil ne se concentre que sur l’axe central, Cassie Evans a présenté différentes animations avancées et responsives à l’aide de [GreenSock (en anglais)](https://greensock.com/gsap/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}{:hreflang="en"}. 
+
+Je retiens la méthode FLIP pour <strong lang="en">First, Last, Invert, Play</strong>.<br><strong lang="en">First</strong> signifie que l’on saisie la position et la taille de l’élément à animer dans son état initial.<br><strong lang="en">Last</strong>, on calcule la position et la taille finale de l’élément en le déplaçant dans le DOM. <br><strong lang="en">Invert</strong>, à l’aide de transitions, on passe l’élément de son état final à son état initial.<br>Enfin, <strong lang="en">Play</strong>, signifie que l’on joue l’animation à l’utilisateur. Les calculs se sont fait de manière invisible pour lui mais il en voit le résultat.
+
+[Voir la vidéo de la conférence Animating the impossible sur Youtube (en anglais)](https://www.youtube.com/watch?v=pJuHsOi0q4Y&t=8130s "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+
+### Illectronisme et numérisation des services publics
+
+Raphaël Yharrassarry nous a parlé d’illectronisme, ou inhabileté numérique en Québécois.<br>
+À ne pas confondre avec la phobie administrative (qui est réservée aux ministres et aux élus), il s’agit bien un réel problème.<br>
+En effet, 18 % de la population française a des difficultés à maîtriser les outils numériques et 35% ont au moins une difficulté qui les empêchent d’utiliser pleinement le numérique et internet. 8% n’ont pas du tout d’adresse email, 15% n’ont pas internet chez eux, 22% n’ont pas de tablette ou d’ordinateur à domicile.
+
+Autant dire que dans un pays où les démarches administratives sont de plus en plus dématérialisées, l’exclusion d’une partie de la population s’étend.
+
+Alors quelles solutions pour limiter la casse?
+
+- laisser le choix à l’usager du moyen de communication avec l’administration (téléphone, courrier...)
+- changer le mode de relation en cours de démarche
+- « l’aller-vers » (réseaux sociaux pour toucher les étudiants, autoriser la création d’un compte par un tiers)
+- transformer le jargon administratif en français compréhensible
+- traduire en anglais (pour aider les personnes qui arrivent en France et ne parleraient pas encore la langue)
+
+[Voir la vidéo de la conférence Illectronisme et numérisation des services publics sur Youtube](https://www.youtube.com/watch?v=TGnbXfyIbq8&t=323s "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+
+### Tu fais du Web et tu ne connais pas les Layout Shifts ?! Nan mais… 
+
+Conférence inattendue de Raphaël Goetter qui a remplacé un autre orateur au pied levé !<br>
+Nous avons appris des techniques simples pour éviter les <span lang="en">layout shifts</span>, qui sont la réorganisation intempestive d’une page (redimensionnements, repositionnements, ...). 
+
+Par exemple, le fait d’indiquer les dimensions des images évite ces <span lang="en">layout shifts</span> car le navigateur peut calculer leur ratio. 
+
+Cela s’applique à flexbox et à grid: éviter grid-auto-columns et préférer grid-templates-columns où l’on indique le nombre exact d’éléments, utiliser auto-fill au lieu de auto-fit qui supprime les colonnes inutilisées.
+
+Pour les fontes, on peut utiliser l’outil [Fallback font generator (en anglais)](https://screenstrong.net/fallback "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"} qui permet de caler les caractères de la fonte de fallback en fonction de la font qui sera chargée plus tard et donc, d’éviter un <span lang="en">layout shift</span>. Aussi, on peur précharger nos différentes fontes dans le `<head>` en ajoutant l’attribut `preload` comme ceci:
+
+{% highlight html %}
+{% raw %}
+<link rel="preload" as="font" href="mafont.woff2" type="font/woff2"/>
+{% endraw %}
+{% endhighlight %}
+
+[Voir la vidéo de la conférence Tu fais du Web et tu ne connais pas les Layout Shifts ?! Nan mais… sur Youtube](https://www.youtube.com/watch?v=LRx8jSBwQeY&t=2628s "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+## Les conférences du vendredi
+
+<h3> Découvrez « le bon <abbr title="HyperText Markup Language">HTML</abbr> » et économisez du <abbr title="javaScript">JS</abbr> et du <abbr title="Cascading Stylesheet">CSS</abbr></h3>
+
+Encore une super conférence de Gaël Poupard. Comment se passer du JS pour certains composants avancés ou aides à la saisie ? 
+Par exemple, une balise `<dialog>` avec un simple événement JS pour son ouverture permet de gérer automatiquement l’accessiblité de celle-ci. La fenêtre modale se ferme avec la touche échap et le focus se déplace automatiquement sur le premier élément focusable. Pas besoin de JS pour ça, **« ça juste marche »**.
+
+Vous voulez proposer une liste de suggestions ? La balise `<datalist>` est faite pour vous !
+
+Pour faciliter la saisie dans les formulaires (et pour respecter le critère d’accessiblité [1.3.5:  Identifier la finalité de la saisie](https://www.w3.org/Translations/WCAG21-fr/#identify-input-purpose "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}) utilisez l’attribut autocomplete avec la valeur souhaitée. La liste exhaustive se trouve sur [cette page](https://www.w3.org/Translations/WCAG21-fr/#input-purposes "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}.
+
+Vous voulez améliorer la performance de votre site ? Les attributs `preload`, `prefetch`, `loading="lazy"` pour les images existent et sont bien supportés.
+
+
+[Voir la vidéo de la conférence Découvrez « le bon HTML » et économisez du JS et du CSS sur Youtube](https://www.youtube.com/watch?v=ym2sI8Jlu6A&t=653s "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+
+### Du social à la tech : plaidoyer en faveur des profils atypiques
+
+Magali Milbergue nous a présenté son expérience personnelle en tant que personne venant d’un autre milieu que la tech pour intégrer ce même milieu. 
+
+Elle nous a aussi beaucoup parlé de Pierre.
+
+Pierre est un individu blanc, hétérosexuel, mince, cisgenre et son profil est majoritaire dans la tech.
+Pierre est plein de biais (comme tout le monde). Le problème est que Pierre va concevoir des services avec ces biais à l’intérieur. Donc lorsque Pierre va concevoir un logiciel de reconnaissance faciale, il ne va pas penser que certaines personnes peuvent avoir le visage tatoué, et donc, cette reconnaissance va demander à la personne d’enlever ce qui obstrue son visage...
+
+Lorsque Pierre va travailler sur l’intelligence artificielle des voitures autonomes, ces mêmes voitures vont penser que les personnes noires sont des obstacles non-vivants et vont donc choisir de les écraser plutôt qu’une personne blanche.
+
+Quand Pierre va fabriquer une chaise, il ne va pas penser qu’une personne avec une corpulence importante ne pourra peut-être pas s’asseoir dedans.
+
+C’est pour éviter ce genre de biais qu’il est important d’inclure des profils atypiques, des minorités. Au-delà de vous faire grandir personnellement, cela permettra de produire des services et des outils utilisables par le plus grand nombre.
+
+[Voir la vidéo de la conférence Du social à la tech : plaidoyer en faveur des profils atypiques sur Youtube](https://www.youtube.com/watch?v=ym2sI8Jlu6A&t=7840s "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+
+<h3 lang="en">Defensive CSS</h3>
+
+Dans la lignée de la conférence de Raphaël Goetter, Ahmad Shadeed nous a présenté plusieurs techniques pour avoir un contenu toujours lisible et présentable en toutes circonstances.<br>
+Par exemple, la propriété overflow-wrap: break-word; accompagnée de min-width: 0; pour ajuster automatiquement un contenu trop long.
+
+Autre exemple, utiliser la propriété scrollbar-gutter: stable; permet de réserver l’espace prévu pour la scrollbar du navigateur, ainsi, lorsque la scrollbar apparaîtra, il n’y aura pas de décalage dans la page (et on évite un <span lang="en">layout shift</span>).
+
+Une technique que j’ai particulièrement retenue est celle d’overscroll-behaviour à appliquer sur une modale. En utilisant overscroll-behaviour-y: contain; le scroll est contenu dans la modale et ne fait pas scroller le reste du body.
+
+[Voir la vidéo de la conférence Defensive CSS sur Youtube (en anglais)](https://www.youtube.com/watch?v=ym2sI8Jlu6A&t=10226s "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+### Numérique et éthique : l’impossible équation ?
+
+Résolument la claque de cette édition.<br>
+Audrey Neveu et Agnès Crepet nous on montré l’impact environnemental et sociétal de notre consommation du numérique.
+Nous nous en doutons entre les énormes usines chinoises, le travail des enfants, la pollution engendrée. Mais avec des chiffres et des exemples concrets, la sensation n’est pas la même.
+
+Quelques chiffres:
+- Il faut extraire 70 kg de minéraux pour un téléphone de 250 g. L’extraction se fait avec de l’acide pour le cuivre, qui se retrouve ensuite dans les nappes phréatiques, ce qui engendre une pollution énorme et durable et donc un exode de populations.
+
+- 40 000 enfants travaillent dans les mines de cobalt au Congo
+
+- plus de 50 millions de tonnes de déchets électroniques
+
+- des suicides collectifs dans des usines en Chine tellement que les conditions de travail sont horribles (26 employés en 2010)
+
+- travail d’adolescents dans les usines Chinoises
+
+- les conflits armés et mafias (environs 100 groupes armés) qui exploitent les mineurs
+
+Concernant l’éthique, il a été question de <span lang="en">dark patterns</span> et de design de l’attention.<br>
+Lorsqu’on rafraîchit notre fil Twitter ou Facebook, le même mécanisme que lorsqu’on joue à une machine à sous s’enclenche dans notre cerveau et cela créé une addiction.
+
+Par rapport à la collecte des données personnelles, même les personnes n’utilisant pas Facebook ont un profil <span lang="en">(shadow profile)</span> construit grâce à leurs contacts ayant Facebook.
+Cela permet de vendre des profils, de connaître la probabilité que vous puissiez acheter un produit particulier ou de voter pour tel ou tel parti politique.
+
+Problématique au niveau des objets connectés, ils sont de plus en plus présents, banalisés et rendent normal des usages qui nous auraient paru liberticides dans le passé.
+
+Exemple de drones livreurs de pizza: l’idée de prime abord n’est pas plus choquante que ça... Une dérive qui en a été faite, **en France**, en 2020 est que des personnels soignants manifestants ont été suivi jusque chez eux par des drones de la police pour être placés en garde à vue quelques jours après !
+
+Un autre drone, en Libye cette fois, a abattu une cible; personne ne sait à ce jour si c’est l’opérateur du drone qui a tiré ou le drone lui-même...
+
+Alors, quelles sont les solutions pour limiter tout ça ?
+
+- Garder son téléphone plus longtemps et ne pas le changer tous les 3 ans. En le gardant 7 ans, on réduit de 44% les émissions de gaz à effet de serre
+- Utilisez des services respectueux de la vie privée (Proton Mail, Signal, Firefox, les outils Framasoft)
+
+Pleins d’autres exemples et solutions ont été donnés, je vous invite vivement à voir cette conférence.
+
+[Voir la vidéo de la conférence Numérique et éthique : l’impossible équation ? sur Youtube](https://www.youtube.com/watch?v=gq_y9PDQgLw&t=20357s "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+
+### La grande absente : la communauté trans dans nos produits digitaux 
+
+Comment concevoir des produits et services non discriminants pour les personnes trans ?
+
+Tout d’abord éviter les clichés « rose pour les filles, bleu pour les garçons » une application pour le suivi des règles peut être utilisé par une personne trans et iel ne va pas forcément se sentir à l’aise à cause de ces couleurs genrées.
+
+Eviter aussi la binarité femme/homme lorsqu’on demande le genre de la personne. D’abord se demander si cette information est utile ? Et si oui, ajouter un genre neutre pour que toute personne soit incluse.
+
+Ceci est aussi important dans les annonces d’embauche, on précise toujours femme/homme.
+
+Là aussi, plein d’autres exemples ont été donnés, cette conférence est très intéressante pour vous ouvrir l’esprit !
+
+[Voir la vidéo de la conférence La grande absente : la communauté trans dans nos produits digitaux sur Youtube](https://www.youtube.com/watch?v=ym2sI8Jlu6A&t=28925s "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
+
+
+### Conclusion
+
+Le thème était le « retour aux sources » et on l’a bien ressenti. L’humain au centre des préoccupations, donner de la valeur à nos métiers en pensant à inclure les minorités, en mesurant et en limitant notre impact sur l’environnement et la société.
+Cette édition a été riche avec des thèmes très divers. Un équilibre s’est fait entre la technique pure et les enjeux de société et j’ai particulièrement apprécié cela.
+
+Merci aux orateur·ice·s pour ces sujets passionants et enrichissants ainsi à toutes les personnes que j’ai croisées, ça m’a fait un bien fou de vous revoir, à l’année prochaine !
+
+En attendant le découpage des vidéos, vous pouvez retouver toutes les conférences 
+[sur ce fil Twitter](https://twitter.com/mab_/status/1578780606179282944 "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}.
+
+<div class="cols">
+   <figure>
+      <img src="{{ site.baseurl }}/assets/img/blog/staff-paris-web.jpg" alt="le staff Paris Web saluant l’audience depuis l’estrade" 
+                  srcset="{{ site.baseurl }}/assets/img/blog/staff-paris-web-medium.jpg 670w,
+               {{ site.baseurl }}/assets/img/blog/staff-paris-web.jpg 1024w"
+               sizes="(min-width:671px) 1024px"/>
+      <figcaption>Un grand merci au Staff qui abat un travail énorme à chaque fois !</figcaption>
+   </figure>
+   <figure>
+      <img src="{{ site.baseurl }}/assets/img/blog/interpretes-lsf.jpg" alt="l’équipe des interprètes LSF" 
+            srcset="{{ site.baseurl }}/assets/img/blog/interpretes-lsf-medium.jpg 670w,
+               {{ site.baseurl }}/assets/img/blog/interpretes-lsf.jpg 1024w"
+               sizes="(min-width:671px) 1024px"/>
+      <figcaption>Merci aux interprètes <abbr title="Langue des Signes Française">LSF</abbr> qui sont tellement doué·e·s que même le gouvernement ne peut plus s’en passer !</figcaption>
+   </figure>   
+</div> 

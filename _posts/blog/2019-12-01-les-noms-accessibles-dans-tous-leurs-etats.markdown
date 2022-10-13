@@ -232,3 +232,5 @@ Encore mieux, lors de la conception UX et/ou design, vérifiez s’il est possib
 [Compatibilité des lecteurs d’écran avec les attributs ARIA (en anglais)](https://www.powermapper.com/tests/screen-readers/wcag/ "Powermapper (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}
 
 Merci à Romain Gervois pour sa relecture bienveillante et pleine de bons conseils ainsi qu’à Nicolas Hoffmann et aux relecteurs et relectrices :)
+
+Vous pouvez retrouver cet article et plein d'autres articles très intéressants sur [24 jours de web](https://www.24joursdeweb.fr/2019/ "24 jours de web édition 2019 (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}

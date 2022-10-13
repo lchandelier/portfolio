@@ -55,6 +55,10 @@ article, .simple_content {
     }
 }
 
+article img {
+    max-width: 50%;
+}
+
 .wrapper + .wrapper {
     padding-top: 0;
 }
@@ -202,6 +206,26 @@ article {
         background: #f0f0f0; 
         padding: 2rem; 
         margin-bottom: 2rem; 
+    }
+}
+
+.cols {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+
+    @include respond-to(mobile_to_landscape) {
+        grid-template-columns: 1fr;
+    } 
+
+    
+    img {
+        width: 100%;
+        max-width: none;
+    }
+
+    figcaption {
+        font-size: 1.4rem;
     }
 }
 

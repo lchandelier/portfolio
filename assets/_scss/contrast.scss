@@ -18,6 +18,14 @@
                 background: #eee;
             }
         }
+
+        &:focus-visible {
+            outline: 2px solid $light_color;
+        }
+    }
+
+    article .highlight {
+        background: #ccc;
     }
 
     header {
@@ -39,6 +47,10 @@
     }
     
     code {
+        color: $high_contrast_color;
+    }
+
+    pre code {
         color: #000;
     }
 
@@ -46,6 +58,7 @@
     .project, 
     .about,
     .contact, 
+    .form_comment,
     .experience,
     footer {
         background: none;
@@ -65,6 +78,9 @@
 
         &:focus, &:active, &:hover {
             border-color: #eee;
+        }
+        &:focus-visible {
+            outline: 2px solid $light_color;
         }
     }
 
@@ -107,20 +123,28 @@
             
             &:focus, &:active, &:hover {
                 color: #fff;
-            }
-
-            &:focus, &:active, &:hover {
+            
                 &:after {
                     background: #fff;
                 }
             }
+            &:focus-visible {
+                outline: 2px solid $light_color;
+            }
         }
+    }
+
+    .post_list > div > a:focus-visible::before {
+        outline: 2px solid $light_color;
     }
     
     .social {
         a {
             &:focus, &:active, &:hover {
                 box-shadow: 0 0 10px #eee;
+            }
+            &:focus-visible {
+                outline: 2px solid $light_color;
             }
         }
     }
