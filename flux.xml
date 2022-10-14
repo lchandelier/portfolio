@@ -14,7 +14,7 @@ ref: rss
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% assign posts=site.posts | where:"lang", page.lang %}
-    {% for post in posts limit:10 %}
+    {% for post in posts %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.content | remove: '<img />' | strip_html | truncatewords: 40 | xml_escape }}</description>
