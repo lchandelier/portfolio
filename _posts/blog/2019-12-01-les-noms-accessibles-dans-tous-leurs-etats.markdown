@@ -51,17 +51,17 @@ Exemple d’utilisation :
 
 {% highlight html %}
 {% raw %}
-<a href="https://twitter.com/24joursdeweb" class="twitter">
-    <span class="sr-only">24 jours de web sur Twitter</span>
+<a href="https://www.facebook.com/terrapotager/" class="facebook">
+    <span class="sr-only">Terra potager sur Facebook</span>
 </a>
 {% endraw %}
 {% endhighlight %}
 
-![CSS est activé, seule l’icône Twitter est visible](https://media.24joursdeweb.fr/2019/11/sr-only-icon.png)
+<img src="{{ site.baseurl }}/assets/img/blog/icon-css.jpg" alt="CSS est activé, seule l’icône Facebook est visible"/>
 
-CSS est activé, seule l’icône Twitter est visible
+CSS est activé, seule l’icône Facebook est visible
 
-![CSS est désactivé, le texte de l’icône apparaît : 24 jours de web sur Twitter](https://media.24joursdeweb.fr/2019/11/sr-only-nocss.png)
+<img src="{{ site.baseurl }}/assets/img/blog/icon-text.jpg" alt="CSS est désactivé, le texte de l’icône apparaît : Terra potager sur Facebook"/>
 
 CSS est désactivé, le texte de l’icône apparaît
 

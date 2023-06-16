@@ -18,7 +18,6 @@ After answered 6 questions, our programme appear for all the festival. From ther
 
 For this project, I've been part of the [Superhuit](https://superhuit.ch/ "(new window)"){:target="_blank"}{:rel="noopener noreferrer"} development team. I've brought an accessibility touch to this experience and done CSS and Vue.js development as well.
 
-See [Montreux Jazz Festival Swipe experience](https://mjfswipe.com/ "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
 <img src="{{ site.baseurl }}/assets/img/projects/mjf_large.jpg" alt="" 
              srcset="{{ site.baseurl }}/assets/img/projects/mjf_medium.jpg 670w,

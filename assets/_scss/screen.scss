@@ -7,7 +7,7 @@
 
 /* fonts */
 @font-face {
-    font-family: 'lato_light';
+    font-family: 'atk_reg';
     src: url('font/lato-light-webfont.woff2') format('woff2'),
         url('font/lato-light-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -16,7 +16,7 @@
 }
 
 @font-face {
-    font-family: 'lato_reg';
+    font-family: 'atk_reg';
     src: url('font/lato-regular-webfont.woff2') format('woff2'),
         url('font/lato-regular-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-    font-family: 'lato_black';
+    font-family: 'atk_bold';
     src: url('font/lato-black-webfont.woff2') format('woff2'),
         url('font/lato-black-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -39,6 +39,22 @@
     src: url('font/opendyslexic3-regular-webfont.eot?#iefix') format('embedded-opentype'),
         url('font/opendyslexic3-regular-webfont.woff2') format('woff2'),
         url('font/opendyslexic3-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'atk_reg';
+    src: url('font/atkinson-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'atk_bold';
+    src: url('font/atkinson-bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -74,7 +90,7 @@ html, body {
 body {
     margin: 0;
     font-size: 100%;
-    font-family: lato_reg, arial, sans-serif;
+    font-family: atk_reg, arial, sans-serif;
     font-weight: normal;
     color: $main_color;
     -webkit-font-smoothing: antialiased;
@@ -146,6 +162,10 @@ pre {
     font-size: 1.6rem;
 }
 
+code {
+    font-family: monospace;
+}
+
 blockquote, q {
     quotes: "\201C" "\201D" "\2018" "\2019";
     font-size: 1.8rem;
@@ -206,14 +226,14 @@ h2 {
         margin: 0;
         padding: 2rem 0 8rem;
         color: $secondary_color;
-        font-family: lato_light, arial, sans-serif;
+        font-family: atk_reg, arial, sans-serif;
         font-size: 5rem;
     }
 }
 
 h3 {
     font-size: 2.2rem;
-    font-family: lato_black, arial, sans-serif;
+    font-family: atk_bold, arial, sans-serif;
     margin-bottom: 1rem;
 }
 
@@ -222,7 +242,7 @@ h4 {
 }
 
 p {
-    font-family: lato_reg,helvetica,sans-serif;
+    font-family: atk_reg,helvetica,sans-serif;
 }
 
 main {
@@ -341,7 +361,7 @@ div, textarea{
     text-align: center;
     text-transform: uppercase;
     color: $site_color;
-    font-family: lato_black, arial, sans-serif;
+    font-family: atk_bold, arial, sans-serif;
     font-size: 1.6rem;
     @include transition( .2s);
 
@@ -444,7 +464,7 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
         border-radius: .2rem;
         text-align: center;
         color: $site_color;
-        font-family: lato_black, arial, sans-serif;
+        font-family: atk_bold, arial, sans-serif;
         font-size: 1.6rem;
         @include transition( .2s);
     }

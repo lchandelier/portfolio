@@ -59,13 +59,13 @@ Example of use:
 {% endraw %}
 {% endhighlight %}
 
-![CSS is activated, only the Twitter icon is visible](https://media.24joursdeweb.fr/2019/11/sr-only-icon.png)
+<img src="{{ site.baseurl }}/assets/img/blog/icon-css.jpg" alt="CSS is activated, only the Facebook icon is visible"/>
 
-CSS is activated, only the Twitter icon is visible
+CSS is activated, only the Facebook icon is visible
 
-![CSS is disabled, the text of the icon appears: 24 jours de web sur Twitter](https://media.24joursdeweb.fr/2019/11/sr-only-nocss.png)
+<img src="{{ site.baseurl }}/assets/img/blog/icon-text.jpg" alt="CSS is disabled, the text of the icon appears: Terra potager sur Facebook"/>
 
-CSS is disabled, the text of the icon appears
+CSS is disabled, the text of the icon appears: Terra potager sur Facebook
 
 I recommend this technique because it offers the best compatibility.
 

@@ -18,7 +18,6 @@ Après avoir répondu à 6 questions, notre programme apparaît pour l'ensemble 
 
 Pour ce projet, j'ai intégré l'équipe de développement de [Superhuit](https://superhuit.ch/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}. J'ai apporté une touche d'accessibilité à l'expérience et participé au développement Vue.js et CSS.
 
-Voir [L'expérience Swipe du Montreux Jazz Festival](https://mjfswipe.com/ "(nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
 <img src="{{ site.baseurl }}/assets/img/projects/mjf_large.jpg" alt="" 
              srcset="{{ site.baseurl }}/assets/img/projects/mjf_medium.jpg 670w,

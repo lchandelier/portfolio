@@ -16,12 +16,6 @@ My favourite project when I worked at Actitudes because it’s the first multisi
 It’s multilingual, responsive and I could do it without any technical constraint.
 This is a project I loved by its technical and graphical look. I played with some <abbr title="Cascading Style Sheets">CSS</abbr> animations and discovered the multisite Wordpress’ face.
 
-See the [Cerabati group’s website](http://groupecerabati.com/en/ "Cerabati group (new window)"){:target="_blank"}{:rel="noopener noreferrer"}.
-
-See the [Cerabati’s website](https://web.archive.org/web/20190309111417/https://cerabati.fr/ "Cerabati on the Internet webarchive (new window)"){:target="_blank"}{:rel="noopener noreferrer"}.
-
-See the [Alfacaro’s website](http://alfacaro.fr/en/ "Alfacaro (new window)"){:target="_blank"}{:rel="noopener noreferrer"}.
-
 <img src="{{ site.baseurl }}/assets/img/projects/gc_large.jpg" alt="" 
              srcset="{{ site.baseurl }}/assets/img/projects/gc_medium.jpg 670w,
           {{ site.baseurl }}/assets/img/projects/gc_large.jpg 1024w"
