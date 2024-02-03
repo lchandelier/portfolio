@@ -78,6 +78,10 @@
         removeHoverCSSRule();
     });
 
+    if($('#year').length) {
+        $('#year').text(new Date().getFullYear());
+    }
+
     //store cookie for contrast color dyslexia font or font-size preferences
     function manageA11yTools(cookieName, targetClass, cssClass) {
         if (getCookie('cookies-consent-bar-enabled') == 'accepted') {
