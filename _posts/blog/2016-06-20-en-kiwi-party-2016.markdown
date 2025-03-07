@@ -6,13 +6,13 @@ date:   2016-06-20 09:48:44 +0100
 category: "blog"
 permalink: /en/blog/kiwi-party-2016.html
 lang: en
-thumbnail: /assets/img/blog/kiwi-party-medium.jpg
+thumbnail: /assets/img/blog/kiwi-party-medium.webp
 alt_thumb:
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/kiwi-party.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/kiwi-party-medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/kiwi-party.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/kiwi-party.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/kiwi-party-medium.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/kiwi-party.webp 1024w"
           sizes="(min-width:671px) 1024px"/>
 
 ## Introduction

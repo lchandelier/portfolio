@@ -6,13 +6,13 @@ date:   2017-12-06 13:22:16 +0100
 category: "blog"
 permalink: /blog/sensibiliser-ses-collegues-et-ses-clients-a-laccessibilite.html
 lang: fr
-thumbnail: /assets/img/blog/access-medium.jpg
+thumbnail: /assets/img/blog/access-medium.webp
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/access.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/access.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/access.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/access.webp 1024w"
           sizes="(min-width:671px) 1024px"/> 
 
 Avant d’entrer dans le sujet, voici 2 définitions complémentaires de l’accessibilité :

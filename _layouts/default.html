@@ -4,14 +4,15 @@
   {% include head.html %}
 
   <body>
+    <div class="page-wrapper">
+      {% include header.html %}
 
-    {% include header.html %}
+      <main id="page" role="main" tabindex="-1">
+          {{ content }}
+      </main>
 
-    <main id="page" role="main" tabindex="-1">
-        {{ content }}
-    </main>
-
-    {% include footer.html %}
+      {% include footer.html %}
+    </div>
     <script src="/assets/js/all.min.js"></script>
     <script src="/assets/js/tracking.js" nonce="9BaWAhQhu9grXzjLyVJj"></script>
   </body>

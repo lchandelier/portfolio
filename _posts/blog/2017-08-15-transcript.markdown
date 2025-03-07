@@ -6,7 +6,7 @@ date:   2017-09-28 10:24:00 +0100
 category: "blog"
 permalink: /blog/transcript.html
 lang: fr
-thumbnail: /assets/img/blog/paris-web-medium.jpg
+thumbnail: /assets/img/blog/paris-web-medium.webp
 alt_thumb: 
 ---
 

@@ -7,9 +7,9 @@ lang: fr
 
 <div class="banner">
     <div class="wrapper">
-        <img src="{{ site.baseurl }}/assets/img/home/header.jpg" alt="" width="1024"
-             srcset="{{ site.baseurl }}/assets/img/home/header_medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/home/header.jpg 1024w"
+        <img src="{{ site.baseurl }}/assets/img/home/header.webp" alt="" width="1024"
+             srcset="{{ site.baseurl }}/assets/img/home/header_medium.webp 670w,
+          {{ site.baseurl }}/assets/img/home/header.webp 1024w"
           sizes="(min-width:671px) 1024px"
              class="visual noprint"/> 
         
@@ -161,16 +161,18 @@ lang: fr
                 Télécharger mon cv
             </p>
             <a class="pdf" href="/assets/doc/cv_lena_chandelier.pdf" download="CV Lena Chandelier">
-                (PDF - 789ko)
+                (PDF - 846ko)
             </a>
             <a class="epub" href="/assets/doc/cv_lena_chandelier.epub" download="CV Lena Chandelier">
                 (ePub - 12,4ko)
             </a>
             <ul class="social" id="social">
                 <li>
-                    <a href="https://www.linkedin.com/in/lena-chandelier/" class="linkedin" 
+                    <a href="https://www.linkedin.com/in/lena-chandelier/"
                        title="Mon profil sur Linkedin (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ site.baseurl }}/assets/img/home/linkedin.svg" width="34" height="34" alt="Linkedin"/>
+                       <svg aria-hidden="true" focusable="false" class="linkedin">
+                        <use xlink:href="#linkedin"></use>
+                    </svg>
                         <span class="a11y_hidden">{{ site.linkedin[page.lang] }}</span>
                     </a>
                 </li>
@@ -178,20 +180,26 @@ lang: fr
                 <li>
                     <a href="https://twitter.com/CrazyCatLena"
                        title="Mon profil sur Twitter (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ site.baseurl }}/assets/img/home/twitter.svg" width="34" height="34" alt="Twitter"/>
+                       <svg aria-hidden="true" focusable="false" class="twitter">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
                         <span class="a11y_hidden">{{ site.twitter[page.lang] }}</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://mamot.fr/@lena" title="Mon profil sur Mastodon (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ site.baseurl }}/assets/img/home/masto.svg" width="34" height="34" alt="Mastodon">
+                        <svg aria-hidden="true" focusable="false" class="masto">
+                            <use xlink:href="#masto"></use>
+                        </svg>
                         <span class="a11y_hidden">Accéder à mon profil Mastodon</span>
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/lchandelier" class="github" 
+                    <a href="https://github.com/lchandelier"
                        title="Mon repo Github (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ site.baseurl }}/assets/img/home/github.svg" width="34" height="34" alt="Github"/>
+                        <svg aria-hidden="true" focusable="false" class="github">
+                            <use xlink:href="#github"></use>
+                        </svg>
                         <span class="a11y_hidden">{{ site.github[page.lang] }}</span>
                     </a>
                 </li>

@@ -1,4 +1,5 @@
-@import "base/setup";
+@use "base/setup";
+@use "base/mixins";
 
 /* header with picture */
 main {
@@ -16,7 +17,7 @@ main {
     background: #161b1f;
     max-height: 399px;
     
-    @include respond-to(mobile_to_large) {
+    @include mixins.respond-to(mobile_to_large) {
         max-height: none;
     }
 }
@@ -26,7 +27,7 @@ main {
     width: 100%;
     height: auto;
         
-    @include respond-to(mobile) {
+    @include mixins.respond-to(mobile) {
         width: 200%;
         margin-left: -50%;
         height: auto;
@@ -42,7 +43,7 @@ main {
     z-index: 50;
     background: rgba(26,72,96,.9);
     
-    @include respond-to(mobile_to_large) {
+    @include mixins.respond-to(mobile_to_large) {
         display: none;
     }
 }
@@ -58,7 +59,7 @@ main {
     text-align: center;
     hyphens: none;
     
-    @include respond-to(mobile_to_large) {
+    @include mixins.respond-to(mobile_to_large) {
         position: relative;
         background: rgba(26,72,96,.9);
         padding: 50px 20px;
@@ -77,6 +78,14 @@ main {
             font-size: 1.6rem;
             text-transform: none;
         }
+
+        .dyslexia & {
+            font-family: od_bold, arial, sans-serif;
+
+            span {
+                font-family: od_reg, arial, sans-serif;
+            }
+        }
     }
 
     ul {
@@ -91,7 +100,7 @@ main {
             margin-right: 8px;
         }
 
-        @include respond-to(mobile_to_landscape) {
+        @include mixins.respond-to(mobile_to_landscape) {
             margin: 0 0 16px 0;
         }
     }
@@ -101,7 +110,7 @@ main {
         vertical-align: top;
         
         &:focus-visible {
-            outline: 2px solid $light_color;
+            outline: 2px solid var(--light-color);
         }
     }
 }
@@ -114,7 +123,7 @@ main {
     perspective-origin: 50% 0;
     text-align: center;
 
-    @include respond-to(wide) {
+    @include mixins.respond-to(wide) {
         text-align: left;
     } 
 
@@ -127,13 +136,13 @@ main {
         box-shadow: 0 0 5px #bababa;
         opacity: 0;
         
-        @include transition(box-shadow .2s, transform .2s);
+        transition: box-shadow .2s, transform .2s;
 
         .ie &{
             opacity: 1;
         }
 
-        @include respond-to(mobile) {
+        @include mixins.respond-to(mobile) {
             margin: 0 0 16px 0;
         }
     }
@@ -145,12 +154,11 @@ main {
 
     @for $i from 1 through 6 {
         .item:nth-child(#{$i}) {            
-            @include fadeAppear($i/4);
+            @include mixins.fadeAppear(calc($i / 4));
         }
 
         @media (prefers-reduced-motion: reduce) {
             .item:nth-child(#{$i}) {
-                animation: none;
                 opacity: 1;
             }
         }
@@ -159,9 +167,9 @@ main {
     img {
         display: block;
         opacity: 1;
-        @include transition(opacity .2s);
+        transition: opacity .2s;
         
-        @include respond-to(mobile) {
+        @include mixins.respond-to(mobile) {
             max-width: 100%;
         }
     }
@@ -177,7 +185,7 @@ main {
             span {
                 &:after {
                     width: 100%;
-                    background: $main_color;
+                    background: var(--main-color);
                 }
             }
         
@@ -195,7 +203,7 @@ main {
         max-width: 324px;
 
         text-transform: uppercase;
-        color: $site_color;
+        color: var(--site-color);
     }
     
     h3 {
@@ -218,7 +226,7 @@ main {
                 height: 1px;
                 width: 0;
                 background: #173d51;
-                @include transition(width .2s);
+               transition: width .2s;
             }
         }
     }
@@ -242,7 +250,7 @@ main {
         vertical-align: top;
         opacity: 0;
        
-        @include respond-to(mobile_to_large) {
+        @include mixins.respond-to(mobile_to_large) {
             position: relative;
             left: 50%;
             margin: 0 0 30px -110px;
@@ -262,7 +270,7 @@ main {
         margin-left: 32px;
         font-size: 1.6rem;
         
-        @include respond-to(mobile_to_large) {
+        @include mixins.respond-to(mobile_to_large) {
             max-width: 100%;
             margin: 0;
         }
@@ -278,17 +286,17 @@ main {
             height: 1px;
             width: 100%;
             background: #173d51;
-            @include transition(width .2s);
+           transition: width .2s;
         }
 
         &:focus, &:active, &:hover{
-            color: $main_color;
+            color: var(--main-color);
         }
 
         &:focus, &:active, &:hover {
             &:after {
                 width: 0;
-                background: $main_color;
+                background: var(--main-color);
             }
         }
     }
@@ -313,7 +321,7 @@ main {
         
         &.highlight {
             padding: 30px 0 0;
-            background: $site_color;
+            background: var(--site-color);
             box-shadow: 0 0 15px #cdcdce;
             border-radius: 4px;
             border: 0;
@@ -327,12 +335,12 @@ main {
     }
     
     h3 {
-        color: $site_color;
+        color: var(--site-color);
         margin-bottom: 12px;
     }
     
     a {
-        color: $site_color;
+        color: var(--site-color);
         margin-top: 12px;
         
         &:after {
@@ -341,8 +349,8 @@ main {
             margin: 0 auto;
             height: 1px;
             width: 0;
-            background: $site_color;
-            @include transition(width .2s, background-color .2s);
+            background: var(--site-color);
+            transition: width .2s, background-color .2s;
         }
         
         &:focus, &:active, &:hover {
@@ -395,7 +403,7 @@ main {
         }
         
         a {
-            color: $light_color;
+            color: var(--light-color);
             margin-top: 0;
             
             &:focus, &:active, &:hover {
@@ -407,7 +415,7 @@ main {
             }
 
             &:focus-visible {
-                outline: 2px solid $light_color;
+                outline: 2px solid var(--light-color);
             }
         }
     }
@@ -432,6 +440,7 @@ main {
     
     > a {
         line-height: 1.25;
+        border: 2px solid var(--secondary-color);
     }
     
     small {
@@ -441,7 +450,7 @@ main {
     }
     
         
-    @include respond-to(mobile_to_landscape) {
+    @include mixins.respond-to(mobile_to_landscape) {
         display: block;
         
         p {
@@ -472,23 +481,27 @@ main {
     }
     
     a {
-        padding: 0 3px;
+        padding: 0.3rem 0.5rem 0;
         border-radius: 100%;
         background: #ededed;
-        border: 1px solid $site_color;
-        @include transition(box-shadow .3s);
+        border: 1px solid var(--site-color);
+        transition: box-shadow .3s;
         
         &:focus, &:active, &:hover {
-            box-shadow: 0 0 5px $site_color;
+            box-shadow: 0 0 5px var(--site-color);
         }
+    }
+
+    svg {
+        fill: var(--secondary-color);
     }
 }
 
 .contact {
-    background: $secondary_color;
+    background: var(--secondary-color);
 
     h2, a { 
-        color: $light_color;
+        color: var(--light-color);
     }
     
     p {
@@ -498,7 +511,7 @@ main {
         line-height: 2.6rem;
         color: #fff;
         
-        @include respond-to(mobile_to_large) {
+        @include mixins.respond-to(mobile_to_large) {
             color: #fff;
         }
         
@@ -512,7 +525,7 @@ main {
     }
     
     a { 
-        @include transition(color .2s, background-color .2s);
+        transition: color .2s, background-color .2s;
         
         &:after {
             content: '';
@@ -521,7 +534,7 @@ main {
             height: 1px;
             width: 0;
             background: transparent;
-            @include transition(width .2s, background-color .2s);
+            transition: width .2s, background-color .2s;
         }
 
         &:focus, &:active, &:hover{
@@ -534,7 +547,7 @@ main {
         }
 
         &:focus-visible {
-            outline: 2px solid $light_color;
+            outline: 2px solid var(--light-color);
         }
     }
 }

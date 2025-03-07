@@ -6,13 +6,13 @@ date:   2022-12-22 18:48:00 +0100
 category: "blog"
 permalink: /blog/accessibilite-comme-patisserie-savoir-doser.html
 lang: fr
-thumbnail: /assets/img/blog/access-medium.jpg
+thumbnail: /assets/img/blog/access-medium.webp
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/access.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/access.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/access.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/access.webp 1024w"
           sizes="(min-width:671px) 1024px"/>
 
 **Quand j’ai débuté dans l’accessibilité numérique, je voulais être sûre que le contenu présenté était lisible par tout le monde.
@@ -54,7 +54,7 @@ Voici un exemple à ne pas reproduire chez vous :
 
 {% highlight html %}
 {% raw %}
-<img src="tournoi.jpg" alt="image de la 2ème édition du tournoi des sorciers du 3 au 7 octobre 2023" />
+<img src="tournoi.webp" alt="image de la 2ème édition du tournoi des sorciers du 3 au 7 octobre 2023" />
 {% endraw %}
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ Et voici un bon exemple :
 
 {% highlight html %}
 {% raw %}
-<img src="tournoi.jpg" alt="2ème édition du tournoi des sorciers du 3 au 7 octobre 2023" />
+<img src="tournoi.webp" alt="2ème édition du tournoi des sorciers du 3 au 7 octobre 2023" />
 {% endraw %}
 {% endhighlight %}
 
@@ -163,11 +163,11 @@ L’information ou le manque d’information **doit être égal pour tous les pu
 
 Prenons une image affichant un numéro surtaxé :
 
-<img src="{{ site.baseurl }}/assets/img/blog/numero-surtaxe.jpg" alt="0811 123 456 (service 0.05€ / min + prix de l’appel)"/>
+<img src="{{ site.baseurl }}/assets/img/blog/numero-surtaxe.webp" alt="0811 123 456 (service 0.05€ / min + prix de l’appel)"/>
 
 {% highlight html %}
 {% raw %}
-<img src="numero-surtaxe.jpg" alt="0811 123 456 (service 0.05€ / min + prix de l’appel)">
+<img src="numero-surtaxe.webp" alt="0811 123 456 (service 0.05€ / min + prix de l’appel)">
 {% endraw %}
 {% endhighlight %}
 
@@ -176,11 +176,11 @@ Dans le [RGAA](https://www.numerique.gouv.fr/publications/rgaa-accessibilite/ "(
 
 Une bonne implémentation serait de mettre l’image avec l’ensemble des informations tarifaires :
 
-<img src="{{ site.baseurl }}/assets/img/blog/numero-surtaxe-ok.jpg" alt="0811 123 456 (service 0.05€ / min + prix de l’appel)"/>
+<img src="{{ site.baseurl }}/assets/img/blog/numero-surtaxe-ok.webp" alt="0811 123 456 (service 0.05€ / min + prix de l’appel)"/>
 
 {% highlight html %}
 {% raw %}
-<img src="numero-surtaxe.jpg-ok" alt="0811 123 456 (service 0.05€ / min + prix de l’appel)">
+<img src="numero-surtaxe.webp-ok" alt="0811 123 456 (service 0.05€ / min + prix de l’appel)">
 {% endraw %}
 {% endhighlight %}
 

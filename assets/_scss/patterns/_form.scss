@@ -1,3 +1,6 @@
+@use "../base/mixins";
+@use "../base/setup";
+
 .form_comment {
     background: #1a4860;
     padding: 16px 20px;
@@ -13,7 +16,7 @@
     }
 
     h2 {
-        color: $light_color;
+        color: var(--light-color);
     }
 
     legend {
@@ -33,7 +36,7 @@
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     
-    @include respond-to(mobile_to_landscape) {
+    @include mixins.respond-to(mobile_to_landscape) {
         display: block;
     }
 }
@@ -41,7 +44,7 @@
 .field {
     width: 48%;
 
-    @include respond-to(mobile_to_landscape) {
+    @include mixins.respond-to(mobile_to_landscape) {
         width: 100%;
     }
 }
@@ -76,11 +79,11 @@ input {
 
         &:focus, &:active, &:hover {
             background: #fff;
-            color: $main_color;
+            color: var(--main-color);
         }
 
         &:focus-visible {
-            outline: 2px solid $light_color;
+            outline: 2px solid var(--light-color);
         }
     }
 }
@@ -96,7 +99,7 @@ input {
         overflow-x: hidden;
         border: 1px solid #a1bfcf;
         
-        @include respond-to(mobile_to_landscape) {
+        @include mixins.respond-to(mobile_to_landscape) {
             width: 100%;
             min-width: auto;
         }
@@ -135,7 +138,7 @@ input {
 
             option {
                 padding-left: 0;
-				color: $main_color;
+				color: var(--main-color);
             }
         }
     }
@@ -152,6 +155,6 @@ textarea {
 
 input, textarea, select {
     &:focus-visible {
-        outline: 2px solid $light_color;
+        outline: 2px solid var(--light-color);
     }
 }

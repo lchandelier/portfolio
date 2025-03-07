@@ -7,7 +7,7 @@ date:   2019-04-11 08:22:41 +0100
 category: project
 permalink: /projets/projet-mjf.html
 lang: fr
-thumbnail: /assets/img/projects/mjf.jpg
+thumbnail: /assets/img/projects/mjf.webp
 alt_thumb: 
 ---
 
@@ -20,7 +20,7 @@ Pour ce projet, j'ai intégré l'équipe de développement de [Superhuit](https:
 
 Voir la [fiche projet MJF Swipe](https://superhuit.ch/fr/projets/montreux-jazz-festival-swipe-app/ "MJF Swipe (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
-<img src="{{ site.baseurl }}/assets/img/projects/mjf_large.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/projects/mjf_medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/projects/mjf_large.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/projects/mjf_large.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/projects/mjf_medium.webp 670w,
+          {{ site.baseurl }}/assets/img/projects/mjf_large.webp 1024w"
           sizes="(min-width:671px) 1024px"/> 

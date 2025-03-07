@@ -6,13 +6,13 @@ date:   2019-12-01 18:56:09 +0100
 category: "blog"
 permalink: /blog/noms-accessibles-dans-tous-leurs-etats.html
 lang: fr
-thumbnail: /assets/img/blog/code-medium.jpg
+thumbnail: /assets/img/blog/code-medium.webp
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/code.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/code-medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/code.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/code.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/code-medium.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/code.webp 1024w"
           sizes="(min-width:671px) 1024px"/> 
 
 
@@ -57,11 +57,11 @@ Exemple d’utilisation :
 {% endraw %}
 {% endhighlight %}
 
-<img src="{{ site.baseurl }}/assets/img/blog/icon-css.jpg" alt="CSS est activé, seule l’icône Facebook est visible"/>
+<img src="{{ site.baseurl }}/assets/img/blog/icon-css.webp" alt="CSS est activé, seule l’icône Facebook est visible"/>
 
 CSS est activé, seule l’icône Facebook est visible
 
-<img src="{{ site.baseurl }}/assets/img/blog/icon-text.jpg" alt="CSS est désactivé, le texte de l’icône apparaît : Terra potager sur Facebook"/>
+<img src="{{ site.baseurl }}/assets/img/blog/icon-text.webp" alt="CSS est désactivé, le texte de l’icône apparaît : Terra potager sur Facebook"/>
 
 CSS est désactivé, le texte de l’icône apparaît
 
@@ -118,7 +118,7 @@ Par exemple, sur une fenêtre modale :
 
 ou sur un élément graphique, ici un point rouge qui indique un retard de paiement :
 
-![Tableau de bord utilisateur. L’onglet actif est Mon compte. Un point rouge à côté du label indique qu’il y a un retard de paiement.](https://media.24joursdeweb.fr/2019/11/aria-labelledby.jpg)
+![Tableau de bord utilisateur. L’onglet actif est Mon compte. Un point rouge à côté du label indique qu’il y a un retard de paiement.](https://media.24joursdeweb.fr/2019/11/aria-labelledby.webp)
 
 {% highlight html %}
 {% raw %}

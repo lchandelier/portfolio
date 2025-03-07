@@ -7,7 +7,7 @@ date:   2017-11-10 07:22:05 +0100
 category: project
 permalink: /en/projects/project-eta.html
 lang: en
-thumbnail: /assets/img/projects/eta.jpg
+thumbnail: /assets/img/projects/eta.webp
 alt_thumb: 
 ---
 
@@ -19,7 +19,7 @@ I’ve done all the front-end part and the back-end, with Drupal, has been done 
 
 See [ETA Swiss Watch Maker’s website](http://www.eta.ch/en "Eta - Swiss Watch Maker (new window)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
-<img src="{{ site.baseurl }}/assets/img/projects/eta_large.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/projects/eta_medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/projects/eta_large.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/projects/eta_large.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/projects/eta_medium.webp 670w,
+          {{ site.baseurl }}/assets/img/projects/eta_large.webp 1024w"
           sizes="(min-width:671px) 1024px"/> 

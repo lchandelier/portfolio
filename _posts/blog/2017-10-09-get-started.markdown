@@ -6,13 +6,13 @@ date:   2017-10-09 07:45:48 +0100
 category: "blog"
 permalink: /en/blog/get-started.html
 lang: en
-thumbnail: /assets/img/blog/can.jpg
+thumbnail: /assets/img/blog/can.webp
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/can.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/can.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/can.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/can.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/can.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/can.webp 1024w"
           sizes="(min-width:671px) 1024px"/>
 
 **I have never been comfortable with public speaking. Many times I was asked if I wanted to participate in meetups to talk about my favorite subject, accessibility but fear always prevailed. Then, a new opportunity presented itself, proposing a topic in Paris Web and there I jumped into the adventure.**

@@ -4,9 +4,19 @@
 /*
   Description: project's variables
 */
-/* multiple sprites management 
-* see https://www.liquidlight.co.uk/blog/article/creating-svg-sprites-using-gulp-and-sass/
-*/
+:root {
+  --light-color: #4bc4b1;
+  --main-color: #5f5f5f;
+  --secondary-color: #1a4860;
+  --site-color: #1B4751;
+  --high-contrast-color: #AFDED6;
+  --dark-bg: #173d51;
+  --break-small: 415px;
+  --break-medium: 768px;
+  --break-large: 1024px;
+  --break-wide: 1280px;
+}
+
 body,
 html {
   background-color: #fff;
@@ -20,10 +30,12 @@ html {
   position: static;
   width: auto;
   display: block;
-  min-height: 100%; }
+  min-height: 100%;
+}
 
 body {
-  padding: 1.5em; }
+  padding: 1.5em;
+}
 
 .noprint,
 header .right_items.noprint,
@@ -36,81 +48,101 @@ header .right_items.noprint,
 .comments,
 .form_comment,
 .wrapper + .wrapper {
-  display: none; }
+  display: none;
+}
 
 main > div {
-  padding: 0 !important; }
+  padding: 0 !important;
+}
 
 .wrapper .intro {
   position: relative;
   left: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 h1 {
-  font-size: 18pt; }
+  font-size: 18pt;
+}
 
 h2.center {
-  padding: 10px 0 30px; }
+  padding: 10px 0 30px;
+}
 
 article a[href]:after {
   display: inline;
-  content: " (" attr(href) ")"; }
-
+  content: " (" attr(href) ")";
+}
 article h1 + p > img {
-  display: none; }
-
+  display: none;
+}
 article img {
   display: block;
-  page-break-inside: avoid; }
+  page-break-inside: avoid;
+}
 
 abbr[title]:after {
   display: inline;
-  content: " (" attr(title) ")"; }
+  content: " (" attr(title) ")";
+}
 
 .item {
   display: block !important;
   opacity: 1 !important;
   text-align: left;
-  box-shadow: none !important; }
-  .item a {
-    display: inline-block;
-    max-width: none;
-    text-align: left; }
-  .item img {
-    display: none; }
+  box-shadow: none !important;
+}
+.item a {
+  display: inline-block;
+  max-width: none;
+  text-align: left;
+}
+.item img {
+  display: none;
+}
 
 .list_xp > div {
   opacity: 1;
-  page-break-inside: avoid; }
+  page-break-inside: avoid;
+}
 
 abbr {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .about p {
   margin: 0;
-  max-width: none; }
+  max-width: none;
+}
 
 .contact h2 {
-  color: #1a4860; }
+  color: var(--secondary-color);
+}
 
 main p {
-  position: relative; }
+  position: relative;
+}
 
 img {
   position: relative;
-  page-break-inside: avoid; }
+  page-break-inside: avoid;
+}
 
 .post_list > div {
-  page-break-inside: avoid; }
-  .post_list > div h2 {
-    display: block;
-    color: #000000; }
-    .post_list > div h2:after {
-      display: none;
-      height: 0; }
+  page-break-inside: avoid;
+}
+.post_list > div h2 {
+  display: block;
+  color: #000000;
+}
+.post_list > div h2:after {
+  display: none;
+  height: 0;
+}
 
 .wrapper .sitemap li {
-  opacity: 1; }
+  opacity: 1;
+}
 
 @media print {
   *,
@@ -125,11 +157,13 @@ img {
   blockquote:first-line,
   li:first-line {
     background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+    color: #000 !important; /* Black prints faster:
+   http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
-    text-shadow: none !important; }
+    text-shadow: none !important;
+  }
   a,
   a:visited {
-    text-decoration: underline; } }
+    text-decoration: underline;
+  }
+}

@@ -6,14 +6,14 @@ date:   2015-10-13 11:36:08 +0100
 category: "blog"
 permalink: /en/blog/paris-web-2015.html
 lang: en
-thumbnail: /../assets/img/blog/paris-web-medium.jpg
+thumbnail: /../assets/img/blog/paris-web-medium.webp
 alt_thumb: 
 ---
 
 
-<img src="{{ site.baseurl }}/assets/img/blog/paris-web.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/paris-web-medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/paris-web.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/paris-web.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/paris-web-medium.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/paris-web.webp 1024w"
           sizes="(min-width:671px) 1024px"/>
 
 **Paris Web, one of the biggest event to follow for webmakers, stood up from the 1st to the 3rd of october 2015.

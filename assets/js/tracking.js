@@ -16,10 +16,10 @@ _paq.push(['enableLinkTracking']);
             $('#social').find('a').each(function(i, e){
                 $(e).click(function(){
                     if($('html').attr('lang') == 'fr') {
-                        _paq.push(['trackEvent', 'Home', 'Click', $(e).attr('class')]);
+                        _paq.push(['trackEvent', 'Home', 'Click', $(e).attr('href')]);
                     }
                     else {
-                        _paq.push(['trackEvent', 'Home EN', 'Click', $(e).attr('class')]);
+                        _paq.push(['trackEvent', 'Home EN', 'Click', $(e).attr('href')]);
                     }
                 });
             });

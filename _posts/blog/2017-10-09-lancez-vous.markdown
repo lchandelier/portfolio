@@ -6,13 +6,13 @@ date:   2017-10-09 07:45:48 +0100
 category: "blog"
 permalink: /blog/lancez-vous.html
 lang: fr
-thumbnail: /assets/img/blog/can.jpg
+thumbnail: /assets/img/blog/can.webp
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/can.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/can.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/can.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/can.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/can.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/can.webp 1024w"
           sizes="(min-width:671px) 1024px"/>
 
 **Je n’ai jamais été à l’aise avec l’idée de parler en public. Plusieurs fois on m’a demandé si je voulais participer à des évènements meetups pour parler de mon sujet favori, l’accessibilité mais la peur à toujours pris le dessus. Puis, une nouvelle occasion s’est présentée, celle de proposer un sujet à Paris Web et là, je me suis lancée.**

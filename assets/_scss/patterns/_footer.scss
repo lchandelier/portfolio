@@ -1,14 +1,18 @@
+@use "../base/mixins";
+@use "../base/setup";
+@use "../components/sprites";
+
 footer {
-    background: $dark_bg;
+    background: var(--dark-bg);
     padding: 16px 20px;
     color: #a1bfcf;
     font-size: 1.6rem;
     
-    @include respond-to(landscape) {
+    @include mixins.respond-to(landscape) {
         padding: 26px 20px 56px;
     }
     
-    @include respond-to(large) {
+    @include mixins.respond-to(large) {
         padding: 26px 20px 56px;
     }
 
@@ -20,7 +24,7 @@ footer {
         -webkit-align-items: center;
         align-items: center;
         
-        @include respond-to(mobile_to_landscape) {
+        @include mixins.respond-to(mobile_to_landscape) {
             display: block;
         }
     }
@@ -29,7 +33,7 @@ footer {
         display: inline-block;
         vertical-align: top;
         
-        @include respond-to(mobile_to_landscape) {
+        @include mixins.respond-to(mobile_to_landscape) {
             margin: 3rem 0 0;
         }
     }
@@ -38,7 +42,7 @@ footer {
         color: #fff;
         font-size: 1.6rem;
         line-height: 1.6rem;
-        @include transition(color .2s, background-color .2s);
+        transition: color .2s, background-color .2s;
 
         &:after {
             content: '';
@@ -47,28 +51,30 @@ footer {
             height: 1px;
             width: 0;
             background: transparent;
-            @include transition(width .2s, background-color .2s);
+            transition: width .2s, background-color .2s;
         }
 
         &:focus, &:active, &:hover {
-            color: $light_color;
+            color: var(--light-color);
 
             &:after {
                 width: 100%;
-                background: $light_color;
+                background: var(--light-color);
             }
         }
         
         &:focus-visible {
-            outline: 2px solid $light_color;
+            outline: 2px solid var(--light-color);
         }
     }
     
     li:not(:first-child) {
         margin-left: 20px;
     }
-    
-    button {
-        @include sprite($icons, top);
+
+    .top {
+        fill: var(--light-color);
+        box-shadow: 0 0 0 2px var(--secondary-color);
+
     }
 }

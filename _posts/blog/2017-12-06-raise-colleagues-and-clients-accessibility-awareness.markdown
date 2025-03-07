@@ -6,13 +6,13 @@ date:   2017-12-06 14:36:05 +0100
 category: "blog"
 permalink: /en/blog/raise-colleagues-and-clients-accessibility-awareness.html
 lang: en
-thumbnail: /assets/img/blog/access-medium.jpg
+thumbnail: /assets/img/blog/access-medium.webp
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/access.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/access.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/access.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/access.webp 1024w"
           sizes="(min-width:671px) 1024px"/> 
 
 Before going further, here are 2 complementary definitions of web accessibility:

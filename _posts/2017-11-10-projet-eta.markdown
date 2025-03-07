@@ -7,7 +7,7 @@ date:   2017-11-10 07:22:05 +0100
 category: project
 permalink: /projets/projet-eta.html
 lang: fr
-thumbnail: /assets/img/projects/eta.jpg
+thumbnail: /assets/img/projects/eta.webp
 alt_thumb: 
 ---
 
@@ -18,7 +18,7 @@ Je me suis chargée de toute la partie front et la partie back, sous Drupal, a �
 
 Voir le site [ETA Manufacture horlogère Suisse](http://www.eta.ch/fr "Eta - Manufacture horlogère Suisse (nouvelle fenêtre)"){:target="_blank"}{:rel="noopener noreferrer"}.
 
-<img src="{{ site.baseurl }}/assets/img/projects/eta_large.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/projects/eta_medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/projects/eta_large.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/projects/eta_large.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/projects/eta_medium.webp 670w,
+          {{ site.baseurl }}/assets/img/projects/eta_large.webp 1024w"
           sizes="(min-width:671px) 1024px"/> 

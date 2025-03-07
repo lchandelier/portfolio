@@ -1,4 +1,5 @@
-@import 'base/setup';
+@use 'base/setup';
+@use 'base/mixins';
 
 .chapo {
     font-weight: bold;
@@ -24,20 +25,20 @@ article, .simple_content {
             height: 1px;
             width: 100%;
             background: #173d51;
-            @include transition(width .2s);
+            transition: width .2s;
         }
 
         &:focus, &:active, &:hover{
-            color: $main_color;
+            color: var(--main-color);
         
             &:after {
                 width: 0;
-                background: $main_color;
+                background: var(--main-color);
             }
         }
 
         &:focus-visible {
-            outline: 2px solid $site_color;
+            outline: 2px solid var(--site-color);
         }
     }
     
@@ -75,7 +76,7 @@ article img {
             display: table-cell;
             vertical-align: top;
 
-            @include respond-to(mobile_to_landscape) {
+            @include mixins.respond-to(mobile_to_landscape) {
                 display: block;
             }
         }
@@ -83,7 +84,7 @@ article img {
         > a {
             width: 320px;
         
-            @include respond-to(mobile_to_landscape) {
+            @include mixins.respond-to(mobile_to_landscape) {
                 width: 100%;
             }
 
@@ -105,7 +106,7 @@ article img {
             }
             &:focus-visible {
                 &::before {
-                    outline: 2px solid $site_color;
+                    outline: 2px solid var(--site-color);
                 }
 
             }
@@ -118,9 +119,9 @@ article img {
 
             img {
                 box-shadow: 0 0 5px #f1f1f1;
-                @include transition(box-shadow .2s, transform .2s);
+                transition:box-shadow .2s, transform .2s;
                 
-                @include respond-to(mobile_to_landscape) {
+                @include mixins.respond-to(mobile_to_landscape) {
                     width: 100%;
                     height: auto;
                 }
@@ -131,7 +132,7 @@ article img {
             width: 320px;
             max-width: none;
         
-            @include respond-to(mobile_to_landscape) {
+            @include mixins.respond-to(mobile_to_landscape) {
                 width: 100%;
             }
         }
@@ -139,7 +140,7 @@ article img {
 
     .content {
         padding-left: 20px;
-        @include respond-to(mobile_to_landscape) {
+        @include mixins.respond-to(mobile_to_landscape) {
             padding: 20px 0 0 0;
         }
     }
@@ -159,7 +160,7 @@ article img {
             height: 1px;
             width: 0;
             background: #173d51;
-            @include transition(width .2s);
+           transition: width .2s;
         }
     }
 }
@@ -172,7 +173,7 @@ article img {
     -webkit-perspective-origin: -25% 0;
     perspective-origin: -25% 0;
 
-    @include respond-to(wide) {
+    @include mixins.respond-to(wide) {
         text-align: left;
     } 
     
@@ -188,7 +189,7 @@ article img {
 
     @for $i from 1 through 10 {
         li:nth-child(#{$i}) {            
-            @include fadeAppear($i/4);
+            @include mixins.fadeAppear(calc($i / 4));
         }
     }
     
@@ -214,7 +215,7 @@ article {
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
 
-    @include respond-to(mobile_to_landscape) {
+    @include mixins.respond-to(mobile_to_landscape) {
         grid-template-columns: 1fr;
     } 
 
@@ -308,7 +309,7 @@ article {
             width: 50%;
             height: 1px;
             margin: 0 auto;
-            background: $dark_bg;
+            background: var(--dark-bg);
         }
     }
 

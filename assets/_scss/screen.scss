@@ -1,44 +1,31 @@
 /* 
   Description: print styles
 */
-@import "base/setup";
-@import "base/reset";
-@import "base/helpers";
+@use "sass:meta";
+@use "base/setup";
+@use "base/reset";
+@use "base/helpers";
+@use "base/mixins";
+@use "components/sprites";
 
 /* fonts */
-@font-face {
-    font-family: 'atk_reg';
-    src: url('font/lato-light-webfont.woff2') format('woff2'),
-        url('font/lato-light-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'atk_reg';
-    src: url('font/lato-regular-webfont.woff2') format('woff2'),
-        url('font/lato-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'atk_bold';
-    src: url('font/lato-black-webfont.woff2') format('woff2'),
-        url('font/lato-black-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 @font-face {
     font-family: 'od_reg';
     src: url('font/opendyslexic3-regular-webfont.eot');
     src: url('font/opendyslexic3-regular-webfont.eot?#iefix') format('embedded-opentype'),
         url('font/opendyslexic3-regular-webfont.woff2') format('woff2'),
         url('font/opendyslexic3-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'od_bold';
+    src: url('font/opendyslexic3-bold-webfont.eot');
+    src: url('font/opendyslexic3-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('font/opendyslexic3-bold-webfont.woff2') format('woff2'),
+        url('font/opendyslexic3-bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -60,15 +47,14 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'od_bold';
-    src: url('font/opendyslexic3-bold-webfont.eot');
-    src: url('font/opendyslexic3-bold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('font/opendyslexic3-bold-webfont.woff2') format('woff2'),
-        url('font/opendyslexic3-bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+@media screen and (prefers-reduced-motion: reduce), (update: slow) {
+    // Remove duration for all unknown animation when a user requests a reduced animation experience 
+    //it's more fluid than animation: none
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
 }
 
 /* global styles */
@@ -81,7 +67,7 @@ html {
 }
 
 html, body {
-    @include respond-to(mobile){
+    @include mixins.respond-to(mobile){
         width: 100%;
         overflow-x: hidden;
     }
@@ -92,7 +78,7 @@ body {
     font-size: 100%;
     font-family: atk_reg, arial, sans-serif;
     font-weight: normal;
-    color: $main_color;
+    color: var(--main-color);
     -webkit-font-smoothing: antialiased;
     width: 100%;
     background: #fafafa;
@@ -123,9 +109,18 @@ body {
             font-size: 1.6rem;
         }
         &:focus-visible {
-            outline: 2px solid $light_color;
+            outline: 2px solid var(--light-color);
         }
     }
+}
+
+.page-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
 }
 
 .wrapper {
@@ -137,9 +132,8 @@ body {
 a {
     display: inline-block;
     text-decoration: none;
-    color: $site_color;
-
-    @include transition( .2s);
+    color: var(--site-color);
+    transition: .2s;
 
     &.link_full_block {
         &:before {
@@ -154,7 +148,7 @@ a {
     }
 
     &:focus-visible {
-        outline: 2px solid $site_color;
+        outline: 2px solid var(--site-color);
     }
 }
 
@@ -198,7 +192,7 @@ button:not(.display_menu) {
     border: 0;
     background: transparent;
     cursor: pointer;
-    @include transition(color .2s, background-color .2s);
+    transition:color .2s, background-color .2s;
 }
 
 strong, b {
@@ -225,7 +219,7 @@ h2 {
     &.center {
         margin: 0;
         padding: 2rem 0 8rem;
-        color: $secondary_color;
+        color: var(--secondary-color);
         font-family: atk_reg, arial, sans-serif;
         font-size: 5rem;
     }
@@ -264,11 +258,11 @@ main {
 }
 
 ::-moz-selection { 
-    background: $site_color; 
+    background: var(--site-color); 
     color: #fff; 
 }
 ::selection { 
-    background: $site_color; 
+    background: var(--site-color); 
     color: #fff; 
 }
 
@@ -314,17 +308,6 @@ main {
             transform: translateY(5px);
         }
     }
-
-    @-webkit-keyframes display_item {
-        0%   { opacity: 0; -webkit-transform: translateY(-30px);}
-        100% { opacity: 1; -webkit-transform: translateY(5px);}
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .display {
-        animation: none;
-    }
 }
 
 div, textarea{
@@ -333,7 +316,7 @@ div, textarea{
 }
 
 .hidden_small {
-    @include respond-to(mobile_to_landscape) {
+    @include mixins.respond-to(mobile_to_landscape) {
         display: none;
     }
 }
@@ -342,7 +325,7 @@ div, textarea{
     position: relative;
     max-width: 1240px;
     margin: 0 auto;
-    @include respond-to(mobile_to_large) {
+    @include mixins.respond-to(mobile_to_large) {
         padding: 0 2rem;
     }
 }
@@ -356,19 +339,19 @@ div, textarea{
     min-width: 13rem;
     box-sizing: border-box;
     padding: 1.8rem 2rem;
-    background: $light_color;
+    background: var(--light-color);
     border-radius: .2rem;
     text-align: center;
     text-transform: uppercase;
-    color: $site_color;
+    color: var(--site-color);
     font-family: atk_bold, arial, sans-serif;
     font-size: 1.6rem;
-    @include transition( .2s);
+    transition: .2s;
 
     &:focus, &:active, &:hover {
-        background: $site_color;
-        color: $light_color;
-        box-shadow: 0 0 1px 2px $light_color;
+        background: var(--site-color);
+        color: var(--light-color);
+        box-shadow: 0 0 1px 2px var(--light-color);
     }
 }
 
@@ -390,14 +373,13 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
     bottom: 20px;
     right: 20px;
     opacity: 0;
-    @include sprite($icons, top);
-    @include transition(opacity .2s);
+    transition: opacity .2s;
 
     &.visible {
         opacity: 1;
     }
 
-    @include respond-to(wide) {
+    @include mixins.respond-to(wide) {
         right: 100px;
         bottom: 130px;
     }
@@ -409,7 +391,7 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
     }
 
     &:focus-visible {
-        box-shadow: 0 0 1px 2px $light_color, 0 0 1px 4px $site_color;
+        box-shadow: 0 0 1px 2px var(--light-color), 0 0 1px 4px var(--site-color);
     }
 }
 /* end global styles */
@@ -420,10 +402,10 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
     height: auto;
 }
 
-@import "patterns/header";
-@import "patterns/breadcrumb";
-@import "patterns/form";
-@import "patterns/footer";
+@include meta.load-css("patterns/header");
+@include meta.load-css("patterns/breadcrumb");
+@include meta.load-css("patterns/form");
+@include meta.load-css("patterns/footer");
 
 #cookie-consent-bar {
     background: rgba(231, 231, 231, 0.9);
@@ -437,7 +419,7 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
     font-size: 1.6rem;
     
     .contrast & {
-        color: $main_color;
+        color: var(--main-color);
         background: #eee;
     }
     
@@ -448,7 +430,7 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
         margin: 0 auto 1rem;
         line-height: 1.55;
 
-        @include respond-to(mobile_to_large) {
+        @include mixins.respond-to(mobile_to_large) {
             padding: 0 2rem;
         }
     }
@@ -460,24 +442,24 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
     .sb-enable, .sb-disable {
         box-sizing: border-box;
         padding: .5rem 1rem;
-        background: $light_color;
+        background: var(--light-color);
         border-radius: .2rem;
         text-align: center;
-        color: $site_color;
+        color: var(--site-color);
         font-family: atk_bold, arial, sans-serif;
         font-size: 1.6rem;
-        @include transition( .2s);
+        transition: .2s;
     }
     
     .sb-disable {
-        background: $site_color;
-        color: $light_color;
+        background: var(--site-color);
+        color: var(--light-color);
     }
     
     .sb-policy {
         display: inline-block;
         .contrast & {
-            color: $main_color;
+            color: var(--main-color);
         }
 
         &:after {
@@ -486,23 +468,23 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
             margin: 0 auto;
             height: 1px;
             width: 100%;
-            background: $main_color;
-            @include transition(width .2s);
+            background: var(--main-color);
+            transition: width .2s;
         }
 
         &:focus, &:active, &:hover{
-            color: $main_color;
+            color: var(--main-color);
         
             &:after {
                 width: 0;
-                background: $main_color;
+                background: var(--main-color);
             }
         }
     }
 
     a, button {
         &:focus-visible {
-            outline: 2px solid $site_color;
+            outline: 2px solid var(--site-color);
         }
     }
 }

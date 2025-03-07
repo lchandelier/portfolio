@@ -1,11 +1,11 @@
-/*! jQuery UI - v1.13.2 - 2022-10-10
-* http://jqueryui.com
+/*! jQuery UI - v1.14.1 - 2025-03-06
+* https://jqueryui.com
 * Includes: focusable.js, tabbable.js
-* Copyright jQuery Foundation and other contributors; Licensed MIT */
+* Copyright OpenJS Foundation and other contributors; Licensed MIT */
 
 ( function( factory ) {
 	"use strict";
-	
+
 	if ( typeof define === "function" && define.amd ) {
 
 		// AMD. Register as an anonymous module.
@@ -20,22 +20,22 @@
 
 $.ui = $.ui || {};
 
-var version = $.ui.version = "1.13.2";
+var version = $.ui.version = "1.14.1";
 
 
 /*!
- * jQuery UI Focusable 1.13.2
- * http://jqueryui.com
+ * jQuery UI Focusable 1.14.1
+ * https://jqueryui.com
  *
- * Copyright jQuery Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * https://jquery.org/license
  */
 
 //>>label: :focusable Selector
 //>>group: Core
 //>>description: Selects elements which can be focused.
-//>>docs: http://api.jqueryui.com/focusable-selector/
+//>>docs: https://api.jqueryui.com/focusable-selector/
 
 
 // Selectors
@@ -73,19 +73,9 @@ $.ui.focusable = function( element, hasTabindex ) {
 		focusableIfVisible = hasTabindex;
 	}
 
-	return focusableIfVisible && $( element ).is( ":visible" ) && visible( $( element ) );
+	return focusableIfVisible && $( element ).is( ":visible" ) &&
+		$( element ).css( "visibility" ) === "visible";
 };
-
-// Support: IE 8 only
-// IE 8 doesn't resolve inherit to visible/hidden for computed values
-function visible( element ) {
-	var visibility = element.css( "visibility" );
-	while ( visibility === "inherit" ) {
-		element = element.parent();
-		visibility = element.css( "visibility" );
-	}
-	return visibility === "visible";
-}
 
 $.extend( $.expr.pseudos, {
 	focusable: function( element ) {
@@ -97,18 +87,18 @@ var focusable = $.ui.focusable;
 
 
 /*!
- * jQuery UI Tabbable 1.13.2
- * http://jqueryui.com
+ * jQuery UI Tabbable 1.14.1
+ * https://jqueryui.com
  *
- * Copyright jQuery Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * https://jquery.org/license
  */
 
 //>>label: :tabbable Selector
 //>>group: Core
 //>>description: Selects elements which can be tabbed to.
-//>>docs: http://api.jqueryui.com/tabbable-selector/
+//>>docs: https://api.jqueryui.com/tabbable-selector/
 
 
 var tabbable = $.extend( $.expr.pseudos, {

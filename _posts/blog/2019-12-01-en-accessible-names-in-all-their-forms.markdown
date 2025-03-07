@@ -6,13 +6,13 @@ date:   2019-12-01 18:56:09 +0100
 category: "blog"
 permalink: /en/blog/accessible-names-in-all-their-states.html
 lang: en
-thumbnail: /assets/img/blog/code-medium.jpg
+thumbnail: /assets/img/blog/code-medium.webp
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/code.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/code-medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/code.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/code.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/code-medium.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/code.webp 1024w"
           sizes="(min-width:671px) 1024px"/> 
 
 
@@ -59,11 +59,11 @@ Example of use:
 {% endraw %}
 {% endhighlight %}
 
-<img src="{{ site.baseurl }}/assets/img/blog/icon-css.jpg" alt="CSS is activated, only the Facebook icon is visible"/>
+<img src="{{ site.baseurl }}/assets/img/blog/icon-css.webp" alt="CSS is activated, only the Facebook icon is visible"/>
 
 CSS is activated, only the Facebook icon is visible
 
-<img src="{{ site.baseurl }}/assets/img/blog/icon-text.jpg" alt="CSS is disabled, the text of the icon appears: Terra potager sur Facebook"/>
+<img src="{{ site.baseurl }}/assets/img/blog/icon-text.webp" alt="CSS is disabled, the text of the icon appears: Terra potager sur Facebook"/>
 
 CSS is disabled, the text of the icon appears: Terra potager sur Facebook
 
@@ -121,7 +121,7 @@ For example, on a modal window:
 
 or on a graphic element, here a red dot indicating a delay in payment:
 
-![User dashboard. The active tab is My Account. A red dot next to the label indicates that there is an overdue payment.](https://media.24joursdeweb.fr/2019/11/aria-labelledby.jpg)
+![User dashboard. The active tab is My Account. A red dot next to the label indicates that there is an overdue payment.](https://media.24joursdeweb.fr/2019/11/aria-labelledby.webp)
 
 {% highlight html %}
 {% raw %}

@@ -9,13 +9,15 @@
     <meta content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}" property="og:description">
     <meta content="https://lena-chandelier.me" property="og:url">
     <meta content="Lena Chandelier" property="og:site_name">
-    <meta content="https://lena-chandelier.me/assets/img/home/header_medium.jpg" property="og:image">
+    <meta content="https://lena-chandelier.me/assets/img/home/header_medium.webp" property="og:image">
     
     <meta content="summary" name="twitter:card">
     <meta content="https://lena-chandelier.me" name="twitter:url">
     <meta content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}" name="twitter:title">
     <meta content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}" name="twitter:description">
-    <meta content="https://lena-chandelier.me/assets/img/home/header_medium.jpg" name="twitter:image">
+    <meta content="https://lena-chandelier.me/assets/img/home/header_medium.webp" name="twitter:image">
+
+    <link rel="preload" as="image" href="/assets/img/home/header.jpg" imagesizes="(min-width:671px) 1024px" imagesrcset="/assets/img/home/header_medium.jpg 670w, /assets/img/home/header.jpg 1024w" />
 
     <link rel="stylesheet" href="{{ "/assets/css/all.min.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/print.min.css" | prepend: site.baseurl }}" media="print">

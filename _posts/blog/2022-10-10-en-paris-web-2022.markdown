@@ -6,13 +6,13 @@ date:   2022-10-10 12:20:00 +0100
 category: "blog"
 permalink: /en/blog/paris-web-2022.html
 lang: en
-thumbnail: /assets/img/blog/paris-web-medium.jpg
+thumbnail: /assets/img/blog/paris-web-medium.webp
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/paris-web.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/paris-web-medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/paris-web.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/paris-web.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/paris-web-medium.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/paris-web.webp 1024w"
           sizes="(min-width:671px) 1024px"/>
 
 **Back in person for this edition after 2 years of COVID pandemic and online editions. It was great to be back with the "Paris Web family"! This year's theme was "back to basics"**.
@@ -196,16 +196,16 @@ While waiting for the videos to be cut, you can find all the conferences
 
 <div class="cols">
    <figure>
-      <img src="{{ site.baseurl }}/assets/img/blog/staff-paris-web.jpg" alt="Paris Web staff greeting the audience from the stage" 
-                  srcset="{{ site.baseurl }}/assets/img/blog/staff-paris-web-medium.jpg 670w,
-               {{ site.baseurl }}/assets/img/blog/staff-paris-web.jpg 1024w"
+      <img src="{{ site.baseurl }}/assets/img/blog/staff-paris-web.webp" alt="Paris Web staff greeting the audience from the stage" 
+                  srcset="{{ site.baseurl }}/assets/img/blog/staff-paris-web-medium.webp 670w,
+               {{ site.baseurl }}/assets/img/blog/staff-paris-web.webp 1024w"
                sizes="(min-width:671px) 1024px"/>
       <figcaption>A big thank you to the Staff who did a great job, as always!</figcaption>
    </figure>
    <figure>
-      <img src="{{ site.baseurl }}/assets/img/blog/interpretes-lsf.jpg" alt="The FSL team" 
-            srcset="{{ site.baseurl }}/assets/img/blog/interpretes-lsf-medium.jpg 670w,
-               {{ site.baseurl }}/assets/img/blog/interpretes-lsf.jpg 1024w"
+      <img src="{{ site.baseurl }}/assets/img/blog/interpretes-lsf.webp" alt="The FSL team" 
+            srcset="{{ site.baseurl }}/assets/img/blog/interpretes-lsf-medium.webp 670w,
+               {{ site.baseurl }}/assets/img/blog/interpretes-lsf.webp 1024w"
                sizes="(min-width:671px) 1024px"/>
       <figcaption>Thank you to the <abbr title="French Sign Language">FSL</abbr> interpreters who are so talented that even the government can no longer do without them!</figcaption>
    </figure>   

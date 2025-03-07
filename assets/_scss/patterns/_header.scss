@@ -1,6 +1,10 @@
+@use "../base/mixins";
+@use "../base/setup";
+@use "../components/sprites";
+
 header {
     font-size: 1.8rem;
-    background: $dark_bg;
+    background: var(--dark-bg);
     padding: 20px;
     
     .wrapper {
@@ -47,7 +51,7 @@ header {
 
     a, button {
         &:focus-visible {
-            outline: 2px solid $light_color;
+            outline: 2px solid var(--light-color);
         }
     }
     
@@ -68,15 +72,15 @@ header {
             height: 1px;
             width: 0;
             background: #fff;
-            @include transition(width .2s, background-color .2s);
+            transition: width .2s, background-color .2s;
         }
 
         &:focus, &:active, &:hover {
-            color: $light_color;
+            color: var(--light-color);
         
             &:after {
                 width: 100%;
-                background: $light_color;
+                background: var(--light-color);
             }
         }
       
@@ -95,10 +99,10 @@ header {
     box-sizing: border-box;
     z-index: 99;
     text-align: center;
-    background: $site_color;
+    background: var(--site-color);
     border: 1px solid #fff;
     
-    @include respond-to(mobile) {
+    @include mixins.respond-to(mobile) {
         left: auto;
         right: 0;
         -webkit-transform: none;
@@ -109,23 +113,22 @@ header {
 .a11y_tools {
     position: relative;
     
-   > button {
-        @include sprite($icons, a11y);
-    }
-    
     ul {
         @extend .submenu;
        
-        @include respond-to(mobile) {
+        @include mixins.respond-to(mobile) {
             left: 50%;
             right: auto;
-            -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
         }
     }
     
     a, button {
         color: #fff;
+    }
+
+    svg {
+        fill: var(--light-color);
     }
 } 
 
@@ -150,7 +153,7 @@ header {
     height: 40px;
     border: 0;
     background: transparent;
-    @include transition(.2s);
+    transition: .2s;
 
     .caret {
         display: block;
@@ -161,8 +164,8 @@ header {
         cursor: pointer;
         height: 3px;
         width: 30px;
-        background: $light_color;
-        @include transition(.2s);
+        background: var(--light-color);
+        transition: .2s;
 
         &:before, &:after {
             content: '';
@@ -173,8 +176,8 @@ header {
             cursor: pointer;
             height: 3px;
             width: 30px;
-            background: $light_color;
-            @include transition(.3s);
+            background: var(--light-color);
+            transition: .3s;
         }
 
         &:before {

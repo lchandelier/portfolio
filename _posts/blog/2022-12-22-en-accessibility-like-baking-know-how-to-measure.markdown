@@ -6,13 +6,13 @@ date:   2022-12-22 18:48:00 +0100
 category: "blog"
 permalink: /en/blog/accessibility-like-baking-know-how-to-measure.html
 lang: en
-thumbnail: /assets/img/blog/access-medium.jpg
+thumbnail: /assets/img/blog/access-medium.webp
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/access.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/access.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/access.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/access.webp 1024w"
           sizes="(min-width:671px) 1024px"/>
 
 **When I started in digital accessibility, I wanted to make sure that the content presented was readable by everyone.
@@ -54,7 +54,7 @@ Here's an example not to be reproduced at home:
 
 {% highlight html %}
 {% raw %}
-<img src="tournoi.jpg" alt="image of the 2nd edition of the wizards' tournament from october 3 to 7, 2023" />
+<img src="tournoi.webp" alt="image of the 2nd edition of the wizards' tournament from october 3 to 7, 2023" />
 {% endraw %}
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ Here is a good example :
 
 {% highlight html %}
 {% raw %}
-<img src="tournoi.jpg" alt="2nd edition of the wizards' tournament from october 3 to 7, 2023" />
+<img src="tournoi.webp" alt="2nd edition of the wizards' tournament from october 3 to 7, 2023" />
 {% endraw %}
 {% endhighlight %}
 
@@ -166,11 +166,11 @@ Information, or the lack of it, **must be equal for everyone**. If information i
 
 Let's take an image showing a premium rate number :
 
-<img src="{{ site.baseurl }}/assets/img/blog/numero-surtaxe.jpg" alt="0811 123 456 (service 0.05€ / min + price of call)"/>
+<img src="{{ site.baseurl }}/assets/img/blog/numero-surtaxe.webp" alt="0811 123 456 (service 0.05€ / min + price of call)"/>
 
 {% highlight html %}
 {% raw %}
-<img src="numero-surtaxe.jpg" alt="0811 123 456 (service 0.05€ / min + price of call)">
+<img src="numero-surtaxe.webp" alt="0811 123 456 (service 0.05€ / min + price of call)">
 {% endraw %}
 {% endhighlight %}
 
@@ -178,11 +178,11 @@ Here, someone using a screen reader will know that the number is taxed as well a
 In the [RGAA (in french)](https://www.numerique.gouv.fr/publications/rgaa-accessibilite/ "(new window)"){:hreflang="fr"}{:target="_blank"}{:rel="noopener noreferrer"} and the [WCAG](https://www.w3.org/WAI/WCAG21/quickref/ "(new window)"){:target="_blank"}{:rel="noopener noreferrer"}, this is a non-conformity.
 A good implementation would be to display the image with all the pricing information:
 
-<img src="{{ site.baseurl }}/assets/img/blog/numero-surtaxe-ok.jpg" alt="0811 123 456 (service 0.05€ / min + price of call)"/>
+<img src="{{ site.baseurl }}/assets/img/blog/numero-surtaxe-ok.webp" alt="0811 123 456 (service 0.05€ / min + price of call)"/>
 
 {% highlight html %}
 {% raw %}
-<img src="numero-surtaxe.jpg-ok" alt="0811 123 456 (service 0.05€ / min + price of call)">
+<img src="numero-surtaxe.webp-ok" alt="0811 123 456 (service 0.05€ / min + price of call)">
 {% endraw %}
 {% endhighlight %}
 

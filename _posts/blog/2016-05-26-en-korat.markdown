@@ -6,13 +6,13 @@ date:   2016-05-26 13:22:16 +0100
 category: "blog"
 permalink: /en/blog/korat-starterkit.html
 lang: en
-thumbnail: /assets/img/blog/korat.jpg
+thumbnail: /assets/img/blog/korat.webp
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/korat.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/korat-medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/korat.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/korat.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/korat-medium.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/korat.webp 1024w"
           sizes="(min-width:671px) 1024px"/> 
 
 **Korat is a minimalist starterkit (also the breed of the cat on the picture) that allows you to quickly create sprites divided into multiple files, create an archive for a client sending or a server deployment, do basic optimizations such as images compression and <abbr title="Cascading Style Sheets">CSS</abbr>/<abbr title="Javascript">JS</abbr> minification.

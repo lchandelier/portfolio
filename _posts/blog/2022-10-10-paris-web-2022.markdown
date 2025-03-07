@@ -6,13 +6,13 @@ date:   2022-10-10 12:20:00 +0100
 category: "blog"
 permalink: /blog/paris-web-2022.html
 lang: fr
-thumbnail: /assets/img/blog/paris-web-medium.jpg
+thumbnail: /assets/img/blog/paris-web-medium.webp
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/paris-web.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/paris-web-medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/paris-web.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/paris-web.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/paris-web-medium.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/paris-web.webp 1024w"
           sizes="(min-width:671px) 1024px"/>
 
 **Retour en présentiel pour cette édition après 2 ans de pandémie COVID et d’éditions en ligne. Autant dire que cela à fait beaucoup de bien de retrouver la « famille Paris Web » ! Le thème de cette année était le retour aux sources.**
@@ -193,16 +193,16 @@ En attendant le découpage des vidéos, vous pouvez retouver toutes les confére
 
 <div class="cols">
    <figure>
-      <img src="{{ site.baseurl }}/assets/img/blog/staff-paris-web.jpg" alt="le staff Paris Web saluant l’audience depuis l’estrade" 
-                  srcset="{{ site.baseurl }}/assets/img/blog/staff-paris-web-medium.jpg 670w,
-               {{ site.baseurl }}/assets/img/blog/staff-paris-web.jpg 1024w"
+      <img src="{{ site.baseurl }}/assets/img/blog/staff-paris-web.webp" alt="le staff Paris Web saluant l’audience depuis l’estrade" 
+                  srcset="{{ site.baseurl }}/assets/img/blog/staff-paris-web-medium.webp 670w,
+               {{ site.baseurl }}/assets/img/blog/staff-paris-web.webp 1024w"
                sizes="(min-width:671px) 1024px"/>
       <figcaption>Un grand merci au Staff qui abat un travail énorme à chaque fois !</figcaption>
    </figure>
    <figure>
-      <img src="{{ site.baseurl }}/assets/img/blog/interpretes-lsf.jpg" alt="l’équipe des interprètes LSF" 
-            srcset="{{ site.baseurl }}/assets/img/blog/interpretes-lsf-medium.jpg 670w,
-               {{ site.baseurl }}/assets/img/blog/interpretes-lsf.jpg 1024w"
+      <img src="{{ site.baseurl }}/assets/img/blog/interpretes-lsf.webp" alt="l’équipe des interprètes LSF" 
+            srcset="{{ site.baseurl }}/assets/img/blog/interpretes-lsf-medium.webp 670w,
+               {{ site.baseurl }}/assets/img/blog/interpretes-lsf.webp 1024w"
                sizes="(min-width:671px) 1024px"/>
       <figcaption>Merci aux interprètes <abbr title="Langue des Signes Française">LSF</abbr> qui sont tellement doué·e·s que même le gouvernement ne peut plus s’en passer !</figcaption>
    </figure>   

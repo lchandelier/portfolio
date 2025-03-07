@@ -1,25 +1,17 @@
 /*
   Description: project's variables
 */
+:root {
+  --light-color: #4bc4b1;
+  --main-color: #5f5f5f; 
+  --secondary-color: #1a4860;
+  --site-color: #1B4751; //ancien bleu clair
+  --high-contrast-color: #AFDED6;
+  --dark-bg: #173d51;
 
-$main_color: #5f5f5f; 
-$secondary_color: #1a4860;
-$site_color: #1B4751; //ancien bleu clair
-$light_color: #4bc4b1; 
-$high_contrast_color: #AFDED6;
-$dark_bg: #173d51;
-
-@import 'utilities/sprite_global';
-
-
-$ie_sprite: '.no-svg' !default;
-$sprite: map-get($icons, sprite) !default;
-
-
-@import "base/mixins";
-
-// Break points for media queries
-$break-small: 415px;//iphone 6+
-$break-medium: 768px;
-$break-large: 1024px;
-$break-wide: 1280px;
+  // Break points for media queries
+  --break-small: 415px;
+  --break-medium: 768px;
+  --break-large: 1024px;
+  --break-wide: 1280px;
+}

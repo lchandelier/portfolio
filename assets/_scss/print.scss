@@ -1,7 +1,7 @@
 /* 
   Description: print styles
 */
-@import "base/setup";
+@use "base/setup";
 
 body,
 html {
@@ -112,7 +112,7 @@ abbr {
 
 .contact {
     h2 { 
-        color: $secondary_color;
+        color: var(--secondary-color);
     }
 }
 

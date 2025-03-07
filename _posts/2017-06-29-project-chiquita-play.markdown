@@ -7,7 +7,7 @@ date:   2017-06-29 07:18:11 +0100
 category: project
 permalink: /en/projects/project-chiquita-play.html
 lang: en
-thumbnail: /assets/img/projects/dm3.jpg
+thumbnail: /assets/img/projects/dm3.webp
 alt_thumb: 
 ---
 
@@ -28,28 +28,28 @@ See [Chiquita’s website](https://www.chiquita.com/ "Chiquita (new window)"){:t
 
 ### Breakfast Contest
 
-<img src="{{ site.baseurl }}/assets/img/projects/breakfast_large.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/projects/breakfast_medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/projects/breakfast_large.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/projects/breakfast_large.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/projects/breakfast_medium.webp 670w,
+          {{ site.baseurl }}/assets/img/projects/breakfast_large.webp 1024w"
           sizes="(min-width:671px) 1024px"/> 
 
 ### Despicable Me 3 Contest
 
-<img src="{{ site.baseurl }}/assets/img/projects/dm3_large.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/projects/dm3_medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/projects/dm3_large.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/projects/dm3_large.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/projects/dm3_medium.webp 670w,
+          {{ site.baseurl }}/assets/img/projects/dm3_large.webp 1024w"
           sizes="(min-width:671px) 1024px"/> 
 
 ### School Snack Contest
 
-<img src="{{ site.baseurl }}/assets/img/projects/school_large.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/projects/school_medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/projects/school_large.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/projects/school_large.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/projects/school_medium.webp 670w,
+          {{ site.baseurl }}/assets/img/projects/school_large.webp 1024w"
           sizes="(min-width:671px) 1024px"/> 
 
 ### Chiquita’s main website
 
-<img src="{{ site.baseurl }}/assets/img/projects/chiquita_large.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/projects/chiquita_medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/projects/chiquita_large.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/projects/chiquita_large.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/projects/chiquita_medium.webp 670w,
+          {{ site.baseurl }}/assets/img/projects/chiquita_large.webp 1024w"
           sizes="(min-width:671px) 1024px"/> 

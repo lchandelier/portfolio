@@ -1,14 +1,14 @@
-@import "base/setup";
+@use "base/setup";
 
 .contrast {
     background: #333;
     color: #eee;
 
     article a, .wrapper a, a {
-        color: $high_contrast_color;
+        color: var(--high-contrast-color);
         
         &:after {
-            background: $high_contrast_color;
+            background: var(--high-contrast-color);
         }
 
         &:focus, &:active, &:hover {
@@ -20,7 +20,7 @@
         }
 
         &:focus-visible {
-            outline: 2px solid $light_color;
+            outline: 2px solid var(--light-color);
         }
     }
 
@@ -30,7 +30,7 @@
 
     header {
         a, button {
-            color: $high_contrast_color;
+            color: var(--high-contrast-color);
 
             &:focus, &:active, &:hover {
                 color: #eee;
@@ -47,7 +47,7 @@
     }
     
     code {
-        color: $high_contrast_color;
+        color: var(--high-contrast-color);
     }
 
     pre code {
@@ -73,14 +73,14 @@
 
     .intro a, [download], [role="button"] {
         background: none;
-        border: 1px solid $high_contrast_color;
-        @include transition(color .2s, border-color .2s);
+        border: 1px solid var(--high-contrast-color);
+        transition:color .2s, border-color .2s;
 
         &:focus, &:active, &:hover {
             border-color: #eee;
         }
         &:focus-visible {
-            outline: 2px solid $light_color;
+            outline: 2px solid var(--light-color);
         }
     }
 
@@ -115,11 +115,11 @@
         }
         
         h3 {
-            color: $high_contrast_color;
+            color: var(--high-contrast-color);
         }
         
         a {
-            color: $light_color;
+            color: var(--light-color);
             
             &:focus, &:active, &:hover {
                 color: #fff;
@@ -129,13 +129,13 @@
                 }
             }
             &:focus-visible {
-                outline: 2px solid $light_color;
+                outline: 2px solid var(--light-color);
             }
         }
     }
 
     .post_list > div > a:focus-visible::before {
-        outline: 2px solid $light_color;
+        outline: 2px solid var(--light-color);
     }
     
     .social {
@@ -144,7 +144,7 @@
                 box-shadow: 0 0 10px #eee;
             }
             &:focus-visible {
-                outline: 2px solid $light_color;
+                outline: 2px solid var(--light-color);
             }
         }
     }
@@ -160,7 +160,7 @@
     
     .contact {
         a { 
-            color: $high_contrast_color;
+            color: var(--high-contrast-color);
         }
     }
 }

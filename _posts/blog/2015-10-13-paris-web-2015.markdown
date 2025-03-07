@@ -6,13 +6,13 @@ date:   2015-10-13 11:36:08 +0100
 category: "blog"
 permalink: /blog/paris-web-2015.html
 lang: fr
-thumbnail: /assets/img/blog/paris-web-medium.jpg
+thumbnail: /assets/img/blog/paris-web-medium.webp
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/paris-web.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/paris-web-medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/paris-web.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/paris-web.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/paris-web-medium.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/paris-web.webp 1024w"
           sizes="(min-width:671px) 1024px"/>
 
 **Paris Web, l’un des plus gros événements à suivre pour les gens qui font du web a eu lieu du 1er au 3 octobre 2015.

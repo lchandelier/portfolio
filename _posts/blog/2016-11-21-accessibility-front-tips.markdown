@@ -6,13 +6,13 @@ date:   2016-11-20 13:22:16 +0100
 category: "blog"
 permalink: /en/blog/accessibility-front-tips.html
 lang: en
-thumbnail: /assets/img/blog/access-medium.jpg
+thumbnail: /assets/img/blog/access-medium.webp
 alt_thumb: 
 ---
 
-<img src="{{ site.baseurl }}/assets/img/blog/access.jpg" alt="" 
-             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.jpg 670w,
-          {{ site.baseurl }}/assets/img/blog/access.jpg 1024w"
+<img src="{{ site.baseurl }}/assets/img/blog/access.webp" alt="" 
+             srcset="{{ site.baseurl }}/assets/img/blog/access-medium.webp 670w,
+          {{ site.baseurl }}/assets/img/blog/access.webp 1024w"
           sizes="(min-width:671px) 1024px"/> 
 
 **We don’t have to work often on a project that must be accessible.
