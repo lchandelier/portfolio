@@ -8,11 +8,11 @@ footer {
     color: #a1bfcf;
     font-size: 1.6rem;
     
-    @include mixins.respond-to(landscape) {
+    @include mixins.mq(landscape) {
         padding: 26px 20px 56px;
     }
     
-    @include mixins.respond-to(large) {
+    @include mixins.mq($from: landscape, $until: wide) {
         padding: 26px 20px 56px;
     }
 
@@ -24,7 +24,7 @@ footer {
         -webkit-align-items: center;
         align-items: center;
         
-        @include mixins.respond-to(mobile_to_landscape) {
+        @include mixins.mq($until: landscape) {
             display: block;
         }
     }
@@ -33,7 +33,7 @@ footer {
         display: inline-block;
         vertical-align: top;
         
-        @include mixins.respond-to(mobile_to_landscape) {
+        @include mixins.mq($until: landscape) {
             margin: 3rem 0 0;
         }
     }
@@ -72,9 +72,12 @@ footer {
         margin-left: 20px;
     }
 
+    .top_page {
+        background: var(--dark-bg);
+        padding: 0.5rem 0.8rem 0.2rem;
+    }
+
     .top {
         fill: var(--light-color);
-        box-shadow: 0 0 0 2px var(--secondary-color);
-
     }
 }

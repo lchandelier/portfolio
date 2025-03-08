@@ -67,7 +67,7 @@ html {
 }
 
 html, body {
-    @include mixins.respond-to(mobile){
+    @include mixins.mq($until: portrait){
         width: 100%;
         overflow-x: hidden;
     }
@@ -316,7 +316,7 @@ div, textarea{
 }
 
 .hidden_small {
-    @include mixins.respond-to(mobile_to_landscape) {
+    @include mixins.mq($until: landscape) {
         display: none;
     }
 }
@@ -325,7 +325,7 @@ div, textarea{
     position: relative;
     max-width: 1240px;
     margin: 0 auto;
-    @include mixins.respond-to(mobile_to_large) {
+    @include mixins.mq($until: landscape) {
         padding: 0 2rem;
     }
 }
@@ -379,7 +379,7 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
         opacity: 1;
     }
 
-    @include mixins.respond-to(wide) {
+    @include mixins.mq($from: wide) {
         right: 100px;
         bottom: 130px;
     }
@@ -430,7 +430,7 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
         margin: 0 auto 1rem;
         line-height: 1.55;
 
-        @include mixins.respond-to(mobile_to_large) {
+        @include mixins.mq($until: landscape) {
             padding: 0 2rem;
         }
     }

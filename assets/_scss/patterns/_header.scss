@@ -102,7 +102,7 @@ header {
     background: var(--site-color);
     border: 1px solid #fff;
     
-    @include mixins.respond-to(mobile) {
+    @include mixins.mq($until: portrait) {
         left: auto;
         right: 0;
         -webkit-transform: none;
@@ -116,7 +116,7 @@ header {
     ul {
         @extend .submenu;
        
-        @include mixins.respond-to(mobile) {
+        @include mixins.mq($until: portrait) {
             left: 50%;
             right: auto;
             transform: translateX(-50%);

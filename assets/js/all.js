@@ -1961,7 +1961,8 @@ function validateForm(selectorForm, submitButton) {
 
 (function ($) {
     $(document).ready(function () {
-        
+        const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
         //display current language in title
         var currentLanguage = $('#lang').find('a.' + $('html').attr('lang'));
         currentLanguage.attr('title', currentLanguage.attr('title') + ' ' + $('#currentLanguage').html());
@@ -2010,6 +2011,10 @@ function validateForm(selectorForm, submitButton) {
                 window.scrollTo({ top: 0, behavior: "smooth" });
                 return false;
             });
+        }
+
+        if($('#animatedGif').length && isReduced) {
+            $('#animatedGif').attr('src', '/assets/img/global/404.jpg');
         }
 
         //cookie banner

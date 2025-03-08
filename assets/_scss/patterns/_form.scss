@@ -36,7 +36,7 @@
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     
-    @include mixins.respond-to(mobile_to_landscape) {
+    @include mixins.mq($until: landscape) {
         display: block;
     }
 }
@@ -44,7 +44,7 @@
 .field {
     width: 48%;
 
-    @include mixins.respond-to(mobile_to_landscape) {
+    @include mixins.mq($until: landscape) {
         width: 100%;
     }
 }
@@ -99,7 +99,7 @@ input {
         overflow-x: hidden;
         border: 1px solid #a1bfcf;
         
-        @include mixins.respond-to(mobile_to_landscape) {
+        @include mixins.mq($until: landscape) {
             width: 100%;
             min-width: auto;
         }

@@ -17,7 +17,7 @@ main {
     background: #161b1f;
     max-height: 399px;
     
-    @include mixins.respond-to(mobile_to_large) {
+    @include mixins.mq($until: landscape) {
         max-height: none;
     }
 }
@@ -27,7 +27,7 @@ main {
     width: 100%;
     height: auto;
         
-    @include mixins.respond-to(mobile) {
+    @include mixins.mq($until: portrait) {
         width: 200%;
         margin-left: -50%;
         height: auto;
@@ -43,7 +43,7 @@ main {
     z-index: 50;
     background: rgba(26,72,96,.9);
     
-    @include mixins.respond-to(mobile_to_large) {
+    @include mixins.mq($until: landscape) {
         display: none;
     }
 }
@@ -59,7 +59,7 @@ main {
     text-align: center;
     hyphens: none;
     
-    @include mixins.respond-to(mobile_to_large) {
+    @include mixins.mq($until: landscape) {
         position: relative;
         background: rgba(26,72,96,.9);
         padding: 50px 20px;
@@ -100,7 +100,7 @@ main {
             margin-right: 8px;
         }
 
-        @include mixins.respond-to(mobile_to_landscape) {
+        @include mixins.mq($until: landscape) {
             margin: 0 0 16px 0;
         }
     }
@@ -123,7 +123,7 @@ main {
     perspective-origin: 50% 0;
     text-align: center;
 
-    @include mixins.respond-to(wide) {
+    @include mixins.mq($from: wide) {
         text-align: left;
     } 
 
@@ -142,7 +142,7 @@ main {
             opacity: 1;
         }
 
-        @include mixins.respond-to(mobile) {
+        @include mixins.mq($until: portrait) {
             margin: 0 0 16px 0;
         }
     }
@@ -169,7 +169,7 @@ main {
         opacity: 1;
         transition: opacity .2s;
         
-        @include mixins.respond-to(mobile) {
+        @include mixins.mq($until: portrait) {
             max-width: 100%;
         }
     }
@@ -250,7 +250,7 @@ main {
         vertical-align: top;
         opacity: 0;
        
-        @include mixins.respond-to(mobile_to_large) {
+        @include mixins.mq($until: landscape) {
             position: relative;
             left: 50%;
             margin: 0 0 30px -110px;
@@ -270,7 +270,7 @@ main {
         margin-left: 32px;
         font-size: 1.6rem;
         
-        @include mixins.respond-to(mobile_to_large) {
+        @include mixins.mq($until: landscape) {
             max-width: 100%;
             margin: 0;
         }
@@ -450,7 +450,7 @@ main {
     }
     
         
-    @include mixins.respond-to(mobile_to_landscape) {
+    @include mixins.mq($until: landscape) {
         display: block;
         
         p {
@@ -511,7 +511,7 @@ main {
         line-height: 2.6rem;
         color: #fff;
         
-        @include mixins.respond-to(mobile_to_large) {
+        @include mixins.mq($until: landscape) {
             color: #fff;
         }
         
