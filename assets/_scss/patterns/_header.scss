@@ -1,26 +1,21 @@
 @use "../base/mixins";
-@use "../base/setup";
-@use "../components/sprites";
 
 header {
     font-size: 1.8rem;
     background: var(--dark-bg);
-    padding: 20px;
+    padding: 2rem;
     
     .wrapper {
         position: relative;
-        display: -webkit-flex;
         display: flex;
-        -webkit-align-items: center;
         align-items: center;
-        -webkit-justify-content: space-between;
         justify-content: space-between;
     }
     
     li {
         display: inline-block;
         vertical-align: middle;
-        margin-left: 5px;
+        margin-left: 0.5rem;
         
         &:nth-child(2) {
             margin-left: 0;
@@ -31,18 +26,23 @@ header {
         
         li {
             display: block;
-            margin-bottom: 15px;
+            margin-bottom: 1.5rem;
         }
     }
     
     .lang {
         li {
-            padding-right: 10px;
+            padding-right: 1rem;
         }
     } 
     
     :lang(en) .en, :lang(fr) .fr{
-        font-weight: bold;
+        text-transform: uppercase;
+        font-family: atk_bold, arial, sans-serif;
+    
+        .dyslexia & {
+            font-family: od_bold, arial, sans-serif;
+        }
     }
 
     .right_items {
@@ -68,8 +68,8 @@ header {
         &:after {
             content: '';
             display: block;
-            margin: 3px auto 0;
-            height: 1px;
+            margin: 0.3rem auto 0;
+            height: 0.1rem;
             width: 0;
             background: #fff;
             transition: width .2s, background-color .2s;
@@ -90,12 +90,11 @@ header {
 .submenu {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 5rem;
     left: 50%;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    min-width: 200px;
-    padding: 10px;
+    min-width: 20rem;
+    padding: 1rem;
     box-sizing: border-box;
     z-index: 99;
     text-align: center;
@@ -105,7 +104,6 @@ header {
     @include mixins.mq($until: portrait) {
         left: auto;
         right: 0;
-        -webkit-transform: none;
         transform: none;
     }
 }
@@ -133,7 +131,7 @@ header {
 } 
 
 .logo {
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 //menu
@@ -143,14 +141,14 @@ header {
     
     li {
         display: block;
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem;
     }
 }
 
 .display_menu {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     border: 0;
     background: transparent;
     transition: .2s;
@@ -159,11 +157,11 @@ header {
         display: block;
         position: absolute;
         left: 50%;
-        top: 20px;
-        margin: 0 0 0 -15px;
+        top: 2rem;
+        margin: 0 0 0 -1.5rem;
         cursor: pointer;
-        height: 3px;
-        width: 30px;
+        height: 0.3rem;
+        width: 3rem;
         background: var(--light-color);
         transition: .2s;
 
@@ -172,19 +170,19 @@ header {
             display: block;
             position: absolute;
             left: 50%;
-            margin-left: -15px;
+            margin-left: -1.5rem;
             cursor: pointer;
-            height: 3px;
-            width: 30px;
+            height: 0.3rem;
+            width: 3rem;
             background: var(--light-color);
             transition: .3s;
         }
 
         &:before {
-            top: 8px;
+            top: 0.8rem;
         }
         &:after {
-            bottom: 8px;
+            bottom: 0.8rem;
         }
     }
 
@@ -196,15 +194,11 @@ header {
                 top: 0;
             }
             &:before {
-                -webkit-transform: translate3d(0,0,0);
                 transform: translate3d(0,0,0);
-                -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
             }
             &:after {
-                -webkit-transform: translate3d(0,0,0);
                 transform: translate3d(0,0,0);
-                -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg);
             }
         }

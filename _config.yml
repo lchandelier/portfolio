@@ -12,8 +12,8 @@ title:
   en: Lena Chandelier's portfolio
   fr: Portfolio de Lena Chandelier
 description:
-  en: Accessibility Expert and Front-end Developer
-  fr: Experte en Accessibilité Numérique et Développeuse front-end
+  en: Accessibility Officer and Front-end Lead
+  fr: Référente Accessibilité Numérique et Lead Développeuse front-end
 index:
   en: /en
   fr: /
@@ -105,12 +105,12 @@ github:
 linkedin:
   en: Go to my Linkedin profile
   fr: Accéder à mon profil Linkedin
-viadeo:
-  en: Go to my Viadeo profile
-  fr: Accéder à mon profil Viadeo
-twitter:
-  en: Go to my Twitter profile
-  fr: Accéder à mon profil Twitter
+mastodon:
+  en: Go to my Mastodon profile
+  fr: Accéder à mon profil Mastodon
+bluesky:
+  en: Go to my BlueSky profile
+  fr: Accéder à mon profil BlueSky
 cookie_msg:
   en: "Cookie recipe (for 2 people): 
     ½ cup flour

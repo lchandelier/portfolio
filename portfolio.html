@@ -12,9 +12,8 @@ category: project
     {% for blogpost in blogposts %}
     <div>
         <a class="link_full_block" href="{{ blogpost.url | prepend: site.baseurl }}" title="Lire l’article {{ blogpost.title }}">
-            <img width="320" height="220" 
-                         alt="{{ blogpost.alt_thumb }}" 
-                         src="{{ site.baseurl }}{{ blogpost.thumbnail }}">
+            <img alt="{{ blogpost.alt_thumb }}" 
+                src="{{ site.baseurl }}{{ blogpost.thumbnail }}">
         </a>
         <div class="content">
             <h2>{{ blogpost.title }}</h2>

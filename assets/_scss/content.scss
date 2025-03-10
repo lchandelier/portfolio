@@ -1,13 +1,12 @@
-@use 'base/setup';
 @use 'base/mixins';
 
 .chapo {
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 article, .simple_content {
-    padding: 60px 20px;
+    padding: 6rem 2rem;
     
     img {
         display: block;
@@ -57,7 +56,12 @@ article, .simple_content {
 }
 
 article img {
-    max-width: 50%;
+    margin: 5rem 0 0;
+
+    @include mixins.mq($from: landscape) {
+        margin: 5rem auto 0;
+        max-width: 70%;
+    }
 }
 
 .wrapper + .wrapper {
@@ -70,21 +74,21 @@ article img {
         position: relative;
         display: table;
         width: 100%;
-        margin: 0 0 40px 0;
+        margin: 0 0 4rem 0;
 
         > a, > img, .content {
             display: table-cell;
             vertical-align: top;
 
-            @include mixins.mq($until: landscape) {
+            @include mixins.mq($until: tablet) {
                 display: block;
             }
         }
 
         > a {
-            width: 320px;
+            width: 32rem;
         
-            @include mixins.mq($until: landscape) {
+            @include mixins.mq($until: tablet) {
                 width: 100%;
             }
 
@@ -121,7 +125,7 @@ article img {
                 box-shadow: 0 0 5px #f1f1f1;
                 transition:box-shadow .2s, transform .2s;
                 
-                @include mixins.mq($until: landscape) {
+                @include mixins.mq($until: tablet) {
                     width: 100%;
                     height: auto;
                 }
@@ -129,25 +133,25 @@ article img {
         }
 
         > img {
-            width: 320px;
+            width: 32rem;
             max-width: none;
         
-            @include mixins.mq($until: landscape) {
+            @include mixins.mq($until: tablet) {
                 width: 100%;
             }
         }
     }
 
     .content {
-        padding-left: 20px;
-        @include mixins.mq($until: landscape) {
-            padding: 20px 0 0 0;
+        padding-left: 2rem;
+        @include mixins.mq($until: tablet) {
+            padding: 2rem 0 0 0;
         }
     }
 
     h2 {
         .wrapper & {
-            margin: 0 0 10px;  
+            margin: 0 0 1rem;  
         }
         
         display: inline-block;
@@ -168,9 +172,7 @@ article img {
 //sitemap
 
 .sitemap {
-    -webkit-perspective: 200px;
     perspective: 200px;
-    -webkit-perspective-origin: -25% 0;
     perspective-origin: -25% 0;
 
     @include mixins.mq($from: wide) {
@@ -178,12 +180,11 @@ article img {
     } 
     
     h2 {
-        margin: 20px 0;
+        margin: 2rem 0;
     }
 
     ul {
-        margin-left: 20px;
-        -webkit-transform-style: preserve-3d;
+        margin-left: 2rem;
         transform-style: preserve-3d;
     }
 
@@ -292,9 +293,9 @@ article {
 //comment
 
 .comment {
-    padding: 20px;
+    padding: 2rem;
     box-sizing: border-box;
-    max-width: 640px;
+    max-width: 64rem;
     margin: 0 auto;
     line-height: 1.55;
 
@@ -314,11 +315,8 @@ article {
     }
 
     .info {
-        display: -webkit-flex;
         display: flex;
-        -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
-        -webkit-justify-content: space-between;
         justify-content: space-between;
     }
 

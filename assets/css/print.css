@@ -1,22 +1,6 @@
 /* 
   Description: print styles
 */
-/*
-  Description: project's variables
-*/
-:root {
-  --light-color: #4bc4b1;
-  --main-color: #5f5f5f;
-  --secondary-color: #1a4860;
-  --site-color: #1B4751;
-  --high-contrast-color: #AFDED6;
-  --dark-bg: #173d51;
-  --break-small: 415px;
-  --break-medium: 768px;
-  --break-large: 1024px;
-  --break-wide: 1280px;
-}
-
 body,
 html {
   background-color: #fff;

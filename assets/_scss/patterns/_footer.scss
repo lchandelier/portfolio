@@ -1,27 +1,18 @@
 @use "../base/mixins";
-@use "../base/setup";
-@use "../components/sprites";
 
 footer {
     background: var(--dark-bg);
-    padding: 16px 20px;
-    color: #a1bfcf;
+    padding: 1.6rem 2rem;
+    color: var(--input-color);
     font-size: 1.6rem;
     
-    @include mixins.mq(landscape) {
-        padding: 26px 20px 56px;
-    }
-    
     @include mixins.mq($from: landscape, $until: wide) {
-        padding: 26px 20px 56px;
+        padding: 2.6rem 2rem 5.6rem;
     }
 
     .wrapper {
-        display: -webkit-flex;
         display: flex;
-        -webkit-justify-content: space-between;
         justify-content: space-between;
-        -webkit-align-items: center;
         align-items: center;
         
         @include mixins.mq($until: landscape) {
@@ -47,8 +38,8 @@ footer {
         &:after {
             content: '';
             display: block;
-            margin: 3px auto 0;
-            height: 1px;
+            margin: 0.3rem auto 0;
+            height: 0.1rem;
             width: 0;
             background: transparent;
             transition: width .2s, background-color .2s;
@@ -68,8 +59,8 @@ footer {
         }
     }
     
-    li:not(:first-child) {
-        margin-left: 20px;
+    li:not(:last-child) {
+        margin-right: 2rem;
     }
 
     .top_page {

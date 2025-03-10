@@ -17,7 +17,7 @@ lang: fr
             <img src="{{ site.baseurl }}/assets/img/home/l.svg" alt="" width="51" height="61"/>
             <h1>
                 Lena Chandelier
-                <span>Experte en Accessibilité Numérique et Développeuse Front-end</span>
+                <span>{{ site.description[page.lang] }}</span>
             </h1>
 			<ul>
 				<li><a href="{{ site.baseurl }}{{ site.folioURL[page.lang] }}">Portfolio</a></li>
@@ -38,9 +38,7 @@ lang: fr
                 <div class="item">
                     <h3>
                         <a href="{{ post.url | prepend: site.baseurl }}">
-                            <img width="324" height="264" 
-                                 alt="" 
-                                 src="{{ site.baseurl }}{{ post.thumbnail }}">
+                            <img alt="" src="{{ site.baseurl }}{{ post.thumbnail }}">
                             <span>{{ post.title }}</span>
                         </a>
                     </h3>
@@ -78,11 +76,18 @@ lang: fr
         <h2 class="center">Parcours</h2>
         <div id="xp" class="list_xp">
 			<div class="highlight">
-                <h3>Experte en Accessibilité Numérique / Développeuse Front-end</h3>
+                <h3>Experte en Accessibilité Numérique / Lead Développeuse Front-end</h3>
                 <ul>
                     <li>Mise en place du styleguide Salt (accessible),</li>
                     <li>Intégration HTML et développement JavaScript des différents sites de la marque,</li>
                     <li>Accessibilité (développements accessibles et sensibilisations en interne).</li>
+                </ul>
+                <p>Depuis mai 2024: Accessibility Officer</p>
+                <ul>
+                    <li>Rédaction de documentation (informations générales, guides opérationnels, liste d’outils),</li>
+                    <li>Sensibilisations auprès de différentes équipes (Digital, Marketing, B2B, Légal, IT, ...),</li>
+                    <li>Audits de designs et audits techniques rapides,</li>
+                    <li>Collaboration avec un partenaire externe pour des audits de conformité.</li>
                 </ul>
                 <div class="bottom">
                     <a href="https://salt.ch" target="_blank" rel="noopener noreferrer" title="Salt Mobile SA (nouvelle fenêtre)">Salt Mobile SA</a>
@@ -97,7 +102,7 @@ lang: fr
                     <li>Accessibilité (développements accessibles et sensibilisations en interne).</li>
                 </ul>
                 <p>
-                    <a href="https://essencedesign.com/" target="_blank" rel="noopener noreferrer" title="Essence design (nouvelle fenêtre)">Essencedesign</a> novembre 2017 à novembre 2018
+                    <span class="company">Essencedesign</span> novembre 2017 à novembre 2018
                 </p>
             </div>
             <div>
@@ -108,7 +113,7 @@ lang: fr
                     <li>Accessibilité (audit de sites et développements accessibles).</li>
                 </ul>
                 <p>
-                    <a href="https://www.sqli.com/ch-en" hreflang="en" target="_blank" rel="noopener noreferrer" title="Wax Interactive Lausanne (Groupe SQLI) (nouvelle fenêtre, en anglais)">Wax Interactive Lausanne (Groupe SQLI)</a> juillet 2015 à octobre 2017
+                    <span class="company">Wax Interactive Lausanne (Groupe SQLI)</span> juillet 2015 à octobre 2017
                 </p>
             </div>
             <div>
@@ -119,7 +124,7 @@ lang: fr
                     <li>Accessibilité.</li>
                 </ul>
                 <p>
-                    <a href="http://www.actitudes.com" target="_blank" rel="noopener noreferrer" title="Actitudes (nouvelle fenêtre)">Actitudes</a> octobre 2014 à juin 2015
+                    <span class="company">Actitudes</span> octobre 2014 à juin 2015
                 </p>
             </div>
             <div>
@@ -131,7 +136,7 @@ lang: fr
                     <li>Intégrations Magento, Drupal, Wordpress, ezPublish.</li>
                 </ul>
                 <p>
-                    <a href="http://www.agenceinteractive.com" target="_blank" rel="noopener noreferrer" title="Agence Interactive (nouvelle fenêtre)">Agence Interactive</a> 2009 à septembre 2014
+                    <span class="company">Agence Interactive</span> 2009 à septembre 2014
                 </p>
             </div>
             <div>
@@ -143,7 +148,7 @@ lang: fr
                     <li>Intégrations Google Maps</li>
                 </ul>
                 <p>
-                    <a href="http://www.speedmedia.fr" target="_blank" rel="noopener noreferrer" title="Speedmedia Services (nouvelle fenêtre)">Speedmedia Services</a> 2008 à 2009
+                    <span class="company">SpeedMedia Services</span> 2008 à 2009
                 </p>
             </div>
             <div>
@@ -152,24 +157,22 @@ lang: fr
                     <li>Réalisation d’un projet de gestion du suivi de cartouches de sauvegardes en PHP.</li>
                 </ul>
                 <p>
-                    <a href="https://www.veolia.com" target="_blank" rel="noopener noreferrer" title="Véolia Propreté (nouvelle fenêtre)">Véolia Propreté</a> 2006 à 2008
+                    <span class="company">Véolia Propreté</span> 2006 à 2008
                 </p>
             </div>
         </div>
         <div class="buttons noprint">
             <p>
                 Télécharger mon cv
+                <a class="pdf" href="/assets/doc/cv_lena_chandelier.pdf" download="CV Lena Chandelier">
+                    (PDF - 846ko)
+                </a>
             </p>
-            <a class="pdf" href="/assets/doc/cv_lena_chandelier.pdf" download="CV Lena Chandelier">
-                (PDF - 846ko)
-            </a>
-            <a class="epub" href="/assets/doc/cv_lena_chandelier.epub" download="CV Lena Chandelier">
-                (ePub - 12,4ko)
-            </a>
+           
             <ul class="social" id="social">
                 <li>
                     <a href="https://www.linkedin.com/in/lena-chandelier/"
-                       title="Mon profil sur Linkedin (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+                       title="{{ site.linkedin[page.lang] }} (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
                        <svg aria-hidden="true" focusable="false" class="linkedin">
                         <use xlink:href="#linkedin"></use>
                     </svg>
@@ -177,26 +180,27 @@ lang: fr
                     </a>
                 </li>
 
+
                 <li>
-                    <a href="https://twitter.com/CrazyCatLena"
-                       title="Mon profil sur Twitter (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
-                       <svg aria-hidden="true" focusable="false" class="twitter">
-                            <use xlink:href="#twitter"></use>
+                    <a href="https://web-cdn.bsky.app/profile/lena-chandelier.me"
+                       title="{{ site.bluesky[page.lang] }} (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+                       <svg aria-hidden="true" focusable="false" class="bluesky">
+                            <use xlink:href="#bluesky"></use>
                         </svg>
-                        <span class="a11y_hidden">{{ site.twitter[page.lang] }}</span>
+                        <span class="a11y_hidden">{{ site.bluesky[page.lang] }}</span>
                     </a>
                 </li>
                 <li>
-                    <a href="https://mamot.fr/@lena" title="Mon profil sur Mastodon (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+                    <a href="https://mamot.fr/@lena" title="{{ site.mastodon[page.lang] }} (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
                         <svg aria-hidden="true" focusable="false" class="masto">
                             <use xlink:href="#masto"></use>
                         </svg>
-                        <span class="a11y_hidden">Accéder à mon profil Mastodon</span>
+                        <span class="a11y_hidden">{{ site.mastodon[page.lang] }}</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/lchandelier"
-                       title="Mon repo Github (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+                       title="{{ site.github[page.lang] }} (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
                         <svg aria-hidden="true" focusable="false" class="github">
                             <use xlink:href="#github"></use>
                         </svg>

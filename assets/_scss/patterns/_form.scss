@@ -1,10 +1,9 @@
 @use "../base/mixins";
-@use "../base/setup";
 
 .form_comment {
-    background: #1a4860;
-    padding: 16px 20px;
-    color: #a1bfcf;
+    background: var(--secondary-color);
+    padding: 1.6rem 2rem;
+    color: var(--input-color);
     font-size: 1.6rem;
 
     p {
@@ -12,7 +11,7 @@
     }
     
     .wrapper {
-        max-width: 640px;
+        max-width: 64rem;
     }
 
     h2 {
@@ -27,13 +26,9 @@
 }
 
 .container_field {
-    display: -webkit-flex;
     display: flex;
-    -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-align-items: center;
     align-items: center;
-    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     
     @include mixins.mq($until: landscape) {
@@ -58,22 +53,22 @@ label {
 input {
     display: block;
     border: 0;
-    margin: 10px 0;
+    margin: 1rem 0;
     box-sizing: border-box;
     background: transparent;
-    border: 1px solid #a1bfcf;
+    border: 1px solid var(--input-color);
     font-family: atk_reg, arial, sans-serif;
     font-size: 1.6rem;
     color: #fff;
 
     &[type="text"], &[type="email"] {
-        min-height: 40px;
+        min-height: 4rem;
         width: 100%;
-        padding: 3px 10px;
+        padding: 0.3rem 1rem;
     }
 
     &[type="submit"] {
-        margin: 40px auto;
+        margin: 4rem auto;
         width: auto;
         cursor: pointer;
 
@@ -89,15 +84,15 @@ input {
 }
 
 .custom_select {
-	margin: 10px 0;
+	margin: 1rem 0;
 	
     div {
         display: block;
         position: relative;
-        min-width: 305px;
-        min-height: 40px;
+        min-width: 30.5rem;
+        min-height: 4rem;
         overflow-x: hidden;
-        border: 1px solid #a1bfcf;
+        border: 1px solid var(--input-color);
         
         @include mixins.mq($until: landscape) {
             width: 100%;
@@ -107,29 +102,28 @@ input {
         &:after {
             content: '';
             position: absolute;
-            top: 15px;
-            right: 12px;
+            top: 1.5rem;
+            right: 1.2rem;
             pointer-events: none;
             background: url(../img/global/arrow-down.svg) no-repeat;
-            width: 20px;
-            height: 12px;
+            width: 2rem;
+            height: 1.2rem;
         }
         
         select {
             position: absolute;
-            left: 1px;
-            top: 3px;
+            left: 0.1rem;
+            top: 0.3rem;
             width: 99.5%;
             border: 0;
             background: transparent;
             box-sizing: border-box;
-            padding: 5px 8px 5px;
+            padding: 0.5rem 0.8rem 0.5rem;
             font-family: atk_reg, arial, sans-serif;
             font-size: 1.6rem;
 			line-height: 1.5;
             color: #fff;
             cursor: pointer;
-            -moz-appearance: none;
             -webkit-appearance: none;
             
             &::-ms-expand {
@@ -147,7 +141,7 @@ input {
 
 textarea {
     width: 100%;
-    padding: 3px 10px;
+    padding: 0.3rem 1rem;
 
     @extend input;
     resize: vertical;

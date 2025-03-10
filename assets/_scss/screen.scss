@@ -60,7 +60,6 @@
 /* global styles */
 html {
     font-size: 62.5%;
-    font-size: calc(1rem * 0.625);
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     scroll-behavior: smooth;
@@ -83,11 +82,9 @@ body {
     width: 100%;
     background: #fafafa;
 
-    display: -webkit-flex;
     display: flex;
     min-height: 100vh;
     height: 100%;
-    -webkit-flex-direction: column;
     flex-direction: column;
     line-height: 2.2rem;
 }
@@ -125,7 +122,7 @@ body {
 
 .wrapper {
     position: relative;
-    max-width: 1024px;
+    max-width: 102.4rem;
     margin: 0 auto;
 }
 
@@ -196,7 +193,11 @@ button:not(.display_menu) {
 }
 
 strong, b {
-    font-weight: bold;
+    font-family: atk_bold, arial, sans-serif;
+    
+    .dyslexia & {
+        font-family: od_bold, arial, sans-serif;
+    }
 }
 
 em, i {
@@ -240,7 +241,6 @@ p {
 }
 
 main {
-    -webkit-flex: 1;
     flex: 1 0 auto;
 
     p, li {
@@ -282,18 +282,11 @@ main {
 }
 
 .display {
-    -webkit-transform: translateZ(0); 
     transform: translateZ(0);
-    -webkit-transform: translate3d(0,0,0); 
     transform: translate3d(0,0,0);
-    -webkit-backface-visibility: hidden; 
     backface-visibility: hidden;
-    -webkit-animation: display_item 1s  1;
     animation: display_item 1s  1;
-    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
     animation-delay: 1s;
 
     transform: translateY(-30px);
@@ -310,11 +303,6 @@ main {
     }
 }
 
-div, textarea{
-    word-wrap: break-word;
-    hyphens: auto;
-}
-
 .hidden_small {
     @include mixins.mq($until: landscape) {
         display: none;
@@ -323,7 +311,7 @@ div, textarea{
 
 .center_content {
     position: relative;
-    max-width: 1240px;
+    max-width: 124rem;
     margin: 0 auto;
     @include mixins.mq($until: landscape) {
         padding: 0 2rem;
@@ -370,8 +358,8 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
 
 .top_page {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 2rem;
+    right: 2rem;
     opacity: 0;
     transition: opacity .2s;
 
@@ -380,8 +368,8 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
     }
 
     @include mixins.mq($from: wide) {
-        right: 100px;
-        bottom: 130px;
+        right: 10rem;
+        bottom: 13rem;
     }
     
     &:focus, &:active, &:hover {
@@ -404,7 +392,6 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
 
 @include meta.load-css("patterns/header");
 @include meta.load-css("patterns/breadcrumb");
-@include meta.load-css("patterns/form");
 @include meta.load-css("patterns/footer");
 
 #cookie-consent-bar {
@@ -426,7 +413,7 @@ body, a, button, p, li, .btn, h1, h2, h3, h4, header a:not(.logo) {
 
     p {
         position: relative;
-        max-width: 1240px;
+        max-width: 124rem;
         margin: 0 auto 1rem;
         line-height: 1.55;
 
